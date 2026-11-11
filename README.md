@@ -9,7 +9,3 @@ Static site, no build step. It installs as an app (PWA) on Android, iOS, tablets
 - `manifest.webmanifest`, `sw.js`, `icons/`: install and offline support
 
 Comnt Academy · كومنت أكاديمي
-
-## Editing
-Lesson sources live in `source/` (`src-l1.html` … `src-l4.html`, `src-games.html`, `src-basics.html`, `src-app.js`, quizzes).
-`python3 source/build.py` rebuilds the page.
