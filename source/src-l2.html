@@ -1,0 +1,428 @@
+<section class="lesson" id="lesson-2" data-lesson="2" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l2-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-2</span><br>حركة المقذوفات الأفقية</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>عندما تُقذف عملة معدنية أفقيًا من حافة طاولة بينما تسقط عملة أخرى رأسيًا بجانبها في نفس اللحظة، أيهما تصل الأرض أولًا، وما الذي يحدد النتيجة؟</p>
+      </div>
+      <p class="muted">هنستخدم اللي اتعلمناه في الدرس اللي فات (تفكيك الحركة لمركبتين) على أي حاجة بتتقذف أفقي: كورة بتقع من على ترابيزة، حجر من فوق جرف، كيس من طيارة.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l2-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · لعبة إسقاط · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنرمي حاجات من على الترابيزة!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l2-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تشرح</b> ليه الحركة الأفقية والحركة الرأسية للمقذوف كل واحدة بتحصل لوحدها من غير ما تأثر في التانية.</span></li>
+      <li><span><b>تحسب</b> زمن الطيران والمدى الأفقي لأي جسم اتقذف أفقي.</span></li>
+      <li><span><b>تحسب</b> سرعة المقذوف في أي لحظة (مقدارها واتجاهها) لما تركّب مركبتيها.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر من سنة أولى:</b> معادلات الحركة بعجلة منتظمة: <span class="m">v = v₀ + at</span> و <span class="m">d = v₀t + ½at²</span>. وفي السقوط الحر الجسم بيبدأ من السكون <span class="m">(v₀ = 0)</span> وعجلته <span class="m">g = 9.8 m s⁻²</span> لتحت.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l2-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">حط عملتين معدن على حرف الترابيزة بالظبط. زُق واحدة بصباعك تطلع أفقي من على الترابيزة، وفي نفس اللحظة سيب التانية تقع رأسي من على الحرف. اللي اتزقت بتنزل على الأرض بعيد، والتانية بتنزل تحت الحرف على طول. السؤال: مين بتخبط في الأرض الأول؟</p>
+      <div class="poll" data-poll="p3" data-answer="2">
+        <b>(أ) أي العملتين تصل إلى الأرض أولًا: التي يتم قذفها أفقيًا، أم التي تُركت تسقط رأسيًا، أم لا تصل أي واحدة منهما قبل الأخرى؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">المقذوفة أفقيًا</button>
+          <button class="opt" aria-pressed="false">الساقطة رأسيًا</button>
+          <button class="opt" aria-pressed="false">تصلان معًا</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. اختبره في <a href="#l2-explore" style="color:var(--yellow)">تجربة العملتين</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">بيوصلوا مع بعض.</b> بص على الحركة الرأسية بس: العملتين بيبدأوا من نفس الارتفاع، وسرعتهم الرأسية في الأول صفر، والجاذبية بتشدهم بنفس العجلة <span class="m">g</span>. يعني حركتهم الرأسية متطابقة. الزقة الأفقية بتحرك العملة الأولى لقدّام بس، ومالهاش دعوة بالنزول.</div>
+      </div>
+      <div class="poll" data-poll="p4" data-answer="2">
+        <b>(ب) إذا قُذفت العملة الأولى بقوة ضعف السابقة، هل تبقى في الهواء لزمن أطول، أم أقصر، أم نفس الزمن؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">زمن أطول</button>
+          <button class="opt" aria-pressed="false">زمن أقصر</button>
+          <button class="opt" aria-pressed="false">نفس الزمن</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l2-lab" style="color:var(--yellow)">معمل المقذوف</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">نفس الزمن.</b> الزقة الأقوى بتخلّي العملة تروح أبعد، لكن مش بتخلّيها تقعد في الهوا أكتر. اللي بيحدد هي هتفضل في الهوا قد إيه هو الارتفاع بس: <span class="m">t = √(2y / g)</span>.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">اختار توقعك قبل ما تشوف!</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l2-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — قارن حركة عملتين</span>
+    <p class="lead">في التجربة دي بتنقر طرف مسطرة طالع برّه الترابيزة: المسطرة بتزق العملة <span class="m">A</span> أفقي، وفي نفس اللحظة بتتسحب من تحت العملة <span class="m">B</span> فتقع رأسي. النقط على الشاشة هي مكان كل عملة كل <span class="m">0.1 s</span>، والخطوط المتقطعة بتوصّل النقط اللي في نفس اللحظة. غيّر قوة النقر ودوس تاني، وكل محاولة هتتسجل في الجدول.</p>
+    <div class="sim">
+      <canvas id="coinCanvas" style="aspect-ratio:16/8" aria-label="عملتان تسقطان من حافة طاولة، واحدة أفقيًا والأخرى رأسيًا، مع نقاط كل 0.1 s"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="coinF">قوة النقر (السرعة الأفقية للعملة A) <output data-out="coinF"></output></label><input id="coinF" type="range" min="0.5" max="3" step="0.25" value="1.5"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="coinGo">انقر المسطرة</button><button class="btn ghost small" id="coinClear">امسح الجدول</button><span id="coinSound" class="ylw" style="font-weight:700"></span></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th>قوة النقر <span class="m">v₀ (m/s)</span></th><th>زمن نزول <span class="m">A (s)</span></th><th>زمن نزول <span class="m">B (s)</span></th><th>المسافة الأفقية لـ <span class="m">A (m)</span></th><th>خبطة واحدة ولا اتنين؟</th></tr></thead>
+          <tbody id="coinTable"><tr class="empty"><td colspan="6" class="muted">لسه مفيش محاولات. دوس «انقر المسطرة».</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) هل انقسم صوت الارتطام إلى نقرتين مع زيادة قوة النقر؟ ما النمط الذي يُظهره العمود؟<br>(ب) تقطع العملة المقذوفة مسارًا منحنيًا أطول بكثير، لكن الارتطامين يبقيان متزامنين. لماذا لا يؤدي المسار الأطول إلى زيادة الزمن اللازم للوصول إلى الأرض؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="coinAns">اكشف النمط</button>
+        <div id="coinAns" class="reveal" hidden>دايمًا خبطة واحدة. لما زوّدت قوة النقر، المسافة الأفقية زادت، لكن زمن النزول فضل زي ما هو. بص على الخطوط المتقطعة: العملتين دايمًا على نفس الارتفاع في نفس اللحظة. يعني المسار الأطول معمول من حركة أفقية زيادة، والحركة الأفقية دي مش بتاخد من وقت النزول.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l2-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">حركتين في جسم واحد</h2>
+      <p>أول ما الجسم يسيب الترابيزة، مفيش غير قوة واحدة بتأثر عليه: الجاذبية، وهي رأسية لتحت. (بنهمل مقاومة الهوا في الدرس ده.) فالحل إننا نفكّ حركته لاتجاهين ونشتغل على كل واحد لوحده، زي ما عملنا مع القارب:</p>
+      <div class="grid2">
+        <div class="note"><b>أفقي:</b> مفيش قوة أفقية، يبقى مفيش عجلة أفقية. الجسم بيكمّل بنفس السرعة اللي خرج بيها <span class="m">v₀</span> طول الوقت. حركة منتظمة.</div>
+        <div class="note"><b>رأسي:</b> الجسم بيبدأ بسرعة رأسية صفر (لأنه اتزق أفقي)، والجاذبية بتسرّعه لتحت بـ <span class="m">g</span>. يعني سقوط حر بالظبط.</div>
+      </div>
+      <div class="fbox"><span class="m">x = v₀t</span><span class="m">y = ½gt²</span><span class="m">v<sub>y</sub> = gt</span></div>
+      <div class="plain"><b class="t">الفكرة الأهم في الدرس:</b> الحركتين <b>مستقلين</b>؛ يعني الأفقي مش بيأثر في الرأسي، والرأسي مش بيأثر في الأفقي. الحاجة الوحيدة المشتركة بينهم هي الزمن <span class="m">t</span>، لأن الجسم بيعمل الحركتين في نفس الوقت. عشان كده الزمن هو «الكوبري» اللي بينقلك من محور للتاني.</div>
+      <div class="term"><b>مصطلح — المقذوف:</b> أي جسم طاير في الهوا بعد ما اتساب، ومفيش حاجة بتأثر عليه غير الجاذبية (لو أهملنا مقاومة الهوا).</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">شكل المسار: قطع مكافئ</h3>
+      <p>كل ثانية الجسم بيمشي أفقي نفس المسافة، لكن رأسيًا بيقع مسافة أكبر من الثانية اللي قبلها (لأنه بيتسارع). النتيجة منحنى بيميل لتحت أكتر وأكتر، واسمه <b>قطع مكافئ</b>.</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px">الارتفاع هو اللي بيحدد الزمن</h3>
+      <p>من المعادلة الرأسية <span class="m">y = ½gt²</span> نطلّع زمن الطيران:</p>
+      <div class="fbox"><span class="m">t = √(2y / g)</span></div>
+      <p>بص على القانون: مفيش فيه <span class="m">v₀</span> خالص. يعني زمن الطيران بيعتمد على الارتفاع <span class="m">y</span> وعجلة الجاذبية <span class="m">g</span> بس. لو ضاعفت السرعة الأفقية، الجسم هيروح ضعف المسافة في نفس الزمن. وعشان تضاعف الزمن، لازم ترفع الارتفاع <span class="m">4</span> أضعاف (لأن الزمن بيتناسب مع الجذر التربيعي للارتفاع).</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px">السرعة في أي لحظة</h3>
+      <p>في أي لحظة الجسم ليه مركبتين: أفقية ثابتة <span class="m">vₓ = v₀</span>، ورأسية بتزيد <span class="m">v<sub>y</sub> = gt</span>. نجمعهم بفيثاغورث زي الدرس اللي فات:</p>
+      <div class="fbox"><span class="m">v = √(vₓ² + v<sub>y</sub>²)</span><span class="m">tan θ = v<sub>y</sub> / vₓ</span></div>
+      <p>الزاوية <span class="m">θ</span> هنا هي زاوية اتجاه السرعة تحت الأفقي. ولأن <span class="m">v<sub>y</sub></span> بتكبر مع الوقت، الجسم بيبص لتحت أكتر وأكتر، وسرعته لحظة الخبطة دايمًا أكبر من السرعة اللي اتقذف بيها.</p>
+    </div>
+    <div class="mint">
+      <div class="bubble">الأفقي في حاله، والرأسي في حاله… والزمن هو اللي بيجمعهم</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB ============ -->
+<section class="board" id="l2-lab">
+  <div class="stack">
+    <span class="seg">معمل المقذوف</span>
+    <h2 class="h2">اقذف من فوق المبنى</h2>
+    <p class="lead">غيّر الارتفاع والسرعة الأفقية، واسحب شريط الزمن عشان تشوف أسهم السرعة في أي لحظة. خد بالك من حاجتين: السهم الأزرق (الأفقي) طوله ثابت مبيتغيرش، والسهم الأخضر (الرأسي) بيطول مع الوقت. والكرة الزرقا اللي بتقع رأسي جنب المبنى دايمًا على نفس ارتفاع الكرة الحمرا.</p>
+    <div class="sim">
+      <canvas id="labCanvas" style="aspect-ratio:16/9" aria-label="مقذوف أفقي من مبنى مع متجهات السرعة الأفقية والرأسية والمحصلة"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="labH">الارتفاع <span class="m">y</span> <output data-out="labH"></output></label><input id="labH" type="range" min="5" max="80" step="0.1" value="19.6"></div>
+        <div class="ctrl"><label for="labV">السرعة الأفقية <span class="m">v₀</span> <output data-out="labV"></output></label><input id="labV" type="range" min="0" max="25" step="0.1" value="14.7"></div>
+        <div class="ctrl"><label for="labT">الزمن <span class="m">t</span> (اسحب) <output data-out="labT"></output></label><input id="labT" type="range" min="0" max="1" step="0.005" value="1"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="labGo">اقذف</button></div>
+      <div class="readout">
+        <div><span>زمن الطيران <span class="m">√(2y/g)</span></span><b id="labTT">—</b></div>
+        <div><span>المدى الأفقي <span class="m">x = v₀t</span></span><b id="labX">—</b></div>
+        <div><span><span class="m">vₓ</span> عند <span class="m">t</span></span><b id="labVx">—</b></div>
+        <div><span><span class="m">v<sub>y</sub> = gt</span></span><b id="labVy">—</b></div>
+        <div><span>السرعة <span class="m">v</span></span><b id="labVv">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--pen-given)"></i>المركبة الأفقية (ثابتة)</span><span><i style="background:var(--pen-check)"></i>المركبة الرأسية (بتزيد)</span><span><i style="background:var(--pen-formula)"></i>السرعة المحصلة</span></div>
+      <p class="muted" style="font-size:14px">جرّب: حط الارتفاع <span class="m">19.6 m</span> والسرعة <span class="m">14.7 m/s</span>، هتلاقي الأرقام هي هي أرقام المثال المحلول تحت.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l2-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <p>المقذوف الأفقي = حركة أفقية منتظمة + سقوط حر. كل القوانين جاية من الفكرة دي. <span class="m">v₀</span> السرعة اللي اتقذف بيها (أفقي)، و <span class="m">y</span> الارتفاع، و <span class="m">x</span> المسافة الأفقية، و <span class="m">t</span> الزمن.</p>
+    <div class="laws">
+      <div class="law"><b>المسافة الأفقية</b><div class="eq">x = v₀t</div><small>حركة منتظمة: مفيش عجلة أفقية.</small></div>
+      <div class="law"><b>السرعة الأفقية</b><div class="eq">vₓ = v₀</div><small>ثابتة طول الرحلة.</small></div>
+      <div class="law"><b>المسافة الرأسية</b><div class="eq">y = ½gt²</div><small>سقوط حر من السكون رأسيًا.</small></div>
+      <div class="law"><b>السرعة الرأسية</b><div class="eq">v<sub>y</sub> = gt</div><small>بتزيد <span class="m">9.8 m/s</span> كل ثانية.</small></div>
+      <div class="law"><b>زمن الطيران</b><div class="eq">t = √(2y / g)</div><small>بيعتمد على الارتفاع بس، مش على <span class="m">v₀</span>.</small></div>
+      <div class="law"><b>المدى الأفقي</b><div class="eq">x = v₀ √(2y / g)</div><small>عوّض الزمن في <span class="m">x = v₀t</span>.</small></div>
+      <div class="law"><b>السرعة لحظة الخبطة</b><div class="eq">v = √(v₀² + (gt)²)</div><small>ركّب المركبتين بفيثاغورث.</small></div>
+      <div class="law"><b>اتجاه السرعة</b><div class="eq">tan θ = gt / v₀</div><small><span class="m">θ</span> تحت الأفقي.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l2-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> قُذف جسم أفقيًا بسرعة <span class="m">14.7 m/s</span> من ارتفاع <span class="m">19.6 m</span> فوق الأرض. بافتراض أن عجلة الجاذبية الأرضية تساوي <span class="m">9.8 m/s²</span>، أوجد: (أ) الزمن اللازم بالثانية ليصل الجسم إلى الأرض. (ب) المدى الأفقي للجسم بالمتر. (ج) سرعة الجسم قُبيل ارتطامه بالأرض بـ <span class="m">m/s</span>.</div>
+    <div class="steps" id="exSteps2">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">v₀ = 14.7 m s⁻¹</span> (أفقي)، <span class="m">y = 19.6 m</span>، <span class="m">g = 9.8 m s⁻²</span></p>
+        <p><b>المطلوب:</b> الزمن <span class="m">t</span>، المدى <span class="m">x</span>، السرعة <span class="m">v</span></p>
+        <p style="font-size:15px">أفقي: ماشي بسرعة ثابتة. رأسي: بيقع سقوط حر مسافة <span class="m">19.6 m</span>.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>نبدأ بالرأسي عشان نجيب الزمن: <span class="m">y = ½gt²</span></p>
+        <p>بعدين الأفقي عشان نجيب المدى: <span class="m">x = v₀t</span></p>
+        <p>وفي الآخر السرعة الرأسية <span class="m">v<sub>y</sub> = gt</span> ونركّب: <span class="m">v = √(vₓ² + v<sub>y</sub>²)</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">19.6 = ½ × 9.8 × t² → t² = 4</span></p>
+        <p>(ب) <span class="m">x = 14.7 × 2.0</span></p>
+        <p>(ج) <span class="m">v<sub>y</sub> = 9.8 × 2.0 = 19.6 m s⁻¹</span><br><span class="m">v = √(14.7² + 19.6²)</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">t = 2.0 s</span></div>
+        <div class="answer"><span class="m">x = 29.4 m</span></div>
+        <div class="answer"><span class="m">v = 24.5 m s⁻¹</span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext2">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset2">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> السرعة النهائية <span class="m">24.5</span> لازم تطلع أكبر من السرعة الابتدائية <span class="m">14.7</span>، لأن الجاذبية زوّدت المركبة الرأسية وسابت الأفقية زي ما هي. ولو طلعت أصغر، يبقى في غلطة.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l2-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> قُذف جسم أفقيًا بسرعة <span class="m">19.6 m/s</span> من ارتفاع <span class="m">58.8 m</span> فوق الأرض.</p>
+        <p>(i) أوجد الزمن اللازم (بالثانية) ليصل الجسم إلى الأرض.</p>
+        <div class="ansrow" data-num="3.464" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(ii) أوجد المدى الأفقي للجسم بالمتر.</p>
+        <div class="ansrow" data-num="67.9" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المدى"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(iii) أوجد سرعة الجسم قبل ارتطامه بالأرض.</p>
+        <div class="ansrow" data-num="39.2" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="السرعة"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try2A">وريني الحل</button>
+        <div id="try2A" class="sol" hidden>(i) <span class="m">t = √(2 × 58.8 / 9.8) = √12 ≈ 3.46 s</span><br>(ii) <span class="m">x = 19.6 × 3.46 ≈ 67.9 m</span><br>(iii) <span class="m">v<sub>y</sub> = 9.8 × 3.46 ≈ 33.9 m s⁻¹</span>، ويبقى <span class="m">v = √(19.6² + 33.9²) ≈ 39.2 m s⁻¹</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> يُقذف جسم أفقيًا بسرعة <span class="m">3.0 m s⁻¹</span> من ارتفاع معيّن، فيصل إلى الأرض خلال <span class="m">3.0 s</span>.</p>
+        <p>(i) أوجد الارتفاع الابتدائي للجسم بالمتر.</p>
+        <div class="ansrow" data-num="44.1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الارتفاع"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(ii) أوجد المدى الأفقي للجسم بالمتر.</p>
+        <div class="ansrow" data-num="9" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المدى"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try2B">وريني الحل</button>
+        <div id="try2B" class="sol" hidden>(i) <span class="m">y = ½ × 9.8 × 3.0² = 44.1 m</span><br>(ii) <span class="m">x = 3.0 × 3.0 = 9.0 m</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج) تطبيق سريع:</b> ينزلق هاتف من حافة نافذة على ارتفاع <span class="m">4.9 m</span> فوق الرصيف. أوجد زمن سقوطه.</p>
+        <div class="ansrow" data-num="1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try2C">وريني الحل</button>
+        <div id="try2C" class="sol" hidden><span class="m">t = √(2 × 4.9 / 9.8) = √1 = 1.0 s</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">ابدأ دايمًا بالرأسي: هو اللي بيديك الزمن</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: AIRDROP GAME ============ -->
+<section class="board sky" id="l2-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">ارمي قبل الهدف</h2>
+      <p class="lead">طيارة إغاثة طايرة أفقي بسرعة <span class="m">60 m s⁻¹</span> على ارتفاع <span class="m">80 m</span> فوق قرية غرقانة من الفيضان، وعايزة ترمي أكياس حبوب على حقل متعلّم بعلامة. أول ما الكيس يخرج من الطيارة، بياخد معاه سرعتها الأفقية ويفضل محافظ عليها، وفي نفس الوقت بيقع بسبب الجاذبية. الوقوع بياخد <span class="m">t = √(2 × 80 / 9.8) ≈ 4.0 s</span>، وفي الأربع ثواني دول الكيس بيمشي لقدّام حوالي <span class="m">60 × 4.0 ≈ 240 m</span>. عشان كده الطيار لازم يرمي <b>قبل</b> ما يوصل فوق الهدف بحوالي <span class="m">240 m</span>.</p>
+      <div class="sim">
+        <b class="h3">العبها: دوس «ارمي» في اللحظة الصح</b>
+        <canvas id="dropCanvas" style="aspect-ratio:16/8" aria-label="لعبة: طائرة تتحرك فوق هدف، اضغط لإسقاط الكيس"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="dropV">سرعة الطيارة <output data-out="dropV"></output></label><input id="dropV" type="range" min="30" max="90" step="5" value="60"></div>
+          <div class="ctrl"><label for="dropH">ارتفاع الطيارة <output data-out="dropH"></output></label><input id="dropH" type="range" min="40" max="160" step="10" value="80"></div>
+        </div>
+        <div class="btnrow"><button class="btn navy" id="dropStart">ابدأ الطلعة</button><button class="btn" id="dropBtn" disabled>ارمي الكيس!</button><button class="btn ghost small" id="dropHint">وريني نقطة الرمي</button><span id="dropMsg" style="font-weight:700"></span></div>
+        <div class="readout"><div><span>زمن الوقوع</span><b id="dropT">—</b></div><div><span>المسافة لقدّام <span class="m">x = v₀t</span></span><b id="dropX">—</b></div><div><span>إصاباتك</span><b id="dropScore">0 / 0</b></div></div>
+      </div>
+      <div class="btnrow"><b>فسّر:</b> إذا حافظت الطائرة على سرعتها الأفقية، يهبط الكيس تقريبًا مباشرة أسفل الطائرة، رغم أنه بعيد جدًا عن نقطة إسقاطه. كيف تكون العبارتان صحيحتين في آنٍ واحد؟ <button class="btn small navy" data-toggle="irl2A">إجابة مقترحة</button></div>
+      <div id="irl2A" class="sol" hidden>الكيس والطيارة ليهم نفس السرعة الأفقية طول الوقت، فالكيس بيفضل تحت الطيارة على طول (لو بصيت من الطيارة هتشوفه بيقع رأسي). بس بالنسبة للأرض، الاتنين مشيوا <span class="m">240 m</span> لقدّام أثناء الوقوع، فالكيس بينزل بعيد عن المكان اللي اترمى فيه. الجملتين صح، كل واحدة من إطار مرجعي مختلف (افتكر السرعة النسبية!).</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">ركّز! الكيس بيكمّل بسرعة الطيارة</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l2-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">جاليليو بطّأ الجاذبية</h3>
+      <p>الحاجة اللي بتقع حرة بتقع بسرعة جدًا، وجاليليو مكانش معاه ساعة دقيقة تقيس زمنها. فعمل حيلة ذكية: دحرج كور على مستوى مايل ناعم ميله خفيف. الحركة فضلت بنفس طبيعتها (عجلة منتظمة بسبب الجاذبية)، بس بقت أبطأ بكتير، فقدر يقيس زمنها بساعة مية. وفي كتابه «علمان جديدان» سنة <span class="m">1638</span> أثبت إن المقذوف (من غير مقاومة هوا) بيجمع حركة أفقية منتظمة وحركة رأسية بعجلة، والاتنين مع بعض بيرسموا قطع مكافئ.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> فسّر لماذا تُعَدّ دراسة الحركة أسفل منحدر أملس عديم الاحتكاك مكافئة فيزيائيًا لدراسة السقوط الحر الرأسي المباشر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l2-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تفتكر إن السرعة الأفقية الأكبر بتطوّل زمن الطيران</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «اتقذف أسرع، يبقى هيقعد في الهوا وقت أطول»</div>
+            <div class="good"><b>صح:</b> <span class="m">t = √(2y / g)</span>: الارتفاع لوحده هو اللي بيحدد الزمن</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تحط <span class="m">v₀</span> في المعادلة الرأسية</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">y = v₀t + ½gt²</span> و <span class="m">v₀</span> هي السرعة الأفقية</div>
+            <div class="good"><b>صح:</b> السرعة الرأسية في الأول = صفر، يبقى <span class="m">y = ½gt²</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تفتكر إن سرعة الخبطة = المركبة الرأسية بس</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">v = gt = 19.6 m s⁻¹</span></div>
+            <div class="good"><b>صح:</b> <span class="m">v = √(v₀² + (gt)²) = 24.5 m s⁻¹</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تقرّب الزمن بدري</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> تقرّب <span class="m">t = 3.46 s</span> لـ <span class="m">3 s</span> وتكمّل بيه في <span class="m">x</span> و <span class="m">v</span></div>
+            <div class="good"><b>صح:</b> كمّل بالزمن من غير تقريب، وقرّب الإجابة النهائية بس</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">الفخ رقم 1 بييجي كل سنة!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l2-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">عندما تُقذف عملة معدنية أفقيًا من فوق طاولة بينما تسقط عملة أخرى رأسيًا بجانبها في نفس اللحظة، أيهما تصل الأرض أولًا؟ وما الذي يحدد النتيجة؟</p>
+    <p class="lead">العملتين بيوصلوا في نفس اللحظة. السبب إن الحركة الرأسية للاتنين واحدة: نفس الارتفاع، ونفس السرعة الرأسية في الأول (صفر)، ونفس العجلة <span class="m">g</span>. والحركة الأفقية مستقلة، فمش بتغير حاجة في النزول. اللي بيحدد زمن الوصول هو الارتفاع بس، أما السرعة الأفقية فبتحدد العملة هتنزل بعيد قد إيه.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l2-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">الحركة الأفقية</b><p>مفيش عجلة، فالسرعة ثابتة <span class="m">vₓ = v₀</span><br><span class="m">x = v₀t</span><br>السرعة الأفقية هي اللي بتحدد المدى.</p></div>
+        <div class="sumcol"><b class="on-navy-given">الحركة الرأسية</b><p>سقوط حر من السكون بعجلة <span class="m">g</span><br><span class="m">v<sub>y</sub> = gt</span> و <span class="m">y = ½gt²</span><br>الارتفاع هو اللي بيحدد الزمن: <span class="m">t = √(2y/g)</span></p></div>
+        <div class="sumcol"><b class="mintc">التركيب</b><p>المسار قطع مكافئ، والحركتين بيشتركوا في <span class="m">t</span> بس.<br><span class="m">v = √(vₓ² + v<sub>y</sub>²)</span> في أي لحظة، وسرعة الخبطة أكبر من سرعة القذف.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! بريك شاي وبعدين التحدي</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l2-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تتدحرج كرة من فوق منضدة أفقية ارتفاعها <span class="m">1.25 m</span> بسرعة <span class="m">2.0 m s⁻¹</span>.</p>
+      <p>(أ) احسب الزمن الذي تستغرقه الكرة لتصل إلى الأرض.</p>
+      <div class="ansrow" data-num="0.505" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(ب) أوجد المسافة الأفقية من المنضدة التي تهبط عندها الكرة.</p>
+      <div class="ansrow" data-num="1.01" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="المسافة"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch2A">وريني الحل</button>
+      <div id="ch2A" class="sol" hidden>(أ) <span class="m">t = √(2 × 1.25 / 9.8) ≈ 0.51 s</span><br>(ب) <span class="m">x = 2.0 × 0.505 ≈ 1.0 m</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> يُقذف جسم أفقيًا من ارتفاع <span class="m">0.40 m</span> ويهبط عند النقطة <span class="m">A</span> الواقعة على مسافة أفقية <span class="m">0.40 m</span>.</p>
+      <p>(i) أوجد السرعة الابتدائية للجسم.</p>
+      <div class="ansrow" data-num="1.4" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="السرعة"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(ii) أوجد الارتفاع الابتدائي اللازم ليسقط الجسم عند النقطة <span class="m">B</span> الواقعة على مسافة أفقية <span class="m">0.80 m</span>، بافتراض السرعة الابتدائية نفسها.</p>
+      <div class="ansrow" data-num="1.6" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="الارتفاع"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch2B">وريني الحل</button>
+      <div id="ch2B" class="sol" hidden>(i) <span class="m">t = √(2 × 0.40 / 9.8) ≈ 0.286 s</span>، و <span class="m">v₀ = 0.40 / 0.286 ≈ 1.4 m s⁻¹</span><br>(ii) بنفس السرعة، عشان المسافة تتضاعف لازم الزمن يتضاعف. وبما إن <span class="m">y = ½gt²</span>، الارتفاع بيتضاعف <span class="m">4</span> مرات: <span class="m">4 × 0.40 = 1.6 m</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l2-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">لو وقعت الموبايل من إيدك وإنت ماشي، هيقع ورا رجلك ولا قدامها ولا جنبها؟ وليه؟</b>
+  <label for="l2c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l2c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l2c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l2-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-2</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m/s²</span> وأهمل مقاومة الهوا، إلا لو السؤال قال غير كده.</p>
+    <div class="qlist" data-quiz="q2"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q2">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q2">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="3">الدرس الجاي: المقذوفات بزاوية ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

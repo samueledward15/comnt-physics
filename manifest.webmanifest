@@ -1,0 +1,23 @@
+{
+  "name": "فيزياء كومنت · Comnt Physics",
+  "short_name": "فيزياء كومنت",
+  "description": "دروس فيزياء تفاعلية لتانية ثانوي (البكالوريا): المتجهات، المقذوفات، عزم القوة، ألعاب وأساسيات.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#013869",
+  "theme_color": "#013869",
+  "categories": ["education"],
+  "icons": [
+    {"src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "الألعاب", "url": "/#tab-games"},
+    {"name": "الأساسيات", "url": "/#tab-basics"}
+  ]
+}

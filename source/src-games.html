@@ -1,0 +1,107 @@
+<section class="lesson" id="lesson-games" data-lesson="games" hidden>
+<main class="wrap">
+
+<section class="board" id="g-intro">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">العب واتعلم</span>
+      <h1 style="font-size:clamp(32px,5vw,52px);font-weight:800">ألعاب الفيزياء</h1>
+      <p class="lead">4 ألعاب على اللي درسناه. مفيش حظ هنا: لو فهمت القانون هتكسب كل مرة. ابدأ بالتخمين، وبعدين جرّب تحسبها في ورقة قبل ما تلعب، وشوف الفرق.</p>
+      <div class="grid2">
+        <a class="gcard" href="#g-cannon"><b>اضرب الهدف</b><span>مقذوف بزاوية · الدرس <span class="m">1-3</span></span></a>
+        <a class="gcard" href="#g-river"><b>اوصل للمرسى</b><span>السرعة المحصلة · الدرس <span class="m">1-1</span></span></a>
+        <a class="gcard" href="#g-seesaw"><b>وازن السيسو</b><span>عزم القوة · الدرس <span class="m">1-4</span></span></a>
+        <a class="gcard" href="#g-blitz"><b>سباق الدقيقة</b><span>أسئلة سريعة على كل الدروس</span></a>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">مين هيجيب أعلى سكور؟</div>
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME 1: CANNON ============ -->
+<section class="board" id="g-cannon">
+  <div class="stack">
+    <span class="seg">لعبة 1 · مقذوف بزاوية</span>
+    <h2 class="h2">اضرب الهدف</h2>
+    <p>الهدف الأحمر على مسافة معيّنة. اختار سرعة الإطلاق والزاوية ودوس «اطلق». لو الكورة نزلت على بُعد <span class="m">1.5 m</span> من الهدف أو أقل، تبقى إصابة. كل 3 إصابات بتطلع مستوى، والهدف بيبعد، وفي المستويات العالية بيظهر حيطة لازم تعدّي من فوقها.</p>
+    <div class="sim">
+      <canvas id="gcCanvas" style="aspect-ratio:16/8" aria-label="لعبة مدفع: أطلق الكرة لتصيب الهدف"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="gcV">سرعة الإطلاق <span class="m">v₀</span> <output data-out="gcV"></output></label><input id="gcV" type="range" min="5" max="30" step="0.5" value="18"></div>
+        <div class="ctrl"><label for="gcA">الزاوية <span class="m">θ</span> <output data-out="gcA"></output></label><input id="gcA" type="range" min="5" max="85" step="1" value="45"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="gcFire">اطلق</button><button class="btn ghost small" id="gcNew">هدف جديد</button><button class="btn ghost small" id="gcHint">مساعدة</button><span id="gcMsg" style="font-weight:700"></span></div>
+      <div class="readout">
+        <div><span>بُعد الهدف</span><b id="gcT">—</b></div>
+        <div><span>المستوى</span><b id="gcLv">1</b></div>
+        <div><span>الإصابات</span><b id="gcSc">0</b></div>
+        <div><span>أعلى سكور</span><b id="gcBest">0</b></div>
+      </div>
+      <div id="gcHelp" class="plain" hidden><b class="t">مساعدة:</b> المدى على أرض مستوية <span class="m">R = v₀² sin 2θ / g</span>. ثبّت الزاوية <span class="m">45°</span> (أكبر مدى)، واحسب السرعة اللي تخلّي <span class="m">R</span> = بُعد الهدف: <span class="m">v₀ = √(R g)</span>. ولو فيه حيطة، استخدم زاوية أكبر عشان الكورة تطلع أعلى.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME 2: RIVER ============ -->
+<section class="board" id="g-river">
+  <div class="stack">
+    <span class="seg">لعبة 2 · السرعة المحصلة</span>
+    <h2 class="h2">اوصل للمرسى</h2>
+    <p>القارب سرعته في المية الساكنة <span class="m">5 m/s</span>، والتيار بيتغير كل جولة. المرسى الأصفر في الضفة التانية، ومش شرط يكون قصادك. اختار زاوية البوز (عكس التيار أو معاه) ودوس «انطلق». لو رسيت على بُعد <span class="m">3 m</span> من المرسى أو أقل، تبقى كسبت الجولة.</p>
+    <div class="sim">
+      <canvas id="grCanvas" style="aspect-ratio:16/9" aria-label="لعبة عبور النهر للوصول إلى المرسى"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="grA">زاوية البوز عن العمودي (بالسالب = عكس التيار) <output data-out="grA"></output></label><input id="grA" type="range" min="-70" max="70" step="1" value="0"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="grGo">انطلق</button><button class="btn ghost small" id="grNew">جولة جديدة</button><span id="grMsg" style="font-weight:700"></span></div>
+      <div class="readout">
+        <div><span>سرعة التيار</span><b id="grC">—</b></div>
+        <div><span>مكان المرسى من النقطة اللي قصادك</span><b id="grDock">—</b></div>
+        <div><span>الجولات اللي كسبتها</span><b id="grSc">0 / 0</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">فكرة: نقطة الرسو بتبعد عن النقطة اللي قصادك مسافة <span class="m">x = d × (v<sub>c</sub> + v<sub>b</sub> sin α) / (v<sub>b</sub> cos α)</span>. ولو المرسى قصادك بالظبط، يبقى عايز <span class="m">sin α = −v<sub>c</sub> / v<sub>b</sub></span>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME 3: SEESAW ============ -->
+<section class="board" id="g-seesaw">
+  <div class="stack">
+    <span class="seg">لعبة 3 · عزم القوة</span>
+    <h2 class="h2">وازن السيسو</h2>
+    <p>على الشمال قاعد طفل بوزن معيّن وعلى بُعد معيّن. إنت هتقعّد الطفل التاني على اليمين: اختار بُعده عن نقطة الارتكاز بحيث السيسو يتزن. افتكر: <span class="m">F<sub>1</sub> d<sub>1</sub> = F<sub>2</sub> d<sub>2</sub></span>. احسبها الأول، وبعدين اكتب الرقم أو حرّك الـ slider.</p>
+    <div class="sim">
+      <canvas id="gsCanvas" style="aspect-ratio:16/7" aria-label="لعبة السيسو: وازن العزمين"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="gsD">بُعد الطفل اللي على اليمين <span class="m">d<sub>2</sub></span> <output data-out="gsD"></output></label><input id="gsD" type="range" min="0.2" max="3" step="0.05" value="1.5"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="gsCheck">جرّب</button><button class="btn ghost small" id="gsNew">جولة جديدة</button><span id="gsMsg" style="font-weight:700"></span></div>
+      <div class="readout">
+        <div><span>الطفل الشمال <span class="m">F<sub>1</sub> × d<sub>1</sub></span></span><b id="gsL">—</b></div>
+        <div><span>الطفل اليمين <span class="m">F<sub>2</sub></span></span><b id="gsW2">—</b></div>
+        <div><span>الجولات اللي كسبتها</span><b id="gsSc">0 / 0</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME 4: BLITZ ============ -->
+<section class="board" id="g-blitz">
+  <div class="stack">
+    <span class="seg">لعبة 4 · كل الدروس</span>
+    <h2 class="h2">سباق الدقيقة</h2>
+    <p>عندك <span class="m">60</span> ثانية. كل سؤال حسبة سريعة من الدروس الأربعة أو من الأساسيات. الإجابة الصح بنقطة، والغلط مالوش خصم بس بيضيّع وقتك. حاول تكسر أعلى سكور ليك.</p>
+    <div class="blitz">
+      <div class="blitzhead"><b id="gbTime" class="m">60</b><span>ثانية</span><b id="gbScore" class="m">0</b><span>نقطة</span><span class="muted">أعلى سكور: <b id="gbBest" class="m">0</b></span></div>
+      <div id="gbQ" class="blitzq">دوس «ابدأ» عشان يبدأ السباق.</div>
+      <div id="gbOpts" class="choices"></div>
+      <div class="btnrow"><button class="btn" id="gbStart">ابدأ</button><span id="gbMsg" style="font-weight:700"></span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

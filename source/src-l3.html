@@ -1,0 +1,435 @@
+<section class="lesson" id="lesson-3" data-lesson="3" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l3-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-3</span><br>حركة المقذوفات بزاوية</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>عند أعلى نقطة في مسار كرة مقذوفة بزاوية، هل تصل الكرة إلى حالة سكون لحظي؟</p>
+      </div>
+      <div class="btnrow">
+        <a class="btn" href="#l3-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">تصوير بطيء · مدفع بزاوية · ألعاب نارية · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده الكورة هتطلع لفوق الأول!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l3-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تشرح</b> إزاي تفك مقذوف اتقذف بزاوية لحركتين كل واحدة في حالها.</span></li>
+      <li><span><b>تحسب</b> زمن الطيران وأقصى ارتفاع والمدى لمقذوف اتقذف بزاوية.</span></li>
+      <li><span><b>توصف</b> حركة المقذوف عند أعلى نقطة، ومركبتين سرعته الأفقية والرأسية هناك.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> من الدرس الأول: تفكيك السرعة لمركبتين <span class="m">(v cos θ</span> و <span class="m">v sin θ)</span>. ومن الدرس التاني: الحركة الأفقية والرأسية مستقلين، والزمن هو اللي بيربطهم. الدرس ده هو الاتنين مع بعض.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l3-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">بص على إعادة بالحركة البطيئة لضربة حرة: الكورة بتسيب رجل اللاعب، وتطلع لفوق، وتبان كأنها وقفت لحظة عند أعلى نقطة قبل ما تنزل ناحية المرمى. المعلّقين أحيانًا بيسموا ده «زمن التحليق». ارجع للإعادة وركّز على أعلى نقطة: هل الكورة فعلًا واقفة في اللحظة دي؟</p>
+      <div class="poll" data-poll="p5" data-answer="1">
+        <b>(أ) عند أعلى نقطة، هل تكون سرعة الكرة صفرًا، أم أقل ما يمكن لكنها ليست صفرًا، أم بلا تغيير؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">صفر</button>
+          <button class="opt" aria-pressed="false">أقل ما يمكن لكنها ليست صفرًا</button>
+          <button class="opt" aria-pressed="false">بلا تغيير</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. اختبره في <a href="#l3-explore" style="color:var(--yellow)">التصوير البطيء</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">أقل ما يمكن، بس مش صفر.</b> عند أعلى نقطة المركبة الرأسية بس هي اللي بتبقى صفر، أما المركبة الأفقية <span class="m">v₀ cos θ</span> فبتفضل زي ما هي. يعني الكورة عمرها ما بتقف.</div>
+      </div>
+      <div class="poll" data-poll="p6" data-answer="2">
+        <b>(ب) تستغرق الكرة <span class="m">1.8 s</span> للوصول إلى أعلى نقطة، فهل ستستغرق العودة إلى ارتفاع الإطلاق وقتًا أطول، أم أقصر، أم نفس الوقت؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">أطول</button>
+          <button class="opt" aria-pressed="false">أقصر</button>
+          <button class="opt" aria-pressed="false">نفس الوقت</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l3-lab" style="color:var(--yellow)">مدفع المقذوف</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">نفس الوقت.</b> لو الكورة رجعت لنفس الارتفاع اللي اتقذفت منه ومن غير مقاومة هوا، الحركة بتبقى متماثلة حوالين أعلى نقطة: زمن الطلوع = زمن النزول، يعني الزمن الكلي <span class="m">2 × 1.8 = 3.6 s</span>.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فكّر كويس… الكورة بتقف فوق ولا لأ؟</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l3-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — هل الكورة بتقف فوق؟</span>
+    <p class="lead">في الكتاب بتصوّر كورة ورق بالتصوير البطيء وهي معدية من فوق باب. هنا عندك نفس الفيديو متقطّع لكادرات: كل نقطة بيضا هي مكان الكورة في كادر، وبين كل كادر والتاني نفس الزمن بالظبط. اتنقّل كادر كادر، وبص على الأرقام اللي تحت: الكورة اتحركت قد إيه أفقي وقد إيه رأسي من الكادر اللي قبله. ركّز أكتر حوالين القمة.</p>
+    <div class="sim">
+      <canvas id="frameCanvas" style="aspect-ratio:16/8" aria-label="مسار كرة بالتصوير البطيء، مع قياس الإزاحة الأفقية والرأسية بين الكادرات"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="frAng">زاوية الإطلاق <output data-out="frAng"></output></label><input id="frAng" type="range" min="20" max="75" step="5" value="45"></div>
+        <div class="ctrl"><label for="frN">الكادر <output data-out="frN"></output></label><input id="frN" type="range" min="0" max="16" step="1" value="8"></div>
+      </div>
+      <div class="btnrow"><button class="btn ghost small" id="frPrev">الكادر اللي قبله</button><button class="btn ghost small" id="frNext">الكادر اللي بعده</button><button class="btn" id="frPlay">شغّل بالبطيء</button></div>
+      <div class="readout">
+        <div><span>الإزاحة الأفقية من الكادر اللي قبله</span><b id="frDx">—</b></div>
+        <div><span>الإزاحة الرأسية من الكادر اللي قبله</span><b id="frDy">—</b></div>
+        <div><span>اتجاه الحركة الرأسية</span><b id="frDir" style="font-family:var(--f-ar)">—</b></div>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) بالنسبة لكل زاوية إطلاق، هل ظلت الإزاحة الأفقية لكل إطار ثابتة تقريبًا في أثناء مرور الكرة بأعلى نقطة؟<br>(ب) كيف تغيّرت الحركة الرأسية أثناء مرور الكرة بأعلى نقطة؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="frAns">اكشف النمط</button>
+        <div id="frAns" class="reveal" hidden>الإزاحة الأفقية بين الكادرات <b>ثابتة</b> طول الوقت، حتى عند أعلى نقطة. أما الرأسية فبتصغر كادر ورا كادر لحد ما تقرب من الصفر عند القمة، وبعدين اتجاهها بيتقلب وتكبر تاني والكورة نازلة.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l3-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">فك المقذوف لمركباته</h2>
+      <p>في التجربة، الكورة فضلت ماشية أفقي بخطوات متساوية كادر ورا كادر حتى عند أعلى نقطة. وفي نفس الوقت، الإزاحة الرأسية كانت بتقل لحد ما قربت من الصفر عند القمة، وبعدين اتجاهها اتقلب وكبرت والكورة نازلة. يمكن كنت متوقع إن الكورة تقف خالص فوق، بس الفيديو قال غير كده.</p>
+      <p>الفكرة كلها إن المقذوف بزاوية = مقذوف أفقي (الدرس اللي فات) + حاجة واحدة جديدة: إنه بيبدأ وهو طالع لفوق. أول خطوة دايمًا: نفك سرعة الإطلاق <span class="m">v₀</span> لمركبتين باستخدام الزاوية <span class="m">θ</span> اللي مع الأفقي:</p>
+      <div class="fbox"><span class="m">vₓ = v₀ cos θ</span><span class="m">v<sub>0y</sub> = v₀ sin θ</span></div>
+      <p><b>أفقي:</b> لو أهملنا مقاومة الهوا، المركبة الأفقية بتفضل ثابتة طول الرحلة، فالجسم ماشي بسرعة منتظمة:</p>
+      <div class="fbox"><span class="m">x = v₀ cos θ × t</span></div>
+      <p><b>رأسي:</b> الكورة بتتصرف بالظبط زي حجر رميته لفوق على طول بسرعة <span class="m">v₀ sin θ</span>. الجاذبية بتشده لتحت، فبتقلل سرعته الرأسية <span class="m">9.8 m/s</span> كل ثانية. ولأننا اخترنا «لفوق» موجب، العجلة بتبقى <span class="m">(−g)</span>:</p>
+      <div class="fbox"><span class="m">v<sub>y</sub> = v₀ sin θ − gt</span><span class="m">y = v₀ sin θ × t − ½gt²</span></div>
+      <div class="plain"><b class="t">تخيّلها كده:</b> المركبة الرأسية بتبدأ كبيرة وموجبة (طالعة)، وكل ثانية بتقل، لحد ما توصل صفر عند القمة، وبعدين تبقى سالبة (نازلة) وتكبر تاني. أما المركبة الأفقية فزي الدرس اللي فات بالظبط: ثابتة من الأول للآخر. والحركتين مستقلين، والحاجة الوحيدة المشتركة بينهم هي الزمن <span class="m">t</span>.</div>
+      <div class="term"><b>عند أعلى نقطة:</b> المركبة الرأسية للسرعة لوحدها بتبقى صفر <span class="m">(v<sub>y</sub> = 0)</span>، أما المركبة الأفقية فبتفضل ثابتة، <b>عشان كده الكورة عمرها ما بتوصل لسكون فعلي.</b></div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">التماثل حوالين أعلى نقطة</h3>
+      <p><b>زمن الوصول للقمة:</b> عند القمة <span class="m">v<sub>y</sub> = 0</span>، فبنحط صفر في معادلة السرعة الرأسية: <span class="m">0 = v₀ sin θ − g t<sub>top</sub></span>، يطلع <span class="m">t<sub>top</sub> = v₀ sin θ / g</span>.</p><p><b>التماثل:</b> لو الكورة نزلت على نفس الارتفاع اللي اتقذفت منه (ومن غير مقاومة هوا)، الطلوع والنزول صورة طبق الأصل من بعض: زمن الطلوع = زمن النزول، وسرعة النزول عند الأرض = سرعة الطلوع. يبقى الزمن الكلي ضعف زمن القمة.</p><p><b>أقصى ارتفاع:</b> هو المسافة الرأسية اللي اتقطعت لحد القمة، وبيطلع من <span class="m">v<sub>y</sub>² = v<sub>0y</sub>² − 2gH</span> مع <span class="m">v<sub>y</sub> = 0</span>.</p><p><b>المدى:</b> السرعة الأفقية ثابتة طول الرحلة، فالمدى = السرعة الأفقية × الزمن الكلي:</p>
+      <div class="fbox"><span class="m">t<sub>top</sub> = v₀ sin θ / g</span><span class="m">T = 2 t<sub>top</sub></span><span class="m">H = (v₀ sin θ)² / 2g</span><span class="m">R = v₀ cos θ × T</span></div>
+      <div class="note">مثال سريع: لو المقذوف وصل لأعلى نقطة بعد <span class="m">1.2 s</span>، يبقى هيرجع لنفس ارتفاعه بعد <span class="m">2.4 s</span>. ولو الإزاحة الأفقية لحد أعلى نقطة <span class="m">3.0 m</span>، يبقى المدى الكلي <span class="m">6.0 m</span>.</div>
+      <div class="plain"><b class="t">ليه <span class="m">45°</span> بتدي أبعد مسافة؟</b> لو الزاوية صغيرة، الكورة بتجري أفقي بسرعة بس بتقع بسرعة (وقت قليل في الهوا). ولو الزاوية كبيرة، بتقعد في الهوا كتير بس بتمشي أفقي ببطء. الـ <span class="m">45°</span> هي التوازن الأحسن بين الاتنين. وأي زاويتين مجموعهم <span class="m">90°</span> (زي <span class="m">30°</span> و <span class="m">60°</span>) بيوصلوا لنفس المدى بالظبط.</div>
+      <div class="plain"><b class="t">خلي بالك من الزاوية:</b> كل القوانين دي لما تكون <span class="m">θ</span> مع <b>الأفقي</b>. لو المسألة قالت «مع الرأسي»، اطرحها من <span class="m">90°</span> الأول، أو بدّل <span class="m">sin</span> و <span class="m">cos</span>.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فوق خالص: الرأسي صفر… بس الأفقي لسه شغال!</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB ============ -->
+<section class="board" id="l3-lab">
+  <div class="stack">
+    <span class="seg">مدفع المقذوف</span>
+    <h2 class="h2">اقذف بزاوية</h2>
+    <p class="lead">غيّر السرعة والزاوية، واسحب شريط الزمن. دوس «وقّف عند أعلى نقطة» وشوف السهم الأخضر (الرأسي) اختفى، والسهم الأزرق (الأفقي) لسه زي ما هو. وجرّب «قارن بالزاوية المتممة»: <span class="m">30°</span> و <span class="m">60°</span> بيوصلوا لنفس المدى!</p>
+    <div class="sim">
+      <canvas id="angCanvas" style="aspect-ratio:16/8" aria-label="مقذوف بزاوية مع متجهات السرعة وأقصى ارتفاع والمدى"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="angV">سرعة الإطلاق <span class="m">v₀</span> <output data-out="angV"></output></label><input id="angV" type="range" min="5" max="30" step="0.1" value="19.6"></div>
+        <div class="ctrl"><label for="angT">زاوية الإطلاق <span class="m">θ</span> <output data-out="angT"></output></label><input id="angT" type="range" min="5" max="85" step="1" value="30"></div>
+        <div class="ctrl"><label for="angS">الزمن <span class="m">t</span> <output data-out="angS"></output></label><input id="angS" type="range" min="0" max="1" step="0.005" value="0.5"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="angGo">اقذف</button><button class="btn ghost small" id="angTop">وقّف عند أعلى نقطة</button><button class="btn ghost small" id="angComp" aria-pressed="false">قارن بالزاوية المتممة</button></div>
+      <div class="readout">
+        <div><span>زمن الوصول لأعلى نقطة</span><b id="angTt">—</b></div>
+        <div><span>زمن الطيران الكلي <span class="m">T</span></span><b id="angTT">—</b></div>
+        <div><span>أقصى ارتفاع <span class="m">H</span></span><b id="angH">—</b></div>
+        <div><span>المدى الأفقي <span class="m">R</span></span><b id="angR">—</b></div>
+        <div><span>الأفقية <span class="m">vₓ</span> عند <span class="m">t</span></span><b id="angVx">—</b></div>
+        <div><span>الرأسية <span class="m">v<sub>y</sub></span> عند <span class="m">t</span></span><b id="angVy">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--pen-given)"></i>المركبة الأفقية (ثابتة)</span><span><i style="background:var(--pen-check)"></i>المركبة الرأسية (بتقل لحد صفر وبعدين تنعكس)</span><span><i style="background:var(--pen-formula)"></i>السرعة المحصلة</span></div>
+      <b class="h3" style="margin-top:4px">المدى مع الزاوية (بنفس السرعة)</b>
+      <canvas id="rangeCanvas" style="aspect-ratio:16/5" aria-label="منحنى المدى الأفقي مع زاوية الإطلاق، أقصاه عند 45 درجة"></canvas>
+      <p class="muted" style="font-size:14px">النقطة الصفرا هي زاويتك. أكبر مدى عند <span class="m">45°</span>، وكل زاويتين مجموعهم <span class="m">90°</span> ليهم نفس المدى.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l3-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <p><span class="m">v₀</span> سرعة الإطلاق، و <span class="m">θ</span> زاوية الإطلاق مع الأفقي، و <span class="m">g = 9.8 m s⁻²</span>. القوانين اللي عليها علامة «نفس المستوى» تنفع بس لو الجسم نزل على نفس الارتفاع اللي اتقذف منه.</p>
+    <div class="laws">
+      <div class="law"><b>المركبة الأفقية</b><div class="eq">vₓ = v₀ cos θ</div><small>ثابتة طول الرحلة (مفيش عجلة أفقية).</small></div>
+      <div class="law"><b>المركبة الرأسية الابتدائية</b><div class="eq">v<sub>0y</sub> = v₀ sin θ</div><small>السرعة الرأسية لحظة الإطلاق.</small></div>
+      <div class="law"><b>المسافة الأفقية</b><div class="eq">x = v₀ cos θ × t</div><small>في أي لحظة <span class="m">t</span>.</small></div>
+      <div class="law"><b>السرعة الرأسية</b><div class="eq">v<sub>y</sub> = v₀ sin θ − gt</div><small>موجبة طالع، صفر عند القمة، سالبة نازل.</small></div>
+      <div class="law"><b>الارتفاع</b><div class="eq">y = v₀ sin θ × t − ½gt²</div><small>ارتفاع الجسم في أي لحظة.</small></div>
+      <div class="law"><b>زمن الوصول للقمة</b><div class="eq">t<sub>top</sub> = v₀ sin θ / g</div><small>من <span class="m">v<sub>y</sub> = 0</span>.</small></div>
+      <div class="law"><b>أقصى ارتفاع</b><div class="eq">H = (v₀ sin θ)² / 2g</div><small>فوق نقطة الإطلاق.</small></div>
+      <div class="law"><b>زمن التحليق (نفس المستوى)</b><div class="eq">T = 2 t<sub>top</sub></div><small>زمن الطلوع = زمن النزول.</small></div>
+      <div class="law"><b>المدى الأفقي</b><div class="eq">R = v₀ cos θ × T</div><small>أكبر مدى عند <span class="m">45°</span>.</small></div>
+      <div class="law"><b>السرعة في أي لحظة</b><div class="eq">v = √(vₓ² + v<sub>y</sub>²)</div><small>عند القمة: <span class="m">v = vₓ = v₀ cos θ</span>.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l3-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> تُقذف كرة صغيرة من سطح الأرض بسرعة ابتدائية <span class="m">19.6 m s⁻¹</span> بزاوية <span class="m">30°</span> أفقي. وتحدث الحركة تحت تأثير عجلة جاذبية ثابتة <span class="m">g = 9.8 m s⁻²</span> بدون مقاومة هواء. أوجد: (أ) الزمن اللازم للوصول إلى أقصى ارتفاع. (ب) المدى الأفقي.</div>
+    <div class="steps" id="exSteps3">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">v₀ = 19.6 m s⁻¹</span>، <span class="m">θ = 30°</span>، <span class="m">g = 9.8 m s⁻²</span></p>
+        <p><span class="m">sin 30° = ½</span>، <span class="m">cos 30° = √3 / 2</span></p>
+        <p><b>المطلوب:</b> زمن الوصول لأقصى ارتفاع، والمدى الأفقي.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>نفك السرعة: <span class="m">v<sub>0x</sub> = v₀ cos θ</span> و <span class="m">v<sub>0y</sub> = v₀ sin θ</span></p>
+        <p>عند أقصى ارتفاع: <span class="m">v<sub>y</sub> = 0</span>، والحركة متماثلة (زمن الطلوع = زمن النزول).</p>
+        <div class="answer"><span class="m">v<sub>y</sub> = v₀ sin θ − gt</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">0 = 19.6 × ½ − 9.8t → 9.8t = 9.8</span></p>
+        <p>الزمن الكلي <span class="m">= 2t</span></p>
+        <p>(ب) <span class="m">R = 19.6 × cos 30° × 2.0</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">t = 1.0 s</span> لأقصى ارتفاع</div>
+        <div class="answer"><span class="m">T = 2.0 s</span> زمن الطيران</div>
+        <div class="answer"><span class="m">R = 33.948 ≈ 34 m</span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext3">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset3">من الأول</button></div>
+    <div class="note"><b>منطقية الحل:</b> الزمن <span class="m">1.0 s</span> متفق مع <span class="m">v<sub>0y</sub> / g</span>، والمدى حوالي <span class="m">34 m</span> معقول لمقذوف سرعته <span class="m">19.6 m s⁻¹</span> بزاوية <span class="m">30°</span>. والحركة متماثلة (زمن الطلوع = زمن النزول).</div>
+    <div class="btnrow"><b>فسّرها بنفسك:</b> لماذا يتيح تحليل الحركة إلى مركبتين أفقية ورأسية تحديد زمن الطيران والمدى كلٌّ على حدة، رغم أن المقذوف يتبع مسارًا منحنيًا؟ <button class="btn small ghost" data-toggle="ex3Why">وريني</button></div>
+    <div id="ex3Why" class="sol" hidden>لأن الحركتين مستقلين: الرأسي لوحده بيحدد الزمن (إمتى <span class="m">v<sub>y</sub></span> تبقى صفر وترجع)، والأفقي لوحده بيحدد المدى (سرعة ثابتة × الزمن). المسار المنحني ده مجرد ناتج تركيب الاتنين.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l3-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> تُقذف كرة صغيرة من سطح الأرض بسرعة <span class="m">19.6 m s⁻¹</span> بزاوية <span class="m">60°</span> عن الأفقي. أوجد ما يلي لأقرب رقمين عشريين، بافتراض أن عجلة الجاذبية الأرضية <span class="m">9.8 m s⁻²</span> وأن <span class="m">√3 ≈ 1.73</span>.</p>
+        <p>(i) أوجد المركبة الأفقية للسرعة الابتدائية بـ <span class="m">m s⁻¹</span>.</p>
+        <div class="ansrow" data-num="9.8" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المركبة الأفقية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(ii) أوجد الزمن اللازم (بالثانية) لتصل الكرة إلى أقصى ارتفاع.</p>
+        <div class="ansrow" data-num="1.73" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(iii) أوجد أقصى ارتفاع تصل إليه الكرة بالمتر.</p>
+        <div class="ansrow" data-num="14.7" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="أقصى ارتفاع"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(iv) أوجد المدى الأفقي بالمتر.</p>
+        <div class="ansrow" data-num="33.9" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المدى"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try3A">وريني الحل</button>
+        <div id="try3A" class="sol" hidden><span class="m">vₓ = 19.6 cos 60° = 9.8 m s⁻¹</span><br><span class="m">v<sub>0y</sub> = 19.6 × 1.73 / 2 ≈ 16.95 m s⁻¹ → t = 16.95 / 9.8 ≈ 1.73 s</span><br><span class="m">H = ½ × 16.95 × 1.73 ≈ 14.7 m</span><br><span class="m">R = 9.8 × 2 × 1.73 ≈ 33.9 m</span><br>خد بالك: نفس مدى المثال المحلول بالظبط، لأن <span class="m">30°</span> و <span class="m">60°</span> مجموعهم <span class="m">90°</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب) تطبيق سريع:</b> تُركل كرة بسرعة <span class="m">14 m s⁻¹</span> بزاوية <span class="m">30°</span> على الأفقي. أوجد مركبتي سرعتها الابتدائية.</p>
+        <div class="ansrow" data-num="12.12" data-tol="0.02"><span>الأفقية:</span><input type="text" inputmode="decimal" aria-label="المركبة الأفقية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <div class="ansrow" data-num="7" data-tol="0.02"><span>الرأسية:</span><input type="text" inputmode="decimal" aria-label="المركبة الرأسية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try3B">وريني الحل</button>
+        <div id="try3B" class="sol" hidden><span class="m">vₓ = 14 cos 30° ≈ 12.1 m s⁻¹</span>، <span class="m">v<sub>0y</sub> = 14 sin 30° = 7.0 m s⁻¹</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج) سؤال بأسلوب الامتحان:</b> يُقذف حجر من مستوى الأرض بسرعة <span class="m">12 m s⁻¹</span> بزاوية <span class="m">30°</span> أفقي.</p>
+        <p>(i) اذكر المركبة الأفقية لسرعته عند أعلى نقطة.</p>
+        <div class="ansrow" data-num="10.39" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المركبة الأفقية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(ii) احسب الزمن اللازم لعودة الحجر إلى الأرض.</p>
+        <div class="ansrow" data-num="1.224" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try3C">وريني الحل</button>
+        <div id="try3C" class="sol" hidden>(i) عند أعلى نقطة السرعة كلها أفقية: <span class="m">vₓ = 12 cos 30° ≈ 10.4 m s⁻¹</span><br>(ii) <span class="m">t<sub>top</sub> = 12 sin 30° / 9.8 ≈ 0.61 s → T = 2 × 0.61 ≈ 1.2 s</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">فُك السرعة الأول… وبعدين كل حاجة هتمشي</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: FIREWORKS ============ -->
+<section class="board sky" id="l3-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">الألعاب النارية اللي بتفضل كروية</h2>
+      <p class="lead">قذيفة ألعاب نارية بتنفجر فوق المدينة، وبتطلّع كور صغيرة منورة اسمها «شظايا» في كل الاتجاهات. كل شظية بعد كده بتتحرك كمقذوف لوحدها، والجاذبية <span class="m">g</span> بتأثر عليها. ولو أهملنا مقاومة الهوا، كل شظية بترسم قطع مكافئ بالنسبة للأرض. بس عشان كلهم بياخدوا نفس العجلة، حركتهم بالنسبة لبعض مش بتتغير. فلو اتقذفوا بسرعات متساوية تقريبًا في كل الاتجاهات، بيعملوا شكل كروي بيكبر، ومركزه هو اللي بيرسم مسار مقذوف.</p>
+      <div class="sim">
+        <canvas id="fwCanvas" style="aspect-ratio:16/8" aria-label="ألعاب نارية: شظايا في كل الاتجاهات تكون دائرة تكبر وتنزل"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="fwV">سرعة الشظايا <output data-out="fwV"></output></label><input id="fwV" type="range" min="5" max="25" step="1" value="15"></div>
+        </div>
+        <div class="btnrow"><button class="btn navy" id="fwGo">فرقع</button><button class="btn ghost small" id="fwGhost" aria-pressed="true">بيّن الدايرة</button></div>
+      </div>
+      <div class="btnrow"><b>فسّر:</b> لماذا يبقى نمط شظايا المتوسع كرويًا تقريبًا، رغم أن كل شظايا تتبع مسارًا قطعًا مكافئًا؟ <button class="btn small navy" data-toggle="irl3A">إجابة مقترحة</button></div>
+      <div id="irl3A" class="sol" hidden>لأن كل الشظايا بتتسارع بنفس العجلة <span class="m">g</span> لتحت، فالجاذبية بتسحب الشكل كله لتحت مع بعض من غير ما تغيّر شكله. بالنسبة لمركز الانفجار، كل شظية ماشية في خط مستقيم بنفس السرعة، فبيفضلوا على دايرة بتكبر.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">إيه ده! الدايرة بتكبر وبتنزل مع بعض</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l3-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">النماذج: واضع النموذج حدّد حدوده</h3>
+      <p>في كتابه «علمان جديدان» <span class="m">(1638)</span>، جاليليو أثبت إن المقذوف من غير مقاومة هوا بيمشي في قطع مكافئ، وده النموذج اللي استخدمناه طول الدرس. بس في نفس الكتاب قال إن مقاومة الهوا بتخلّي المسار الحقيقي يبعد عن القطع المكافئ، خصوصًا في السرعات العالية. يعني كل نموذج فيزيائي ليه حدود بيشتغل جواها، وجاليليو نفسه حدد حدود نموذجه.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح ملاحظة واحدة من مباراة كرة قدم حقيقية لا يستطيع نموذج القطع المكافئ (بإهمال مقاومة الهواء) تفسيرها.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l3-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تفتكر إن السرعة عند أعلى نقطة = صفر</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «فوق خالص الكورة واقفة، يبقى <span class="m">v = 0</span>»</div>
+            <div class="good"><b>صح:</b> <span class="m">v<sub>y</sub> = 0</span> بس، والسرعة كلها <span class="m">v = vₓ = v₀ cos θ</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تبدّل <span class="m">sin</span> و <span class="m">cos</span></b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">vₓ = v₀ sin θ</span> و <span class="m">v<sub>y</sub> = v₀ cos θ</span></div>
+            <div class="good"><b>صح:</b> لو <span class="m">θ</span> مع الأفقي: <span class="m">vₓ = v₀ cos θ</span> و <span class="m">v<sub>0y</sub> = v₀ sin θ</span>. ولو الزاوية مع الرأسي، الاتنين بيتبدّلوا!</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تنسى تضرب في <span class="m">2</span></b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">R = vₓ × t<sub>top</sub></span></div>
+            <div class="good"><b>صح:</b> <span class="m">R = vₓ × T</span> و <span class="m">T = 2 t<sub>top</sub></span> (لو رجع لنفس الارتفاع)</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تستخدم التماثل والكورة نازلة على ارتفاع مختلف</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> كورة من فوق مبنى: «الزمن الكلي = <span class="m">2 t<sub>top</sub></span>»</div>
+            <div class="good"><b>صح:</b> التماثل بس لو نقطة الهبوط على نفس ارتفاع الإطلاق. غير كده احسب زمن النزول من أقصى ارتفاع للأرض لوحده</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">الفخ رقم 1 ده الأشهر في المقذوفات!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l3-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">عند أعلى نقطة في مسار كرة تتحرك حركة قذفية بزاوية، هل تكون الكرة في حالة سكون لحظي؟</p>
+    <p class="lead">لأ، عمرها ما بتوصل لسكون فعلي. المركبة الرأسية للسرعة بس هي اللي بتبقى صفر للحظة، أما المركبة الأفقية فبتفضل ثابتة (لو أهملنا مقاومة الهوا). والعجلة بتفضل لتحت طول الحركة. الكورة بتبان كأنها وقفت لأن حركتها الرأسية بتبطّأ لحد الصفر قبل ما تقلب اتجاهها، أما حركتها الأفقية فعمرها ما بتقف.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l3-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">فُك السرعة</b><p><span class="m">vₓ = v₀ cos θ</span> (ثابتة طول الرحلة)<br><span class="m">v<sub>0y</sub> = v₀ sin θ</span> (بتقل بعجلة <span class="m">g</span>)<br><span class="m">v<sub>y</sub> = v₀ sin θ − gt</span></p></div>
+        <div class="sumcol"><b class="on-navy-given">أعلى نقطة</b><p><span class="m">v<sub>y</sub> = 0</span> بس، والسرعة كلها أفقية.<br><span class="m">t<sub>top</sub> = v₀ sin θ / g</span><br><span class="m">H = (v₀ sin θ)² / 2g</span></p></div>
+        <div class="sumcol"><b class="mintc">التماثل والمدى</b><p>لو نزل على نفس الارتفاع: <span class="m">T = 2 t<sub>top</sub></span><br><span class="m">R = v₀ cos θ × T</span><br>أكبر مدى عند <span class="m">45°</span>، والزاويتين المتتامتين ليهم نفس المدى.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت المقذوفات كلها</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l3-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تُقذف كرة صغيرة من سطح الأرض بسرعة <span class="m">39.2 m s⁻¹</span> بزاوية <span class="m">30°</span> أفقي.</p>
+      <p>(i) أوجد المركبة الرأسية للسرعة الابتدائية بـ <span class="m">m s⁻¹</span>.</p>
+      <div class="ansrow" data-num="19.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المركبة الرأسية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(ii) أوجد المركبة الأفقية للسرعة بعد <span class="m">1.5 s</span>.</p>
+      <div class="ansrow" data-num="33.95" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المركبة الأفقية"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(iii) أوجد الزمن اللازم (بالثانية) لتصل الكرة إلى أقصى ارتفاع.</p>
+      <div class="ansrow" data-num="2" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(iv) أوجد المدى الأفقي بالمتر.</p>
+      <div class="ansrow" data-num="135.8" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المدى"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch3A">وريني الحل</button>
+      <div id="ch3A" class="sol" hidden>(i) <span class="m">39.2 sin 30° = 19.6 m s⁻¹</span> (ii) الأفقية ثابتة: <span class="m">39.2 cos 30° ≈ 33.9 m s⁻¹</span> (iii) <span class="m">19.6 / 9.8 = 2.0 s</span> (iv) <span class="m">R = 33.95 × 4.0 ≈ 136 m</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> تُقذف كرة صغيرة من أعلى مبنى ارتفاعه <span class="m">39.2 m</span> فوق الأرض بسرعة <span class="m">19.6 m s⁻¹</span> بزاوية <span class="m">30°</span> على الأفقي.</p>
+      <p>(i) أوجد أقصى ارتفاع تصل إليه الكرة فوق الأرض بالمتر.</p>
+      <div class="ansrow" data-num="44.1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="أقصى ارتفاع"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(ii) أوجد الزمن اللازم (بالثانية) لترتطم الكرة بالأرض.</p>
+      <div class="ansrow" data-num="4" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(iii) أوجد المدى الأفقي بالمتر.</p>
+      <div class="ansrow" data-num="67.9" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="المدى"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch3B">وريني الحل</button>
+      <div id="ch3B" class="sol" hidden><span class="m">v<sub>0y</sub> = 9.8 m s⁻¹ → t<sub>top</sub> = 1.0 s</span>، والارتفاع فوق المبنى <span class="m">= 9.8²/19.6 = 4.9 m</span>، يبقى <span class="m">H = 39.2 + 4.9 = 44.1 m</span>.<br>من القمة للأرض سقوط حر <span class="m">44.1 m</span>: <span class="m">t = √(2 × 44.1 / 9.8) = 3.0 s</span>، فالزمن الكلي <span class="m">1.0 + 3.0 = 4.0 s</span> (مش <span class="m">2 t<sub>top</sub></span>: فخ رقم 4!).<br><span class="m">R = 19.6 cos 30° × 4.0 ≈ 67.9 m</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l3-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">لو إنت حارس مرمى وبتشوط الكورة لأبعد مكان، هتشوطها بزاوية كام؟ وليه في الماتشات الحقيقية الزاوية دي بتطلع أقل شوية؟</b>
+  <label for="l3c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l3c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l3c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l3-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-3</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m/s²</span> وأهمل مقاومة الهوا، إلا لو السؤال قال غير كده.</p>
+    <div class="qlist" data-quiz="q3"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q3">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q3">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="1">ارجع للدرس الأول للمراجعة ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

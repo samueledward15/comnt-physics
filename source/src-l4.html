@@ -1,0 +1,413 @@
+<section class="lesson" id="lesson-4" data-lesson="4" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l4-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-4</span><br>عزم القوة</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>ادفع بابًا بالقوة نفسها في موضعين مختلفين — لماذا يدور بسهولة عند المقبض لكنه بالكاد يتحرك بالقرب من المفصلة؟</p>
+      </div>
+      <p class="muted">لحد دلوقتي كنا بندرس حاجات بتتحرك في خط أو منحنى. الدرس ده عن حاجة جديدة: القوة لما تخلّي الجسم <b>يلف</b>. باب، مفتاح عجل، ترابيزة سيسو في الملاهي.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l4-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنلف الحاجات بدل ما نرميها!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l4-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تحسب</b> عزم القوة على إنه حاصل ضرب القوة في بُعدها العمودي عن نقطة الدوران.</span></li>
+      <li><span><b>تحدد</b> ذراع العزم العمودي لما القوة تكون مايلة بزاوية.</span></li>
+      <li><span><b>تحدد</b> إشارة العزم (موجب أو سالب) على حسب اتجاه الدوران.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> القوة زقة أو شدة ليها مقدار واتجاه (كمية متجهة)، ووحدتها النيوتن <span class="m">(N)</span>. ومن الدرس الأول: <span class="m">sin θ</span> بتجيب الضلع المقابل للزاوية في المثلث القايم.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l4-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">جرّب تفتح باب وإنت زاقق من عند الأوكرة: هيتفتح بسهولة. دلوقتي ازقه بنفس القوة بالظبط بس قريب من المفصلة: هتلاقيه تقيل جدًا وبالعافية بيتحرك. ونفس الكلام في مفتاح العجل: المفتاح الطويل بيفك الصامولة المزرجنة بسهولة، والقصير محتاج قوة أكبر بكتير. في الحالتين القوة واحدة، والحاجة الوحيدة اللي اتغيرت هي <b>بُعد القوة عن نقطة اللف</b>.</p>
+      <div class="poll" data-poll="p7" data-answer="1">
+        <b>(أ) هل يحدد مقدار القوة وحده تأثيرها الدوراني (العزم)؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">نعم، القوة وحدها</button>
+          <button class="opt" aria-pressed="false">لا، يعتمد أيضًا على مكان تأثيرها</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l4-explore" style="color:var(--yellow)">تجربة المسطرة</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">لأ، القوة لوحدها مش كفاية.</b> نفس القوة ممكن تلف الباب بسهولة أو بالعافية، على حسب هي بعيدة قد إيه عن المفصلة. التأثير الدوراني (العزم) بيعتمد على القوة <b>و</b>البُعد مع بعض.</div>
+      </div>
+      <div class="poll" data-poll="p8" data-answer="1">
+        <b>(ب) هل يجعل دفع الباب بالقرب من المفصلة فتحه أسهل لأن القوة أقرب إلى نقطة الارتكاز؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">نعم، أسهل</button>
+          <button class="opt" aria-pressed="false">لا، أصعب</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. شوفه في <a href="#l4-lab" style="color:var(--yellow)">محاكي العزم</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">لأ، أصعب.</b> كل ما القوة تقرب من نقطة اللف، ذراعها يقصر، والعزم يقل. عشان كده الأوكرة دايمًا في الناحية البعيدة عن المفصلة.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فكّر في باب أوضتك وإنت بتجاوب</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l4-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — وازن المسطرة</span>
+    <p class="lead">مسطرة متوازنة فوق قلم رصاص في نصها. على الشمال حط عدد من العملات قريب من القلم، وعلى اليمين عملة واحدة بعيدة. حرّك الأماكن والعدد لحد ما المسطرة تتزن، ودوس «سجّل» عشان تحفظ المحاولة في الجدول.</p>
+    <div class="sim">
+      <canvas id="balCanvas" style="aspect-ratio:16/7" aria-label="مسطرة على نقطة ارتكاز، عملات على اليسار وعملة على اليمين"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="balN">عدد العملات على الشمال <span class="m">n</span> <output data-out="balN"></output></label><input id="balN" type="range" min="1" max="6" step="1" value="3"></div>
+        <div class="ctrl"><label for="balD1">بُعدها عن القلم <span class="m">d<sub>1</sub></span> <output data-out="balD1"></output></label><input id="balD1" type="range" min="1" max="15" step="1" value="4"></div>
+        <div class="ctrl"><label for="balD2">بُعد العملة اللي على اليمين <span class="m">d<sub>2</sub></span> <output data-out="balD2"></output></label><input id="balD2" type="range" min="1" max="15" step="1" value="10"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="balRec">سجّل المحاولة</button><button class="btn ghost small" id="balClear">امسح الجدول</button><span id="balMsg" style="font-weight:700"></span></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th><span class="m">d<sub>1</sub> (cm)</span></th><th>عدد العملات <span class="m">n</span></th><th><span class="m">d<sub>2</sub> (cm)</span></th><th><span class="m">n × d<sub>1</sub></span></th><th><span class="m">1 × d<sub>2</sub></span></th><th>متزنة؟</th></tr></thead>
+          <tbody id="balTable"><tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. لما المسطرة تتزن دوس «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) عندما وُضعت العملة الوحيدة بعيدًا عن نقطة الارتكاز، هل احتاجت إلى عملات قريبة أكثر أم أقل لتوازنها؟<br>(ب) اضرب عدد العملات على كل جانب في بُعدها عن نقطة الارتكاز. كيف يقارن الناتجان عند الاتزان؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="balAns">اكشف النمط</button>
+        <div id="balAns" class="reveal" hidden>كل ما العملة الوحيدة تبعد، بتحتاج عملات <b>أكتر</b> عشان توازنها. وعند الاتزان، الناتجين بيطلعوا متساويين بالظبط: <span class="m ylw">n × d<sub>1</sub> = 1 × d<sub>2</sub></span>. يعني اللي بيتوازن مش الوزن لوحده، ده <b>الوزن × البُعد</b>. والحاصل ده هو العزم.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l4-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">عزم القوة</h2>
+      <p>في التجربة، العملات الكتير القريبة اتوازنت مع عملة واحدة بعيدة. يعني القوة مش هي اللي بتحدد اللف لوحدها؛ اللي بيحدده هو حاصل ضرب القوة في بُعدها عن نقطة الارتكاز. الحاصل ده اسمه <b>عزم القوة</b>، وبنرمزله بـ <span class="m">M</span>:</p>
+      <div class="fbox"><span class="m">M = F d</span></div>
+      <div class="grid3">
+        <div class="note"><span class="m">M</span>: العزم، ووحدته <span class="m">N m</span> (نيوتن.متر).</div>
+        <div class="note"><span class="m">F</span>: القوة بالنيوتن <span class="m">(N)</span>.</div>
+        <div class="note"><span class="m">d</span>: <b>البُعد العمودي</b> من نقطة الدوران لخط عمل القوة، بالمتر <span class="m">(m)</span>.</div>
+      </div>
+      <div class="term"><b>مصطلح — عزم القوة:</b> التأثير الدوراني للقوة حوالين نقطة. كل ما القوة تكبر أو تبعد عن نقطة الدوران، العزم يكبر. ولو ضاعفت البُعد بنفس القوة، العزم يتضاعف.</div>
+      <div class="plain"><b class="t">يعني إيه «خط عمل القوة»؟</b> تخيّل إنك مدّيت سهم القوة لقدّام ولورا بخط مستقيم طويل. ده خط عمل القوة. «البُعد العمودي» هو أقصر مسافة من نقطة الدوران للخط ده، يعني الخط اللي نازل عليه بزاوية <span class="m">90°</span>. وبنسميه <b>ذراع العزم</b>.</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">اتجاه الدوران: إشارة العزم</h3>
+      <p>العزم ممكن يلف الجسم في اتجاه من اتنين، فبنميّزهم بإشارة:</p>
+      <div class="grid2">
+        <div class="note"><b class="mintc">عكس عقارب الساعة:</b> العزم <b>موجب</b> <span class="m">(+)</span></div>
+        <div class="note"><b class="coral">مع عقارب الساعة:</b> العزم <b>سالب</b> <span class="m">(−)</span></div>
+      </div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">لما القوة تبقى مايلة</h3>
+      <p>لو القوة مش عمودية على الذراع، مش كل القوة بتلف الجسم. جزء منها بس اللي بيلف. لو <span class="m">L</span> هي المسافة من نقطة الدوران لنقطة تأثير القوة، و <span class="m">θ</span> الزاوية بين القوة والذراع، يبقى البُعد العمودي <span class="m">d = L sin θ</span>، والعزم:</p>
+      <div class="fbox"><span class="m">M = F L sin θ</span></div>
+      <div class="plain"><b class="t">3 حالات لازم تحفظها:</b> لو القوة عمودية <span class="m">(θ = 90°)</span>: <span class="m">sin 90° = 1</span> فالعزم أكبر ما يمكن <span class="m">M = F L</span>. لو القوة مايلة: العزم أقل. ولو القوة على امتداد الذراع وخط عملها معدي من نقطة الدوران <span class="m">(θ = 0°)</span>: البُعد العمودي صفر، فالعزم <b>صفر</b> ومفيش لف خالص، زي ما تزق الباب ناحية المفصلة.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">العزم = القوة × الذراع العمودي… مش أي ذراع!</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB ============ -->
+<section class="board" id="l4-lab">
+  <div class="stack">
+    <span class="seg">محاكي العزم</span>
+    <h2 class="h2">لف القضيب بإيدك</h2>
+    <p class="lead">القضيب بيلف حوالين النقطة <span class="m">O</span>. غيّر القوة، ومكانها، وزاويتها. الخط المتقطع الأبيض هو خط عمل القوة، والخط الأخضر هو الذراع العمودي <span class="m">d</span>. جرّب الزاوية <span class="m">0°</span> وشوف الذراع العمودي بيختفي.</p>
+    <div class="sim">
+      <canvas id="tqCanvas" style="aspect-ratio:16/8" aria-label="قضيب يدور حول نقطة O وقوة مائلة عليه مع الذراع العمودي"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="tqF">القوة <span class="m">F</span> <output data-out="tqF"></output></label><input id="tqF" type="range" min="1" max="20" step="0.5" value="4"></div>
+        <div class="ctrl"><label for="tqL">بُعد نقطة التأثير <span class="m">L</span> <output data-out="tqL"></output></label><input id="tqL" type="range" min="0.5" max="5" step="0.1" value="4"></div>
+        <div class="ctrl"><label for="tqA">الزاوية بين القوة والقضيب <span class="m">θ</span> (بالسالب = مع عقارب الساعة) <output data-out="tqA"></output></label><input id="tqA" type="range" min="-180" max="180" step="5" value="60"></div>
+      </div>
+      <div class="readout">
+        <div><span>الذراع العمودي <span class="m">d = L sin θ</span></span><b id="tqD">—</b></div>
+        <div><span>العزم <span class="m">M = F L sin θ</span></span><b id="tqM">—</b></div>
+        <div><span>اتجاه الدوران</span><b id="tqDir" style="font-family:var(--f-ar)">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--pen-formula)"></i>القوة <span class="m">F</span></span><span><i style="background:var(--pen-check)"></i>الذراع العمودي <span class="m">d</span></span><span><i style="background:var(--white)"></i>خط عمل القوة</span></div>
+      <p class="muted" style="font-size:14px">جرّب: <span class="m">F = 4</span> و <span class="m">L = 4</span> و <span class="m">θ = 60°</span>. هتلاقي <span class="m">M ≈ 13.9 N m</span>، ودي أرقام المثال المحلول تحت.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l4-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>عزم القوة</b><div class="eq">M = F d</div><small><span class="m">d</span> البُعد العمودي من نقطة الدوران لخط عمل القوة.</small></div>
+      <div class="law"><b>عزم قوة مايلة</b><div class="eq">M = F L sin θ</div><small><span class="m">L</span> المسافة لنقطة التأثير، و <span class="m">θ</span> الزاوية بين القوة والذراع.</small></div>
+      <div class="law"><b>الذراع العمودي</b><div class="eq">d = L sin θ</div><small>لو <span class="m">θ = 90°</span> يبقى <span class="m">d = L</span>.</small></div>
+      <div class="law"><b>الإشارة</b><div class="eq">+ ↺    − ↻</div><small>عكس عقارب الساعة موجب، ومع عقارب الساعة سالب.</small></div>
+      <div class="law"><b>وحدة العزم</b><div class="eq">N m</div><small>نيوتن × متر. خلي بالك: حوّل الـ <span class="m">cm</span> لـ <span class="m">m</span> الأول.</small></div>
+      <div class="law"><b>اتزان المسطرة (العتلة)</b><div class="eq">F<sub>1</sub> d<sub>1</sub> = F<sub>2</sub> d<sub>2</sub></div><small>عزم الناحيتين متساوي، فمفيش لف.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l4-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> تؤثر قوة مقدارها <span class="m">4.0 N</span> بزاوية <span class="m">60°</span> على جسم، عند نقطة تبعد <span class="m">4.0 m</span> عن النقطة <span class="m">A</span> و <span class="m">3.0 m</span> عن النقطة <span class="m">B</span> (النقطتان على جانبين متقابلين من نقطة التأثير). أوجد عزم القوة حول النقطتين <span class="m">A</span> و <span class="m">B</span>. اعتبر عكس اتجاه عقارب الساعة موجبًا، واستخدم <span class="m">√3 ≈ 1.7</span>.</div>
+    <div class="steps" id="exSteps4">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">F = 4.0 N</span>، <span class="m">θ = 60°</span></p>
+        <p>البُعد عن <span class="m">A</span>: <span class="m">4.0 m</span>، والبُعد عن <span class="m">B</span>: <span class="m">3.0 m</span></p>
+        <p><b>المطلوب:</b> العزم حول <span class="m">A</span> وحول <span class="m">B</span> بالإشارة.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>القوة مايلة، فبنجيب الذراع العمودي الأول، وبعدين نحدد اتجاه اللف حوالين كل نقطة:</p>
+        <div class="answer"><span class="m">M = F L sin θ</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>حول <span class="m">A</span>: <span class="m">M = 4.0 × 4.0 × sin 60°</span>، والقوة بتلف الجسم <b>عكس</b> عقارب الساعة، يبقى الإشارة موجبة.</p>
+        <p>حول <span class="m">B</span>: <span class="m">M = 4.0 × 3.0 × sin 60°</span>، والقوة بتلف الجسم <b>مع</b> عقارب الساعة، يبقى الإشارة سالبة.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">M<sub>A</sub> = +13.6 ≈ +14 N m</span></div>
+        <div class="answer"><span class="m">M<sub>B</sub> = −10.2 ≈ −10 N m</span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext4">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset4">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> نفس القوة في الحالتين، بس <span class="m">A</span> أبعد عن خط عمل القوة من <span class="m">B</span>، فذراعها أطول والعزم حوالين <span class="m">A</span> أكبر. والإشارتين مختلفين لأن القوة بتلف الجسم في اتجاهين عكس بعض حوالين النقطتين.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l4-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> تقع النقطة <span class="m">O</span> عند الطرف الأيسر لقضيب أفقي طوله <span class="m">0.20 m</span>. تؤثر قوة مقدارها <span class="m">3.0 N</span> عموديًا لأعلى عند الطرف الأيمن. أوجد عزم القوة حول <span class="m">O</span>، معتبرًا اتجاه عكس عقارب الساعة موجبًا.</p>
+        <div class="ansrow" data-num="0.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="العزم"><span class="unit">N m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try4A">وريني الحل</button>
+        <div id="try4A" class="sol" hidden>القوة عمودية، يبقى الذراع هو طول القضيب كله: <span class="m">M = 3.0 × 0.20 = 0.60 N m</span>. والقوة لفوق عند الطرف اليمين بتلف القضيب عكس عقارب الساعة، فالإشارة موجبة: <span class="m">+0.60 N m</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> تؤثر قوة مقدارها <span class="m">4.0 N</span> عند طرف قضيب على بُعد <span class="m">0.30 m</span> من النقطة <span class="m">O</span>، وتصنع زاوية <span class="m">45°</span> مع القضيب. أوجد مقدار عزم القوة حول <span class="m">O</span>.</p>
+        <div class="ansrow" data-num="0.849" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="العزم"><span class="unit">N m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try4B">وريني الحل</button>
+        <div id="try4B" class="sol" hidden><span class="m">M = F L sin θ = 4.0 × 0.30 × sin 45° ≈ 0.85 N m</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج) جرّب بنفسك:</b> تؤثر القوة نفسها <span class="m">4.0 N</span> من المثال المحلول على نقطة <span class="m">C</span> تبعد <span class="m">2.0 m</span> عن نقطة التأثير، بزاوية <span class="m">60°</span>، وتُدوِّر الجسم مع اتجاه عقارب الساعة حول <span class="m">C</span>. أوجد عزم القوة حول <span class="m">C</span>.</p>
+        <div class="ansrow" data-num="-6.93" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="العزم بالإشارة"><span class="unit">N m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try4C">وريني الحل</button>
+        <div id="try4C" class="sol" hidden>مع عقارب الساعة يبقى سالب: <span class="m">M = −4.0 × 2.0 × sin 60° ≈ −6.9 N m</span>. لازم تكتب الإشارة السالبة.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د) تطبيق سريع:</b> تؤثر قوة مقدارها <span class="m">5.0 N</span> عموديًا عند طرف قضيب طوله <span class="m">0.40 m</span>. احسب العزم حول الطرف الآخر.</p>
+        <div class="ansrow" data-num="2" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="العزم"><span class="unit">N m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try4D">وريني الحل</button>
+        <div id="try4D" class="sol" hidden><span class="m">M = F d = 5.0 × 0.40 = 2.0 N m</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">ارسم البُعد العمودي الأول، وبعدين اضرب</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: TORQUE WRENCH ============ -->
+<section class="board sky" id="l4-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">مفتاح العزم في ورشة العربيات</h2>
+      <p class="lead">صواميل العجل لازم تتربط بعزم معيّن بالظبط: لو أقل، العجلة ممكن تفك؛ ولو أكتر، المسمار ممكن يبوظ. عشان كده الميكانيكي بيستخدم «مفتاح عزم» بيعمل صوت «تِك» أول ما يوصل للعزم المطلوب. ولأن <span class="m">M = F d</span>، المفتاح الأطول بيوصل لنفس العزم بقوة أقل. جرّب بنفسك: العزم المطلوب <span class="m">40 N m</span>.</p>
+      <div class="sim">
+        <canvas id="wrCanvas" style="aspect-ratio:16/6" aria-label="مفتاح عزم يربط صامولة عجلة"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="wrD">طول ذراع المفتاح <span class="m">d</span> <output data-out="wrD"></output></label><input id="wrD" type="range" min="0.1" max="0.6" step="0.05" value="0.2"></div>
+          <div class="ctrl"><label for="wrF">القوة اللي بتشد بيها <span class="m">F</span> <output data-out="wrF"></output></label><input id="wrF" type="range" min="0" max="400" step="5" value="100"></div>
+        </div>
+        <div class="readout">
+          <div><span>العزم دلوقتي <span class="m">M = F d</span></span><b id="wrM">—</b></div>
+          <div><span>القوة المطلوبة <span class="m">F = 40 / d</span></span><b id="wrNeed">—</b></div>
+          <div><span>الحالة</span><b id="wrState" style="font-family:var(--f-ar)">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا يبلغ مفتاح العزم الأطول العزم المحدَّد نفسه بقوة أصغر، مستخدمًا العلاقة: القوة × الذراع العمودية. <button class="btn small navy" data-toggle="irl4A">إجابة مقترحة</button></div>
+      <div id="irl4A" class="sol" hidden>العزم المطلوب ثابت. ولأن <span class="m">M = F × d</span>، لو الذراع <span class="m">d</span> طويل، القوة <span class="m">F</span> اللي محتاجها تبقى أصغر عشان الحاصل يفضل نفس الرقم. مثلًا لـ <span class="m">40 N m</span>: بذراع <span class="m">0.2 m</span> محتاج <span class="m">200 N</span>، وبذراع <span class="m">0.4 m</span> محتاج <span class="m">100 N</span> بس.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">تِك! كده الصامولة متربطة صح</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l4-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">أرشميدس والرافعة</h3>
+      <p>من أكتر من ألفين سنة، أرشميدس كتب قانون الرافعة: وزن صغير بعيد عن نقطة الارتكاز يقدر يوازن وزن كبير قريب منها، لما «الوزن × البُعد» يبقى متساوي على الناحيتين. وبيتقال إنه قال: «أعطوني موضعًا أقف عليه وسأحرك الأرض». ودي من أقدم القوانين الكمية في الفيزياء، وهي نفس القاعدة اللي استخدمناها طول الدرس: القوة × الذراع العمودي.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح أداة يومية واحدة تستخدم مبدأ أرشميدس للرافعة لإنتاج عزم كبير من قوة صغيرة تؤثر بعيدًا عن نقطة الارتكاز.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l4-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تضرب القوة في طول القضيب وهي مايلة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">M = F × L</span> والقوة بزاوية <span class="m">60°</span></div>
+            <div class="good"><b>صح:</b> <span class="m">M = F L sin θ</span>: اضرب في الذراع <b>العمودي</b> بس</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تنسى الإشارة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «العزم حوالين <span class="m">B</span> = <span class="m">10 N m</span>» والقوة بتلف مع عقارب الساعة</div>
+            <div class="good"><b>صح:</b> <span class="m">M = −10 N m</span>. مع عقارب الساعة سالب، وعكسها موجب</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. القوة اللي خط عملها معدي من نقطة الدوران</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «القوة كبيرة، يبقى العزم كبير»</div>
+            <div class="good"><b>صح:</b> البُعد العمودي = صفر، فالعزم = صفر مهما كانت القوة</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تنسى تحوّل السنتيمتر لمتر</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">M = 10 × 30 = 300 N m</span> و <span class="m">d = 30 cm</span></div>
+            <div class="good"><b>صح:</b> <span class="m">d = 0.30 m</span>، يبقى <span class="m">M = 3.0 N m</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">ارسم الذراع العمودي دايمًا قبل ما تحسب!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l4-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">ادفع بابًا بالقوة نفسها في موضعين مختلفين — لماذا يدور بسهولة عند المقبض لكنه بالكاد يتحرك بالقرب من المفصلة؟</p>
+    <p class="lead">لأن اللي بيلف الباب هو العزم، والعزم = القوة × البُعد العمودي عن المفصلة، مش القوة لوحدها. عند الأوكرة الذراع طويل، فنفس القوة بتدي عزم كبير والباب يلف بسهولة. قريب من المفصلة الذراع قصير جدًا، فالعزم صغير والباب بالعافية بيتحرك. والاتجاه بيتحدد بالإشارة: عكس عقارب الساعة موجب، ومعها سالب.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l4-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">العزم</b><p>التأثير الدوراني للقوة.<br><span class="m">M = F d</span>، ووحدته <span class="m">N m</span>.<br><span class="m">d</span> هو البُعد العمودي من نقطة الدوران لخط عمل القوة.</p></div>
+        <div class="sumcol"><b class="on-navy-given">القوة المايلة</b><p><span class="m">M = F L sin θ</span><br>عمودية: أكبر عزم. معدية من نقطة الدوران: العزم صفر.</p></div>
+        <div class="sumcol"><b class="mintc">الإشارة والاتزان</b><p>عكس عقارب الساعة <span class="m">(+)</span>، معها <span class="m">(−)</span>.<br>الاتزان: <span class="m">F<sub>1</sub> d<sub>1</sub> = F<sub>2</sub> d<sub>2</sub></span></p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! كده خلّصت أول 4 دروس</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l4-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تؤثر قوة مقدارها <span class="m">6.0 N</span> عند طرف رافعة طولها <span class="m">0.50 m</span>، بزاوية <span class="m">30°</span> على الرافعة. أوجد عزم القوة حول الطرف الآخر من الرافعة، علمًا بأنها تُدوِّر الرافعة عكس اتجاه عقارب الساعة.</p>
+      <div class="ansrow" data-num="1.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="العزم"><span class="unit">N m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch4A">وريني الحل</button>
+      <div id="ch4A" class="sol" hidden><span class="m">M = 6.0 × 0.50 × sin 30° = 1.5 N m</span>، وعكس عقارب الساعة يبقى موجب: <span class="m">+1.5 N m</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> لوح خشبي (سيسو) يرتكز من منتصفه. يجلس طفل وزنه <span class="m">300 N</span> على بُعد <span class="m">1.6 m</span> من نقطة الارتكاز. على أي بُعد من نقطة الارتكاز يجب أن يجلس طفل آخر وزنه <span class="m">400 N</span> على الجانب الآخر ليتزن اللوح؟</p>
+      <div class="ansrow" data-num="1.2" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="البعد"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch4B">وريني الحل</button>
+      <div id="ch4B" class="sol" hidden>الاتزان: <span class="m">F<sub>1</sub> d<sub>1</sub> = F<sub>2</sub> d<sub>2</sub></span>، يعني <span class="m">300 × 1.6 = 400 × d<sub>2</sub></span>، يبقى <span class="m">d<sub>2</sub> = 480 / 400 = 1.2 m</span>. التقيل لازم يقعد أقرب.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l4-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه أوكرة الباب دايمًا في الناحية البعيدة عن المفصلة؟ وتفتكر لو اتحطت جنب المفصلة إيه اللي هيحصل؟</b>
+  <label for="l4c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l4c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l4c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l4-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-4</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر عكس اتجاه عقارب الساعة موجبًا في كل الأسئلة.</p>
+    <div class="qlist" data-quiz="q4"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q4">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q4">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="games">يلا على الألعاب ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

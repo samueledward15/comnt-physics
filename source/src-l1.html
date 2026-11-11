@@ -1,0 +1,469 @@
+<section class="lesson" id="lesson-1" data-lesson="1">
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l1-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-1</span><br>متجهات السرعة والسرعة النسبية</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>لماذا ترسو عَبَّارة موجَّهة مباشرة عبر النيل عند نقطة في اتجاه مصب النيل بمسافة؟</p>
+        <p>لماذا يترك المطر المتساقط خطوطًا مائلة على نافذة حافلة متحركة؟</p>
+      </div>
+      <p class="muted">الدرس ده هيجاوب على السؤالين دول خطوة بخطوة. كل جزء فيه شرح، وبعده تجربة تلعب فيها بإيدك، وفي الآخر كويز تختبر نفسك فيه.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l1-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">5 محاكيات · مثال محلول · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">جهّز الشاي وتعالى نبدأ!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l1-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تشرح</b> إزاي سرعتين بيتركّبوا على بعض ويطلّعوا سرعة واحدة اسمها «السرعة المحصلة».</span></li>
+      <li><span><b>تحسب</b> المركبة الأفقية والمركبة الرأسية لأي سرعة، وترجع تركّبهم تاني.</span></li>
+      <li><span><b>تحدد</b> سرعة جسم زي ما بيشوفها واحد هو نفسه بيتحرك (السرعة النسبية).</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر من رياضيات قبل كده:</b> نظرية فيثاغورث في المثلث القايم، و <span class="m">sin</span> و <span class="m">cos</span> و <span class="m">tan</span>. لو مش فاكرهم، متقلقش، هنستخدمهم براحة وهنشرح كل خطوة.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l1-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">تخيّل عَبَّارة بتعدّي النيل. الريّس موجّه بوزها على طول ناحية المرسى اللي قدّامه في الضفة التانية، والموتور شغال بنفس القوة طول الوقت، والبوز عمره ما لفّ. ومع ذلك العَبَّارة بترسى بعيد عن المرسى بمسافة، ناحية ما المية رايحة. وفي نفس اليوم وإنت راكب الأتوبيس، المطر نازل من السما رأسي تمامًا، لكن الخطوط اللي بيرسمها على الشباك بتطلع مايلة!</p>
+      <p class="on-navy-given">الملاحظتين دول وراهم فكرة واحدة. قبل ما نشرحها، اختار توقعك:</p>
+
+      <div class="poll" data-poll="p1" data-answer="1">
+        <b>(أ) مع عدم تغيير (ثبات) إعدادات محرك العَبَّارة أبدًا، إذا أصبح تيار النهر أسرع، فهل سيستغرق العبور زمنًا أطول أم نفس الزمن أم زمنًا أقصر؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">زمن أطول</button>
+          <button class="opt" aria-pressed="false">نفس الزمن</button>
+          <button class="opt" aria-pressed="false">زمن أقصر</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هتختبره بنفسك في <a href="#l1-river" style="color:var(--yellow)">محاكي النهر</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">نفس الزمن.</b> العَبَّارة عشان تعدّي محتاجة تقطع عرض النهر، واللي بيقطع العرض ده هو الموتور بس. التيار بيزق العَبَّارة على جنب (بالطول مع النهر)، فمش بيقرّبها ولا بيبعّدها عن الضفة التانية. يعني التيار الأسرع بيزوّد <b>الانجراف</b> (المسافة اللي بتنزلها مع المية)، بس زمن العبور زي ما هو.</div>
+      </div>
+
+      <div class="poll" data-poll="p2" data-answer="0">
+        <b>(ب) من داخل الأتوبيس (الحافلة) المتحرك، هل الخطوط المائلة للمطر قادمة من أمام الأتوبيس أم من خلفه؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">من الأمام</button>
+          <button class="opt" aria-pressed="false">من الخلف</button>
+          <button class="opt" aria-pressed="false">رأسية تمامًا</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هتشوفه بعينك في <a href="#l1-rel" style="color:var(--yellow)">محاكي المطر</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">من قدّام، ومايلة لورا.</b> إنت ماشي لقدّام، فبالنسبة لك كل حاجة برّه بتبان كأنها راجعة لورا، والمطر كمان. فالمطر بيبقى نازل لتحت وفي نفس الوقت راجع لورا، فيرسم خط مايل جاي من قدّام.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">ماتكمّلش قبل ما تتوقع!</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l1-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — ارسم عملية العبور</span>
+    <p class="lead">التجربة دي بتعمل «نهر صغير» على ورقة: القلم هو القارب وهو بيعدّي على المسطرة، والورقة اللي بتتسحب لتحت هي التيار. الاتنين بيتحركوا في نفس الوقت، فالقلم بيرسم خط مايل. غيّر السرعتين، دوس «ارسم»، وكل محاولة هتتسجل لوحدها في الجدول.</p>
+    <div class="sim">
+      <canvas id="penCanvas" style="aspect-ratio:16/8" aria-label="محاكاة القلم والورقة: القلم يتحرك أفقيًا والورقة تُسحب لأسفل فيُرسم خط مائل"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="penV">سرعة القلم على المسطرة (العبور) <output data-out="penV"></output></label><input id="penV" type="range" min="1" max="5" step="0.5" value="3"></div>
+        <div class="ctrl"><label for="paperV">سرعة سحب الورقة (التيار) <output data-out="paperV"></output></label><input id="paperV" type="range" min="1" max="5" step="0.5" value="4"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="penRun">ارسم لمدة <span class="m">4 s</span></button><button class="btn ghost small" id="penClear">امسح الجدول</button></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th>العبور <span class="m">a (cm)</span></th><th>السحب <span class="m">b (cm)</span></th><th><span class="m">a + b (cm)</span></th><th>طول الخط المايل <span class="m">c (cm)</span></th><th><span class="m">√(a² + b²) (cm)</span></th></tr></thead>
+          <tbody id="penTable"><tr class="empty"><td colspan="6" class="muted">لسه مفيش محاولات. دوس «ارسم».</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) قارن بين العمودين الأخيرين، محاولة بمحاولة. ما النمط الذي توضحه الأرقام؟<br>(ب) يتحرك القلم على طول المسطرة فقط، بينما تُسحب الورقة في خط مستقيم لأسفل. كيف تتراكب هاتان الحركتان لتنتجا المسار المائل؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="penAns">اكشف النمط</button>
+        <div id="penAns" class="reveal" hidden>طول الخط المايل <span class="m ylw">c</span> بيطلع دايمًا قد <span class="m ylw">√(a² + b²)</span>، مش <span class="m">a + b</span>. بص على الرسمة بعد ما تخلص: <span class="m">a</span> و <span class="m">b</span> ضلعين مثلث قايم الزاوية، والخط المايل هو الوتر. يعني الحركتين المتعامدتين بيتجمعوا بفيثاغورث، مش بالجمع العادي.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l1-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">السرعة كمية متجهة</h2>
+      <p>لو قلتلك «عربية ماشية <span class="m">20 m/s</span>»، إنت عرفت هي سريعة قد إيه، بس لسه متعرفش هي رايحة فين. عشان كده الفيزياء بتفرّق بين حاجتين:</p>
+      <div class="grid2">
+        <div class="note"><b>كمية قياسية:</b> رقم + وحدة وبس. زي الكتلة <span class="m">(5 kg)</span> والزمن <span class="m">(3 s)</span> ومقدار السرعة <span class="m">(20 m/s)</span>.</div>
+        <div class="note"><b>كمية متجهة:</b> رقم + وحدة + <b>اتجاه</b>. زي السرعة المتجهة <span class="m">(20 m/s)</span> شرقًا. وبنرسمها بسهم: طوله = المقدار، واتجاهه = الاتجاه.</div>
+      </div>
+      <p>دلوقتي القارب. القارب ليه سرعتين شغالين عليه في نفس الوقت: الموتور بيزقه عرضيًا ناحية الضفة التانية، والتيار بيشيله بالطول مع النهر. القارب مش بيمشي في اتجاه الموتور ولا في اتجاه التيار، هو بيمشي في اتجاه تالت هو «مجموعهم». المجموع ده اسمه <b>السرعة المحصلة</b>:</p>
+      <div class="fbox"><span class="m">V⃗ = V⃗₁ + V⃗₂</span></div>
+      <div class="plain"><b class="t">إزاي بنجمع سهمين؟</b> حط ديل السهم التاني على راس السهم الأول (رأس على ديل). السهم اللي بيبدأ من ديل الأول وبيخلص عند راس التاني هو المحصلة. لو السهمين متعامدين، الشكل بيبقى مثلث قايم الزاوية، والمحصلة هي الوتر.</div>
+      <p>عشان كده جمع المتجهات عملية <b class="coral">هندسية مش حسابية</b>. الجمع العادي <span class="m">(4 + 3 = 7)</span> ينفع بس لو السرعتين على خط واحد وفي نفس الاتجاه. لو في اتجاهين عكس بعض بنطرح <span class="m">(4 − 3 = 1)</span>. ولو متعامدين بنستخدم فيثاغورث <span class="m">(√(4² + 3²) = 5)</span>.</p>
+      <div class="term"><b>مصطلح — السرعة المحصلة:</b> سرعة واحدة بتعمل نفس تأثير السرعتين وهما مع بعض. بدل ما تقول «القارب بيتحرك <span class="m">4 m/s</span> عرضي و <span class="m">3 m/s</span> بالطول»، تقول «القارب بيتحرك <span class="m">5 m/s</span> في اتجاه مايل».</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">العكس: تفكيك السرعة لمركبتين</h3>
+      <p>زي ما بنجمع سرعتين في سرعة واحدة، نقدر نعمل العكس: أي سرعة مايلة نفكّها لجزئين متعامدين، جزء أفقي على محور <span class="m">x</span> وجزء رأسي على محور <span class="m">y</span>. الجزئين دول اسمهم <b>المركبتين</b>. لو السرعة <span class="m">v</span> بتعمل زاوية <span class="m">θ</span> مع الأفقي:</p>
+      <div class="fbox"><span class="m">vₓ = v cos θ</span><span class="m">v<sub>y</sub> = v sin θ</span></div>
+      <div class="plain"><b class="t">طريقة تفتكر بيها:</b> المركبة اللي «لازقة» في الزاوية <span class="m">θ</span> (على نفس ضلع الزاوية) بتاخد <span class="m">cos</span>، والمركبة اللي «قصاد» الزاوية بتاخد <span class="m">sin</span>. ولو الزاوية متقاسة مع الرأسي بدل الأفقي، الاتنين بيتبدّلوا.</div>
+      <p>ولو معاك المركبتين وعايز ترجع للسرعة الأصلية، بنستخدم فيثاغورث للمقدار و <span class="m">tan</span> للاتجاه:</p>
+      <div class="fbox"><span class="m">v = √(vₓ² + v<sub>y</sub>²)</span><span class="m">tan θ = v<sub>y</sub> / vₓ</span></div>
+      <p>الفايدة الكبيرة من التفكيك: كل محور بيشتغل لوحده. في مسألة القارب، المركبة اللي عبر النهر لوحدها هي اللي بتحدد زمن العبور، والمركبة اللي بطول النهر لوحدها هي اللي بتحدد الانجراف. فبنحل كل محور لوحده، وفي الآخر نركّب.</p>
+
+      <div class="sim">
+        <b class="h3">جرّب بنفسك: اسحب راس السهم الأصفر</b>
+        <canvas id="vecCanvas" style="aspect-ratio:16/10" aria-label="شبكة يمكنك فيها سحب متجه السرعة لرؤية مركبتيه"></canvas>
+        <div class="readout">
+          <div><span>المقدار <span class="m">v</span></span><b id="vecV">—</b></div>
+          <div><span>الزاوية <span class="m">θ</span></span><b id="vecT">—</b></div>
+          <div><span>الأفقية <span class="m">vₓ = v cos θ</span></span><b id="vecX">—</b></div>
+          <div><span>الرأسية <span class="m">v<sub>y</sub> = v sin θ</span></span><b id="vecY">—</b></div>
+        </div>
+        <div class="legend"><span><i style="background:var(--pen-formula)"></i>السرعة <span class="m">v</span></span><span><i style="background:var(--pen-given)"></i>المركبة الأفقية</span><span><i style="background:var(--pen-check)"></i>المركبة الرأسية</span></div>
+        <p class="muted" style="font-size:14px">جرّب تحط الراس عند <span class="m">(4, 3)</span>: هتلاقي <span class="m">v = 5</span>. ده المثلث المشهور <span class="m">3-4-5</span>. وممكن تحرك السهم بأسهم الكيبورد كمان.</p>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">السرعة مش رقم بس… ليها اتجاه كمان!</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELATIVE VELOCITY ============ -->
+<section class="board" id="l1-rel">
+  <div class="stack">
+    <span class="seg">ماذا يرى المراقب المتحرك؟</span>
+    <h2 class="h2">السرعة النسبية</h2>
+    <p class="lead">لو إنت قاعد في قطر واقف في المحطة، والقطر اللي جنبك اتحرك، ساعات بتحس إن قطرك هو اللي ماشي! ده لأن السرعة اللي بتشوفها دايمًا متقاسة «بالنسبة لك». القانون بيقول:</p>
+    <div class="fbox"><span class="m">V⃗<sub>AB</sub> = V⃗<sub>B</sub> − V⃗<sub>A</sub></span><span style="font-size:15px">سرعة <span class="m">B</span> زي ما <span class="m">A</span> شايفها</span></div>
+    <div class="plain"><b class="t">إزاي تفتكر الترتيب؟</b> سرعة الحاجة اللي بتبص عليها <b>ناقص</b> سرعتك إنت. إنت <span class="m">(A)</span> المراقب، والحاجة <span class="m">(B)</span> هي اللي بتبص عليها. لو إنت واقف <span class="m">(V<sub>A</sub> = 0)</span> بتشوف السرعة الحقيقية. ولو إنت ماشي بنفس سرعتها بالظبط، هتشوفها واقفة.</div>
+    <div class="grid3">
+      <div class="note"><b>نفس الاتجاه:</b> قطر <span class="m">30 m/s</span> وقطر جنبه <span class="m">20 m/s</span>. كل واحد بيشوف التاني بسرعة <span class="m">30 − 20 = 10 m/s</span>.</div>
+      <div class="note"><b>عكس بعض:</b> نفس القطرين جايين قصاد بعض. كل واحد بيشوف التاني بسرعة <span class="m">30 + 20 = 50 m/s</span>.</div>
+      <div class="note"><b>متعامدين:</b> زي المطر والأتوبيس. هنا بنطرح كمتجهات، فبنستخدم فيثاغورث.</div>
+    </div>
+    <p>نرجع للمطر. بالنسبة للأرض المطر نازل رأسي. لما نطرح منه سرعة الأتوبيس (اللي ماشي لقدّام)، كأننا بنضيف للمطر سرعة <b>لورا</b> قد سرعة الأتوبيس. فالمطر بالنسبة للراكب بيبقى نازل لتحت وراجع لورا في نفس الوقت، فيرسم خط مايل. وزاوية الميل عن الرأسي:</p>
+    <div class="fbox"><span class="m">tan θ = v<sub>bus</sub> / v<sub>rain</sub></span><span class="m">v<sub>rel</sub> = √(v<sub>rain</sub>² + v<sub>bus</sub>²)</span></div>
+    <div class="sim">
+      <canvas id="rainCanvas" style="aspect-ratio:16/7" aria-label="محاكاة المطر: يمين من على الرصيف ويسار من داخل الأتوبيس"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="rainV">سرعة نزول المطر (بالنسبة للأرض) <output data-out="rainV"></output></label><input id="rainV" type="range" min="2" max="12" step="0.5" value="6"></div>
+        <div class="ctrl"><label for="busV">سرعة الأتوبيس <output data-out="busV"></output></label><input id="busV" type="range" min="0" max="16" step="0.5" value="8"></div>
+      </div>
+      <div class="readout">
+        <div><span>سرعة المطر بالنسبة للراكب</span><b id="rainRel">—</b></div>
+        <div><span>زاوية الميل عن الرأسي <span class="m">θ</span></span><b id="rainAng">—</b></div>
+        <div><span><span class="m">tan θ = v<sub>bus</sub> / v<sub>rain</sub></span></span><b id="rainTan">—</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">جرّب: خلّي سرعة الأتوبيس صفر. الخطوط بقت رأسية؟ وبعدين زوّدها شوية بشوية وشوف الخطوط بتميل لورا أكتر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l1-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <p>كل قانون معاه معنى الرموز وإمتى تستخدمه. احفظ القانون ومعاه «إمتى»؛ ده اللي بيفرق في الامتحان.</p>
+    <div class="laws">
+      <div class="law"><b>محصلة سرعتين</b><div class="eq">V⃗ = V⃗₁ + V⃗₂</div><small>جمع متجهات (رأس على ديل). لو على خط واحد: جمع أو طرح عادي.</small></div>
+      <div class="law"><b>محصلة سرعتين متعامدتين</b><div class="eq">v = √(v₁² + v₂²)</div><small>لما السرعتين بينهم <span class="m">90°</span>، زي القارب والتيار.</small></div>
+      <div class="law"><b>المركبة الأفقية</b><div class="eq">vₓ = v cos θ</div><small><span class="m">θ</span> الزاوية مع الأفقي.</small></div>
+      <div class="law"><b>المركبة الرأسية</b><div class="eq">v<sub>y</sub> = v sin θ</div><small><span class="m">θ</span> الزاوية مع الأفقي.</small></div>
+      <div class="law"><b>اتجاه المحصلة</b><div class="eq">tan θ = v<sub>y</sub> / vₓ</div><small>عشان تجيب الزاوية من المركبتين.</small></div>
+      <div class="law"><b>زمن عبور النهر</b><div class="eq">t = d / v<sub>across</sub></div><small><span class="m">d</span> عرض النهر، و <span class="m">v<sub>across</sub></span> مركبة السرعة العمودية على الضفة (من غير التيار).</small></div>
+      <div class="law"><b>الانجراف</b><div class="eq">x = v<sub>current</sub> × t</div><small>المسافة اللي القارب بينزلها مع التيار أثناء العبور.</small></div>
+      <div class="law"><b>السرعة النسبية</b><div class="eq">V⃗<sub>AB</sub> = V⃗<sub>B</sub> − V⃗<sub>A</sub></div><small>سرعة <span class="m">B</span> زي ما <span class="m">A</span> شايفها: اللي بتبص عليه ناقص اللي بيبص.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l1-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> قارب سرعته في الماء الساكن <span class="m">4.0 m s⁻¹</span>، بحيث يتحرك في نهر مستقيم سرعة تياره <span class="m">3.0 m s⁻¹</span>. حيث تتجه مقدمة القارب بشكل عمودي على ضفة النهر. أوجد سرعة القارب بالنسبة إلى ضفة النهر.</div>
+    <div class="steps" id="exSteps">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p>سرعة القارب (عبر النهر): <span class="m">v<sub>y</sub> = 4.0 m s⁻¹</span></p>
+        <p>سرعة التيار (بطول النهر): <span class="m">vₓ = 3.0 m s⁻¹</span></p>
+        <p><b>المطلوب:</b> سرعة القارب بالنسبة للضفة <span class="m">v = ?</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>السرعتين متعامدتين (واحدة عبر النهر وواحدة بطوله)، يبقى المحصلة هي وتر مثلث قايم الزاوية:</p>
+        <div class="answer"><span class="m">v = √(vₓ² + v<sub>y</sub>²)</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p><span class="m">v = √(3.0² + 4.0²)</span></p>
+        <p><span class="m">v = √(9 + 16) = √25</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">v = 5.0 m s⁻¹</span></div>
+        <p style="font-size:15px">والاتجاه: <span class="m">tan θ = 3.0 / 4.0 → θ ≈ 37°</span> عن العمودي على الضفة، ناحية التيار.</p>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> المحصلة <span class="m">5.0</span> لازم تكون أكبر من أكبر مركبة <span class="m">(4.0)</span> وأصغر من مجموعهم <span class="m">(7.0)</span>. لو طلعت برّه الحدود دي، يبقى في غلطة.</div>
+    <div class="btnrow"><b>فسّرها بنفسك:</b> لماذا تكون السرعة المحصلة <span class="m">5.0 m s⁻¹</span> وليست <span class="m">7.0 m s⁻¹</span>؟ <button class="btn small ghost" data-toggle="exWhy">وريني</button></div>
+    <div id="exWhy" class="sol" hidden>لأن السرعتين متعامدتين: جزء منهم بيودّي القارب عرضي وجزء بالطول، فمش بيزوّدوا بعض بالكامل. بنجمعهم بفيثاغورث. الجمع العادي <span class="m">3 + 4 = 7</span> كان هيبقى صح بس لو التيار والموتور في نفس الاتجاه.</div>
+  </div>
+</section>
+
+<!-- ============ RIVER SIM ============ -->
+<section class="board" id="l1-river">
+  <div class="stack">
+    <span class="seg">محاكي عبور النهر</span>
+    <h2 class="h2">اعبر النيل بنفسك</h2>
+    <p class="lead">هنا عندك القارب والنهر. السهم الأبيض اتجاه البوز (سرعة الموتور)، والسهم الأزرق التيار، والسهم الأصفر المحصلة اللي القارب فعلًا ماشي عليها. ارجع لتوقعك (أ): زوّد التيار بس، ودوس «اعبر»، وبص على الزمن.</p>
+    <div class="sim">
+      <canvas id="riverCanvas" style="aspect-ratio:16/9" aria-label="منظر علوي لنهر وقارب يعبره، مع أسهم سرعة القارب والتيار والمحصلة"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="rvB">سرعة القارب في المية الساكنة <output data-out="rvB"></output></label><input id="rvB" type="range" min="1" max="8" step="0.5" value="4"></div>
+        <div class="ctrl"><label for="rvC">سرعة التيار <output data-out="rvC"></output></label><input id="rvC" type="range" min="0" max="6" step="0.5" value="3"></div>
+        <div class="ctrl"><label for="rvD">عرض النهر <output data-out="rvD"></output></label><input id="rvD" type="range" min="20" max="200" step="10" value="60"></div>
+        <div class="ctrl"><label for="rvA">زاوية البوز عن العمودي (بالسالب = عكس التيار) <output data-out="rvA"></output></label><input id="rvA" type="range" min="-60" max="60" step="1" value="0"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="rvGo">اعبر</button><button class="btn ghost small" id="rvZero">وجّه البوز بحيث يعبر عمودي</button></div>
+      <div class="readout">
+        <div><span>عبر النهر <span class="m">v<sub>y</sub></span></span><b id="rvVy">—</b></div>
+        <div><span>مع التيار <span class="m">vₓ</span></span><b id="rvVx">—</b></div>
+        <div><span>السرعة المحصلة <span class="m">v</span></span><b id="rvV">—</b></div>
+        <div><span>زمن العبور <span class="m">t = d / v<sub>y</sub></span></span><b id="rvT">—</b></div>
+        <div><span>الانجراف <span class="m">x = vₓ × t</span></span><b id="rvX">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--white)"></i>اتجاه البوز (سرعة القارب)</span><span><i style="background:var(--pen-given)"></i>سرعة التيار</span><span><i style="background:var(--pen-formula)"></i>السرعة المحصلة والمسار الفعلي</span></div>
+    </div>
+    <div class="plain"><b class="t">لو عايز توصل للمرسى اللي قدّامك بالظبط؟</b> لازم توجّه البوز بزاوية <b>عكس التيار</b>، بحيث جزء من سرعة الموتور يلغي التيار. الزاوية دي بتتحسب من <span class="m">sin θ = v<sub>current</sub> / v<sub>boat</sub></span>. دوس على «وجّه البوز بحيث يعبر عمودي» وشوف. خد بالك إن الزمن بيزيد، لأن جزء من الموتور راح في مقاومة التيار بدل العبور. ولو التيار أسرع من القارب، مستحيل يوصل للنقطة اللي قصاده.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l1-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> قارب سرعته في الماء الساكن <span class="m">6.0 m s⁻¹</span>، بحيث يتحرك في نهر مستقيم سرعة تياره <span class="m">3.0 m s⁻¹</span>، حيث تتجه مقدمة القارب بشكل عمودي على ضفة النهر.</p>
+        <p>(i) أوجد الزاوية <span class="m">θ</span> التي يصنعها اتجاه الحركة المحصلة مع ضفة النهر.</p>
+        <div class="ansrow" data-num="63.43" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزاوية بالدرجات"><span class="unit">°</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <p>(ii) إذا كان عرض النهر <span class="m">60 m</span>، أوجد الزمن اللازم للعبور.</p>
+        <div class="ansrow" data-num="10" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الزمن بالثانية"><span class="unit">s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="tryA">وريني الحل</button>
+        <div id="tryA" class="sol" hidden>(i) الزاوية مع الضفة: الضلع المقابل هو سرعة العبور والمجاور هو التيار، يبقى <span class="m">tan θ = 6.0 / 3.0 = 2 → θ ≈ 63.4°</span><br>(ii) <span class="m">t = d / v<sub>y</sub> = 60 / 6.0 = 10 s</span>. التيار مالوش دعوة بالزمن.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> يركب شخص دراجة متجهًا غربًا بسرعة <span class="m">5.0 m s⁻¹</span>، فشعر برياح شمالية سرعتها <span class="m">5.0 m s⁻¹</span> (تهب من الشمال بالنسبة له). حدّد اتجاه الرياح وسرعتها بالنسبة إلى الأرض.</p>
+        <div class="ansrow" data-num="7.07" data-tol="0.02"><span>السرعة:</span><input type="text" inputmode="decimal" aria-label="سرعة الرياح"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <div class="ansrow" data-sel="2"><span>الرياح تهب من:</span><select aria-label="اتجاه الرياح"><option value="">اختار…</option><option value="0">الشمال</option><option value="1">الشمال الغربي</option><option value="2">الشمال الشرقي</option><option value="3">الجنوب الغربي</option></select><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="tryB">وريني الحل</button>
+        <div id="tryB" class="sol" hidden>الراكب حاسس بالرياح «بالنسبة له»: <span class="m">V⃗<sub>rel</sub> = V⃗<sub>wind</sub> − V⃗<sub>bike</sub></span>.<br>يبقى السرعة الحقيقية: <span class="m">V⃗<sub>wind</sub> = V⃗<sub>rel</sub> + V⃗<sub>bike</sub></span>.<br>الجزء الأول <span class="m">5.0 m s⁻¹</span> رايح جنوب، والتاني <span class="m">5.0 m s⁻¹</span> رايح غرب، ومتعامدين:<br><span class="m">v = √(5.0² + 5.0²) ≈ 7.1 m s⁻¹</span> رايحة ناحية الجنوب الغربي، يعني الرياح <b>جاية من الشمال الشرقي</b>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج) حاول بنفسك:</b> يبدو المطر المتساقط رأسيًا لراكب في قطار مترو يعبر جزءًا مكشوفًا بسرعة <span class="m">5.0 m s⁻¹</span> وكأنه يسقط بزاوية <span class="m">30°</span> عن الرأسي. احسب سرعة قطرات المطر.</p>
+        <div class="ansrow" data-num="8.66" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة المطر"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="tryC">وريني الحل</button>
+        <div id="tryC" class="sol" hidden>الزاوية مع الرأسي: المقابل سرعة القطر، والمجاور سرعة المطر.<br><span class="m">tan 30° = v<sub>train</sub> / v<sub>rain</sub> → v<sub>rain</sub> = 5.0 / tan 30° ≈ 8.7 m s⁻¹</span> رأسي لتحت.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">حلّها الأول في ورقة، وبعدين دوس «تحقق»</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL ============ -->
+<section class="board sky" id="l1-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">الطيارة اللي بتنزل مايلة</h2>
+      <p class="lead">يوم الهوا فيه جامد في مطار برج العرب، والريح بتهب بالعرض على الممر. لو الطيار وجّه الطيارة على طول الممر بالظبط، الريح هتزقها على جنب وتطلّعها برّه خط النص. فالطيار بيلف البوز شوية <b>ناحية الريح</b>. ساعتها جزء من سرعة الطيارة بيلغي الريح، والباقي بيمشّيها على طول الممر بالظبط. يعني الطيارة بتنزل وبوزها مايل، بس حركتها مستقيمة!</p>
+      <div class="sim">
+        <canvas id="planeCanvas" style="aspect-ratio:16/7" aria-label="منظر علوي لمدرج وطائرة مائلة في اتجاه الرياح"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="plW">سرعة الريح الجانبية <output data-out="plW"></output></label><input id="plW" type="range" min="0" max="80" step="5" value="40"></div>
+          <div class="ctrl"><label for="plV">سرعة الطيارة في الهوا <output data-out="plV"></output></label><input id="plV" type="range" min="180" max="260" step="10" value="220"></div>
+        </div>
+        <div class="readout">
+          <div><span>زاوية ميل البوز <span class="m">sin θ = w / v</span></span><b id="plA">—</b></div>
+          <div><span>السرعة على طول الممر</span><b id="plG">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا يجب أن يوجه الطيار مقدمة الطائرة بعيدًا عن اتجاه المدرج رغم أن الطائرة يجب أن تسير بالضبط على طول المدرج. <button class="btn small navy" data-toggle="irlA">إجابة مقترحة</button></div>
+      <div id="irlA" class="sol" hidden>حركة الطيارة الحقيقية = سرعتها في الهوا + سرعة الريح (جمع متجهات). عشان المحصلة تبقى على طول الممر، لازم سرعة الطيارة يبقى فيها جزء جانبي قد سرعة الريح وعكسها، فيلغيها. والجزء ده مش هييجي غير لو البوز مايل.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">إيه ده! الطيارة بتنزل مايلة؟!</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l1-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">السفينة اللي خبّت حركتها</h3>
+      <p>سنة <span class="m">1632</span>، جاليليو قال: تخيّل نفسك في أوضة مقفولة تحت سطح مركب ماشية بهدوء وبسرعة ثابتة. فيه مية بتنقّط، وسمك في حوض، وفراشات طايرة. كل حاجة هتتحرك بالظبط زي ما المركب واقفة! مفيش تجربة جوه الأوضة تقدر تقولك المركب ماشية ولا لأ. الخلاصة: الحركة دايمًا «بالنسبة لحاجة». لما تقول سرعة، لازم تحدد بالنسبة لإيه، والحاجة دي اسمها <b>الإطار المرجعي</b>.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح كيف يمكن لمراقبَين دقيقين أن يسجّلا سرعتين مختلفتين لنفس قطرة المطر دون أن يكون أيٌّ منهما مخطئًا.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l1-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تجمع سرعتين متعامدتين جمع عادي</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">v = 4.0 + 3.0 = 7.0 m s⁻¹</span></div>
+            <div class="good"><b>صح:</b> <span class="m">v = √(4.0² + 3.0²) = 5.0 m s⁻¹</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تقلب ترتيب الطرح في السرعة النسبية</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> سرعة <span class="m">B</span> بالنسبة لـ <span class="m">A</span> = <span class="m">V<sub>A</sub> − V<sub>B</sub></span></div>
+            <div class="good"><b>صح:</b> <span class="m">V<sub>AB</sub> = V<sub>B</sub> − V<sub>A</sub></span> (اللي بتبص عليه − اللي بيبص)</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تحسب زمن العبور بالسرعة المحصلة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">t = d / v</span> و <span class="m">v</span> هي المحصلة</div>
+            <div class="good"><b>صح:</b> <span class="m">t = d / v<sub>y</sub></span> بمركبة العبور بس</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تكتب الرقم من غير اتجاه</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «سرعة الرياح <span class="m">7.1 m s⁻¹</span>» وخلاص</div>
+            <div class="good"><b>صح:</b> السرعة متجهة، فاكتب المقدار والاتجاه: «<span class="m">7.1 m s⁻¹</span> من الشمال الشرقي»</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">خلي بالك! الفخ ده بيقع فيه ناس كتير</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER TO LESSON Q ============ -->
+<section class="board" id="l1-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">لماذا ترسو عَبَّارة موجّهة مباشرة عبر النيل عند نقطة في اتجاه مصبها بمسافة؟ ولماذا يترك المطر المتساقط خطوطًا مائلة على نافذة حافلة متحركة؟</p>
+    <p class="lead"><b>العَبَّارة:</b> سرعتها الحقيقية بالنسبة للأرض هي محصلة سرعتين: سرعة الموتور (عرضي) وسرعة التيار (بالطول). المحصلة دي مايلة ناحية المصب، فالعَبَّارة بتمشي مايلة وترسى بعيد عن المرسى، مع إن بوزها عمره ما لفّ.</p>
+    <p class="lead"><b>المطر:</b> الراكب بيشوف سرعة المطر «بالنسبة له»، يعني سرعة المطر ناقص سرعة الأتوبيس. الطرح ده بيضيف للمطر جزء راجع لورا، فالمطر اللي نازل رأسي بالنسبة للأرض بيبان مايل من جوه الأتوبيس.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l1-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">السرعة متجهة</b><p>ليها مقدار واتجاه، وبنرسمها بسهم. السرعتين بيتجمعوا هندسيًا (رأس على ديل). على خط واحد: جمع أو طرح عادي. متعامدين: فيثاغورث.</p></div>
+        <div class="sumcol"><b class="on-navy-given">المحصلة والمركبات</b><p><span class="m">vₓ = v cos θ</span> و <span class="m">v<sub>y</sub> = v sin θ</span><br><span class="m">v = √(vₓ² + v<sub>y</sub>²)</span><br>في النهر: الزمن من مركبة العبور بس، والانجراف من التيار.</p></div>
+        <div class="sumcol"><b class="mintc">السرعة النسبية</b><p><span class="m">V⃗<sub>AB</sub> = V⃗<sub>B</sub> − V⃗<sub>A</sub></span><br>اللي بتبص عليه ناقص اللي بيبص. نفس الاتجاه: نطرح. عكس بعض: نجمع. السرعة مالهاش معنى من غير إطار مرجعي.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خد بريك شاي وكمّل</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l1-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> يجري نهر بسرعة <span class="m">1.2 m s⁻¹</span> موازية لضفتيه. بينما يتّجه سبّاح سرعته في الماء الساكن <span class="m">0.9 m s⁻¹</span> مباشرة عبر النهر. أوجد مقدار سرعة السبّاح بالنسبة إلى الضفة.</p>
+      <div class="ansrow" data-num="1.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة السباح"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="chA">وريني الحل</button>
+      <div id="chA" class="sol" hidden>السرعتين متعامدتين: <span class="m">v = √(1.2² + 0.9²) = √2.25 = 1.5 m s⁻¹</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> بالنسبة لمراقب ينظر من نافذة القطار <span class="m">A</span>، الذي يتحرك على مسار أفقي بسرعة <span class="m">10 m s⁻¹</span>، يبدو المطر المتساقط رأسيًا وكأنه يسقط بزاوية <span class="m">45°</span> عن الرأسي.</p>
+      <p>(i) أوجد سرعة قطرات المطر.</p>
+      <div class="ansrow" data-num="10" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة المطر"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <p>(ii) بالنسبة لمراقب ينظر من نافذة القطار <span class="m">B</span> الذي يمر بجانب القطار <span class="m">A</span>، يبدو المطر ساقطًا بزاوية <span class="m">60°</span> عن الرأسي. أوجد سرعة القطار <span class="m">B</span>.</p>
+      <div class="ansrow" data-num="17.32" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة القطار B"><span class="unit">m s⁻¹</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="chB">وريني الحل</button>
+      <div id="chB" class="sol" hidden>(i) <span class="m">tan 45° = v<sub>A</sub> / v<sub>rain</sub> → v<sub>rain</sub> = 10 / 1 = 10 m s⁻¹</span><br>(ii) نفس المطر: <span class="m">tan 60° = v<sub>B</sub> / v<sub>rain</sub> → v<sub>B</sub> = 10 × 1.73 ≈ 17 m s⁻¹</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l1-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">قاعد في القطر في المحطة، والقطر اللي جنبك اتحرك… فحسّيت إن قطرك هو اللي ماشي! فسّرها بالسرعة النسبية في سطرين.</b>
+  <label for="l1c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l1c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l1c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l1-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-1</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">فيه أسئلة اختيار من متعدد، وأسئلة تكتب فيها الناتج بنفسك. ولكل سؤال «مساحة حل» تكتب فيها بالقلم أو الكيبورد. اكتب الأرقام بالإنجليزي أو العربي، هتتفهم في الحالتين.</p>
+    <div class="qlist" data-quiz="q1"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q1">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q1">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="2">الدرس الجاي: المقذوفات الأفقية ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

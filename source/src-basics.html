@@ -1,0 +1,224 @@
+<section class="lesson" id="lesson-basics" data-lesson="basics" hidden>
+<main class="wrap">
+
+<section class="board" id="b-intro">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">قبل ما تبدأ أي درس</span>
+      <h1 style="font-size:clamp(32px,5vw,52px);font-weight:800">أساسيات الفيزياء</h1>
+      <p class="lead">هنا كل الحاجات اللي هتحتاجها في كل درس: الوحدات، والتحويلات، والمثلث القايم، ومعادلات الحركة. الشرح بالعربي، وجنب كل مصطلح كلمته بالإنجليزي <span class="en-term">Like this</span> عشان تعرفها لو جت في الامتحان.</p>
+      <div class="chiplist">
+        <a href="#b-units">الكميات والوحدات</a><a href="#b-derived">الكميات المشتقة</a><a href="#b-prefix">البادئات</a><a href="#b-convert">تحويل الوحدات</a><a href="#b-sci">الصيغة العلمية</a><a href="#b-vector">قياسية ومتجهة</a><a href="#b-trig">فيثاغورث والمثلثات</a><a href="#b-motion">معادلات الحركة</a><a href="#b-gloss">قاموس المصطلحات</a>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">الأساس الكويس = مسائل سهلة</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ BASE UNITS ============ -->
+<section class="board" id="b-units">
+  <div class="stack">
+    <span class="seg">1 · الكميات الأساسية <span class="en">SI Base Quantities</span></span>
+    <p>أي حاجة بنقيسها في الفيزياء اسمها <b>كمية فيزيائية</b> <span class="en-term">Physical quantity</span>، وبتتكتب كده: <b>رقم + وحدة</b>. يعني «<span class="m">5</span>» لوحدها مالهاش معنى، لكن «<span class="m">5 m</span>» معناها خمسة متر. العلماء اتفقوا على نظام واحد للوحدات اسمه <b>النظام الدولي</b> <span class="en-term">SI units</span>، وفيه 7 كميات أساسية، وكل الكميات التانية مبنية منهم:</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>الكمية</th><th>بالإنجليزي</th><th>رمزها</th><th>الوحدة</th><th>رمز الوحدة</th></tr></thead>
+        <tbody>
+          <tr><td>الطول</td><td class="m">Length</td><td class="m">L, d, x</td><td>المتر <span class="en-term">metre</span></td><td class="m">m</td></tr>
+          <tr><td>الكتلة</td><td class="m">Mass</td><td class="m">m</td><td>الكيلوجرام <span class="en-term">kilogram</span></td><td class="m">kg</td></tr>
+          <tr><td>الزمن</td><td class="m">Time</td><td class="m">t</td><td>الثانية <span class="en-term">second</span></td><td class="m">s</td></tr>
+          <tr><td>شدة التيار الكهربي</td><td class="m">Electric current</td><td class="m">I</td><td>الأمبير <span class="en-term">ampere</span></td><td class="m">A</td></tr>
+          <tr><td>درجة الحرارة</td><td class="m">Temperature</td><td class="m">T</td><td>الكلفن <span class="en-term">kelvin</span></td><td class="m">K</td></tr>
+          <tr><td>كمية المادة</td><td class="m">Amount of substance</td><td class="m">n</td><td>المول <span class="en-term">mole</span></td><td class="m">mol</td></tr>
+          <tr><td>شدة الإضاءة</td><td class="m">Luminous intensity</td><td class="m">I<sub>v</sub></td><td>الكانديلا <span class="en-term">candela</span></td><td class="m">cd</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="plain"><b class="t">خلي بالك من الحروف</b> رمز الكمية بيتكتب <i>مايل</i> (زي <span class="m"><i>m</i></span> للكتلة)، ورمز الوحدة بيتكتب عادي (زي <span class="m">m</span> للمتر). نفس الحرف ممكن يبقى كمية في مكان ووحدة في مكان تاني، فاقرا السياق.</div>
+  </div>
+</section>
+
+<!-- ============ DERIVED ============ -->
+<section class="board" id="b-derived">
+  <div class="stack">
+    <span class="seg">2 · الكميات المشتقة <span class="en">Derived Quantities</span></span>
+    <p>الكمية المشتقة هي كمية بنجيبها من الكميات الأساسية بقانون. ووحدتها بتطلع من نفس القانون. مثلًا السرعة = المسافة ÷ الزمن، يبقى وحدتها متر ÷ ثانية <span class="m">(m/s)</span>.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>الكمية</th><th>بالإنجليزي</th><th>القانون</th><th>الوحدة</th></tr></thead>
+        <tbody>
+          <tr><td>المساحة</td><td class="m">Area</td><td class="m">A = L × W</td><td class="m">m²</td></tr>
+          <tr><td>الحجم</td><td class="m">Volume</td><td class="m">V = L × W × H</td><td class="m">m³</td></tr>
+          <tr><td>الكثافة</td><td class="m">Density</td><td class="m">ρ = m / V</td><td class="m">kg/m³</td></tr>
+          <tr><td>السرعة</td><td class="m">Velocity / Speed</td><td class="m">v = d / t</td><td class="m">m/s = m s<sup>−1</sup></td></tr>
+          <tr><td>العجلة (التسارع)</td><td class="m">Acceleration</td><td class="m">a = Δv / t</td><td class="m">m/s² = m s<sup>−2</sup></td></tr>
+          <tr><td>القوة</td><td class="m">Force</td><td class="m">F = m a</td><td class="m">N = kg m s<sup>−2</sup></td></tr>
+          <tr><td>الوزن</td><td class="m">Weight</td><td class="m">W = m g</td><td class="m">N</td></tr>
+          <tr><td>عزم القوة</td><td class="m">Moment (Torque)</td><td class="m">M = F d</td><td class="m">N m</td></tr>
+          <tr><td>الشغل والطاقة</td><td class="m">Work / Energy</td><td class="m">W = F d</td><td class="m">J = N m</td></tr>
+          <tr><td>القدرة</td><td class="m">Power</td><td class="m">P = W / t</td><td class="m">W (watt) = J/s</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><b>إزاي تقرا <span class="m">m s<sup>−1</sup></span>؟</b> الأس السالب معناه «على». يعني <span class="m">m s<sup>−1</sup></span> هي هي <span class="m">m/s</span> (متر لكل ثانية)، و <span class="m">m s<sup>−2</sup></span> هي <span class="m">m/s²</span>. الكتاب بيستخدم الطريقتين، فلازم تعرفهم الاتنين.</div>
+  </div>
+</section>
+
+<!-- ============ PREFIXES ============ -->
+<section class="board" id="b-prefix">
+  <div class="stack">
+    <span class="seg">3 · البادئات <span class="en">Prefixes</span></span>
+    <p>البادئة حرف بيتحط قبل الوحدة عشان يكبّرها أو يصغّرها. بدل ما تكتب <span class="m">5000 m</span> تكتب <span class="m">5 km</span>. الحرف <span class="m">k</span> هنا معناه «اضرب في ألف».</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>البادئة</th><th>بالإنجليزي</th><th>الرمز</th><th>القيمة</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>جيجا</td><td class="m">giga</td><td class="m">G</td><td class="m">10<sup>9</sup></td><td class="m">1 GB = 10<sup>9</sup> B</td></tr>
+          <tr><td>ميجا</td><td class="m">mega</td><td class="m">M</td><td class="m">10<sup>6</sup></td><td class="m">1 MW = 10<sup>6</sup> W</td></tr>
+          <tr><td>كيلو</td><td class="m">kilo</td><td class="m">k</td><td class="m">10<sup>3</sup></td><td class="m">1 km = 1000 m</td></tr>
+          <tr><td>سنتي</td><td class="m">centi</td><td class="m">c</td><td class="m">10<sup>−2</sup></td><td class="m">1 cm = 0.01 m</td></tr>
+          <tr><td>مللي</td><td class="m">milli</td><td class="m">m</td><td class="m">10<sup>−3</sup></td><td class="m">1 mm = 0.001 m</td></tr>
+          <tr><td>ميكرو</td><td class="m">micro</td><td class="m">μ</td><td class="m">10<sup>−6</sup></td><td class="m">1 μm = 10<sup>−6</sup> m</td></tr>
+          <tr><td>نانو</td><td class="m">nano</td><td class="m">n</td><td class="m">10<sup>−9</sup></td><td class="m">1 nm = 10<sup>−9</sup> m</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sim">
+      <b class="h3">حوّل بنفسك</b>
+      <div class="convrow">
+        <input type="text" inputmode="decimal" id="pxVal" class="numin big" value="2.5" aria-label="القيمة">
+        <select id="pxFrom" aria-label="البادئة"><option value="9">G</option><option value="6">M</option><option value="3" selected>k</option><option value="0">(بدون)</option><option value="-2">c</option><option value="-3">m</option><option value="-6">μ</option><option value="-9">n</option></select>
+        <select id="pxUnit" aria-label="الوحدة"><option>m</option><option>g</option><option>s</option><option>N</option><option>W</option></select>
+        <span class="muted">=</span>
+        <b id="pxOut" class="m ylw" style="font-size:20px">—</b>
+      </div>
+      <p class="muted" style="font-size:14px">خلي بالك: الوحدة الأساسية للكتلة هي <span class="m">kg</span> مش <span class="m">g</span>. يعني <span class="m">500 g = 0.5 kg</span>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONVERSION ============ -->
+<section class="board" id="b-convert">
+  <div class="stack">
+    <span class="seg">4 · تحويل الوحدات <span class="en">Unit Conversion</span></span>
+    <p>قبل ما تعوّض في أي قانون، لازم كل الأرقام تبقى بوحدات النظام الدولي: متر، وكيلوجرام، وثانية. لو المسألة إدتك سنتيمتر أو كيلومتر في الساعة، حوّل الأول.</p>
+    <div class="laws">
+      <div class="law"><b>من <span class="m">km/h</span> لـ <span class="m">m/s</span></b><div class="eq">÷ 3.6</div><small><span class="m">72 km/h ÷ 3.6 = 20 m/s</span>. والعكس اضرب في <span class="m">3.6</span>.</small></div>
+      <div class="law"><b>من <span class="m">cm</span> لـ <span class="m">m</span></b><div class="eq">÷ 100</div><small><span class="m">30 cm = 0.30 m</span></small></div>
+      <div class="law"><b>من <span class="m">g</span> لـ <span class="m">kg</span></b><div class="eq">÷ 1000</div><small><span class="m">250 g = 0.25 kg</span></small></div>
+      <div class="law"><b>من دقايق لثواني</b><div class="eq">× 60</div><small><span class="m">2 min = 120 s</span>، والساعة <span class="m">= 3600 s</span>.</small></div>
+      <div class="law"><b>من <span class="m">cm²</span> لـ <span class="m">m²</span></b><div class="eq">÷ 10<sup>4</sup></div><small>لأن <span class="m">1 m = 100 cm</span>، يبقى <span class="m">1 m² = 100 × 100 cm²</span>.</small></div>
+      <div class="law"><b>ليه <span class="m">3.6</span>؟</b><div class="eq">1000 / 3600</div><small>الكيلو = <span class="m">1000 m</span>، والساعة = <span class="m">3600 s</span>.</small></div>
+    </div>
+    <div class="sim">
+      <b class="h3">محوّل السرعة</b>
+      <div class="convrow">
+        <input type="text" inputmode="decimal" id="cvKmh" class="numin big" value="72" aria-label="السرعة بالكيلومتر في الساعة"><span class="m">km/h</span>
+        <span class="muted">=</span>
+        <input type="text" inputmode="decimal" id="cvMs" class="numin big" value="20" aria-label="السرعة بالمتر في الثانية"><span class="m">m/s</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCIENTIFIC NOTATION ============ -->
+<section class="board" id="b-sci">
+  <div class="stack">
+    <span class="seg">5 · الصيغة العلمية والتقريب <span class="en">Scientific Notation</span></span>
+    <p>الأرقام الكبيرة جدًا أو الصغيرة جدًا بنكتبها على شكل: <b>رقم من <span class="m">1</span> لأقل من <span class="m">10</span></b> × <b>عشرة أس حاجة</b>.</p>
+    <div class="grid2">
+      <div class="note"><span class="m">300 000 000 m/s = 3.0 × 10<sup>8</sup> m/s</span><br>(حرّكنا العلامة العشرية <span class="m">8</span> خانات للشمال، فالأس موجب.)</div>
+      <div class="note"><span class="m">0.00045 m = 4.5 × 10<sup>−4</sup> m</span><br>(حرّكنا العلامة <span class="m">4</span> خانات لليمين، فالأس سالب.)</div>
+    </div>
+    <p><b>الأرقام المعنوية</b> <span class="en-term">Significant figures</span>: عدد الأرقام اللي بتوري دقة القياس. لو المسألة إدتك أرقام زي <span class="m">4.0</span> و <span class="m">3.0</span> (رقمين معنويين)، قرّب الإجابة النهائية لرقمين معنويين برضو، زي <span class="m">5.0</span>. وماتقرّبش في نص الحل، قرّب في الآخر بس.</p>
+  </div>
+</section>
+
+<!-- ============ SCALAR / VECTOR ============ -->
+<section class="board" id="b-vector">
+  <div class="stack">
+    <span class="seg">6 · الكميات القياسية والمتجهة <span class="en">Scalars &amp; Vectors</span></span>
+    <div class="grid2">
+      <div class="note"><b>كمية قياسية</b> <span class="en-term">Scalar</span>: ليها <b>مقدار</b> <span class="en-term">magnitude</span> بس. زي الكتلة، والزمن، والمسافة <span class="en-term">distance</span>، ومقدار السرعة <span class="en-term">speed</span>، والطاقة.</div>
+      <div class="note"><b>كمية متجهة</b> <span class="en-term">Vector</span>: ليها مقدار <b>و</b>اتجاه <span class="en-term">direction</span>. زي الإزاحة <span class="en-term">displacement</span>، والسرعة المتجهة <span class="en-term">velocity</span>، والعجلة، والقوة، والوزن.</div>
+    </div>
+    <div class="plain"><b class="t">الفرق بين المسافة والإزاحة</b> لو مشيت <span class="m">100 m</span> حوالين ملعب ورجعت لنفس النقطة: المسافة <span class="m">100 m</span>، والإزاحة <b>صفر</b> لأنك رجعت لمكانك. الإزاحة = الخط المستقيم من البداية للنهاية ومعاه اتجاهه.</div>
+    <p>المتجه بنرسمه سهم، وبنكتبه بحرف عليه سهم <span class="m">V⃗</span> أو بحرف تقيل. ولما نكتب الحرف عادي <span class="m">v</span> نقصد مقداره بس. المتجهات بتتجمع هندسيًا (رأس على ديل)، وده اللي شرحناه بالتفصيل في الدرس <span class="m">1-1</span>.</p>
+  </div>
+</section>
+
+<!-- ============ TRIG ============ -->
+<section class="board" id="b-trig">
+  <div class="stack">
+    <span class="seg">7 · فيثاغورث وحساب المثلثات <span class="en">Pythagoras &amp; Trigonometry</span></span>
+    <p>المثلث القايم الزاوية <span class="en-term">Right-angled triangle</span> هو أكتر شكل هتقابله في الفيزياء، لأن أي سرعة أو قوة مايلة بتتفك لمركبتين متعامدتين وبيعملوا معاها مثلث قايم.</p>
+    <div class="grid3">
+      <div class="note"><b>الوتر</b> <span class="en-term">Hypotenuse</span>: الضلع اللي قصاد الزاوية القايمة، وهو أطول ضلع.</div>
+      <div class="note"><b>المقابل</b> <span class="en-term">Opposite</span>: الضلع اللي قصاد الزاوية <span class="m">θ</span>.</div>
+      <div class="note"><b>المجاور</b> <span class="en-term">Adjacent</span>: الضلع اللي لازق في الزاوية <span class="m">θ</span> (غير الوتر).</div>
+    </div>
+    <div class="laws">
+      <div class="law"><b>نظرية فيثاغورث</b><div class="eq">c² = a² + b²</div><small>مربع الوتر = مجموع مربعي الضلعين التانيين.</small></div>
+      <div class="law"><b>الجيب <span class="en-term">sine</span></b><div class="eq">sin θ = O / H</div><small>المقابل ÷ الوتر. عشان تجيب المقابل: الوتر × <span class="m">sin θ</span>.</small></div>
+      <div class="law"><b>جيب التمام <span class="en-term">cosine</span></b><div class="eq">cos θ = A / H</div><small>المجاور ÷ الوتر. عشان تجيب المجاور: الوتر × <span class="m">cos θ</span>.</small></div>
+      <div class="law"><b>الظل <span class="en-term">tangent</span></b><div class="eq">tan θ = O / A</div><small>المقابل ÷ المجاور. عشان تجيب الزاوية من ضلعين: <span class="m">θ = tan<sup>−1</sup>(…)</span>.</small></div>
+    </div>
+    <div class="plain"><b class="t">طريقة تحفظ بيها: SOH CAH TOA</b><div dir="ltr" class="m" style="display:block;text-align:left;line-height:1.9"><b>S</b>in = <b>O</b>pposite / <b>H</b>ypotenuse<br><b>C</b>os = <b>A</b>djacent / <b>H</b>ypotenuse<br><b>T</b>an = <b>O</b>pposite / <b>A</b>djacent</div></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>الزاوية</th><th class="m">sin</th><th class="m">cos</th><th class="m">tan</th></tr></thead>
+        <tbody>
+          <tr><td class="m">0°</td><td class="m">0</td><td class="m">1</td><td class="m">0</td></tr>
+          <tr><td class="m">30°</td><td class="m">0.5</td><td class="m">0.866 (√3/2)</td><td class="m">0.577</td></tr>
+          <tr><td class="m">37°</td><td class="m">0.6</td><td class="m">0.8</td><td class="m">0.75</td></tr>
+          <tr><td class="m">45°</td><td class="m">0.707 (√2/2)</td><td class="m">0.707</td><td class="m">1</td></tr>
+          <tr><td class="m">53°</td><td class="m">0.8</td><td class="m">0.6</td><td class="m">1.33</td></tr>
+          <tr><td class="m">60°</td><td class="m">0.866</td><td class="m">0.5</td><td class="m">1.73 (√3)</td></tr>
+          <tr><td class="m">90°</td><td class="m">1</td><td class="m">0</td><td>مالوش قيمة</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sim">
+      <b class="h3">حاسبة المثلث القايم</b>
+      <p class="muted" style="font-size:14px">اكتب الضلعين القايمين، والحاسبة هتطلّعلك الوتر والزاوية.</p>
+      <div class="convrow">
+        <span>الضلع الأفقي <span class="m">a</span></span><input type="text" inputmode="decimal" id="trA" class="numin big" value="4" aria-label="الضلع الأفقي">
+        <span>الضلع الرأسي <span class="m">b</span></span><input type="text" inputmode="decimal" id="trB" class="numin big" value="3" aria-label="الضلع الرأسي">
+      </div>
+      <canvas id="trCanvas" style="aspect-ratio:16/6" aria-label="مثلث قائم الزاوية بالأضلاع المدخلة"></canvas>
+      <div class="readout"><div><span>الوتر <span class="m">c = √(a² + b²)</span></span><b id="trC">—</b></div><div><span>الزاوية <span class="m">θ = tan<sup>−1</sup>(b/a)</span></span><b id="trT">—</b></div></div>
+    </div>
+    <div class="plain"><b class="t">مثلثات مشهورة توفّر وقت</b> <bdi class="m">3, 4, 5</bdi> و <bdi class="m">6, 8, 10</bdi> و <bdi class="m">5, 12, 13</bdi> و <bdi class="m">8, 15, 17</bdi>. لو شفت ضلعين منهم، الوتر بيبقى معروف على طول.</div>
+  </div>
+</section>
+
+<!-- ============ MOTION EQUATIONS ============ -->
+<section class="board" id="b-motion">
+  <div class="stack">
+    <span class="seg">8 · معادلات الحركة <span class="en">Equations of Motion</span></span>
+    <p>لما جسم بيتحرك في خط مستقيم بعجلة ثابتة <span class="en-term">uniform acceleration</span>، عندنا 3 معادلات بنستخدمهم كتير في المقذوفات. الرموز: <span class="m">v₀</span> السرعة الابتدائية <span class="en-term">initial velocity</span>، و <span class="m">v</span> السرعة النهائية <span class="en-term">final velocity</span>، و <span class="m">a</span> العجلة، و <span class="m">t</span> الزمن، و <span class="m">d</span> الإزاحة.</p>
+    <div class="laws">
+      <div class="law"><b>المعادلة الأولى</b><div class="eq">v = v₀ + a t</div><small>من غير مسافة.</small></div>
+      <div class="law"><b>المعادلة التانية</b><div class="eq">d = v₀ t + ½ a t²</div><small>من غير سرعة نهائية.</small></div>
+      <div class="law"><b>المعادلة التالتة</b><div class="eq">v² = v₀² + 2 a d</div><small>من غير زمن.</small></div>
+    </div>
+    <div class="plain"><b class="t">السقوط الحر</b> <span class="en-term">Free fall</span> أي جسم بيقع من غير مقاومة هوا عجلته <span class="m">g = 9.8 m/s²</span> لتحت، مهما كانت كتلته. ولو بدأ من السكون <span class="m">(v₀ = 0)</span>: <span class="m">v = g t</span> و <span class="m">d = ½ g t²</span>. وساعات المسألة بتقولك خد <span class="m">g = 10 m/s²</span> عشان الحساب يبقى أسهل، فاقرا المعطيات كويس.</div>
+    <div class="note"><b>إزاي تختار المعادلة؟</b> بص على الكمية اللي مش مذكورة ومش مطلوبة، واختار المعادلة اللي مافيهاش الكمية دي.</div>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section class="board light" id="b-gloss">
+  <div class="stack">
+    <span class="seg navy">9 · قاموس المصطلحات <span class="en">Glossary</span></span>
+    <p>ابحث بالعربي أو بالإنجليزي. كل المصطلحات اللي في الدروس الأربعة والأساسيات.</p>
+    <input type="search" id="glQ" class="glsearch" placeholder="ابحث… مثلًا: سرعة أو torque" aria-label="بحث في المصطلحات">
+    <div class="tablewrap"><table class="gltable"><thead><tr><th>بالعربي</th><th>English</th><th>معناه باختصار</th></tr></thead><tbody id="glBody"></tbody></table></div>
+  </div>
+</section>
+
+</main>
+</section>
