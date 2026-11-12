@@ -1,107 +1,153 @@
 <section class="lesson" id="lesson-games" data-lesson="games" hidden>
 <main class="wrap">
-
 <section class="board" id="g-intro">
   <div class="with-mint">
     <div class="stack">
       <span class="eyebrow on-navy-given">العب واتعلم</span>
       <h1 style="font-size:clamp(32px,5vw,52px);font-weight:800">ألعاب الفيزياء</h1>
-      <p class="lead">4 ألعاب على اللي درسناه. مفيش حظ هنا: لو فهمت القانون هتكسب كل مرة. ابدأ بالتخمين، وبعدين جرّب تحسبها في ورقة قبل ما تلعب، وشوف الفرق.</p>
-      <div class="grid2">
-        <a class="gcard" href="#g-cannon"><b>اضرب الهدف</b><span>مقذوف بزاوية · الدرس <span class="m">1-3</span></span></a>
-        <a class="gcard" href="#g-river"><b>اوصل للمرسى</b><span>السرعة المحصلة · الدرس <span class="m">1-1</span></span></a>
-        <a class="gcard" href="#g-seesaw"><b>وازن السيسو</b><span>عزم القوة · الدرس <span class="m">1-4</span></span></a>
-        <a class="gcard" href="#g-blitz"><b>سباق الدقيقة</b><span>أسئلة سريعة على كل الدروس</span></a>
-      </div>
+      <p class="lead">لعبة لكل درس، ومن غير آلة حاسبة. كل لعبة فيها <span class="m">3</span> مستويات: الأول فيه مساعدة باينة، وبعدين المساعدة بتختفي شوية بشوية. كل مستوى تعدّيه بياخد نجمة.</p>
+      <div class="ggrid"><a class="gcard" href="#g-river"><span class="gles">الدرس <span class="m">1-1</span></span><b>اوصل للمرسى</b><span>جمع المتجهات</span><span class="cstars" data-cstars="river"></span></a><a class="gcard" href="#g-drop"><span class="gles">الدرس <span class="m">1-2</span></span><b>وقّع الصندوق</b><span>المقذوف الأفقي</span><span class="cstars" data-cstars="drop"></span></a><a class="gcard" href="#g-cannon"><span class="gles">الدرس <span class="m">1-3</span></span><b>اضرب الهدف</b><span>المقذوف بزاوية</span><span class="cstars" data-cstars="cannon"></span></a><a class="gcard" href="#g-seesaw"><span class="gles">الدرس <span class="m">1-4</span></span><b>وازن السيسو</b><span>عزم القوة</span><span class="cstars" data-cstars="seesaw"></span></a><a class="gcard" href="#g-sign"><span class="gles">الدرس <span class="m">1-5</span></span><b>علّق اليافطة</b><span>اتزان القوى</span><span class="cstars" data-cstars="sign"></span></a><a class="gcard" href="#g-eff"><span class="gles">الدرس <span class="m">1-6</span></span><b>مين الأكفأ؟</b><span>الكفاءة</span><span class="cstars" data-cstars="eff"></span></a><a class="gcard" href="#g-egg"><span class="gles">الدرس <span class="m">1-7</span></span><b>أنقذ البيضة</b><span>الدفع وزمن التلامس</span><span class="cstars" data-cstars="egg"></span></a><a class="gcard" href="#g-crash"><span class="gles">الدرس <span class="m">1-8</span></span><b>تصادم العربيات</b><span>حفظ كمية التحرك</span><span class="cstars" data-cstars="crash"></span></a><a class="gcard tf" href="#g-tf"><span class="gles">كل الدروس</span><b>صح ولا غلط؟</b><span>مفاهيم من غير حسابات</span><span class="cstars" data-cstars="tf"></span></a></div>
     </div>
     <div class="mint">
-      <div class="bubble">مين هيجيب أعلى سكور؟</div>
+      <div class="bubble">اختار لعبة وجمّع النجوم كلها!</div>
       <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
     </div>
   </div>
 </section>
-
-<!-- ============ GAME 1: CANNON ============ -->
-<section class="board" id="g-cannon">
+<section class="board game" id="g-river" hidden>
   <div class="stack">
-    <span class="seg">لعبة 1 · مقذوف بزاوية</span>
-    <h2 class="h2">اضرب الهدف</h2>
-    <p>الهدف الأحمر على مسافة معيّنة. اختار سرعة الإطلاق والزاوية ودوس «اطلق». لو الكورة نزلت على بُعد <span class="m">1.5 m</span> من الهدف أو أقل، تبقى إصابة. كل 3 إصابات بتطلع مستوى، والهدف بيبعد، وفي المستويات العالية بيظهر حيطة لازم تعدّي من فوقها.</p>
-    <div class="sim">
-      <canvas id="gcCanvas" style="aspect-ratio:16/8" aria-label="لعبة مدفع: أطلق الكرة لتصيب الهدف"></canvas>
-      <div class="ctrls">
-        <div class="ctrl"><label for="gcV">سرعة الإطلاق <span class="m">v₀</span> <output data-out="gcV"></output></label><input id="gcV" type="range" min="5" max="30" step="0.5" value="18"></div>
-        <div class="ctrl"><label for="gcA">الزاوية <span class="m">θ</span> <output data-out="gcA"></output></label><input id="gcA" type="range" min="5" max="85" step="1" value="45"></div>
-      </div>
-      <div class="btnrow"><button class="btn" id="gcFire">اطلق</button><button class="btn ghost small" id="gcNew">هدف جديد</button><button class="btn ghost small" id="gcHint">مساعدة</button><span id="gcMsg" style="font-weight:700"></span></div>
-      <div class="readout">
-        <div><span>بُعد الهدف</span><b id="gcT">—</b></div>
-        <div><span>المستوى</span><b id="gcLv">1</b></div>
-        <div><span>الإصابات</span><b id="gcSc">0</b></div>
-        <div><span>أعلى سكور</span><b id="gcBest">0</b></div>
-      </div>
-      <div id="gcHelp" class="plain" hidden><b class="t">مساعدة:</b> المدى على أرض مستوية <span class="m">R = v₀² sin 2θ / g</span>. ثبّت الزاوية <span class="m">45°</span> (أكبر مدى)، واحسب السرعة اللي تخلّي <span class="m">R</span> = بُعد الهدف: <span class="m">v₀ = √(R g)</span>. ولو فيه حيطة، استخدم زاوية أكبر عشان الكورة تطلع أعلى.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GAME 2: RIVER ============ -->
-<section class="board" id="g-river">
-  <div class="stack">
-    <span class="seg">لعبة 2 · السرعة المحصلة</span>
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-1</span> · جمع المتجهات</span><span class="cstars big" data-cstars="river"></span></div>
     <h2 class="h2">اوصل للمرسى</h2>
-    <p>القارب سرعته في المية الساكنة <span class="m">5 m/s</span>، والتيار بيتغير كل جولة. المرسى الأصفر في الضفة التانية، ومش شرط يكون قصادك. اختار زاوية البوز (عكس التيار أو معاه) ودوس «انطلق». لو رسيت على بُعد <span class="m">3 m</span> من المرسى أو أقل، تبقى كسبت الجولة.</p>
+    <p class="lead">القارب بيمشي بسرعة <span class="m">5 m/s</span>، والتيار بيسحبه. لف بوز القارب ودوس «انطلق» عشان ترسى على المرسى الأصفر. السهم الأخضر هو سرعتك الحقيقية: سرعة القارب + سرعة التيار.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="river-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="river-tip"></span></div>
     <div class="sim">
-      <canvas id="grCanvas" style="aspect-ratio:16/9" aria-label="لعبة عبور النهر للوصول إلى المرسى"></canvas>
-      <div class="ctrls">
-        <div class="ctrl"><label for="grA">زاوية البوز عن العمودي (بالسالب = عكس التيار) <output data-out="grA"></output></label><input id="grA" type="range" min="-70" max="70" step="1" value="0"></div>
-      </div>
-      <div class="btnrow"><button class="btn" id="grGo">انطلق</button><button class="btn ghost small" id="grNew">جولة جديدة</button><span id="grMsg" style="font-weight:700"></span></div>
-      <div class="readout">
-        <div><span>سرعة التيار</span><b id="grC">—</b></div>
-        <div><span>مكان المرسى من النقطة اللي قصادك</span><b id="grDock">—</b></div>
-        <div><span>الجولات اللي كسبتها</span><b id="grSc">0 / 0</b></div>
-      </div>
-      <p class="muted" style="font-size:14px">فكرة: نقطة الرسو بتبعد عن النقطة اللي قصادك مسافة <span class="m">x = d × (v<sub>c</sub> + v<sub>b</sub> sin α) / (v<sub>b</sub> cos α)</span>. ولو المرسى قصادك بالظبط، يبقى عايز <span class="m">sin α = −v<sub>c</sub> / v<sub>b</sub></span>.</p>
+      <div id="river-pick" class="pickrow"></div>
+      <canvas id="river-cv" class="gcv" aria-label="اوصل للمرسى"></canvas>
+      <div class="ctrls"><div class="ctrl"><label for="river-a">اتجاه البوز (بالسالب = عكس التيار) <output data-out="river-a"></output></label><input id="river-a" type="range" min="-70" max="70" step="1" value="0"></div></div>
+      <div class="btnrow"><button class="btn" id="river-go">انطلق</button><button class="btn" id="river-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="river-again" hidden>العب تاني من الأول</button><span class="gmsg" id="river-msg"></span></div>
     </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>اللي بيحدد إنت رايح فين هو <b>المحصلة</b>، مش اتجاه البوز لوحده. لو عايز توصل قصادك بالظبط، لازم تميّل البوز عكس التيار لحد ما السهم الأخضر يبقى عمودي على الضفة.</p></details>
   </div>
 </section>
-
-<!-- ============ GAME 3: SEESAW ============ -->
-<section class="board" id="g-seesaw">
+<section class="board game" id="g-drop" hidden>
   <div class="stack">
-    <span class="seg">لعبة 3 · عزم القوة</span>
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-2</span> · المقذوف الأفقي</span><span class="cstars big" data-cstars="drop"></span></div>
+    <h2 class="h2">وقّع الصندوق</h2>
+    <p class="lead">طيارة مساعدات طايرة بسرعة ثابتة. دوس «وقّع» في اللحظة الصح عشان الصندوق ينزل جوه الدايرة الحمرا. خلي بالك: الصندوق مابينزلش تحت النقطة اللي وقع منها!</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="drop-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="drop-tip"></span></div>
+    <div class="sim">
+      <div id="drop-pick" class="pickrow"></div>
+      <canvas id="drop-cv" class="gcv" aria-label="وقّع الصندوق"></canvas>
+      
+      <div class="btnrow"><button class="btn" id="drop-go">وقّع</button><button class="btn" id="drop-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="drop-again" hidden>العب تاني من الأول</button><span class="gmsg" id="drop-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>الصندوق بيخرج من الطيارة بنفس سرعتها الأفقية، وبيفضل محتفظ بيها وهو نازل. عشان كده بيفضل <b>تحت الطيارة</b> طول ما هو بيقع، ولازم توقّعه <b>قبل</b> ما توصل فوق الهدف.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-cannon" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-3</span> · المقذوف بزاوية</span><span class="cstars big" data-cstars="cannon"></span></div>
+    <h2 class="h2">اضرب الهدف</h2>
+    <p class="lead">اختار سرعة الإطلاق والزاوية، ودوس «اطلق» عشان الكورة تنزل على العلم الأحمر. في المستوى الأول هتشوف المسار قبل ما تضرب.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="cannon-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="cannon-tip"></span></div>
+    <div class="sim">
+      <div id="cannon-pick" class="pickrow"></div>
+      <canvas id="cannon-cv" class="gcv" aria-label="اضرب الهدف"></canvas>
+      <div class="ctrls"><div class="ctrl"><label for="cannon-v">سرعة الإطلاق <output data-out="cannon-v"></output></label><input id="cannon-v" type="range" min="8" max="30" step="0.5" value="16"></div><div class="ctrl"><label for="cannon-a">الزاوية <output data-out="cannon-a"></output></label><input id="cannon-a" type="range" min="10" max="80" step="1" value="45"></div></div>
+      <div class="btnrow"><button class="btn" id="cannon-go">اطلق</button><button class="btn" id="cannon-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="cannon-again" hidden>العب تاني من الأول</button><span class="gmsg" id="cannon-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>الزاوية <span class="m">45°</span> بتدي أكبر مدى لنفس السرعة. وأي زاويتين مجموعهم <span class="m">90°</span> (زي <span class="m">30°</span> و <span class="m">60°</span>) بيوصلوا لنفس المكان، بس واحدة عالية وواحدة واطية.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-seesaw" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-4</span> · عزم القوة</span><span class="cstars big" data-cstars="seesaw"></span></div>
     <h2 class="h2">وازن السيسو</h2>
-    <p>على الشمال قاعد طفل بوزن معيّن وعلى بُعد معيّن. إنت هتقعّد الطفل التاني على اليمين: اختار بُعده عن نقطة الارتكاز بحيث السيسو يتزن. افتكر: <span class="m">F<sub>1</sub> d<sub>1</sub> = F<sub>2</sub> d<sub>2</sub></span>. احسبها الأول، وبعدين اكتب الرقم أو حرّك الـ slider.</p>
+    <p class="lead">الأطفال على الشمال قاعدين. اختار الكرسي اللي هيقعد عليه الطفل اللي على اليمين عشان السيسو يتزن. الأرقام على اللوح هي البُعد بالمتر.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="seesaw-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="seesaw-tip"></span></div>
     <div class="sim">
-      <canvas id="gsCanvas" style="aspect-ratio:16/7" aria-label="لعبة السيسو: وازن العزمين"></canvas>
-      <div class="ctrls">
-        <div class="ctrl"><label for="gsD">بُعد الطفل اللي على اليمين <span class="m">d<sub>2</sub></span> <output data-out="gsD"></output></label><input id="gsD" type="range" min="0.2" max="3" step="0.05" value="1.5"></div>
-      </div>
-      <div class="btnrow"><button class="btn" id="gsCheck">جرّب</button><button class="btn ghost small" id="gsNew">جولة جديدة</button><span id="gsMsg" style="font-weight:700"></span></div>
-      <div class="readout">
-        <div><span>الطفل الشمال <span class="m">F<sub>1</sub> × d<sub>1</sub></span></span><b id="gsL">—</b></div>
-        <div><span>الطفل اليمين <span class="m">F<sub>2</sub></span></span><b id="gsW2">—</b></div>
-        <div><span>الجولات اللي كسبتها</span><b id="gsSc">0 / 0</b></div>
-      </div>
+      <div id="seesaw-pick" class="pickrow"></div>
+      <canvas id="seesaw-cv" class="gcv" aria-label="وازن السيسو"></canvas>
+      
+      <div class="btnrow"><button class="btn" id="seesaw-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="seesaw-again" hidden>العب تاني من الأول</button><span class="gmsg" id="seesaw-msg"></span></div>
     </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>اللي بيتوازن هو <b>العزم</b> مش الوزن: الوزن × البُعد. الطفل الخفيف يقدر يوازن طفل تقيل لو قعد أبعد عن النص.</p></details>
   </div>
 </section>
-
-<!-- ============ GAME 4: BLITZ ============ -->
-<section class="board" id="g-blitz">
+<section class="board game" id="g-sign" hidden>
   <div class="stack">
-    <span class="seg">لعبة 4 · كل الدروس</span>
-    <h2 class="h2">سباق الدقيقة</h2>
-    <p>عندك <span class="m">60</span> ثانية. كل سؤال حسبة سريعة من الدروس التمانية أو من الأساسيات. الإجابة الصح بنقطة، والغلط مالوش خصم بس بيضيّع وقتك. حاول تكسر أعلى سكور ليك.</p>
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-5</span> · اتزان القوى</span><span class="cstars big" data-cstars="sign"></span></div>
+    <h2 class="h2">علّق اليافطة</h2>
+    <p class="lead">يافطة وزنها <span class="m">200 N</span> هتتعلق بكابلين. اختار زاوية الكابلين مع الأفقي ودوس «علّق». لو الشد عدّى قوة الكابل، الكابل هيتقطع!</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="sign-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="sign-tip"></span></div>
+    <div class="sim">
+      <div id="sign-pick" class="pickrow"></div>
+      <canvas id="sign-cv" class="gcv" aria-label="علّق اليافطة"></canvas>
+      <div class="ctrls"><div class="ctrl"><label for="sign-a">زاوية الكابل مع الأفقي <output data-out="sign-a"></output></label><input id="sign-a" type="range" min="5" max="85" step="1" value="15"></div></div>
+      <div class="btnrow"><button class="btn" id="sign-go">علّق</button><button class="btn" id="sign-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="sign-again" hidden>العب تاني من الأول</button><span class="gmsg" id="sign-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>الجزء الرأسي بس من الشد هو اللي شايل اليافطة. كل ما الكابل يقرب من الأفقي، الجزء ده يصغر، فالشد كله لازم يكبر: <span class="m">2 T sin θ = W</span>.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-eff" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-6</span> · الكفاءة</span><span class="cstars big" data-cstars="eff"></span></div>
+    <h2 class="h2">مين الأكفأ؟</h2>
+    <p class="lead">رتّب الأجهزة من <b>الأكفأ</b> للأقل كفاءة: دوس على الأكفأ الأول، وبعدين اللي بعده… الأكفأ هو اللي بيحوّل أكبر <b>نسبة</b> من الطاقة اللي داخلاه لطاقة مفيدة.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="eff-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="eff-tip"></span></div>
+    <div class="sim">
+      <div id="eff-pick" class="pickrow"></div>
+      <canvas id="eff-cv" class="gcv" aria-label="مين الأكفأ؟"></canvas>
+      
+      <div class="btnrow"><button class="btn" id="eff-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="eff-again" hidden>العب تاني من الأول</button><span class="gmsg" id="eff-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>الكفاءة نسبة: <span class="m">المفيد ÷ الدخل</span>. الجهاز اللي بيطلّع أكبر طاقة مفيدة مش شرط يبقى الأكفأ، لو كان بياخد طاقة دخل ضخمة.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-egg" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-7</span> · الدفع وزمن التلامس</span><span class="cstars big" data-cstars="egg"></span></div>
+    <h2 class="h2">أنقذ البيضة</h2>
+    <p class="lead">بيضة هتقع من ارتفاع. اختار السطح اللي هتقع عليه. البيضة بتنكسر لو القوة عدّت <span class="m">25 N</span>.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="egg-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="egg-tip"></span></div>
+    <div class="sim">
+      <div id="egg-pick" class="pickrow"></div>
+      <canvas id="egg-cv" class="gcv" aria-label="أنقذ البيضة"></canvas>
+      
+      <div class="btnrow"><button class="btn" id="egg-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="egg-again" hidden>العب تاني من الأول</button><span class="gmsg" id="egg-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>البيضة بتقف في كل الحالات، فالتغير في كمية تحركها واحد. السطح الطري بيطوّل زمن الوقوف <span class="m">Δt</span>، ولأن <span class="m">F = Δp / Δt</span> القوة بتقل.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-crash" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">الدرس <span class="m">1-8</span> · حفظ كمية التحرك</span><span class="cstars big" data-cstars="crash"></span></div>
+    <h2 class="h2">تصادم العربيات</h2>
+    <p class="lead">العربية الصفرا هتخبط في العربية الزرقا ويلتصقوا ويكملوا مع بعض. اختار كتلة العربية الصفرا عشان الاتنين يقفوا جوه المنطقة الخضرا.</p>
+    <div class="lvbar"><span class="lvpill">المستوى <b class="m" id="crash-lv">1</b> من <span class="m">3</span></span><span class="lvtip" id="crash-tip"></span></div>
+    <div class="sim">
+      <div id="crash-pick" class="pickrow"></div>
+      <canvas id="crash-cv" class="gcv" aria-label="تصادم العربيات"></canvas>
+      
+      <div class="btnrow"><button class="btn" id="crash-next" hidden>المستوى اللي بعده ←</button><button class="btn ghost small" id="crash-again" hidden>العب تاني من الأول</button><span class="gmsg" id="crash-msg"></span></div>
+    </div>
+    <details class="idea"><summary>الفكرة من اللعبة</summary><p>كمية التحرك الكلية قبل = بعد. لو العربية الصفرا أتقل، كمية تحركها أكبر، فالعربيتين بعد الالتصاق بيمشوا أسرع ويروحوا أبعد.</p></details>
+  </div>
+</section>
+<section class="board game" id="g-tf" hidden>
+  <div class="stack">
+    <div class="gamehead"><a class="btn small ghost" href="#g-intro">→ كل الألعاب</a><span class="seg sky">كل الدروس · مفاهيم</span><span class="cstars big" data-cstars="tf"></span></div>
+    <h2 class="h2">صح ولا غلط؟</h2>
+    <p class="lead">جملة عن الفيزياء، وإنت تقول صح ولا غلط. معاك <span class="m">3</span> قلوب، وكل غلطة بتاخد قلب. بعد كل إجابة هتشوف الشرح. <span class="m">10</span> إجابات صح = <span class="m">3</span> نجوم.</p>
     <div class="blitz">
-      <div class="blitzhead"><b id="gbTime" class="m">60</b><span>ثانية</span><b id="gbScore" class="m">0</b><span>نقطة</span><span class="muted">أعلى سكور: <b id="gbBest" class="m">0</b></span></div>
-      <div id="gbQ" class="blitzq">دوس «ابدأ» عشان يبدأ السباق.</div>
-      <div id="gbOpts" class="choices"></div>
-      <div class="btnrow"><button class="btn" id="gbStart">ابدأ</button><span id="gbMsg" style="font-weight:700"></span></div>
+      <div class="blitzhead"><span id="tf-hearts" class="hearts"></span><span>الصح: <b id="tf-score" class="m">0</b></span><span class="muted">أعلى سكور: <b id="tf-best" class="m">0</b></span></div>
+      <div id="tf-les" class="tfles"></div>
+      <div id="tf-q" class="blitzq">دوس «ابدأ» عشان تبدأ.</div>
+      <div class="tfbtns"><button class="btn tfyes" id="tf-yes" disabled>صح</button><button class="btn tfno" id="tf-no" disabled>غلط</button></div>
+      <div id="tf-ex" class="tfex" hidden></div>
+      <div class="btnrow"><button class="btn navy" id="tf-start">ابدأ</button><button class="btn ghost small" id="tf-nextq" hidden>الجملة اللي بعدها ←</button></div>
     </div>
   </div>
 </section>
-
 </main>
 </section>
