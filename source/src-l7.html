@@ -1,0 +1,435 @@
+<section class="lesson" id="lesson-7" data-lesson="7" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l7-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-7</span><br>كمية التحرك والدفع</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>لماذا يقل احتمال تحطم هاتف عند سقوطه على سرير مقارنة بسقوطه على أرضية من البلاط، حتى لو سقط من الارتفاع نفسه؟</p>
+      </div>
+      <p class="muted">لو عربية نقل وعجلة ماشيين بنفس السرعة، مين أصعب توقفه؟ الدرس ده بيدّيك كمية جديدة بتجمع الكتلة والسرعة مع بعض، وبيشرح ليه الخوذة والإيرباج والمرتبة بيحموك.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l7-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنوقع موبايلات… في المحاكي بس!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l7-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>توصف</b> كمية التحرك على إنها حاصل ضرب الكتلة في السرعة: <span class="m">p = m v</span>.</span></li>
+      <li><span><b>تحسب</b> دفع القوة وتربطه بالتغير في كمية التحرك: <span class="m">J = F Δt = Δp</span>.</span></li>
+      <li><span><b>تفسر</b> ليه زيادة زمن تغير كمية التحرك بتقلل متوسط القوة المحصلة.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> السرعة كمية متجهة، فلو الجسم رجع في الاتجاه العكسي سرعته بتتكتب بالسالب. وقانون نيوتن التاني <span class="m">F = m a</span>، والعجلة <span class="m">a = Δv / Δt</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l7-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">موبايل وقع من نفس الارتفاع على سطحين مختلفين. وقع على سرير ونط نطة صغيرة وفضل سليم. وبعدين وقع من نفس الارتفاع على بلاط، والشاشة اتكسرت. في الحالتين الموبايل وصل للسطح بنفس الكتلة ونفس السرعة، يعني التغير في كمية تحركه واحد. الفرق كان في اللحظة اللي خبط فيها، مش في الوقعة نفسها.</p>
+      <div class="poll" data-poll="p13" data-answer="1">
+        <b>(أ) ماذا يغيّر السرير: التغير في كمية التحرك، أم زمن التوقف، أم كليهما؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">التغير في كمية التحرك</button>
+          <button class="opt" aria-pressed="false">زمن التوقف</button>
+          <button class="opt" aria-pressed="false">كليهما</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l7-lab" style="color:var(--yellow)">محاكي الموبايل</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">زمن التوقف بس.</b> الموبايل في الحالتين بيبدأ بنفس السرعة وبيقف، فالتغير في كمية التحرك واحد. السرير بيتضغط فبيطوّل زمن الوقوف، والقوة بتقل.</div>
+      </div>
+      <div class="poll" data-poll="p14" data-answer="0">
+        <b>(ب) هل تتعرض كرة ترتد عن جدار لقوة أكبر أم أصغر أم مساوية لقوة كرة تلتصق بالجدار، للسرعة الابتدائية وزمن التفاعل نفسيهما؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">أكبر</button>
+          <button class="opt" aria-pressed="false">أصغر</button>
+          <button class="opt" aria-pressed="false">مساوية</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنحسبها في <a href="#l7-example" style="color:var(--yellow)">المثال المحلول</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">أكبر.</b> اللي بتلزق بتقف بس: سرعتها من <span class="m">v</span> لـ <span class="m">0</span>. اللي بترتد بتقف <b>وكمان</b> ترجع: من <span class="m">v</span> لـ <span class="m">−v</span>، يعني التغير الضعف، والقوة الضعف لنفس الزمن.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فكّر في الخبطة نفسها، مش في الوقعة</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l7-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — عربية بتخبط في مصد</span>
+    <p class="lead">عربية ماشية على مسار أفقي وبتخبط في مصد متركب على حساس قوة، وبترتد. الحساس بيرسم القوة مع الزمن. غيّر الكتلة والسرعة ونوع المصد (ناشف ولا طري)، ودوس «اخبط». بعدين قارن <b>المساحة تحت منحنى القوة</b> بالتغير في كمية التحرك.</p>
+    <div class="sim">
+      <canvas id="imCanvas" style="aspect-ratio:16/9" aria-label="عربة تصطدم بمصد ومنحنى القوة مع الزمن"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="imM">كتلة العربية <span class="m">m</span> <output data-out="imM"></output></label><input id="imM" type="range" min="0.2" max="2" step="0.05" value="0.5"></div>
+        <div class="ctrl"><label for="imV">سرعة الاصطدام <span class="m">v<sub>i</sub></span> <output data-out="imV"></output></label><input id="imV" type="range" min="0.2" max="3" step="0.05" value="1"></div>
+        <div class="ctrl"><label for="imD">زمن التلامس مع المصد <span class="m">Δt</span> (ناشف ← طري) <output data-out="imD"></output></label><input id="imD" type="range" min="0.02" max="0.4" step="0.01" value="0.05"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="imGo">اخبط</button><button class="btn ghost small" id="imRec">سجّل</button><button class="btn ghost small" id="imClear">امسح الجدول</button></div>
+      <div class="readout">
+        <div><span>التغير في كمية التحرك <span class="m">Δp = m (v<sub>f</sub> − v<sub>i</sub>)</span></span><b id="imDp">—</b></div>
+        <div><span>الدفع = المساحة تحت المنحنى</span><b id="imJ">—</b></div>
+        <div><span>متوسط القوة <span class="m">F = Δp / Δt</span></span><b id="imF">—</b></div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th class="m">v<sub>i</sub> (m/s)</th><th class="m">v<sub>f</sub> (m/s)</th><th class="m">Δt (s)</th><th class="m">Δp (N s)</th><th>الدفع <span class="m">J (N s)</span></th><th>أقصى قوة <span class="m">(N)</span></th></tr></thead>
+          <tbody id="imTable"><tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «اخبط» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">العربية بترتد بـ <span class="m">80%</span> من سرعتها. اعتبرنا اتجاه الحركة الأول موجب، فسرعة الارتداد <span class="m">v<sub>f</sub></span> سالبة.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) لكل محاولة، قارن الدفع <span class="m">J</span> (المساحة أسفل منحنى القوة-الزمن) بالتغير في كمية التحرك. هل يتساويان؟<br>(ب) المصد الأكثر ليونة يزيد زمن التلامس. لتغير مماثل في كمية التحرك، كيف يؤثر ذلك في القوة أثناء التصادم؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="imAns">اكشف النمط</button>
+        <div id="imAns" class="reveal" hidden>المساحة تحت منحنى القوة طالعة <b>بالظبط</b> قد التغير في كمية التحرك في كل مرة. ولما تخلي المصد طري بنفس الكتلة والسرعة، التغير في كمية التحرك مابيتغيرش، بس المنحنى بيبقى أوطى وأعرض: القوة أصغر على زمن أطول، والمساحة هي هي.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l7-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">كمية التحرك</h2>
+      <p>أي جسم كتلته <span class="m">m</span> وبيتحرك بسرعة <span class="m">v</span> ليه <b>كمية تحرك</b>:</p>
+      <div class="fbox"><span class="m">p = m v</span></div>
+      <div class="grid3">
+        <div class="note"><span class="m">p</span>: كمية التحرك بوحدة <span class="m">kg m s<sup>−1</sup></span>.</div>
+        <div class="note"><span class="m">m</span>: الكتلة بالكيلوجرام <span class="m">(kg)</span>.</div>
+        <div class="note"><span class="m">v</span>: السرعة بـ <span class="m">m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="term"><b>مصطلح — كمية التحرك <span class="en-term">Momentum</span>:</b> حاصل ضرب كتلة الجسم في سرعته. كمية <b>متجهة</b>، واتجاهها نفس اتجاه السرعة. وبتتسمى برضه «كمية الحركة» أو «الزخم».</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">الدفع</h3>
+      <p>عشان تغيّر كمية تحرك جسم، لازم قوة محصلة تأثر عليه فترة من الزمن. حاصل ضرب القوة المحصلة الثابتة في الزمن ده اسمه <b>الدفع</b>:</p>
+      <div class="fbox"><span class="m">J = F Δt = Δp = m v′ − m v</span></div>
+      <div class="term"><b>مصطلح — الدفع <span class="en-term">Impulse</span>:</b> حاصل ضرب القوة المحصلة في زمن تأثيرها. كمية متجهة في اتجاه القوة المحصلة، ووحدته <span class="m">N s</span>. و <span class="m">1 N s = 1 kg m s<sup>−1</sup></span>، يعني نفس وحدة كمية التحرك.</div>
+      <div class="plain"><b class="t">الدفع = المساحة تحت منحنى القوة-الزمن</b> في التجربة القوة ماكانتش ثابتة: طلعت ونزلت زي النبضة. في الحالة دي الدفع هو المساحة تحت المنحنى كله، والمتوسط <span class="m">F = Δp / Δt</span>.</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">قانون نيوتن التاني بصيغة كمية التحرك</h3>
+      <div class="fbox"><span class="m">F = Δp / Δt</span></div>
+      <p>يعني القوة المحصلة = معدل تغير كمية التحرك. ومن هنا الفكرة الأهم في الدرس: <b>لنفس التغير في كمية التحرك، كل ما الزمن يطول، القوة تقل</b>. وكل ما الزمن يقصر، القوة تكبر.</p>
+      <div class="plain"><b class="t">الارتداد بيضاعف الدفع</b> لو جسم سرعته <span class="m">v</span> وقف، التغير في كمية تحركه مقداره <span class="m">m v</span>. لكن لو ارتد بنفس السرعة في الاتجاه العكسي، التغير مقداره <span class="m">2 m v</span>، لأنه وقف وكمان رجع.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">نفس Δp + زمن أطول = قوة أقل</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: PHONE DROP ============ -->
+<section class="board" id="l7-lab">
+  <div class="stack">
+    <span class="seg">محاكي وقعة الموبايل</span>
+    <h2 class="h2">سرير ولا بلاط؟</h2>
+    <p class="lead">موبايل كتلته <span class="m">0.20 kg</span> وقع من ارتفاع وإنت اللي بتحدده. اختار السطح، أو حرّك زمن التوقف بنفسك، وشوف متوسط القوة على الموبايل. لو القوة عدّت حوالي <span class="m">300 N</span>، الشاشة بتتكسر (رقم تقريبي للتجربة).</p>
+    <div class="sim">
+      <div class="btnrow" id="phSurf">
+        <button class="btn small navy" data-ph="0.002">بلاط</button>
+        <button class="btn small navy" data-ph="0.01">سجادة</button>
+        <button class="btn small navy" data-ph="0.08">سرير</button>
+        <button class="btn small navy" data-ph="0.15">مخدة</button>
+      </div>
+      <canvas id="phCanvas" style="aspect-ratio:16/8" aria-label="هاتف يسقط على سطح"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="phH">ارتفاع الوقعة <span class="m">h</span> <output data-out="phH"></output></label><input id="phH" type="range" min="0.2" max="2" step="0.05" value="1"></div>
+        <div class="ctrl"><label for="phT">زمن التوقف <span class="m">Δt</span> <output data-out="phT"></output></label><input id="phT" type="range" min="0.001" max="0.2" step="0.001" value="0.002"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="phGo">وقّع الموبايل</button></div>
+      <div class="readout">
+        <div><span>سرعة الوصول <span class="m">v = √(2 g h)</span></span><b id="phV">—</b></div>
+        <div><span>التغير في كمية التحرك <span class="m">|Δp| = m v</span></span><b id="phP">—</b></div>
+        <div><span>متوسط القوة <span class="m">F = Δp / Δt</span></span><b id="phF">—</b></div>
+        <div><span>الشاشة</span><b id="phS" style="font-family:var(--f-ar)">—</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l7-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>كمية التحرك</b><div class="eq">p = m v</div><small>متجهة، وحدتها <span class="m">kg m s<sup>−1</sup></span>.</small></div>
+      <div class="law"><b>الدفع</b><div class="eq">J = F Δt</div><small>متجه في اتجاه القوة المحصلة، وحدته <span class="m">N s</span>.</small></div>
+      <div class="law"><b>نظرية الدفع وكمية التحرك</b><div class="eq">F Δt = m v′ − m v = Δp</div><small>حدد الاتجاه الموجب قبل التعويض.</small></div>
+      <div class="law"><b>نيوتن التاني (صيغة كمية التحرك)</b><div class="eq">F = Δp / Δt</div><small>ولكتلة ثابتة بتبقى <span class="m">F = m a</span>.</small></div>
+      <div class="law"><b>جسم يقف</b><div class="eq">|Δp| = m v</div><small>من <span class="m">v</span> لـ <span class="m">0</span>.</small></div>
+      <div class="law"><b>جسم يرتد بنفس السرعة</b><div class="eq">|Δp| = 2 m v</div><small>من <span class="m">v</span> لـ <span class="m">−v</span>.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l7-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> تتحرك كرة كتلتها <span class="m">6.0 × 10<sup>−2</sup> kg</span> نحو الشرق بسرعة <span class="m">20 m s<sup>−1</sup></span>. أوجد مقدار واتجاه الدفع المؤثر على الكرة: (أ) عندما تُلتقط الكرة. (ب) عندما تُضرب لترتد غربًا بالسرعة نفسها. (ج) عندما تُضرب لترتد شمالًا بالسرعة نفسها.</div>
+    <div class="steps" id="exSteps7">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 6.0 × 10<sup>−2</sup> kg</span>، <span class="m">v = 20 m s<sup>−1</sup></span> شرقًا</p>
+        <p><b>المطلوب:</b> الدفع في الحالات التلاتة. واعتبر الشرق موجب.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>الدفع = التغير في كمية التحرك (كمتجه):</p>
+        <div class="answer"><span class="m">J = Δp = m (v<sub>f</sub> − v<sub>i</sub>)</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">v<sub>f</sub> = 0</span>: <span class="m">J = 0.06 × (0 − 20) = −1.2 N s</span></p>
+        <p>(ب) <span class="m">v<sub>f</sub> = −20</span>: <span class="m">J = 0.06 × (−20 − 20) = −2.4 N s</span></p>
+        <p>(ج) <span class="m">v<sub>f</sub></span> شمال و <span class="m">v<sub>i</sub></span> شرق، متعامدين، فنجمعهم بفيثاغورث: <span class="m">|Δv| = √(20² + 20²) = 20√2</span>، يبقى <span class="m">|J| = 0.06 × 20√2 ≈ 1.7 N s</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer">(أ) <span class="m">1.2 N s</span> غربًا</div>
+        <div class="answer">(ب) <span class="m">2.4 N s</span> غربًا</div>
+        <div class="answer">(ج) <span class="m">1.7 N s</span> نحو الشمال الغربي</div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext7">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset7">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> أكبر دفع في (ب) لما الكرة عكست اتجاهها، وده ضعف (أ) بالظبط. وفي (ج) الدفع مايل للشمال الغربي: لازم «يلغي» حركة الكرة للشرق (فيه جزء غربي) و«يدّيها» حركة للشمال (فيه جزء شمالي).</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l7-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> تؤثر قوة ثابتة مقدارها <span class="m">5.0 N</span> على جسم مدة <span class="m">2.0 s</span> في اتجاه حركته. أوجد مقدار الدفع.</p>
+        <div class="ansrow" data-num="10" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7A">وريني الحل</button>
+        <div id="try7A" class="sol" hidden><span class="m">J = F Δt = 5.0 × 2.0 = 10 N s</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> الجسم السابق كتلته <span class="m">4.0 kg</span> وكان يتحرك بسرعة <span class="m">2.0 m s<sup>−1</sup></span>. أوجد سرعته النهائية.</p>
+        <div class="ansrow" data-num="4.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="السرعة النهائية"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7B">وريني الحل</button>
+        <div id="try7B" class="sol" hidden>الزيادة في كمية التحرك = الدفع = <span class="m">10 kg m s<sup>−1</sup></span>.<br><span class="m">m v′ = m v + J = 4.0 × 2.0 + 10 = 18</span>، يبقى <span class="m">v′ = 18 / 4.0 = 4.5 m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تتحرك كرة كتلتها <span class="m">0.15 kg</span> أفقيًا بسرعة <span class="m">30 m s<sup>−1</sup></span>، وتُضرب بمضرب فترتد بالسرعة نفسها بزاوية ارتفاع <span class="m">60°</span> عن الأفقي. أوجد مقدار الدفع المؤثر على الكرة.</p>
+        <div class="ansrow" data-num="7.79" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7C">وريني الحل</button>
+        <div id="try7C" class="sol" hidden>الكرة رجعت، فخلي اتجاهها الأول <span class="m">+x</span>: <span class="m">v<sub>i</sub> = (30, 0)</span> و <span class="m">v<sub>f</sub> = (−30 cos 60°, 30 sin 60°) = (−15, 26.0)</span>.<br><span class="m">Δv = (−45, 26.0)</span>، ومقداره <span class="m">√(45² + 26²) ≈ 52.0 m s<sup>−1</sup></span>.<br><span class="m">|J| = 0.15 × 52.0 ≈ 7.8 N s</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> في (ج)، إذا كان زمن التلامس بين الكرة والمضرب <span class="m">2.0 × 10<sup>−2</sup> s</span>، فأوجد متوسط القوة المؤثرة على الكرة.</p>
+        <div class="ansrow" data-num="390" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7D">وريني الحل</button>
+        <div id="try7D" class="sol" hidden><span class="m">F = J / Δt = 7.79 / 0.020 ≈ 390 N</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">حدد الاتجاه الموجب قبل أي تعويض</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: HELMET ============ -->
+<section class="board sky" id="l7-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">إزاي الخوذة بتحمي دماغك؟</h2>
+      <p class="lead">لو راكب موتوسيكل وقع ورأسه خبطت في الأسفلت، مستحيل نمنع التغير في كمية تحرك الرأس، لأنها لازم تقف. لكن الخوذة بتطوّل الزمن اللي الرأس بيقف فيه: الفوم اللي جواها بيتضغط، فمسافة الوقوف وزمنها بيزيدوا، ومتوسط القوة بيقل. جرّب: رأس كتلته <span class="m">5.0 kg</span> بيخبط بسرعة <span class="m">6.0 m s<sup>−1</sup></span>.</p>
+      <div class="sim">
+        <canvas id="hmCanvas" style="aspect-ratio:16/6" aria-label="مقارنة قوة الارتطام مع خوذة وبدونها"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="hmD">سُمك فوم الخوذة اللي بيتضغط <output data-out="hmD"></output></label><input id="hmD" type="range" min="0" max="5" step="0.5" value="3"></div>
+        </div>
+        <div class="readout">
+          <div><span>زمن الوقوف <span class="m">Δt</span></span><b id="hmT">—</b></div>
+          <div><span>متوسط القوة <span class="m">F = m v / Δt</span></span><b id="hmF">—</b></div>
+        </div>
+        <p class="muted" style="font-size:14px">من غير خوذة اعتبرنا الرأس بيقف في حوالي <span class="m">0.5 cm</span>. والزمن اتحسب على إن الرأس بيبطّأ بانتظام: <span class="m">Δt = 2 d / v</span>.</p>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا توفر بطانة خوذة أكثر سمكًا وليونة حماية أفضل للجمجمة، رغم أن مقدار التغير في كمية تحرك الرأس يبقى دون تغيير. <button class="btn small navy" data-toggle="irl7A">إجابة مقترحة</button></div>
+      <div id="irl7A" class="sol" hidden>التغير في كمية التحرك ثابت <span class="m">(m v)</span> لأن الرأس بيبدأ بنفس السرعة وبيقف. البطانة الأتخن والأطرى بتتضغط مسافة أكبر، فزمن الوقوف <span class="m">Δt</span> بيطول. ولأن <span class="m">F = Δp / Δt</span>، الزمن الأطول بيدي قوة متوسطة أصغر، فالعجلة اللي الجمجمة بتتعرضلها بتقل والإصابة بتقل.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">الخوذة مابتلغيش الخبطة… بتطوّلها!</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l7-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">نيوتن ماكتبش F = ma!</h3>
+      <p>سنة <span class="m">1687</span>، نيوتن ماكتبش قانونه التاني بالشكل اللي إحنا حافظينه <span class="m">F = m a</span>. هو قال إن معدل تغير «كمية الحركة» بيتناسب مع القوة المؤثرة، وبيحصل في اتجاهها. و«كمية الحركة» دي هي كمية التحرك. وبالرموز الحديثة: <span class="m">F = Δp / Δt</span>. ولو الكتلة ثابتة، بتطلع منها <span class="m">F = m a</span>. القانون العلمي بيوصف علاقة ثابتة نقدر نتنبأ بيها، من غير ما يشرح القوى جاية منين.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح سببًا لاعتبار صيغة كمية التحرك <span class="m">F = Δp / Δt</span> الصيغة العامة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l7-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تنسى إشارة سرعة الارتداد</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">Δp = m (20 − 20) = 0</span> للكرة اللي ارتدت</div>
+            <div class="good"><b>صح:</b> الارتداد سالب: <span class="m">Δp = m (−20 − 20) = −40 m</span>. الارتداد بيضاعف الدفع</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. «السرير بيقلل التغير في كمية التحرك»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> المرتبة والخوذة بيقللوا <span class="m">Δp</span></div>
+            <div class="good"><b>صح:</b> <span class="m">Δp</span> هو هو. اللي بيزيد هو <span class="m">Δt</span>، فالقوة تقل</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تطرح السرعات عادي وهي متعامدة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> كرة رايحة شرق <span class="m">20</span> ورجعت شمال <span class="m">20</span>، يبقى <span class="m">Δv = 0</span></div>
+            <div class="good"><b>صح:</b> دي متجهات: <span class="m">|Δv| = √(20² + 20²) ≈ 28.3 m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تكتب وحدة الدفع غلط</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «الدفع <span class="m">10 N/s</span>»</div>
+            <div class="good"><b>صح:</b> <span class="m">N s</span> (نيوتن × ثانية)، وهي نفسها <span class="m">kg m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">كمية التحرك متجهة… الإشارة جزء من الإجابة!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l7-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">لماذا يقل احتمال تحطم هاتف عند سقوطه على سرير مقارنة بسقوطه على أرضية من البلاط، حتى لو سقط من الارتفاع نفسه؟</p>
+    <p class="lead">لو الموبايل خبط في السرير أو البلاط بنفس السرعة ووقف، يبقى التغير في كمية تحركه <b>واحد</b> في الحالتين. الفرق في زمن الوقوف: السرير بيتضغط فبيطوّل الزمن، ولأن <span class="m ylw">F = Δp / Δt</span> متوسط القوة بيقل. البلاط بيوقّف الموبايل في زمن قصير جدًا، فالقوة بتبقى أكبر بكتير والشاشة ممكن تتكسر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l7-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">كمية التحرك</b><p><span class="m">p = m v</span><br>متجهة، بوحدة <span class="m">kg m s<sup>−1</sup></span>.</p></div>
+        <div class="sumcol"><b class="on-navy-given">الدفع</b><p><span class="m">J = F Δt = Δp</span><br>بوحدة <span class="m">N s</span>.<br>= المساحة تحت منحنى القوة-الزمن.</p></div>
+        <div class="sumcol"><b class="mintc">القوة والزمن</b><p><span class="m">F = Δp / Δt</span><br>نفس <span class="m">Δp</span> وزمن أطول = قوة أقل.<br>الارتداد بيضاعف <span class="m">Δp</span>.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس السابع</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l7-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تُلتقط كرة كتلتها <span class="m">0.14 kg</span> تتحرك بسرعة <span class="m">40 m s<sup>−1</sup></span> بقفاز، فتتوقف خلال <span class="m">2.0 × 10<sup>−2</sup> s</span>. أوجد متوسط القوة التي تؤثر بها الكرة على القفاز.</p>
+      <div class="ansrow" data-num="280" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7A">وريني الحل</button>
+      <div id="ch7A" class="sol" hidden>الدفع: <span class="m">|J| = m v = 0.14 × 40 = 5.6 N s</span>.<br><span class="m">F = 5.6 / 0.020 = 280 N</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> تتحرك كرة كتلتها <span class="m">3.0 × 10<sup>−2</sup> kg</span> نحو الشرق بسرعة <span class="m">10 m s<sup>−1</sup></span>، وتُضرب لترتد غربًا بالسرعة نفسها. أوجد مقدار الدفع المؤثر عليها.</p>
+      <div class="ansrow" data-num="0.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7B">وريني الحل</button>
+      <div id="ch7B" class="sol" hidden><span class="m">J = 0.03 × (−10 − 10) = −0.60 N s</span>، يعني <span class="m">0.60 N s</span> غربًا. (ولو اتلقطت: <span class="m">0.30 N s</span> غربًا. ولو ارتدت شمالًا: <span class="m">0.03 × 10√2 ≈ 0.42 N s</span> نحو الشمال الغربي.)</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> تتحرك كرة كتلتها <span class="m">0.40 kg</span> أفقيًا بسرعة <span class="m">10 m s<sup>−1</sup></span>، وتُضرب لترتد بالسرعة نفسها في اتجاه يصنع زاوية <span class="m">120°</span> مع اتجاهها الابتدائي. أوجد مقدار الدفع الذي تتلقاه الكرة.</p>
+      <div class="ansrow" data-num="6.93" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7C">وريني الحل</button>
+      <div id="ch7C" class="sol" hidden><span class="m">v<sub>i</sub> = (10, 0)</span>، و <span class="m">v<sub>f</sub> = (10 cos 120°, 10 sin 120°) = (−5, 8.66)</span>.<br><span class="m">Δv = (−15, 8.66)</span>، مقداره <span class="m">≈ 17.3 m s<sup>−1</sup></span>.<br><span class="m">|J| = 0.40 × 17.3 ≈ 6.9 N s</span>، واتجاهه بيعمل <span class="m">150°</span> مع الاتجاه الابتدائي.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>4.</b> تتوقف كرة كتلتها <span class="m">0.50 kg</span> تتحرك بسرعة <span class="m">8.0 m s<sup>−1</sup></span> عن الحركة بواسطة قفاز خلال <span class="m">0.040 s</span>. أوجد مقدار متوسط القوة المؤثرة على الكرة.</p>
+      <div class="ansrow" data-num="100" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7D">وريني الحل</button>
+      <div id="ch7D" class="sol" hidden><span class="m">|J| = 0.50 × 8.0 = 4.0 N s</span>، و <span class="m">F = 4.0 / 0.040 = 100 N</span> عكس اتجاه حركة الكرة.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l7-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه لما تمسك كورة جاية عليك بسرعة، بترجّع إيدك لورا معاها بدل ما تثبّتها؟</b>
+  <label for="l7c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l7c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l7c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l7-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-7</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <div class="qlist" data-quiz="q7"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q7">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q7">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="8">الدرس اللي بعده: حفظ كمية الحركة ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

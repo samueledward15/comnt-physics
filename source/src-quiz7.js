@@ -1,0 +1,22 @@
+window.QUIZ_L7=[
+ {type:'mcq',q:'وحدة قياس كمية التحرك هي:',opts:['<span class="m">kg m s<sup>−2</sup></span>','<span class="m">kg m s<sup>−1</sup></span>','<span class="m">N s<sup>−1</sup></span>','<span class="m">J</span>'],a:1,
+  ex:'<span class="m">p = m v</span>: كيلوجرام × متر/ثانية = <span class="m">kg m s<sup>−1</sup></span>، وهي نفسها <span class="m">N s</span>.'},
+ {type:'num',q:'احسب كمية تحرك سيارة كتلتها <span class="m">1200 kg</span> تتحرك بسرعة <span class="m">15 m s<sup>−1</sup></span>.',a:18000,unit:'kg m/s',show:'18000 kg m/s',
+  ex:'<span class="m">p = 1200 × 15 = 18 000 kg m s<sup>−1</sup></span>.'},
+ {type:'mcq',q:'الدفع يساوي:',opts:['حاصل ضرب الكتلة في العجلة','التغير في كمية التحرك','القوة مقسومة على الزمن','كمية التحرك مقسومة على الكتلة'],a:1,
+  ex:'نظرية الدفع وكمية التحرك: <span class="m">J = F Δt = Δp</span>.'},
+ {type:'num',q:'تؤثر قوة ثابتة مقدارها <span class="m">12 N</span> على جسم مدة <span class="m">0.50 s</span>. احسب مقدار الدفع.',a:6,unit:'N s',show:'6.0 N s',
+  ex:'<span class="m">J = 12 × 0.50 = 6.0 N s</span>.'},
+ {type:'mcq',q:'تُستخدم الوسادة الهوائية (الإيرباج) في السيارة لأنها:',opts:['تقلل التغير في كمية تحرك الراكب','تزيد زمن توقف الراكب فتقل القوة المؤثرة عليه','تزيد سرعة الراكب','تلغي كمية تحرك الراكب'],a:1,
+  ex:'التغير في كمية التحرك ثابت. الإيرباج بيطوّل <span class="m">Δt</span>، فـ <span class="m">F = Δp / Δt</span> تقل.'},
+ {type:'num',q:'كرة كتلتها <span class="m">0.20 kg</span> تتحرك بسرعة <span class="m">5.0 m s<sup>−1</sup></span>، تصطدم بجدار وترتد بالسرعة نفسها. احسب مقدار التغير في كمية تحركها.',a:2,unit:'N s',show:'2.0 N s',
+  ex:'<span class="m">|Δp| = m (v + v) = 0.20 × 10 = 2.0 N s</span>. الارتداد بيضاعف التغير.'},
+ {type:'num',q:'كرة كتلتها <span class="m">0.50 kg</span> تتحرك بسرعة <span class="m">6.0 m s<sup>−1</sup></span> تُلتقط فتتوقف خلال <span class="m">0.10 s</span>. احسب متوسط القوة المؤثرة عليها.',a:30,unit:'N',show:'30 N',
+  ex:'<span class="m">F = m v / Δt = 0.50 × 6.0 / 0.10 = 30 N</span>.'},
+ {type:'mcq',q:'جسمان لهما كمية التحرك نفسها، كتلة الأول ضعف كتلة الثاني. سرعة الأول:',opts:['ضعف سرعة الثاني','نصف سرعة الثاني','تساوي سرعة الثاني','أربعة أمثال سرعة الثاني'],a:1,
+  ex:'<span class="m">m<sub>1</sub> v<sub>1</sub> = m<sub>2</sub> v<sub>2</sub></span>، و <span class="m">m<sub>1</sub> = 2 m<sub>2</sub></span>، يبقى <span class="m">v<sub>1</sub> = v<sub>2</sub> / 2</span>.'},
+ {type:'mcq',q:'المساحة تحت منحنى (القوة – الزمن) تمثل:',opts:['الشغل','القدرة','الدفع','العجلة'],a:2,
+  ex:'المساحة = القوة × الزمن = الدفع = التغير في كمية التحرك.'},
+ {type:'num',q:'تؤثر قوة <span class="m">4.0 N</span> مدة <span class="m">3.0 s</span> في اتجاه حركة جسم كتلته <span class="m">2.0 kg</span> كانت سرعته <span class="m">1.0 m s<sup>−1</sup></span>. احسب سرعته النهائية.',a:7,unit:'m/s',show:'7.0 m/s',
+  ex:'<span class="m">J = 12 N s</span>. <span class="m">m v′ = 2.0 × 1.0 + 12 = 14</span>، يبقى <span class="m">v′ = 7.0 m s<sup>−1</sup></span>.'}
+];

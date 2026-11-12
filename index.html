@@ -313,7 +313,8 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
 .blitz .choice:disabled{cursor:default}
 @media (display-mode: standalone){.fsbtn{display:none}}
 @media (max-width:1400px) and (min-width:641px){.fsbtn span{display:none}.tab{padding:4px 12px}}
-@media (max-width:1180px) and (min-width:641px){.tabs{flex:1 1 0;min-width:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none}}
+@media (min-width:641px){.tabs{flex:1 1 0;min-width:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none}}
+@media (max-width:640px){#ebCanvas,#lmCanvas,#coCanvas,#chCanvas,#imCanvas,#skCanvas,#elCanvas,#stCanvas,#phCanvas{aspect-ratio:4/3!important}}
 [hidden]{display:none!important}
 </style>
 
@@ -330,6 +331,10 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
         <button class="tab" role="tab" aria-selected="false" data-tab="2"><span class="m">1-2</span> المقذوفات الأفقية</button>
         <button class="tab" role="tab" aria-selected="false" data-tab="3"><span class="m">1-3</span> المقذوفات بزاوية</button>
         <button class="tab" role="tab" aria-selected="false" data-tab="4"><span class="m">1-4</span> عزم القوة</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="5"><span class="m">1-5</span> اتزان القوى</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="6"><span class="m">1-6</span> القدرة والكفاءة</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="7"><span class="m">1-7</span> كمية التحرك والدفع</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="8"><span class="m">1-8</span> حفظ كمية الحركة</button>
         <button class="tab" role="tab" aria-selected="false" data-tab="games">ألعاب</button>
         <button class="tab" role="tab" aria-selected="false" data-tab="basics">الأساسيات</button>
       </nav>
@@ -346,6 +351,18 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
     </nav>
     <nav class="chips" aria-label="أقسام الدرس" data-chips="4" hidden>
       <a href="#l4-cover">سؤال الدرس</a><a href="#l4-goals">الأهداف</a><a href="#l4-predict">توقّع</a><a href="#l4-explore">استكشف</a><a href="#l4-concept">المفهوم</a><a href="#l4-lab">معمل العزم</a><a href="#l4-eq">القوانين</a><a href="#l4-example">مثال محلول</a><a href="#l4-try">جرّب!</a><a href="#l4-irl">Physics IRL</a><a href="#l4-trap">فخ امتحان!</a><a href="#l4-summary">الملخص</a><a href="#l4-chal">تحدي!</a><a href="#l4-quiz">الكويز</a>
+    </nav>
+    <nav class="chips" aria-label="أقسام الدرس" data-chips="5" hidden>
+      <a href="#l5-cover">سؤال الدرس</a><a href="#l5-goals">الأهداف</a><a href="#l5-predict">توقّع</a><a href="#l5-explore">استكشف</a><a href="#l5-concept">المفهوم</a><a href="#l5-lab">محاكي اللمبة</a><a href="#l5-eq">القوانين</a><a href="#l5-example">مثال محلول</a><a href="#l5-try">جرّب!</a><a href="#l5-irl">Physics IRL</a><a href="#l5-trap">فخ امتحان!</a><a href="#l5-summary">الملخص</a><a href="#l5-chal">تحدي!</a><a href="#l5-quiz">الكويز</a>
+    </nav>
+    <nav class="chips" aria-label="أقسام الدرس" data-chips="6" hidden>
+      <a href="#l6-cover">سؤال الدرس</a><a href="#l6-goals">الأهداف</a><a href="#l6-predict">توقّع</a><a href="#l6-explore">استكشف</a><a href="#l6-concept">المفهوم</a><a href="#l6-lab">سباق الأسانسيرات</a><a href="#l6-eq">القوانين</a><a href="#l6-example">مثال محلول</a><a href="#l6-try">جرّب!</a><a href="#l6-irl">Physics IRL</a><a href="#l6-trap">فخ امتحان!</a><a href="#l6-summary">الملخص</a><a href="#l6-chal">تحدي!</a><a href="#l6-quiz">الكويز</a>
+    </nav>
+    <nav class="chips" aria-label="أقسام الدرس" data-chips="7" hidden>
+      <a href="#l7-cover">سؤال الدرس</a><a href="#l7-goals">الأهداف</a><a href="#l7-predict">توقّع</a><a href="#l7-explore">استكشف</a><a href="#l7-concept">المفهوم</a><a href="#l7-lab">وقعة الموبايل</a><a href="#l7-eq">القوانين</a><a href="#l7-example">مثال محلول</a><a href="#l7-try">جرّب!</a><a href="#l7-irl">Physics IRL</a><a href="#l7-trap">فخ امتحان!</a><a href="#l7-summary">الملخص</a><a href="#l7-chal">تحدي!</a><a href="#l7-quiz">الكويز</a>
+    </nav>
+    <nav class="chips" aria-label="أقسام الدرس" data-chips="8" hidden>
+      <a href="#l8-cover">سؤال الدرس</a><a href="#l8-goals">الأهداف</a><a href="#l8-predict">توقّع</a><a href="#l8-explore">استكشف</a><a href="#l8-concept">المفهوم</a><a href="#l8-lab">محاكي التصادمات</a><a href="#l8-eq">القوانين</a><a href="#l8-example">مثال محلول</a><a href="#l8-try">جرّب!</a><a href="#l8-irl">Physics IRL</a><a href="#l8-trap">فخ امتحان!</a><a href="#l8-summary">الملخص</a><a href="#l8-chal">تحدي!</a><a href="#l8-quiz">الكويز</a>
     </nav>
     <nav class="chips" aria-label="الألعاب" data-chips="games" hidden>
       <a href="#g-intro">الألعاب</a><a href="#g-cannon">اضرب الهدف</a><a href="#g-river">اوصل للمرسى</a><a href="#g-seesaw">وازن السيسو</a><a href="#g-blitz">سباق الدقيقة</a>
@@ -2051,7 +2068,7 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
       </div>
     </div>
     <div class="mint">
-      <div class="bubble">برافو! كده خلّصت أول 4 دروس</div>
+      <div class="bubble">برافو! خلّصت الدرس الرابع</div>
       <img data-img="mint-tea" alt="دكتور نعناع ماسك كوباية شاي">
     </div>
   </div>
@@ -2097,6 +2114,1733 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
     <div class="qlist" data-quiz="q4"></div>
     <div class="btnrow"><button class="btn" data-quiz-reset="q4">ابدأ الكويز من جديد</button></div>
     <div class="endcard" data-end="q4">
+      <img data-img="mint-gotit" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="5">الدرس اللي بعده: اتزان القوى ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>
+
+<section class="lesson" id="lesson-5" data-lesson="5" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l5-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-5</span><br>اتزان القوى</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>يبقى كتاب في حالة سكون على طاولة، وتُعلَّق لافتة متجر بواسطة كابلين – ما الصحيح بشأن القوة المحصلة المؤثرة في كل جسم؟</p>
+      </div>
+      <p class="muted">في الدرس اللي فات عرفنا إمتى الجسم مايلفّش. النهارده هنعرف إمتى الجسم مايتحركش خالص، أو يتحرك بسرعة ثابتة: لما كل القوى اللي عليه تلغي بعضها.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l5-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنعلّق حاجات ونحسب الشد!</div>
+      <img data-img="mint-wave" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l5-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تذكر</b> شرط اتزان جسم ساكن أو بيتحرك بسرعة ثابتة.</span></li>
+      <li><span><b>ترسم</b> مخطط الجسم الحر: تعزل الجسم وترسم كل القوى الخارجية اللي عليه، وتحدد مصدر كل قوة.</span></li>
+      <li><span><b>تحسب</b> قوة مجهولة بإنك تحلل القوى لمركبات على محورين متعامدين وتطبق شرط الاتزان على كل محور.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> من الدرس <span class="m">1-1</span>: أي متجه مايل بيتفك لمركبتين، الأفقية <span class="m">F cos θ</span> والرأسية <span class="m">F sin θ</span> (لما <span class="m">θ</span> تبقى الزاوية مع الأفقي). والوزن <span class="m">W = m g</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l5-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">كتاب تقيل نايم على ترابيزة. وزنه شادّه لتحت، ومع ذلك مابيتحركش، يبقى الترابيزة بتعمل حاجة. وجنبه يافطة محل تقيلة متعلقة بسلسلتين مايلين بزاويتين مختلفين: واحدة مايلة جامد وقريبة من الرأسي، والتانية قريبة من الأفقي.</p>
+      <div class="poll" data-poll="p9" data-answer="1">
+        <b>(أ) ما القوة، إن وُجدت، التي تؤثر بها الطاولة على الكتاب؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">لا تؤثر بأي قوة</button>
+          <button class="opt" aria-pressed="false">قوة لأعلى تساوي وزن الكتاب</button>
+          <button class="opt" aria-pressed="false">قوة لأعلى أكبر من الوزن</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنرجعله في <a href="#l5-concept" style="color:var(--yellow)">المفهوم</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">قوة لأعلى تساوي الوزن بالظبط.</b> اسمها <b>القوة العمودية</b> <span class="m">F<sub>N</sub></span>. لو كانت أقل، الكتاب كان هيقع جوه الترابيزة، ولو أكبر كان هيطير لفوق. بما إنه ساكن، المحصلة صفر: <span class="m">F<sub>N</sub> = m g</span>.</div>
+      </div>
+      <div class="poll" data-poll="p10" data-answer="0">
+        <b>(ب) أي السلسلتين عليها قوة الشد الأكبر: الأبعد عن المستوى الأفقي أم الأقرب إليه؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">الأبعد عن الأفقي (الأقرب للرأسي)</button>
+          <button class="opt" aria-pressed="false">الأقرب إلى الأفقي</button>
+          <button class="opt" aria-pressed="false">الشد متساوٍ فيهما</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l5-lab" style="color:var(--yellow)">محاكي اللمبة</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">السلسلة الأقرب للرأسي شدها أكبر.</b> هي اللي «شايلة» الجزء الأكبر من الوزن، لأن معظم شدها رايح لفوق. جرّبها بالأرقام في المحاكي.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">بص على أي يافطة في الشارع وإنت بتفكر</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l5-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — كبّر الزاوية وقيس الاستطالة</span>
+    <p class="lead">إزازة مية معلقة بأستيكتين (شريطين مطاطيين) زي بعض. الإزازة نفسها طول التجربة، يعني الوزن ثابت. غيّر زاوية كل أستيك مع الرأسي، وشوف الاستطالة بتحصل لها إيه. ودوس «سجّل» عشان تحفظ القراءة في الجدول.</p>
+    <div class="sim">
+      <canvas id="ebCanvas" style="aspect-ratio:16/8" aria-label="زجاجة معلقة بشريطين مطاطيين بزاوية مع الرأسي"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="ebA">زاوية كل أستيك مع الرأسي <span class="m">θ</span> <output data-out="ebA"></output></label><input id="ebA" type="range" min="0" max="75" step="1" value="15"></div>
+        <div class="ctrl"><label for="ebW">وزن الإزازة <span class="m">W</span> <output data-out="ebW"></output></label><input id="ebW" type="range" min="5" max="20" step="0.5" value="10"></div>
+      </div>
+      <div class="readout">
+        <div><span>الشد في كل أستيك <span class="m">T</span></span><b id="ebT">—</b></div>
+        <div><span>استطالة كل أستيك</span><b id="ebX">—</b></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="ebRec">سجّل القراءة</button><button class="btn ghost small" id="ebClear">امسح الجدول</button></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th>وزن الإزازة <span class="m">(N)</span></th><th>الزاوية <span class="m">θ</span></th><th>الاستطالة <span class="m">(cm)</span></th><th>الشد <span class="m">T (N)</span></th></tr></thead>
+          <tbody id="ebTable"><tr class="empty"><td colspan="5" class="muted">لسه مفيش قراءات. غيّر الزاوية ودوس «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">الأستيك هنا بيستطيل <span class="m">1 cm</span> لكل <span class="m">1 N</span> شد (يعني ثابته <span class="m">k = 100 N/m</span>). ومن غير ما نتعدى حد المرونة.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) مع زيادة الزاوية عن المستوى الرأسي، ماذا حدث لاستطالة كل شريط، وبالتالي للشد فيه؟<br>(ب) بقي وزن الزجاجة ثابتًا، فلماذا زاد الشد في كل شريط؟ ماذا حدث للمركبتين الأفقيتين لقوتي الشد؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="ebAns">اكشف النمط</button>
+        <div id="ebAns" class="reveal" hidden>كل ما الزاوية تكبر، الأستيك بيطول أكتر، يعني الشد بيزيد، مع إن الوزن ماتغيرش. السبب: اللي شايل الإزازة هو <b>الجزء الرأسي</b> من الشد بس، <span class="m">T cos θ</span>. لما الأستيك يميل، الجزء ده يقل، فالشد كله لازم يكبر عشان الجزأين الرأسيين مع بعض يفضلوا يساووا الوزن: <span class="m ylw">2 T cos θ = W</span>. أما الجزأين الأفقيين فبيشدوا عكس بعض ويلغوا بعض.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l5-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">اعزل الجسم وارسم مخطط الجسم الحر</h2>
+      <p>عشان نحلل أي جسم، بنعزله لوحده عن كل اللي حواليه، ونرسم عليه <b>القوى الخارجية بس</b>، يعني القوى اللي الأجسام التانية بتأثر بيها عليه (مش القوى اللي هو بيأثر بيها على غيره). كل قوة نرسمها سهم في اتجاهها، ونكتب جنبها مصدرها. والوزن بنرسمه سهم واحد لتحت من مركز ثقل الجسم. الرسمة دي اسمها <b>مخطط الجسم الحر</b>.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>القوة</th><th>الرمز</th><th>جاية منين ورايحة فين</th></tr></thead>
+          <tbody>
+            <tr><td>القوة العمودية <span class="en-term">Normal force</span></td><td class="m">F<sub>N</sub></td><td>من سطح لامس الجسم، وعمودية على السطح. لجسم متزن على سطح أفقي من غير قوى رأسية تانية: <span class="m">F<sub>N</sub> = m g</span></td></tr>
+            <tr><td>الشد <span class="en-term">Tension</span></td><td class="m">T</td><td>من حبل أو كابل مشدود، على طول الحبل، ودايمًا <b>بعيد</b> عن الجسم (الحبل بيشد مابيزقش)</td></tr>
+            <tr><td>القوة المرنة <span class="en-term">Elastic force</span></td><td class="m">F<sub>e</sub> = −k x</td><td>من زنبرك مشدود أو مضغوط، عكس الإزاحة عن وضع الاتزان، في حدود التناسب</td></tr>
+            <tr><td>الوزن <span class="en-term">Weight</span></td><td class="m">F<sub>g</sub> = m g</td><td>من جاذبية الأرض، رأسي لتحت من مركز الثقل</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">طبّق شرط الاتزان</h3>
+      <p>الجسم يبقى في <b>اتزان انتقالي</b> لما يكون ساكن أو بيتحرك بسرعة ثابتة. ده بيحصل لما المحصلة بتاعة كل القوى اللي عليه تساوي صفر:</p>
+      <div class="fbox"><span class="m">Σ F = 0</span></div>
+      <p>والقوى المايلة بنحللها لمركبات على محورين متعامدين، ونطبق الشرط على كل محور لوحده:</p>
+      <div class="fbox"><span class="m">Σ F<sub>x</sub> = 0 ,  Σ F<sub>y</sub> = 0</span></div>
+      <div class="term"><b>مصطلح — الاتزان الانتقالي <span class="en-term">Translational equilibrium</span>:</b> حالة الجسم لما محصلة القوى عليه صفر، فيفضل ساكن أو يتحرك بسرعة ثابتة في خط مستقيم.</div>
+      <div class="plain"><b class="t">مع الإزازة المعلقة:</b> الجزأين الأفقيين للشدين متساويين في المقدار وعكس بعض في الاتجاه، فبيلغوا بعض <span class="m">(ΣF<sub>x</sub> = 0)</span>. والجزأين الرأسيين رايحين لفوق ومع بعض بيساووا الوزن <span class="m">(ΣF<sub>y</sub> = 0)</span>. فالمحصلة صفر والإزازة متزنة.</div>
+      <div class="plain"><b class="t">خلي بالك من الزاوية:</b> لو الزاوية مع <b>الأفقي</b> يبقى الجزء الرأسي <span class="m">T sin θ</span>. ولو الزاوية مع <b>الرأسي</b> يبقى الجزء الرأسي <span class="m">T cos θ</span>. ارسم الزاوية على الرسمة قبل ما تختار <span class="m">sin</span> ولا <span class="m">cos</span>.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">ارسم الجسم لوحده، وحط عليه القوى اللي عليه بس</div>
+      <img data-img="mint-explain" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB ============ -->
+<section class="board" id="l5-lab">
+  <div class="stack">
+    <span class="seg">محاكي اللمبة المعلقة</span>
+    <h2 class="h2">كابلين بزاويتين مختلفين</h2>
+    <p class="lead">لمبة متعلقة في السقف بكابلين. غيّر الكتلة وزاوية كل كابل مع الأفقي. المحاكي بيرسم مخطط الجسم الحر عند نقطة التعليق، وبيحسب الشد في كل كابل بحيث <span class="m">ΣF<sub>x</sub> = 0</span> و <span class="m">ΣF<sub>y</sub> = 0</span>. شغّل «وريني المركبات» عشان تشوف الأجزاء الأفقية بتلغي بعض.</p>
+    <div class="sim">
+      <canvas id="lmCanvas" style="aspect-ratio:16/9" aria-label="لمبة معلقة بكابلين ومخطط الجسم الحر"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="lmM">كتلة اللمبة <span class="m">m</span> <output data-out="lmM"></output></label><input id="lmM" type="range" min="1" max="25" step="0.5" value="6"></div>
+        <div class="ctrl"><label for="lmA1">زاوية الكابل الشمال مع الأفقي <span class="m">θ<sub>1</sub></span> <output data-out="lmA1"></output></label><input id="lmA1" type="range" min="5" max="85" step="1" value="30"></div>
+        <div class="ctrl"><label for="lmA2">زاوية الكابل اليمين مع الأفقي <span class="m">θ<sub>2</sub></span> <output data-out="lmA2"></output></label><input id="lmA2" type="range" min="5" max="85" step="1" value="30"></div>
+      </div>
+      <div class="btnrow"><label class="muted" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="lmComp"> وريني المركبات</label></div>
+      <div class="readout">
+        <div><span>الوزن <span class="m">W = m g</span></span><b id="lmW">—</b></div>
+        <div><span>شد الكابل الشمال <span class="m">T<sub>1</sub></span></span><b id="lmT1">—</b></div>
+        <div><span>شد الكابل اليمين <span class="m">T<sub>2</sub></span></span><b id="lmT2">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--pen-formula)"></i>الشد</span><span><i style="background:var(--pen-warn)"></i>الوزن</span><span><i style="background:var(--pen-given)"></i>المركبات</span></div>
+      <p class="muted" style="font-size:14px">جرّب: <span class="m">m = 6.0 kg</span> والزاويتين <span class="m">30°</span>، هتلاقي الشد في كل كابل <span class="m">≈ 59 N</span>، ودي أرقام المثال المحلول. وبعدين خلي واحدة <span class="m">30°</span> والتانية <span class="m">60°</span> وشوف مين شده أكبر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l5-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>شرط الاتزان الانتقالي</b><div class="eq">Σ F = 0</div><small>الجسم ساكن أو بيتحرك بسرعة ثابتة.</small></div>
+      <div class="law"><b>على محورين متعامدين</b><div class="eq">Σ F<sub>x</sub> = 0 , Σ F<sub>y</sub> = 0</div><small>حلل كل قوة مايلة لمركبتين الأول.</small></div>
+      <div class="law"><b>الوزن</b><div class="eq">W = m g</div><small><span class="m">g = 9.8 m s<sup>−2</sup></span> لتحت.</small></div>
+      <div class="law"><b>القوة العمودية على سطح أفقي</b><div class="eq">F<sub>N</sub> = m g</div><small>لو مفيش قوى رأسية تانية.</small></div>
+      <div class="law"><b>كابلين متماثلين بزاوية θ مع الأفقي</b><div class="eq">2 T sin θ = W</div><small>ولو الزاوية مع الرأسي: <span class="m">2 T cos θ = W</span>.</small></div>
+      <div class="law"><b>القوة المرنة (قانون هوك)</b><div class="eq">F<sub>e</sub> = −k x</div><small>المقدار <span class="m">k x</span>، و <span class="m">k</span> بوحدة <span class="m">N m<sup>−1</sup></span>.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l5-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> يتدلى مصباح كتلته <span class="m">6.0 kg</span> في حالة اتزان بواسطة كابلين متطابقين، يصنع كل منهما زاوية <span class="m">30°</span> مع الأفقي. احسب الشد في كل كابل. <span class="m">(g = 9.8 m s<sup>−2</sup>)</span></div>
+    <div class="steps" id="exSteps5">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 6.0 kg</span>، <span class="m">g = 9.8 m s<sup>−2</sup></span>، <span class="m">θ = 30°</span> مع الأفقي</p>
+        <p><b>المطلوب:</b> الشد <span class="m">T</span> في كل كابل.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>نرسم مخطط الجسم الحر: شدين مايلين لفوق، ووزن لتحت. الجزأين الأفقيين بيلغوا بعض، والجزأين الرأسيين مع بعض بيساووا الوزن:</p>
+        <div class="answer"><span class="m">2 T sin 30° = W</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p><span class="m">W = 6.0 × 9.8 = 58.8 N</span></p>
+        <p><span class="m">T = W / (2 × sin 30°) = 58.8 / (2 × 0.5)</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">T = 58.8 N ≈ 59 N</span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext5">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset5">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> الشد في كل كابل طلع قد الوزن كله، مش نصه! لأن عند <span class="m">30°</span> نص الشد بس هو اللي رايح لفوق <span class="m">(sin 30° = 0.5)</span>. والكابل المايل مابيشيلش غير جزء من الوزن، فلازم يتشد أكتر.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l5-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> يتدلى المصباح نفسه الذي كتلته <span class="m">6.0 kg</span> بواسطة كابلين متطابقين، يصنع كل منهما زاوية <span class="m">50°</span> مع الأفقي. أوجد الشد في كل كابل بالنيوتن.</p>
+        <div class="ansrow" data-num="38.4" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5A">وريني الحل</button>
+        <div id="try5A" class="sol" hidden><span class="m">T = 58.8 / (2 × sin 50°) = 58.8 / 1.53 ≈ 38 N</span>. أقل من المثال، لأن الكابل بقى أقرب للرأسي فجزء أكبر من شده رايح لفوق.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> يتدلى مصباح كتلته <span class="m">20 kg</span> فوق ساحة عامة من كابلين يصنعان زاويتين <span class="m">30°</span> و <span class="m">60°</span> مع الأفقي. أوجد الشد في الكابل الذي يصنع <span class="m">60°</span>.</p>
+        <div class="ansrow" data-num="169.7" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5B">وريني الحل</button>
+        <div id="try5B" class="sol" hidden><span class="m">W = 20 × 9.8 = 196 N</span>.<br>أفقي: <span class="m">T<sub>1</sub> cos 30° = T<sub>2</sub> cos 60°</span><br>رأسي: <span class="m">T<sub>1</sub> sin 30° + T<sub>2</sub> sin 60° = 196</span><br>بالحل: <span class="m">T<sub>1</sub> = 98 N</span> (كابل الـ <span class="m">30°</span>) و <span class="m">T<sub>2</sub> ≈ 170 N</span> (كابل الـ <span class="m">60°</span>). الكابل الأقرب للرأسي شده أكبر.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تتدلى لافتة كتلتها <span class="m">5.0 kg</span> فوق شارع من كابلين يصنع كل منهما زاوية <span class="m">40°</span> مع الأفقي. أوجد الشد في كل كابل بالنيوتن.</p>
+        <div class="ansrow" data-num="38.1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5C">وريني الحل</button>
+        <div id="try5C" class="sol" hidden><span class="m">W = 5.0 × 9.8 = 49 N</span>، و <span class="m">T = 49 / (2 × sin 40°) = 49 / 1.29 ≈ 38 N</span>. ولو عايز المركبة الرأسية اللي بيشيلها كل كابل: <span class="m">49 / 2 = 24.5 N</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> تتدلى قطعة معدنية في حالة سكون من نابض زنبركي ثابته <span class="m">200 N m<sup>−1</sup></span>، فيستطيل <span class="m">0.15 m</span>. أوجد وزن القطعة بالنيوتن.</p>
+        <div class="ansrow" data-num="30" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الوزن"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5D">وريني الحل</button>
+        <div id="try5D" class="sol" hidden>متزنة، يعني قوة الزنبرك لفوق = الوزن: <span class="m">W = k x = 200 × 0.15 = 30 N</span>.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">ارسم مخطط الجسم الحر الأول، وبعدين حلل</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: POWER LINES ============ -->
+<section class="board sky" id="l5-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">ليه أسلاك الكهربا مش مشدودة على الآخر؟</h2>
+      <p class="lead">لو ماشي في طريق زراعي، هتلاحظ إن أسلاك الكهربا بين العواميد بتبقى «مرخية» شوية ونازلة في النص، مش خط أفقي مستقيم. عند كل عمود، الجزء الرأسي من الشد في الناحيتين مع بعض بيساوي وزن السلك كله، والجزء الأفقي بيلغي بعضه. كل ما السلك يتشد أكتر ويقرب من الأفقي، الجزء الرأسي من الشد يبقى نسبة أصغر، فالشد كله لازم يكبر جدًا عشان يشيل نفس الوزن. جرّب بنفسك: المسافة بين العمودين <span class="m">40 m</span> ووزن السلك <span class="m">600 N</span>.</p>
+      <div class="sim">
+        <canvas id="plCanvas" style="aspect-ratio:16/6" aria-label="سلك كهرباء بين عمودين ودرجة ترخيته"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="plS">نزول السلك في النص (الترخية) <output data-out="plS"></output></label><input id="plS" type="range" min="0.1" max="8" step="0.1" value="2"></div>
+        </div>
+        <div class="readout">
+          <div><span>زاوية السلك مع الأفقي عند العمود</span><b id="plA">—</b></div>
+          <div><span>الشد عند كل عمود <span class="m">T = W / (2 sin θ)</span></span><b id="plT">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> باستخدام المركبات الرأسية، فسّر لماذا يؤدي تقليل التدلي في خط كهرباء إلى زيادة الشد فيه. <button class="btn small navy" data-toggle="irl5A">إجابة مقترحة</button></div>
+      <div id="irl5A" class="sol" hidden>الوزن ثابت، والمطلوب <span class="m">2 T sin θ = W</span>. لما نقلل الترخية، الزاوية <span class="m">θ</span> عند العمود تصغر، فـ <span class="m">sin θ</span> يصغر، فلازم <span class="m">T</span> يكبر عشان الحاصل يفضل قد الوزن. ولو حاولنا نخلي السلك أفقي تمامًا <span class="m">(θ = 0)</span>، الشد المطلوب يقرب من ما لا نهاية، والسلك يتقطع. عشان كده المهندسين بيسيبوا ترخية محسوبة.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">السلك المشدود على الآخر بيتقطع أسرع!</div>
+      <img data-img="mint-wow" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l5-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">ستيفن وإكليل الكرات: قانون اتزان قبل نيوتن</h3>
+      <p>قبل نيوتن بحوالي 100 سنة، سنة <span class="m">1586</span>، العالم سيمون ستيفن درس الاتزان على المستوى المايل بتجربة في دماغه بس. تخيّل سلسلة مقفولة من كرات متساوية ملفوفة حوالين مستويين مايلين. لو ناحية كانت بتشد أكتر من التانية، السلسلة هتلف، وبعد لفة ترجع لنفس الشكل، فتفضل تلف للأبد من غير ما حد يزقها. وده مستحيل. يبقى الشدين لازم يتوازنوا. ومن الفكرة دي طلع قانون الاتزان على المستوى المايل وتحليل القوى لمركبات.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> لماذا استطاع ستيفن أن يثق بهذا الاستنتاج حتى بدون معادلات الحركة الحديثة؟</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l5-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تقسم الوزن على اتنين وتقول ده الشد</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «كابلين شايلين <span class="m">58.8 N</span>، يبقى كل واحد <span class="m">29.4 N</span>»</div>
+            <div class="good"><b>صح:</b> الكابل مايل، فـ <span class="m">2 T sin θ = W</span>. عند <span class="m">30°</span> يطلع <span class="m">T = 58.8 N</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تلخبط بين sin و cos</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> الزاوية مع الرأسي وتكتب الجزء الرأسي <span class="m">T sin θ</span></div>
+            <div class="good"><b>صح:</b> مع الأفقي: الرأسي <span class="m">T sin θ</span>. مع الرأسي: الرأسي <span class="m">T cos θ</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تفتكر الساكن بس هو المتزن</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «العربية ماشية بسرعة ثابتة، يبقى فيه محصلة قوى لقدّام»</div>
+            <div class="good"><b>صح:</b> سرعة ثابتة يعني متزنة: <span class="m">ΣF = 0</span>، زيها زي الساكن</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تحط في مخطط الجسم الحر قوة الجسم على غيره</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> ترسم على الكتاب «قوة الكتاب على الترابيزة»</div>
+            <div class="good"><b>صح:</b> ارسم بس القوى اللي <b>عليه</b>: وزنه، والقوة العمودية من الترابيزة</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">ارسم الزاوية على الرسمة قبل ما تختار sin ولا cos!</div>
+        <img data-img="mint-trap" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l5-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">يبقى كتاب في حالة سكون على طاولة، وتُعلَّق لافتة متجر بسلسلتين – ما الصحيح بشأن القوة المحصلة المؤثرة في كل جسم؟</p>
+    <p class="lead">في الحالتين المحصلة <b>صفر</b>: <span class="m ylw">ΣF = 0</span>، لأن الجسمين في اتزان انتقالي. الكتاب: القوة العمودية من الترابيزة لفوق بتوازن وزنه بالظبط. اليافطة: الجزء الأفقي من شد كل سلسلة بيلغي التاني، والجزأين الرأسيين مع بعض بيساووا وزنها. ولأن السلسلتين بزاويتين مختلفين، الشدين غالبًا مش متساويين، والسلسلة الأقرب للرأسي هي اللي شدها أكبر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l5-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">الاتزان</b><p>ساكن أو سرعة ثابتة.<br><span class="m">ΣF = 0</span><br><span class="m">ΣF<sub>x</sub> = 0 , ΣF<sub>y</sub> = 0</span></p></div>
+        <div class="sumcol"><b class="on-navy-given">مخطط الجسم الحر</b><p>اعزل الجسم، وارسم القوى الخارجية اللي عليه بس: الوزن، والعمودية، والشد، والمرنة.</p></div>
+        <div class="sumcol"><b class="mintc">كابلين مايلين</b><p><span class="m">2 T sin θ = W</span> (الزاوية مع الأفقي).<br>كل ما الكابل يقرب من الأفقي، الشد يكبر.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس الخامس</div>
+      <img data-img="mint-tea" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l5-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <p>احسب النتيجة إلى أقرب رقمين عشريين؛ خذ <span class="m">g = 9.8 m s<sup>−2</sup></span>.</p>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تتدلى لافتة متجر كتلتها <span class="m">8.0 kg</span> في حالة اتزان من كابلين خفيفين متصلين بعارضة أفقية. يصنع الكابل الأيسر زاوية <span class="m">30°</span> مع الأفقي، ويصنع الأيمن زاوية <span class="m">55°</span> مع الأفقي. أوجد الشد في الكابل الأيمن.</p>
+      <div class="ansrow" data-num="68.16" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5A">وريني الحل</button>
+      <div id="ch5A" class="sol" hidden><span class="m">W = 78.4 N</span><br>أفقي: <span class="m">T<sub>L</sub> cos 30° = T<sub>R</sub> cos 55°</span><br>رأسي: <span class="m">T<sub>L</sub> sin 30° + T<sub>R</sub> sin 55° = 78.4</span><br>بالحل: <span class="m">T<sub>R</sub> = W cos 30° / sin 85° ≈ 68.16 N</span> و <span class="m">T<sub>L</sub> = W cos 55° / sin 85° ≈ 45.14 N</span>. الأيمن (الأقرب للرأسي) شده أكبر.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> يُثبَّت مصباح كتلته <span class="m">3.0 kg</span> في حالة اتزان بكابل مثبت في السقف وحبل أفقي خفيف. يصنع الكابل زاوية <span class="m">25°</span> مع الرأسي. أوجد الشد <span class="m">P</span> في الحبل الأفقي.</p>
+      <div class="ansrow" data-num="13.71" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد في الحبل"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5B">وريني الحل</button>
+      <div id="ch5B" class="sol" hidden>رأسي: <span class="m">T cos 25° = 29.4</span>، يبقى <span class="m">T ≈ 32.44 N</span>.<br>أفقي: <span class="m">P = T sin 25° ≈ 13.71 N</span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> تتدلى قطعة كتلتها <span class="m">1.5 kg</span> في حالة اتزان من نابضين خفيفين متطابقين، يصنع كل منهما زاوية <span class="m">40°</span> مع الرأسي، وثابت كل منهما <span class="m">60 N m<sup>−1</sup></span>. أوجد استطالة كل نابض بالمتر.</p>
+      <div class="ansrow" data-num="0.16" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="الاستطالة"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5C">وريني الحل</button>
+      <div id="ch5C" class="sol" hidden>الزاوية مع الرأسي: <span class="m">2 F cos 40° = 14.7</span>، يبقى <span class="m">F ≈ 9.60 N</span> في كل نابض.<br><span class="m">x = F / k = 9.60 / 60 ≈ 0.16 m</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l5-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه لما تشيل شنطة تقيلة بإيدين مفرودين على الجنبين بتتعب بسرعة، ولما تشيلها بإيدين نازلين لتحت بتبقى أسهل؟</b>
+  <label for="l5c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l5c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l5c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l5-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-5</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img data-img="face-starry" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m s<sup>−2</sup></span> في كل الأسئلة.</p>
+    <div class="qlist" data-quiz="q5"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q5">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q5">
+      <img data-img="mint-gotit" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="6">الدرس اللي بعده: القدرة والكفاءة ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>
+
+<section class="lesson" id="lesson-6" data-lesson="6" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l6-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-6</span><br>القدرة والكفاءة</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>يرفع مصعدان الحمولة نفسها إلى الارتفاع الرأسي نفسه، لكن أحدهما ينهي الرفع في نصف الزمن. هل يبذل المصعدان الشغل المفيد نفسه؟ وأيهما له القدرة الأكبر؟</p>
+      </div>
+      <p class="muted">الشغل بيقولك عملت «قد إيه». القدرة بتقولك عملته «بسرعة قد إيه». والكفاءة بتقولك «قد إيه من الطاقة اللي دخلت طلع مفيد».</p>
+      <div class="btnrow">
+        <a class="btn" href="#l6-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">مين أقوى: اللي يطلع السلم بسرعة ولا بالراحة؟</div>
+      <img data-img="mint-wave" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l6-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تحسب</b> قدرة آلة من الشغل والزمن، أو من القوة والسرعة الثابتة.</span></li>
+      <li><span><b>تحسب</b> كفاءة جهاز من طاقة الخرج المفيدة وطاقة الدخل كلها، وتكتبها كنسبة مئوية.</span></li>
+      <li><span><b>تقرأ</b> مخطط سانكي وتحدد فين الطاقة بتضيع.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> الشغل <span class="m">W = F d cos θ</span>: القوة بتعمل شغل بس لما الجسم يتحرك في اتجاهها (أو في اتجاه جزء منها). ووحدته الجول <span class="m">(J)</span>. ولما ترفع جسم بسرعة ثابتة: <span class="m">W = m g h</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l6-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">أسانسيرين جنب بعض في نفس العمارة، شايلين نفس الحمل لنفس الدور. الأسانسير <span class="m">A</span> بياخد <span class="m">20 s</span>، والأسانسير <span class="m">B</span> بياخد <span class="m">10 s</span> بس، يعني نص الوقت. ناس كتير بتقول إن الأسانسير الأسرع «بيعمل شغل أكتر».</p>
+      <div class="poll" data-poll="p11" data-answer="1">
+        <b>(أ) هل بذل المصعد الأسرع شغلًا مفيدًا أكبر على الحمل، أم بذل المصعدان الشغل المفيد نفسه؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">الأسرع بذل شغلًا أكبر</button>
+          <button class="opt" aria-pressed="false">بذلا الشغل نفسه</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l6-lab" style="color:var(--yellow)">سباق الأسانسيرات</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">نفس الشغل.</b> نفس الحمل اترفع لنفس الارتفاع، يبقى <span class="m">W = m g h</span> واحد في الاتنين. الفرق إن <span class="m">B</span> عمله في وقت أقل، يعني <b>قدرته</b> أكبر.</div>
+      </div>
+      <div class="poll" data-poll="p12" data-answer="1">
+        <b>(ب) يدّعي بائع أن «المحرك الأكبر قدرة يستهلك طاقة كهربائية أقل». هل يمكن أن يكون هذا صحيحًا دائمًا؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">نعم، دائمًا</button>
+          <button class="opt" aria-pressed="false">لا، القدرة لا تحدد الاستهلاك وحدها</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنرجعله في <a href="#l6-sankey" style="color:var(--yellow)">مخطط سانكي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">لأ، مش دايمًا.</b> القدرة بتقول بيشتغل بسرعة قد إيه. اللي بيحدد هيستهلك طاقة قد إيه عشان يعمل نفس الشغل هو <b>الكفاءة</b>: المحرك الأكفأ بيضيّع طاقة أقل، سواء كان كبير ولا صغير.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فرّق بين «قد إيه» و«بسرعة قد إيه»</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l6-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — اطلع سلم المدرسة</span>
+    <p class="lead">اكتب كتلتك وارتفاع السلم، واختار زمن الطلوع. دوس «اطلع» وبعدين «سجّل». جرّب مرة بالراحة ومرة بسرعة، وقارن عمود الشغل بعمود الشغل ÷ الزمن.</p>
+    <div class="sim">
+      <canvas id="stCanvas" style="aspect-ratio:16/7" aria-label="طالب يصعد سلمًا"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="stM">كتلتك <span class="m">m</span> <output data-out="stM"></output></label><input id="stM" type="range" min="30" max="100" step="1" value="60"></div>
+        <div class="ctrl"><label for="stH">الارتفاع الرأسي للسلم <span class="m">h</span> <output data-out="stH"></output></label><input id="stH" type="range" min="1" max="10" step="0.1" value="3"></div>
+        <div class="ctrl"><label for="stT">زمن الطلوع <span class="m">t</span> <output data-out="stT"></output></label><input id="stT" type="range" min="2" max="20" step="0.1" value="10"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="stGo">اطلع</button><button class="btn ghost small" id="stRec">سجّل</button><button class="btn ghost small" id="stClear">امسح الجدول</button></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>الطلعة</th><th>الزمن <span class="m">(s)</span></th><th>الشغل <span class="m">m g h (J)</span></th><th>الشغل ÷ الزمن <span class="m">(W)</span></th></tr></thead>
+          <tbody id="stTable"><tr class="empty"><td colspan="4" class="muted">لسه مفيش طلعات. دوس «اطلع» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">ملحوظة قياس: في التجربة الحقيقية، زمن رد فعلك وإنت بتدوس على ساعة الإيقاف بيعمل خطأ بسيط (أجزاء من الثانية). والخطأ ده تأثيره أكبر على الطلعة السريعة، لأن زمنها أقصر. عشان كده قيس كل طلعة مرتين وخد المتوسط.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) هل تغيّر الشغل الذي بذلته بين الصعودين، أم بقي ثابتًا؟ فسّر إجابتك.<br>(ب) في أي صعود كانت قيمة <span class="m">W/t</span> أكبر؟ وماذا تمثل هذه الكمية؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="stAns">اكشف النمط</button>
+        <div id="stAns" class="reveal" hidden>الشغل ماتغيرش، لأن كتلتك والارتفاع ثابتين، فـ <span class="m">m g h</span> ثابت. لكن في الطلعة السريعة الشغل ده خلص في وقت أقل، فـ <span class="m">W/t</span> طلعت أكبر. الكمية دي اسمها <b>القدرة المتوسطة</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l6-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">القدرة: الشغل بيتعمل بسرعة قد إيه</h2>
+      <p>آلتين ممكن يعملوا نفس الشغل (أو ينقلوا نفس الطاقة) بس في زمنين مختلفين. القدرة بتقيس الفرق ده: هي <b>معدل</b> بذل الشغل أو نقل الطاقة. والقدرة المتوسطة خلال فترة زمنية:</p>
+      <div class="fbox"><span class="m">P = ΔW / Δt</span></div>
+      <div class="grid3">
+        <div class="note"><span class="m">P</span>: القدرة بالوات <span class="m">(W)</span>.</div>
+        <div class="note"><span class="m">ΔW</span>: الشغل المبذول بالجول <span class="m">(J)</span>.</div>
+        <div class="note"><span class="m">Δt</span>: الزمن بالثانية <span class="m">(s)</span>.</div>
+      </div>
+      <div class="term"><b>مصطلح — الوات <span class="en-term">Watt</span>:</b> <span class="m">1 W = 1 J s<sup>−1</sup></span>، يعني جول كل ثانية. والقيم الكبيرة بنكتبها بالكيلووات <span class="m">1 kW = 10<sup>3</sup> W</span> والميجاوات <span class="m">1 MW = 10<sup>6</sup> W</span>.</div>
+      <div class="plain"><b class="t">خلي بالك من الحرف W:</b> نفس الحرف بيتكتب للشغل <span class="m"><i>W</i></span> (كمية) وللوات <span class="m">W</span> (وحدة). اقرا السياق: «<span class="m">W = 500 J</span>» ده شغل، و«<span class="m">P = 500 W</span>» دي قدرة.</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">القدرة من القوة والسرعة</h3>
+      <p>لو قوة ثابتة <span class="m">F</span> بتحرك جسم بسرعة ثابتة <span class="m">v</span>، تقدر تحسب القدرة من غير ما تقيس الزمن:</p>
+      <div class="fbox"><span class="m">P = F v cos θ</span></div>
+      <p>و <span class="m">θ</span> الزاوية بين القوة والسرعة. ولو القوة في اتجاه الحركة <span class="m">(θ = 0)</span>: <span class="m">P = F v</span>. ولما ترفع حمل بسرعة ثابتة، القوة اللي لفوق = الوزن، فـ <span class="m">P = m g v = m g h / t</span>.</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px" id="l6-eff">الكفاءة: قد إيه من الطاقة طلع مفيد؟</h3>
+      <p>مفيش جهاز بيحوّل كل الطاقة اللي داخلاه لطاقة مفيدة. دايمًا جزء بيضيع، غالبًا على شكل حرارة، ويروح للمحيط. الكفاءة بتقيس الجزء المفيد:</p>
+      <div class="fbox"><span class="m">η = طاقة الخرج المفيدة ÷ طاقة الدخل كلها</span></div>
+      <p>ونفس الكلام بالقدرة: <span class="m">η = P<sub>out</sub> / P<sub>in</sub></span>. والكفاءة <b>مالهاش وحدة</b>، وبتتكتب رقم عشري بين <span class="m">0</span> و <span class="m">1</span>، أو نسبة مئوية لو اضربتها في <span class="m">100%</span>. ومفيش جهاز حقيقي كفاءته <span class="m">100%</span>.</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px" id="l6-sankey">مخطط سانكي</h3>
+      <p>مخطط سانكي <span class="en-term">Sankey diagram</span> بيرسم انتقال الطاقة بالأسهم: سهم دخل واحد بيتقسم لسهم خرج مفيد وسهم طاقة مهدرة. <b>عرض كل سهم بيتناسب مع الطاقة اللي بيمثلها</b>. ومجموع الخرج (المفيد + المهدر) = الدخل بالظبط، فلو عارف اتنين تقدر تجيب التالت بالطرح.</p>
+    </div>
+    <div class="mint">
+      <div class="bubble">القدرة = سرعة الشغل، والكفاءة = نسبة المفيد</div>
+      <img data-img="mint-explain" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: ELEVATOR RACE ============ -->
+<section class="board" id="l6-lab">
+  <div class="stack">
+    <span class="seg">سباق الأسانسيرات</span>
+    <h2 class="h2">نفس الشغل… قدرة مختلفة</h2>
+    <p class="lead">الأسانسيرين شايلين نفس الحمل لنفس الارتفاع، و <span class="m">B</span> دايمًا بياخد نص زمن <span class="m">A</span>. غيّر الكتلة والارتفاع وزمن <span class="m">A</span>، ودوس «ابدأ السباق». قارن الشغل والقدرة، واتأكد إن <span class="m">P = m g v</span> بتدي نفس النتيجة.</p>
+    <div class="sim">
+      <canvas id="elCanvas" style="aspect-ratio:16/8" aria-label="مصعدان يرفعان الحمل نفسه بزمنين مختلفين"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="elM">كتلة الحمل <span class="m">m</span> <output data-out="elM"></output></label><input id="elM" type="range" min="100" max="2000" step="50" value="600"></div>
+        <div class="ctrl"><label for="elH">الارتفاع <span class="m">h</span> <output data-out="elH"></output></label><input id="elH" type="range" min="3" max="30" step="1" value="9"></div>
+        <div class="ctrl"><label for="elT">زمن المصعد <span class="m">A</span> <output data-out="elT"></output></label><input id="elT" type="range" min="4" max="40" step="1" value="24"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="elGo">ابدأ السباق</button></div>
+      <div class="readout">
+        <div><span>الشغل على الحمل (الاتنين) <span class="m">m g h</span></span><b id="elW">—</b></div>
+        <div><span>قدرة <span class="m">A = W / t</span></span><b id="elPA">—</b></div>
+        <div><span>قدرة <span class="m">B = W / (t/2)</span></span><b id="elPB">—</b></div>
+        <div><span>تحقق <span class="m">P<sub>A</sub> = m g v<sub>A</sub></span></span><b id="elChk">—</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">جرّب: <span class="m">600 kg</span> و <span class="m">9 m</span> و <span class="m">24 s</span>. ودي أرقام سؤال من أسئلة الكتاب.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l6-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>الشغل</b><div class="eq">W = F d cos θ</div><small>ولرفع جسم بسرعة ثابتة: <span class="m">W = m g h</span>.</small></div>
+      <div class="law"><b>القدرة من الشغل والزمن</b><div class="eq">P = ΔW / Δt</div><small>بالوات: <span class="m">1 W = 1 J s<sup>−1</sup></span>.</small></div>
+      <div class="law"><b>القدرة من القوة والسرعة</b><div class="eq">P = F v cos θ</div><small>والقوة في اتجاه الحركة: <span class="m">P = F v</span>.</small></div>
+      <div class="law"><b>رفع حمل بسرعة ثابتة</b><div class="eq">P = m g v = m g h / t</div><small>القوة لفوق = الوزن.</small></div>
+      <div class="law"><b>الكفاءة</b><div class="eq">η = E<sub>out</sub> / E<sub>in</sub></div><small>أو <span class="m">P<sub>out</sub> / P<sub>in</sub></span>. × <span class="m">100%</span> للنسبة المئوية.</small></div>
+      <div class="law"><b>مخطط سانكي</b><div class="eq">E<sub>in</sub> = E<sub>useful</sub> + E<sub>wasted</sub></div><small>عرض السهم بيتناسب مع الطاقة.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l6-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> ترفع رافعة في موقع بناء منصة نقالة كتلتها <span class="m">5.0 × 10<sup>2</sup> kg</span> رأسيًا إلى أعلى بارتفاع <span class="m">6.0 m</span> بسرعة ثابتة خلال <span class="m">12 s</span>. أهمل مقاومة الهواء. أوجد: (أ) الشغل الذي بذلته الرافعة. (ب) القدرة المتوسطة للرافعة. (ج) تحقق باستخدام <span class="m">P = F v</span>.</div>
+    <div class="steps" id="exSteps6">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 500 kg</span>، <span class="m">h = 6.0 m</span>، <span class="m">t = 12 s</span>، <span class="m">g = 9.8 m s<sup>−2</sup></span></p>
+        <p><b>المطلوب:</b> الشغل <span class="m">W</span>، والقدرة <span class="m">P</span>، والتحقق.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>سرعة ثابتة، يبقى قوة الرافعة لفوق = الوزن <span class="m">F = m g</span>. فنستخدم:</p>
+        <div class="answer"><span class="m">W = m g h</span> ثم <span class="m">P = W / t</span> ثم <span class="m">P = m g v</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">W = 500 × 9.8 × 6.0 = 2.94 × 10<sup>4</sup> J</span></p>
+        <p>(ب) <span class="m">P = 2.94 × 10<sup>4</sup> / 12 = 2.45 × 10<sup>3</sup> W</span></p>
+        <p>(ج) <span class="m">v = 6.0 / 12 = 0.50 m s<sup>−1</sup></span>، و <span class="m">P = 500 × 9.8 × 0.50 = 2450 W</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">W = 2.94 × 10<sup>4</sup> J</span></div>
+        <div class="answer"><span class="m">P = 2.45 kW</span> (والطريقتين طلعوا نفس الرقم)</div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext6">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset6">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> الطريقتين (الشغل ÷ الزمن، والقوة × السرعة) طلعوا نفس القدرة، وده تأكيد إن الحساب صح. ولو الرافعة رفعت نفس الحمل في نص الزمن، الشغل هيفضل زي ما هو، والقدرة هتتضاعف.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l6-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> ترتفع مقصورة مصعد كتلتها <span class="m">400 kg</span> رأسيًا بارتفاع <span class="m">9.0 m</span> بسرعة ثابتة خلال <span class="m">15 s</span>. احسب القدرة الناتجة عن محركها بالكيلووات.</p>
+        <div class="ansrow" data-num="2.35" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6A">وريني الحل</button>
+        <div id="try6A" class="sol" hidden><span class="m">W = 400 × 9.8 × 9.0 = 35 280 J</span>، و <span class="m">P = 35 280 / 15 ≈ 2352 W ≈ 2.35 kW</span>.<br>تحقق: <span class="m">v = 9.0 / 15 = 0.60 m s<sup>−1</sup></span>، و <span class="m">P = 400 × 9.8 × 0.60 = 2352 W</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> تسحب مضخة كهربائية في مزرعة بدلتا النيل قدرة كهربائية مقدارها <span class="m">2000 W</span>، وتنتج قدرة خرج مفيدة مقدارها <span class="m">1500 W</span> لرفع مياه الري. أوجد كفاءة المضخة كنسبة مئوية.</p>
+        <div class="ansrow" data-num="75" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6B">وريني الحل</button>
+        <div id="try6B" class="sol" hidden><span class="m">η = 1500 / 2000 = 0.75 = 75%</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تستقبل سخانة مياه كهربائية صغيرة <span class="m">2400 W</span>، وتنتج قدرة حرارية مفيدة مقدارها <span class="m">2040 W</span> للماء. أوجد كفاءتها كنسبة مئوية.</p>
+        <div class="ansrow" data-num="85" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6C">وريني الحل</button>
+        <div id="try6C" class="sol" hidden><span class="m">η = 2040 / 2400 = 0.85 = 85%</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> يُزوَّد مصباح بطاقة كهربائية مقدارها <span class="m">100 J</span>، ويصدر <span class="m">25 J</span> من الضوء، ويتبدد الباقي كحرارة. أوجد الطاقة المهدرة.</p>
+        <div class="ansrow" data-num="75" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الطاقة المهدرة"><span class="unit">J</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6D">وريني الحل</button>
+        <div id="try6D" class="sol" hidden>المهدر = الدخل − المفيد = <span class="m">100 − 25 = 75 J</span> حرارة. والكفاءة <span class="m">25 / 100 = 25%</span>. وتقدر ترسمه في <a href="#l6-irl" style="color:var(--navy)">محاكي سانكي</a> تحت: دخل <span class="m">100</span> وكفاءة <span class="m">25%</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(هـ) تطبيق سريع:</b> يحمل مصعد مكتبي حمولته إلى أعلى بسرعة ثابتة <span class="m">2.5 m s<sup>−1</sup></span>، ويؤثر المحرك إلى أعلى بقوة <span class="m">7840 N</span>. احسب القدرة بالكيلووات.</p>
+        <div class="ansrow" data-num="19.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6E">وريني الحل</button>
+        <div id="try6E" class="sol" hidden><span class="m">P = F v = 7840 × 2.5 = 19 600 W = 19.6 kW</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">حوّل لكيلووات في الآخر: اقسم على 1000</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: SANKEY ============ -->
+<section class="board sky" id="l6-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">تختار لمبة إيه؟</h2>
+      <p class="lead">لكل <span class="m">100 J</span> كهربا، اللمبة القديمة (أم فتلة) بتطلّع حوالي <span class="m">10 J</span> بس ضوء مفيد، والباقي <span class="m">90 J</span> بيروح حرارة. لمبة الـ <span class="m">LED</span> بتطلّع حوالي <span class="m">40 J</span> ضوء، وبتضيّع <span class="m">60 J</span> بس. اختار جهاز من تحت أو غيّر الأرقام بنفسك، وشوف سهم سانكي بيتقسم إزاي.</p>
+      <div class="sim">
+        <div class="btnrow" id="skPresets">
+          <button class="btn small navy" data-sk="100,10">لمبة فتلة</button>
+          <button class="btn small navy" data-sk="100,40">لمبة LED</button>
+          <button class="btn small navy" data-sk="2000,75">مضخة ري</button>
+          <button class="btn small navy" data-sk="2400,85">سخان مية</button>
+          <button class="btn small navy" data-sk="50000,70">ونش</button>
+        </div>
+        <canvas id="skCanvas" style="aspect-ratio:16/7" aria-label="مخطط سانكي لانتقال الطاقة"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="skIn">طاقة الدخل <output data-out="skIn"></output></label><input id="skIn" type="range" min="10" max="50000" step="10" value="100"></div>
+          <div class="ctrl"><label for="skE">الكفاءة <span class="m">η</span> <output data-out="skE"></output></label><input id="skE" type="range" min="1" max="99" step="1" value="10"></div>
+        </div>
+        <div class="readout">
+          <div><span>الخرج المفيد</span><b id="skU">—</b></div>
+          <div><span>المهدر (حرارة غالبًا)</span><b id="skW">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر، من مخططي سانكي، لماذا يكلف تشغيل مصباح LED أقل من مصباح فتيل التنجستين بينما ينتجان مقدار الضوء المفيد نفسه. <button class="btn small navy" data-toggle="irl6A">إجابة مقترحة</button></div>
+      <div id="irl6A" class="sol" hidden>عشان نطلّع نفس الضوء، مثلًا <span class="m">40 J</span>: الـ <span class="m">LED</span> محتاجة <span class="m">100 J</span> كهربا بس، أما لمبة الفتلة (كفاءة <span class="m">10%</span>) محتاجة <span class="m">400 J</span>. سهم الضوء في الـ <span class="m">LED</span> أعرض، وسهم الحرارة أضيق، يعني طاقة أقل بتضيع، فبتسحب كهربا أقل وفاتورتها أقل.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">عرض السهم = قد إيه طاقة</div>
+      <img data-img="mint-wow" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l6-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">جيمس وات والحصان: وحدة يفهمها الزبون</h3>
+      <p>في أواخر القرن التمانتاشر، جيمس وات كان بيبيع محركات بخار محسّنة. الزبائن ماكانوش يعرفوا يقارنوا المحرك بإيه، فوات قاس قدرة حصان شغّال واستخدمها أساس للمقارنة. وعرّف «الحصان» على إنه معدل شغل قدره <span class="m">33 000</span> قدم-رطل في الدقيقة. كده الزبون بقى يفهم «المحرك ده قد 10 أحصنة». والقصة دي بتوري إزاي القياس واتفاق الناس على تعريف بيعملوا وحدة عملية لكمية فيزيائية. ووحدة القدرة الحديثة اتسمت «وات» على اسمه.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح ميزة واحدة للتعبير عن قدرة المحرك بوحدة الحصان بدلًا من استحداث وحدة جديدة تمامًا.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l6-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. «الأسرع بيعمل شغل أكتر»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> الأسانسير اللي خلص في <span class="m">10 s</span> عمل شغل أكتر</div>
+            <div class="good"><b>صح:</b> نفس الحمل ونفس الارتفاع = نفس الشغل. الأسرع <b>قدرته</b> أكبر بس</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تقلب كسر الكفاءة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">η = 2000 / 1500 = 133%</span></div>
+            <div class="good"><b>صح:</b> المفيد فوق والدخل تحت: <span class="m">1500 / 2000 = 75%</span>. الكفاءة دايمًا أقل من <span class="m">100%</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تنسى الكيلو</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «<span class="m">P = 2450 kW</span>»</div>
+            <div class="good"><b>صح:</b> <span class="m">2450 W = 2.45 kW</span>. اقسم على <span class="m">1000</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تكتب للكفاءة وحدة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «<span class="m">η = 0.75 J</span>»</div>
+            <div class="good"><b>صح:</b> الكفاءة نسبة مالهاش وحدة: <span class="m">0.75</span> أو <span class="m">75%</span>. ولو السؤال ماطلبش نسبة مئوية، الرقم العشري مقبول</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">الكفاءة = مفيد ÷ دخل، ومستحيل تعدي 100%!</div>
+        <img data-img="mint-trap" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l6-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">يرفع مصعدان الحمولة نفسها إلى الارتفاع الرأسي نفسه، لكن أحدهما ينهي الرفع في نصف الزمن. هل يبذل المصعدان الشغل المفيد نفسه؟ وأيهما له القدرة الأكبر؟</p>
+    <p class="lead">أيوه، الاتنين بيعملوا <b>نفس الشغل المفيد</b>، لأن نفس الحمل بيترفع لنفس الارتفاع: <span class="m ylw">W = m g h</span>. لكن اللي بيخلص في وقت أقل قدرته أكبر: <span class="m ylw">P = W / t</span>، وفي نص الزمن القدرة بتبقى الضعف. ولو طاقة الدخل بتاعتهم مختلفة، الأكفأ هو اللي بيحوّل جزء أكبر من طاقته لطاقة مفيدة وبيضيّع أقل، وده يبان في مخطط سانكي: سهم مفيد أعرض وسهم مهدر أضيق.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l6-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">القدرة</b><p>معدل بذل الشغل.<br><span class="m">P = ΔW / Δt</span><br><span class="m">P = F v cos θ</span><br>بالوات <span class="m">W = J s<sup>−1</sup></span></p></div>
+        <div class="sumcol"><b class="on-navy-given">الكفاءة</b><p><span class="m">η = المفيد ÷ الدخل</span><br>مالهاش وحدة، وأقل من <span class="m">100%</span> دايمًا.</p></div>
+        <div class="sumcol"><b class="mintc">سانكي</b><p>سهم دخل بيتقسم لمفيد ومهدر.<br>العرض ∝ الطاقة.<br>الدخل = المفيد + المهدر.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس السادس</div>
+      <img data-img="mint-tea" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l6-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <p>خذ <span class="m">g = 9.8 m s<sup>−2</sup></span>.</p>
+    <div class="prob" data-prob>
+      <p><b>1.</b> يرفع مصعد بضائع حملًا كتلته <span class="m">1.5 × 10<sup>3</sup> kg</span> رأسيًا بارتفاع <span class="m">18 m</span> بسرعة ثابتة، مستغرقًا <span class="m">30 s</span>. أوجد القدرة الناتجة عن المصعد بالكيلووات.</p>
+      <div class="ansrow" data-num="8.82" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6A">وريني الحل</button>
+      <div id="ch6A" class="sol" hidden><span class="m">W = 1500 × 9.8 × 18 = 2.646 × 10<sup>5</sup> J</span><br><span class="m">P = 2.646 × 10<sup>5</sup> / 30 = 8820 W = 8.82 kW</span><br>تحقق: <span class="m">v = 18 / 30 = 0.60 m s<sup>−1</sup></span>، و <span class="m">P = 1500 × 9.8 × 0.60 = 8820 W</span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> يُزوَّد ونش كهربائي بطاقة كهربائية مقدارها <span class="m">5.0 × 10<sup>4</sup> J</span>، ويبذل <span class="m">3.5 × 10<sup>4</sup> J</span> من الشغل المفيد في رفع حمل، وتتبدد بقية الطاقة. أوجد كفاءة الونش كنسبة مئوية.</p>
+      <div class="ansrow" data-num="70" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6B">وريني الحل</button>
+      <div id="ch6B" class="sol" hidden>المتبدد: <span class="m">5.0 × 10<sup>4</sup> − 3.5 × 10<sup>4</sup> = 1.5 × 10<sup>4</sup> J</span> (غالبًا حرارة).<br><span class="m">η = 3.5 / 5.0 = 0.70 = 70%</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> ترفع رافعة كهربائية حملًا كتلته <span class="m">250 kg</span> بارتفاع رأسي <span class="m">6.0 m</span> بسرعة ثابتة خلال <span class="m">8.0 s</span>، وتُزوَّد بطاقة كهربائية بمعدل ثابت مقداره <span class="m">2.5 kW</span>. أوجد كفاءة الرافعة كنسبة مئوية.</p>
+      <div class="ansrow" data-num="73.5" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6C">وريني الحل</button>
+      <div id="ch6C" class="sol" hidden>القدرة المفيدة: <span class="m">P = 250 × 9.8 × 6.0 / 8.0 = 1837.5 W ≈ 1.84 kW</span><br><span class="m">η = 1.8375 / 2.5 ≈ 0.735 = 73.5%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l6-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">بص على الشاحن بتاع موبايلك أو أي جهاز في البيت: مكتوب عليه كام وات؟ وتفتكر لما الشاحن بيسخن، ده معناه إيه عن كفاءته؟</b>
+  <label for="l6c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l6c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l6c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l6-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-6</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img data-img="face-starry" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m s<sup>−2</sup></span> في كل الأسئلة.</p>
+    <div class="qlist" data-quiz="q6"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q6">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q6">
+      <img data-img="mint-gotit" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="7">الدرس اللي بعده: كمية التحرك والدفع ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>
+
+<section class="lesson" id="lesson-7" data-lesson="7" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l7-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-7</span><br>كمية التحرك والدفع</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>لماذا يقل احتمال تحطم هاتف عند سقوطه على سرير مقارنة بسقوطه على أرضية من البلاط، حتى لو سقط من الارتفاع نفسه؟</p>
+      </div>
+      <p class="muted">لو عربية نقل وعجلة ماشيين بنفس السرعة، مين أصعب توقفه؟ الدرس ده بيدّيك كمية جديدة بتجمع الكتلة والسرعة مع بعض، وبيشرح ليه الخوذة والإيرباج والمرتبة بيحموك.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l7-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنوقع موبايلات… في المحاكي بس!</div>
+      <img data-img="mint-wave" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l7-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>توصف</b> كمية التحرك على إنها حاصل ضرب الكتلة في السرعة: <span class="m">p = m v</span>.</span></li>
+      <li><span><b>تحسب</b> دفع القوة وتربطه بالتغير في كمية التحرك: <span class="m">J = F Δt = Δp</span>.</span></li>
+      <li><span><b>تفسر</b> ليه زيادة زمن تغير كمية التحرك بتقلل متوسط القوة المحصلة.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> السرعة كمية متجهة، فلو الجسم رجع في الاتجاه العكسي سرعته بتتكتب بالسالب. وقانون نيوتن التاني <span class="m">F = m a</span>، والعجلة <span class="m">a = Δv / Δt</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l7-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">موبايل وقع من نفس الارتفاع على سطحين مختلفين. وقع على سرير ونط نطة صغيرة وفضل سليم. وبعدين وقع من نفس الارتفاع على بلاط، والشاشة اتكسرت. في الحالتين الموبايل وصل للسطح بنفس الكتلة ونفس السرعة، يعني التغير في كمية تحركه واحد. الفرق كان في اللحظة اللي خبط فيها، مش في الوقعة نفسها.</p>
+      <div class="poll" data-poll="p13" data-answer="1">
+        <b>(أ) ماذا يغيّر السرير: التغير في كمية التحرك، أم زمن التوقف، أم كليهما؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">التغير في كمية التحرك</button>
+          <button class="opt" aria-pressed="false">زمن التوقف</button>
+          <button class="opt" aria-pressed="false">كليهما</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l7-lab" style="color:var(--yellow)">محاكي الموبايل</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">زمن التوقف بس.</b> الموبايل في الحالتين بيبدأ بنفس السرعة وبيقف، فالتغير في كمية التحرك واحد. السرير بيتضغط فبيطوّل زمن الوقوف، والقوة بتقل.</div>
+      </div>
+      <div class="poll" data-poll="p14" data-answer="0">
+        <b>(ب) هل تتعرض كرة ترتد عن جدار لقوة أكبر أم أصغر أم مساوية لقوة كرة تلتصق بالجدار، للسرعة الابتدائية وزمن التفاعل نفسيهما؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">أكبر</button>
+          <button class="opt" aria-pressed="false">أصغر</button>
+          <button class="opt" aria-pressed="false">مساوية</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنحسبها في <a href="#l7-example" style="color:var(--yellow)">المثال المحلول</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">أكبر.</b> اللي بتلزق بتقف بس: سرعتها من <span class="m">v</span> لـ <span class="m">0</span>. اللي بترتد بتقف <b>وكمان</b> ترجع: من <span class="m">v</span> لـ <span class="m">−v</span>، يعني التغير الضعف، والقوة الضعف لنفس الزمن.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فكّر في الخبطة نفسها، مش في الوقعة</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l7-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — عربية بتخبط في مصد</span>
+    <p class="lead">عربية ماشية على مسار أفقي وبتخبط في مصد متركب على حساس قوة، وبترتد. الحساس بيرسم القوة مع الزمن. غيّر الكتلة والسرعة ونوع المصد (ناشف ولا طري)، ودوس «اخبط». بعدين قارن <b>المساحة تحت منحنى القوة</b> بالتغير في كمية التحرك.</p>
+    <div class="sim">
+      <canvas id="imCanvas" style="aspect-ratio:16/9" aria-label="عربة تصطدم بمصد ومنحنى القوة مع الزمن"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="imM">كتلة العربية <span class="m">m</span> <output data-out="imM"></output></label><input id="imM" type="range" min="0.2" max="2" step="0.05" value="0.5"></div>
+        <div class="ctrl"><label for="imV">سرعة الاصطدام <span class="m">v<sub>i</sub></span> <output data-out="imV"></output></label><input id="imV" type="range" min="0.2" max="3" step="0.05" value="1"></div>
+        <div class="ctrl"><label for="imD">زمن التلامس مع المصد <span class="m">Δt</span> (ناشف ← طري) <output data-out="imD"></output></label><input id="imD" type="range" min="0.02" max="0.4" step="0.01" value="0.05"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="imGo">اخبط</button><button class="btn ghost small" id="imRec">سجّل</button><button class="btn ghost small" id="imClear">امسح الجدول</button></div>
+      <div class="readout">
+        <div><span>التغير في كمية التحرك <span class="m">Δp = m (v<sub>f</sub> − v<sub>i</sub>)</span></span><b id="imDp">—</b></div>
+        <div><span>الدفع = المساحة تحت المنحنى</span><b id="imJ">—</b></div>
+        <div><span>متوسط القوة <span class="m">F = Δp / Δt</span></span><b id="imF">—</b></div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th class="m">v<sub>i</sub> (m/s)</th><th class="m">v<sub>f</sub> (m/s)</th><th class="m">Δt (s)</th><th class="m">Δp (N s)</th><th>الدفع <span class="m">J (N s)</span></th><th>أقصى قوة <span class="m">(N)</span></th></tr></thead>
+          <tbody id="imTable"><tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «اخبط» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">العربية بترتد بـ <span class="m">80%</span> من سرعتها. اعتبرنا اتجاه الحركة الأول موجب، فسرعة الارتداد <span class="m">v<sub>f</sub></span> سالبة.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) لكل محاولة، قارن الدفع <span class="m">J</span> (المساحة أسفل منحنى القوة-الزمن) بالتغير في كمية التحرك. هل يتساويان؟<br>(ب) المصد الأكثر ليونة يزيد زمن التلامس. لتغير مماثل في كمية التحرك، كيف يؤثر ذلك في القوة أثناء التصادم؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="imAns">اكشف النمط</button>
+        <div id="imAns" class="reveal" hidden>المساحة تحت منحنى القوة طالعة <b>بالظبط</b> قد التغير في كمية التحرك في كل مرة. ولما تخلي المصد طري بنفس الكتلة والسرعة، التغير في كمية التحرك مابيتغيرش، بس المنحنى بيبقى أوطى وأعرض: القوة أصغر على زمن أطول، والمساحة هي هي.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l7-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">كمية التحرك</h2>
+      <p>أي جسم كتلته <span class="m">m</span> وبيتحرك بسرعة <span class="m">v</span> ليه <b>كمية تحرك</b>:</p>
+      <div class="fbox"><span class="m">p = m v</span></div>
+      <div class="grid3">
+        <div class="note"><span class="m">p</span>: كمية التحرك بوحدة <span class="m">kg m s<sup>−1</sup></span>.</div>
+        <div class="note"><span class="m">m</span>: الكتلة بالكيلوجرام <span class="m">(kg)</span>.</div>
+        <div class="note"><span class="m">v</span>: السرعة بـ <span class="m">m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="term"><b>مصطلح — كمية التحرك <span class="en-term">Momentum</span>:</b> حاصل ضرب كتلة الجسم في سرعته. كمية <b>متجهة</b>، واتجاهها نفس اتجاه السرعة. وبتتسمى برضه «كمية الحركة» أو «الزخم».</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">الدفع</h3>
+      <p>عشان تغيّر كمية تحرك جسم، لازم قوة محصلة تأثر عليه فترة من الزمن. حاصل ضرب القوة المحصلة الثابتة في الزمن ده اسمه <b>الدفع</b>:</p>
+      <div class="fbox"><span class="m">J = F Δt = Δp = m v′ − m v</span></div>
+      <div class="term"><b>مصطلح — الدفع <span class="en-term">Impulse</span>:</b> حاصل ضرب القوة المحصلة في زمن تأثيرها. كمية متجهة في اتجاه القوة المحصلة، ووحدته <span class="m">N s</span>. و <span class="m">1 N s = 1 kg m s<sup>−1</sup></span>، يعني نفس وحدة كمية التحرك.</div>
+      <div class="plain"><b class="t">الدفع = المساحة تحت منحنى القوة-الزمن</b> في التجربة القوة ماكانتش ثابتة: طلعت ونزلت زي النبضة. في الحالة دي الدفع هو المساحة تحت المنحنى كله، والمتوسط <span class="m">F = Δp / Δt</span>.</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">قانون نيوتن التاني بصيغة كمية التحرك</h3>
+      <div class="fbox"><span class="m">F = Δp / Δt</span></div>
+      <p>يعني القوة المحصلة = معدل تغير كمية التحرك. ومن هنا الفكرة الأهم في الدرس: <b>لنفس التغير في كمية التحرك، كل ما الزمن يطول، القوة تقل</b>. وكل ما الزمن يقصر، القوة تكبر.</p>
+      <div class="plain"><b class="t">الارتداد بيضاعف الدفع</b> لو جسم سرعته <span class="m">v</span> وقف، التغير في كمية تحركه مقداره <span class="m">m v</span>. لكن لو ارتد بنفس السرعة في الاتجاه العكسي، التغير مقداره <span class="m">2 m v</span>، لأنه وقف وكمان رجع.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">نفس Δp + زمن أطول = قوة أقل</div>
+      <img data-img="mint-explain" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: PHONE DROP ============ -->
+<section class="board" id="l7-lab">
+  <div class="stack">
+    <span class="seg">محاكي وقعة الموبايل</span>
+    <h2 class="h2">سرير ولا بلاط؟</h2>
+    <p class="lead">موبايل كتلته <span class="m">0.20 kg</span> وقع من ارتفاع وإنت اللي بتحدده. اختار السطح، أو حرّك زمن التوقف بنفسك، وشوف متوسط القوة على الموبايل. لو القوة عدّت حوالي <span class="m">300 N</span>، الشاشة بتتكسر (رقم تقريبي للتجربة).</p>
+    <div class="sim">
+      <div class="btnrow" id="phSurf">
+        <button class="btn small navy" data-ph="0.002">بلاط</button>
+        <button class="btn small navy" data-ph="0.01">سجادة</button>
+        <button class="btn small navy" data-ph="0.08">سرير</button>
+        <button class="btn small navy" data-ph="0.15">مخدة</button>
+      </div>
+      <canvas id="phCanvas" style="aspect-ratio:16/8" aria-label="هاتف يسقط على سطح"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="phH">ارتفاع الوقعة <span class="m">h</span> <output data-out="phH"></output></label><input id="phH" type="range" min="0.2" max="2" step="0.05" value="1"></div>
+        <div class="ctrl"><label for="phT">زمن التوقف <span class="m">Δt</span> <output data-out="phT"></output></label><input id="phT" type="range" min="0.001" max="0.2" step="0.001" value="0.002"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="phGo">وقّع الموبايل</button></div>
+      <div class="readout">
+        <div><span>سرعة الوصول <span class="m">v = √(2 g h)</span></span><b id="phV">—</b></div>
+        <div><span>التغير في كمية التحرك <span class="m">|Δp| = m v</span></span><b id="phP">—</b></div>
+        <div><span>متوسط القوة <span class="m">F = Δp / Δt</span></span><b id="phF">—</b></div>
+        <div><span>الشاشة</span><b id="phS" style="font-family:var(--f-ar)">—</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l7-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>كمية التحرك</b><div class="eq">p = m v</div><small>متجهة، وحدتها <span class="m">kg m s<sup>−1</sup></span>.</small></div>
+      <div class="law"><b>الدفع</b><div class="eq">J = F Δt</div><small>متجه في اتجاه القوة المحصلة، وحدته <span class="m">N s</span>.</small></div>
+      <div class="law"><b>نظرية الدفع وكمية التحرك</b><div class="eq">F Δt = m v′ − m v = Δp</div><small>حدد الاتجاه الموجب قبل التعويض.</small></div>
+      <div class="law"><b>نيوتن التاني (صيغة كمية التحرك)</b><div class="eq">F = Δp / Δt</div><small>ولكتلة ثابتة بتبقى <span class="m">F = m a</span>.</small></div>
+      <div class="law"><b>جسم يقف</b><div class="eq">|Δp| = m v</div><small>من <span class="m">v</span> لـ <span class="m">0</span>.</small></div>
+      <div class="law"><b>جسم يرتد بنفس السرعة</b><div class="eq">|Δp| = 2 m v</div><small>من <span class="m">v</span> لـ <span class="m">−v</span>.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l7-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> تتحرك كرة كتلتها <span class="m">6.0 × 10<sup>−2</sup> kg</span> نحو الشرق بسرعة <span class="m">20 m s<sup>−1</sup></span>. أوجد مقدار واتجاه الدفع المؤثر على الكرة: (أ) عندما تُلتقط الكرة. (ب) عندما تُضرب لترتد غربًا بالسرعة نفسها. (ج) عندما تُضرب لترتد شمالًا بالسرعة نفسها.</div>
+    <div class="steps" id="exSteps7">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 6.0 × 10<sup>−2</sup> kg</span>، <span class="m">v = 20 m s<sup>−1</sup></span> شرقًا</p>
+        <p><b>المطلوب:</b> الدفع في الحالات التلاتة. واعتبر الشرق موجب.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>الدفع = التغير في كمية التحرك (كمتجه):</p>
+        <div class="answer"><span class="m">J = Δp = m (v<sub>f</sub> − v<sub>i</sub>)</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">v<sub>f</sub> = 0</span>: <span class="m">J = 0.06 × (0 − 20) = −1.2 N s</span></p>
+        <p>(ب) <span class="m">v<sub>f</sub> = −20</span>: <span class="m">J = 0.06 × (−20 − 20) = −2.4 N s</span></p>
+        <p>(ج) <span class="m">v<sub>f</sub></span> شمال و <span class="m">v<sub>i</sub></span> شرق، متعامدين، فنجمعهم بفيثاغورث: <span class="m">|Δv| = √(20² + 20²) = 20√2</span>، يبقى <span class="m">|J| = 0.06 × 20√2 ≈ 1.7 N s</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer">(أ) <span class="m">1.2 N s</span> غربًا</div>
+        <div class="answer">(ب) <span class="m">2.4 N s</span> غربًا</div>
+        <div class="answer">(ج) <span class="m">1.7 N s</span> نحو الشمال الغربي</div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext7">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset7">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> أكبر دفع في (ب) لما الكرة عكست اتجاهها، وده ضعف (أ) بالظبط. وفي (ج) الدفع مايل للشمال الغربي: لازم «يلغي» حركة الكرة للشرق (فيه جزء غربي) و«يدّيها» حركة للشمال (فيه جزء شمالي).</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l7-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> تؤثر قوة ثابتة مقدارها <span class="m">5.0 N</span> على جسم مدة <span class="m">2.0 s</span> في اتجاه حركته. أوجد مقدار الدفع.</p>
+        <div class="ansrow" data-num="10" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7A">وريني الحل</button>
+        <div id="try7A" class="sol" hidden><span class="m">J = F Δt = 5.0 × 2.0 = 10 N s</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> الجسم السابق كتلته <span class="m">4.0 kg</span> وكان يتحرك بسرعة <span class="m">2.0 m s<sup>−1</sup></span>. أوجد سرعته النهائية.</p>
+        <div class="ansrow" data-num="4.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="السرعة النهائية"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7B">وريني الحل</button>
+        <div id="try7B" class="sol" hidden>الزيادة في كمية التحرك = الدفع = <span class="m">10 kg m s<sup>−1</sup></span>.<br><span class="m">m v′ = m v + J = 4.0 × 2.0 + 10 = 18</span>، يبقى <span class="m">v′ = 18 / 4.0 = 4.5 m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تتحرك كرة كتلتها <span class="m">0.15 kg</span> أفقيًا بسرعة <span class="m">30 m s<sup>−1</sup></span>، وتُضرب بمضرب فترتد بالسرعة نفسها بزاوية ارتفاع <span class="m">60°</span> عن الأفقي. أوجد مقدار الدفع المؤثر على الكرة.</p>
+        <div class="ansrow" data-num="7.79" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7C">وريني الحل</button>
+        <div id="try7C" class="sol" hidden>الكرة رجعت، فخلي اتجاهها الأول <span class="m">+x</span>: <span class="m">v<sub>i</sub> = (30, 0)</span> و <span class="m">v<sub>f</sub> = (−30 cos 60°, 30 sin 60°) = (−15, 26.0)</span>.<br><span class="m">Δv = (−45, 26.0)</span>، ومقداره <span class="m">√(45² + 26²) ≈ 52.0 m s<sup>−1</sup></span>.<br><span class="m">|J| = 0.15 × 52.0 ≈ 7.8 N s</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> في (ج)، إذا كان زمن التلامس بين الكرة والمضرب <span class="m">2.0 × 10<sup>−2</sup> s</span>، فأوجد متوسط القوة المؤثرة على الكرة.</p>
+        <div class="ansrow" data-num="390" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try7D">وريني الحل</button>
+        <div id="try7D" class="sol" hidden><span class="m">F = J / Δt = 7.79 / 0.020 ≈ 390 N</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">حدد الاتجاه الموجب قبل أي تعويض</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: HELMET ============ -->
+<section class="board sky" id="l7-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">إزاي الخوذة بتحمي دماغك؟</h2>
+      <p class="lead">لو راكب موتوسيكل وقع ورأسه خبطت في الأسفلت، مستحيل نمنع التغير في كمية تحرك الرأس، لأنها لازم تقف. لكن الخوذة بتطوّل الزمن اللي الرأس بيقف فيه: الفوم اللي جواها بيتضغط، فمسافة الوقوف وزمنها بيزيدوا، ومتوسط القوة بيقل. جرّب: رأس كتلته <span class="m">5.0 kg</span> بيخبط بسرعة <span class="m">6.0 m s<sup>−1</sup></span>.</p>
+      <div class="sim">
+        <canvas id="hmCanvas" style="aspect-ratio:16/6" aria-label="مقارنة قوة الارتطام مع خوذة وبدونها"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="hmD">سُمك فوم الخوذة اللي بيتضغط <output data-out="hmD"></output></label><input id="hmD" type="range" min="0" max="5" step="0.5" value="3"></div>
+        </div>
+        <div class="readout">
+          <div><span>زمن الوقوف <span class="m">Δt</span></span><b id="hmT">—</b></div>
+          <div><span>متوسط القوة <span class="m">F = m v / Δt</span></span><b id="hmF">—</b></div>
+        </div>
+        <p class="muted" style="font-size:14px">من غير خوذة اعتبرنا الرأس بيقف في حوالي <span class="m">0.5 cm</span>. والزمن اتحسب على إن الرأس بيبطّأ بانتظام: <span class="m">Δt = 2 d / v</span>.</p>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا توفر بطانة خوذة أكثر سمكًا وليونة حماية أفضل للجمجمة، رغم أن مقدار التغير في كمية تحرك الرأس يبقى دون تغيير. <button class="btn small navy" data-toggle="irl7A">إجابة مقترحة</button></div>
+      <div id="irl7A" class="sol" hidden>التغير في كمية التحرك ثابت <span class="m">(m v)</span> لأن الرأس بيبدأ بنفس السرعة وبيقف. البطانة الأتخن والأطرى بتتضغط مسافة أكبر، فزمن الوقوف <span class="m">Δt</span> بيطول. ولأن <span class="m">F = Δp / Δt</span>، الزمن الأطول بيدي قوة متوسطة أصغر، فالعجلة اللي الجمجمة بتتعرضلها بتقل والإصابة بتقل.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">الخوذة مابتلغيش الخبطة… بتطوّلها!</div>
+      <img data-img="mint-wow" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l7-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">نيوتن ماكتبش F = ma!</h3>
+      <p>سنة <span class="m">1687</span>، نيوتن ماكتبش قانونه التاني بالشكل اللي إحنا حافظينه <span class="m">F = m a</span>. هو قال إن معدل تغير «كمية الحركة» بيتناسب مع القوة المؤثرة، وبيحصل في اتجاهها. و«كمية الحركة» دي هي كمية التحرك. وبالرموز الحديثة: <span class="m">F = Δp / Δt</span>. ولو الكتلة ثابتة، بتطلع منها <span class="m">F = m a</span>. القانون العلمي بيوصف علاقة ثابتة نقدر نتنبأ بيها، من غير ما يشرح القوى جاية منين.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح سببًا لاعتبار صيغة كمية التحرك <span class="m">F = Δp / Δt</span> الصيغة العامة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l7-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تنسى إشارة سرعة الارتداد</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">Δp = m (20 − 20) = 0</span> للكرة اللي ارتدت</div>
+            <div class="good"><b>صح:</b> الارتداد سالب: <span class="m">Δp = m (−20 − 20) = −40 m</span>. الارتداد بيضاعف الدفع</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. «السرير بيقلل التغير في كمية التحرك»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> المرتبة والخوذة بيقللوا <span class="m">Δp</span></div>
+            <div class="good"><b>صح:</b> <span class="m">Δp</span> هو هو. اللي بيزيد هو <span class="m">Δt</span>، فالقوة تقل</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تطرح السرعات عادي وهي متعامدة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> كرة رايحة شرق <span class="m">20</span> ورجعت شمال <span class="m">20</span>، يبقى <span class="m">Δv = 0</span></div>
+            <div class="good"><b>صح:</b> دي متجهات: <span class="m">|Δv| = √(20² + 20²) ≈ 28.3 m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تكتب وحدة الدفع غلط</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «الدفع <span class="m">10 N/s</span>»</div>
+            <div class="good"><b>صح:</b> <span class="m">N s</span> (نيوتن × ثانية)، وهي نفسها <span class="m">kg m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">كمية التحرك متجهة… الإشارة جزء من الإجابة!</div>
+        <img data-img="mint-trap" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l7-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">لماذا يقل احتمال تحطم هاتف عند سقوطه على سرير مقارنة بسقوطه على أرضية من البلاط، حتى لو سقط من الارتفاع نفسه؟</p>
+    <p class="lead">لو الموبايل خبط في السرير أو البلاط بنفس السرعة ووقف، يبقى التغير في كمية تحركه <b>واحد</b> في الحالتين. الفرق في زمن الوقوف: السرير بيتضغط فبيطوّل الزمن، ولأن <span class="m ylw">F = Δp / Δt</span> متوسط القوة بيقل. البلاط بيوقّف الموبايل في زمن قصير جدًا، فالقوة بتبقى أكبر بكتير والشاشة ممكن تتكسر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l7-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">كمية التحرك</b><p><span class="m">p = m v</span><br>متجهة، بوحدة <span class="m">kg m s<sup>−1</sup></span>.</p></div>
+        <div class="sumcol"><b class="on-navy-given">الدفع</b><p><span class="m">J = F Δt = Δp</span><br>بوحدة <span class="m">N s</span>.<br>= المساحة تحت منحنى القوة-الزمن.</p></div>
+        <div class="sumcol"><b class="mintc">القوة والزمن</b><p><span class="m">F = Δp / Δt</span><br>نفس <span class="m">Δp</span> وزمن أطول = قوة أقل.<br>الارتداد بيضاعف <span class="m">Δp</span>.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس السابع</div>
+      <img data-img="mint-tea" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l7-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تُلتقط كرة كتلتها <span class="m">0.14 kg</span> تتحرك بسرعة <span class="m">40 m s<sup>−1</sup></span> بقفاز، فتتوقف خلال <span class="m">2.0 × 10<sup>−2</sup> s</span>. أوجد متوسط القوة التي تؤثر بها الكرة على القفاز.</p>
+      <div class="ansrow" data-num="280" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7A">وريني الحل</button>
+      <div id="ch7A" class="sol" hidden>الدفع: <span class="m">|J| = m v = 0.14 × 40 = 5.6 N s</span>.<br><span class="m">F = 5.6 / 0.020 = 280 N</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> تتحرك كرة كتلتها <span class="m">3.0 × 10<sup>−2</sup> kg</span> نحو الشرق بسرعة <span class="m">10 m s<sup>−1</sup></span>، وتُضرب لترتد غربًا بالسرعة نفسها. أوجد مقدار الدفع المؤثر عليها.</p>
+      <div class="ansrow" data-num="0.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7B">وريني الحل</button>
+      <div id="ch7B" class="sol" hidden><span class="m">J = 0.03 × (−10 − 10) = −0.60 N s</span>، يعني <span class="m">0.60 N s</span> غربًا. (ولو اتلقطت: <span class="m">0.30 N s</span> غربًا. ولو ارتدت شمالًا: <span class="m">0.03 × 10√2 ≈ 0.42 N s</span> نحو الشمال الغربي.)</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> تتحرك كرة كتلتها <span class="m">0.40 kg</span> أفقيًا بسرعة <span class="m">10 m s<sup>−1</sup></span>، وتُضرب لترتد بالسرعة نفسها في اتجاه يصنع زاوية <span class="m">120°</span> مع اتجاهها الابتدائي. أوجد مقدار الدفع الذي تتلقاه الكرة.</p>
+      <div class="ansrow" data-num="6.93" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الدفع"><span class="unit">N s</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7C">وريني الحل</button>
+      <div id="ch7C" class="sol" hidden><span class="m">v<sub>i</sub> = (10, 0)</span>، و <span class="m">v<sub>f</sub> = (10 cos 120°, 10 sin 120°) = (−5, 8.66)</span>.<br><span class="m">Δv = (−15, 8.66)</span>، مقداره <span class="m">≈ 17.3 m s<sup>−1</sup></span>.<br><span class="m">|J| = 0.40 × 17.3 ≈ 6.9 N s</span>، واتجاهه بيعمل <span class="m">150°</span> مع الاتجاه الابتدائي.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>4.</b> تتوقف كرة كتلتها <span class="m">0.50 kg</span> تتحرك بسرعة <span class="m">8.0 m s<sup>−1</sup></span> عن الحركة بواسطة قفاز خلال <span class="m">0.040 s</span>. أوجد مقدار متوسط القوة المؤثرة على الكرة.</p>
+      <div class="ansrow" data-num="100" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القوة"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch7D">وريني الحل</button>
+      <div id="ch7D" class="sol" hidden><span class="m">|J| = 0.50 × 8.0 = 4.0 N s</span>، و <span class="m">F = 4.0 / 0.040 = 100 N</span> عكس اتجاه حركة الكرة.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l7-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه لما تمسك كورة جاية عليك بسرعة، بترجّع إيدك لورا معاها بدل ما تثبّتها؟</b>
+  <label for="l7c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l7c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l7c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l7-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-7</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img data-img="face-starry" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <div class="qlist" data-quiz="q7"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q7">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q7">
+      <img data-img="mint-gotit" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="8">الدرس اللي بعده: حفظ كمية الحركة ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>
+
+<section class="lesson" id="lesson-8" data-lesson="8" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l8-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-8</span><br>حفظ كمية الحركة</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>عندما تنزل من قارب صغير ساكن بجوار الرصيف، لماذا يتحرك القارب إلى الخلف؟ وما الذي يحدد سرعته؟</p>
+      </div>
+      <p class="muted">في الدرس اللي فات شفنا جسم واحد بيتغير زخمه بالدفع. النهارده هنبص على جسمين أو أكتر بيخبطوا في بعض أو بيزقوا بعض، ونكتشف حاجة مابتتغيرش أبدًا: كمية التحرك الكلية.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l8-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنخبّط عربيات في بعض!</div>
+      <img data-img="mint-wave" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l8-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تشرح</b> ليه كمية التحرك الكلية لنظام معزول بتفضل ثابتة.</span></li>
+      <li><span><b>تطبق</b> قانون حفظ كمية التحرك عشان تحسب سرعات مجهولة قبل التصادم وبعده.</span></li>
+      <li><span><b>تحدد</b> النظام، وتختار محور، وتكتب الاتجاه الموجب قبل ما تطبق حفظ كمية التحرك.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> كمية تحرك جسم <span class="m">p = m v</span>، والدفع اللي بتعمله القوة المحصلة خلال فترة زمنية = التغير في كمية التحرك <span class="m">J = F Δt = Δp</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l8-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">خلصت فسحة في قارب صغير، ونطيت لقدّام ناحية رصيف حجري. أول ما رجلك اتحركت لقدّام، القارب اتزحلق لورا، والمسافة بينه وبين الرصيف زادت. لو نطيت بالراحة، بيبعد بالراحة، ولو زقيت جامد، بيرجع لورا أسرع. ومحدش زق القارب! بص على القارب المرة الجاية لما حد ينزل منه.</p>
+      <div class="poll" data-poll="p15" data-answer="0">
+        <b>(أ) أثناء الدفع، هل تتغير كمية التحرك لديك ولدى القارب بمقدار متساوٍ أم مختلف؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">بمقدار متساوٍ (وفي اتجاهين متعاكسين)</button>
+          <button class="opt" aria-pressed="false">بمقدارين مختلفين</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l8-explore" style="color:var(--yellow)">تجربة الكراسي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">متساوي في المقدار وعكس بعض في الاتجاه.</b> إنت بتزق القارب، والقارب بيزقك بنفس القوة في الاتجاه العكسي، لنفس الزمن بالظبط. فكل واحد بياخد نفس الدفع بالعكس.</div>
+      </div>
+      <div class="poll" data-poll="p16" data-answer="0">
+        <b>(ب) يتلقى قارب فارغ وقارب محمَّل بصناديق الدفع نفسه. أي القاربين يرتد بسرعة أكبر؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">القارب الفارغ</button>
+          <button class="opt" aria-pressed="false">القارب المحمَّل</button>
+          <button class="opt" aria-pressed="false">يرتدان بالسرعة نفسها</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. شوفه في <a href="#l8-explore" style="color:var(--yellow)">تجربة الكراسي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">الفاضي.</b> نفس الدفع يعني نفس التغير في كمية التحرك <span class="m">m v</span>. والكتلة الأصغر بتاخد سرعة أكبر عشان الحاصل يبقى واحد.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">محدش زق القارب… أمال اتحرك ليه؟</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l8-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — طالبين على كراسي بعجل</span>
+    <p class="lead">طالبين قاعدين على كرسيين بعجل قصاد بعض وكفوفهم لازقة في بعض. عند العد، بيزقوا بعض زقة واحدة. غيّر الكتلتين وقوة الزقة، ودوس «زقّوا». وجرّب «طالب واحد بس اللي بيزق». سجّل كل محاولة.</p>
+    <div class="sim">
+      <canvas id="chCanvas" style="aspect-ratio:16/7" aria-label="طالبان على كرسيين بعجلات يتدافعان"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="chM1">كتلة الطالب الشمال مع كرسيه <span class="m">m<sub>1</sub></span> <output data-out="chM1"></output></label><input id="chM1" type="range" min="30" max="120" step="1" value="60"></div>
+        <div class="ctrl"><label for="chM2">كتلة الطالب اليمين مع كرسيه <span class="m">m<sub>2</sub></span> <output data-out="chM2"></output></label><input id="chM2" type="range" min="30" max="120" step="1" value="60"></div>
+        <div class="ctrl"><label for="chJ">قوة الزقة (الدفع) <span class="m">J</span> <output data-out="chJ"></output></label><input id="chJ" type="range" min="20" max="200" step="5" value="90"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="chGo">زقّوا</button><label class="muted" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="chOne"> طالب واحد بس اللي بيزق (الشمال)</label><button class="btn ghost small" id="chRec">سجّل</button><button class="btn ghost small" id="chClear">امسح الجدول</button></div>
+      <div class="readout">
+        <div><span>سرعة الشمال <span class="m">v<sub>1</sub></span></span><b id="chV1">—</b></div>
+        <div><span>سرعة اليمين <span class="m">v<sub>2</sub></span></span><b id="chV2">—</b></div>
+        <div><span>كمية التحرك الكلية بعد الزقة</span><b id="chP">—</b></div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th class="m">m<sub>1</sub> (kg)</th><th class="m">m<sub>2</sub> (kg)</th><th class="m">v<sub>1</sub> (m/s)</th><th class="m">v<sub>2</sub> (m/s)</th><th class="m">m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub></th><th>مين راح أبعد؟</th></tr></thead>
+          <tbody id="chTable"><tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «زقّوا» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">اليمين موجب. والكراسي بتهدّي بالاحتكاك، فالمسافة اللي كل كرسي بيقطعها بتزيد كل ما سرعته تكبر.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) عندما تختلف كتلتا الطالبين، أيهما يتحرك مسافة أبعد؟ كيف تعتمد المسافة على الكتلة؟<br>(ب) عندما دفع طالب واحد فقط، هل تحرك كرسيه وحده أم تحرك الكرسيان؟ ماذا يخبرك هذا عن القوى أثناء التفاعل؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="chAns">اكشف النمط</button>
+        <div id="chAns" class="reveal" hidden>الأخف بيروح أبعد دايمًا. والكرسيين بيتحركوا حتى لو واحد بس اللي زق! لأن لما تزق حد، هو بيزقك بنفس القوة في الاتجاه العكسي، لنفس الزمن. فكل واحد بياخد دفع متساوي ومعاكس، وكمية التحرك الكلية بتفضل <b>صفر</b> زي ما كانت قبل الزقة: <span class="m ylw">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = 0</span>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l8-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">النظام وحفظ كمية التحرك</h2>
+      <p>مجموعة الأجسام اللي بندرسها مع بعض اسمها <b>نظام</b>. القوى اللي الأجسام دي بتأثر بيها على بعض جوه النظام اسمها <b>قوى داخلية</b>، والقوى اللي جاية من حاجات برا النظام اسمها <b>قوى خارجية</b>.</p>
+      <div class="grid2">
+        <div class="note"><b>قوى داخلية <span class="en-term">Internal forces</span>:</b> زي زقة الطالبين لبعض. بتيجي أزواج متساوية ومعاكسة، فدفعها الكلي على النظام صفر.</div>
+        <div class="note"><b>قوى خارجية <span class="en-term">External forces</span>:</b> زي الاحتكاك مع الأرض أو زقة من حد برا النظام. دي اللي ممكن تغيّر كمية التحرك الكلية.</div>
+      </div>
+      <div class="term"><b>مصطلح — النظام المعزول <span class="en-term">Isolated system</span>:</b> نظام الدفع الخارجي الكلي عليه خلال فترة زمنية = صفر. فكمية تحركه الكلية بتفضل ثابتة.</div>
+      <p>ومن هنا القانون: كمية التحرك الكلية للنظام قبل التصادم = كمية التحرك الكلية بعده. ده <b>قانون حفظ كمية التحرك</b>. لو الجسم <span class="m">A</span> (كتلته <span class="m">m<sub>1</sub></span> وسرعته <span class="m">v<sub>1</sub></span>) خبط في الجسم <span class="m">B</span> (كتلته <span class="m">m<sub>2</sub></span> وسرعته <span class="m">v<sub>2</sub></span>)، وبقت سرعاتهم <span class="m">v<sub>1</sub>′</span> و <span class="m">v<sub>2</sub>′</span>:</p>
+      <div class="fbox"><span class="m">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</span></div>
+      <div class="plain"><b class="t">إمتى نستخدمه؟</b> لما الدفع الخارجي على النظام يبقى صفر. أو لما فيه قوى خارجية (زي الجاذبية أو الاحتكاك) بس تأثيرها صغير جدًا خلال الخبطة القصيرة، فنهملها.</div>
+      <div class="plain"><b class="t">الإشارات بتعمل كل الشغل:</b> حدد اتجاه موجب الأول. أي سرعة عكسه تتكتب بالسالب. ولو طلعتلك سرعة نهائية سالبة، يبقى الجسم رايح عكس الاتجاه الموجب.</div>
+      <div class="plain"><b class="t">في بُعدين:</b> لو الأجسام اتحركت في مستوى (مش في خط واحد)، حلل كل سرعة لمركبتين، وطبق الحفظ على <span class="m">x</span> لوحده وعلى <span class="m">y</span> لوحده.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">مجموع p قبل = مجموع p بعد</div>
+      <img data-img="mint-explain" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: COLLISIONS ============ -->
+<section class="board" id="l8-lab">
+  <div class="stack">
+    <span class="seg">محاكي التصادمات</span>
+    <h2 class="h2">عربيتين على مسار أملس</h2>
+    <p class="lead">اختار كتلة وسرعة كل عربية (اليمين موجب، والسالب يعني رايحة شمال)، واختار نوع التصادم. دوس «صادم» وراقب أعمدة كمية التحرك: كل عربية بتتغير، لكن المجموع ثابت.</p>
+    <div class="sim">
+      <canvas id="coCanvas" style="aspect-ratio:16/9" aria-label="عربتان تتصادمان مع أعمدة كمية التحرك"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="coM1">كتلة <span class="m">A</span> <output data-out="coM1"></output></label><input id="coM1" type="range" min="0.2" max="5" step="0.1" value="1.2"></div>
+        <div class="ctrl"><label for="coV1">سرعة <span class="m">A</span> <output data-out="coV1"></output></label><input id="coV1" type="range" min="-5" max="5" step="0.1" value="3"></div>
+        <div class="ctrl"><label for="coM2">كتلة <span class="m">B</span> <output data-out="coM2"></output></label><input id="coM2" type="range" min="0.2" max="5" step="0.1" value="2.8"></div>
+        <div class="ctrl"><label for="coV2">سرعة <span class="m">B</span> <output data-out="coV2"></output></label><input id="coV2" type="range" min="-5" max="5" step="0.1" value="-2"></div>
+      </div>
+      <div class="btnrow" id="coType">
+        <button class="btn small navy" data-co="stick" aria-pressed="true">يلتصقوا</button>
+        <button class="btn small ghost" data-co="bounce" aria-pressed="false">يرتدوا (مرن)</button>
+      </div>
+      <div class="btnrow"><button class="btn" id="coGo">صادم</button><button class="btn ghost small" id="coReset">رجّعهم</button><span id="coMsg" style="font-weight:700"></span></div>
+      <div class="readout">
+        <div><span>الكلية قبل <span class="m">Σp</span></span><b id="coPb">—</b></div>
+        <div><span>الكلية بعد <span class="m">Σp′</span></span><b id="coPa">—</b></div>
+        <div><span><span class="m">v<sub>A</sub>′</span></span><b id="coVa">—</b></div>
+        <div><span><span class="m">v<sub>B</sub>′</span></span><b id="coVb">—</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">الأرقام الأولانية هي المثال المحلول (أ): <span class="m">1.2 kg</span> بـ <span class="m">+3.0</span> و <span class="m">2.8 kg</span> بـ <span class="m">−2.0</span> بيلتصقوا. توقّع الأول السرعة بعد الالتصاق، وبعدين دوس «صادم».</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l8-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>كمية تحرك جسم</b><div class="eq">p = m v</div><small>متجهة.</small></div>
+      <div class="law"><b>حفظ كمية التحرك (جسمين على محور)</b><div class="eq">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</div><small>لنظام معزول: الدفع الخارجي = صفر.</small></div>
+      <div class="law"><b>جسمين التصقوا</b><div class="eq">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = (m<sub>1</sub> + m<sub>2</sub>) v′</div><small>بيتحركوا بسرعة واحدة بعد التصادم.</small></div>
+      <div class="law"><b>انفجار أو تدافع من السكون</b><div class="eq">0 = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</div><small>كميتين متساويتين ومتعاكستين.</small></div>
+      <div class="law"><b>في بُعدين</b><div class="eq">Σp<sub>x</sub> = Σp<sub>x</sub>′ , Σp<sub>y</sub> = Σp<sub>y</sub>′</div><small>كل محور لوحده.</small></div>
+      <div class="law"><b>الصاروخ والعادم</b><div class="eq">Δp<sub>rocket</sub> = −Δp<sub>exhaust</sub></div><small>لو الدفع الخارجي مهمل.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l8-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> (أ) يتحرك الجسم <span class="m">A</span> كتلته <span class="m">1.2 kg</span> في الاتجاه الموجب بسرعة <span class="m">3.0 m s<sup>−1</sup></span>، ويتحرك الجسم <span class="m">B</span> كتلته <span class="m">2.8 kg</span> في الاتجاه السالب بسرعة <span class="m">2.0 m s<sup>−1</sup></span> على خط مستقيم، فيتصادمان ويلتصقان معًا. أوجد السرعة بعد التصاقهما.<br>(ب) على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">0.20 kg</span> متحركًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">0.80 kg</span> الساكن. بعد التصادم يتحرك <span class="m">A</span> عموديًا على اتجاهه الأصلي، ويتحرك <span class="m">B</span> بزاوية <span class="m">30°</span> أسفل الاتجاه الأصلي. أوجد السرعتين النهائيتين.</div>
+    <div class="steps" id="exSteps8">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p>(أ) <span class="m">m<sub>A</sub> = 1.2 kg , v<sub>A</sub> = +3.0 m/s , m<sub>B</sub> = 2.8 kg , v<sub>B</sub> = −2.0 m/s</span>. المطلوب: <span class="m">v′</span>.</p>
+        <p>(ب) <span class="m">m<sub>A</sub> = 0.20 kg , v<sub>A</sub> = 2.0 m/s , m<sub>B</sub> = 0.80 kg , v<sub>B</sub> = 0</span>. المطلوب: <span class="m">v<sub>A</sub>′</span> و <span class="m">v<sub>B</sub>′</span>.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>(أ) حركة في بُعد واحد والجسمين التصقوا: <span class="m">m<sub>A</sub> v<sub>A</sub> + m<sub>B</sub> v<sub>B</sub> = (m<sub>A</sub> + m<sub>B</sub>) v′</span></p>
+        <p>(ب) حركة في بُعدين: نطبق الحفظ على <span class="m">x</span> لوحده وعلى <span class="m">y</span> لوحده.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">1.2 × 3.0 + 2.8 × (−2.0) = 4.0 v′</span>، يعني <span class="m">3.6 − 5.6 = 4.0 v′</span></p>
+        <p>(ب) على <span class="m">x</span>: <span class="m">0.20 × 2.0 = 0 + 0.80 v<sub>B</sub>′ cos 30°</span> (لأن <span class="m">A</span> بقى عمودي، فمالوش مركبة على <span class="m">x</span>)</p>
+        <p>على <span class="m">y</span>: <span class="m">0 = 0.20 v<sub>A</sub>′ − 0.80 v<sub>B</sub>′ sin 30°</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer">(أ) <span class="m">v′ = −2.0 / 4.0 = −0.50 m s<sup>−1</sup></span> (في الاتجاه السالب)</div>
+        <div class="answer">(ب) <span class="m">v<sub>B</sub>′ = 0.40 / 0.693 ≈ 0.58 m s<sup>−1</sup></span> و <span class="m">v<sub>A</sub>′ = 0.80 × 0.577 × 0.5 / 0.20 ≈ 1.2 m s<sup>−1</sup></span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext8">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset8">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> في (أ) السرعة طلعت سالبة، وده منطقي لأن كمية التحرك الأكبر قبل التصادم كانت في الاتجاه السالب <span class="m">(5.6 &gt; 3.6)</span>. في (ب) السرعتين النهائيتين أقل من السرعة الأولانية، لأن كمية التحرك اتقسمت بين الجسمين.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l8-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> يتحرك الجسم <span class="m">A</span> كتلته <span class="m">2.0 kg</span> في الاتجاه الموجب بسرعة <span class="m">4.0 m s<sup>−1</sup></span>، ويتحرك الجسم <span class="m">B</span> كتلته <span class="m">3.0 kg</span> في الاتجاه السالب بسرعة <span class="m">4.0 m s<sup>−1</sup></span>، فيتصادمان. إذا كانت سرعة <span class="m">B</span> بعد التصادم <span class="m">2.0 m s<sup>−1</sup></span> في الاتجاه الموجب، فأوجد سرعة <span class="m">A</span> بعد التصادم (بالإشارة).</p>
+        <div class="ansrow" data-num="-5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8A">وريني الحل</button>
+        <div id="try8A" class="sol" hidden><span class="m">2.0 × 4.0 + 3.0 × (−4.0) = 2.0 v<sub>A</sub>′ + 3.0 × 2.0</span><br><span class="m">8 − 12 = 2.0 v<sub>A</sub>′ + 6</span>، يبقى <span class="m">v<sub>A</sub>′ = −5.0 m s<sup>−1</sup></span>، يعني ارتد في الاتجاه السالب.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> ينفجر جسم كتلته <span class="m">8.0 kg</span>، ساكن، إلى جسم <span class="m">A</span> كتلته <span class="m">3.0 kg</span> وجسم <span class="m">B</span> كتلته <span class="m">5.0 kg</span>. إذا تحرك <span class="m">A</span> بعد الانفجار يسارًا بسرعة <span class="m">10 m s<sup>−1</sup></span>، فأوجد سرعة <span class="m">B</span>.</p>
+        <div class="ansrow" data-num="6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8B">وريني الحل</button>
+        <div id="try8B" class="sol" hidden>اليمين موجب. قبل: صفر. <span class="m">0 = 3.0 × (−10) + 5.0 v<sub>B</sub>′</span>، يبقى <span class="m">v<sub>B</sub>′ = +6.0 m s<sup>−1</sup></span> يعني يمين.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">1.0 kg</span> متحركًا بسرعة <span class="m">4.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">2.0 kg</span> الساكن. بعد التصادم ينحرف <span class="m">A</span> بزاوية <span class="m">45°</span> فوق الأفقي وينحرف <span class="m">B</span> بزاوية <span class="m">45°</span> أسفل الأفقي. أوجد السرعة النهائية للجسم <span class="m">B</span>.</p>
+        <div class="ansrow" data-num="1.41" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8C">وريني الحل</button>
+        <div id="try8C" class="sol" hidden>على <span class="m">y</span>: <span class="m">1.0 v<sub>A</sub>′ sin 45° = 2.0 v<sub>B</sub>′ sin 45°</span>، يبقى <span class="m">v<sub>A</sub>′ = 2 v<sub>B</sub>′</span>.<br>على <span class="m">x</span>: <span class="m">4.0 = 1.0 v<sub>A</sub>′ cos 45° + 2.0 v<sub>B</sub>′ cos 45° = 4 v<sub>B</sub>′ × 0.707</span><br><span class="m">v<sub>B</sub>′ ≈ 1.4 m s<sup>−1</sup></span> و <span class="m">v<sub>A</sub>′ ≈ 2.8 m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د) تطبيق سريع:</b> جسم كتلته <span class="m">5 kg</span> ساكن ينقسم إلى جسمين: جسم كتلته <span class="m">3 kg</span> يتحرك شرقًا بسرعة <span class="m">4 m s<sup>−1</sup></span>، وجسم كتلته <span class="m">2 kg</span> يتحرك غربًا بسرعة <span class="m">6 m s<sup>−1</sup></span>. احسب كمية التحرك الكلية بعد الانقسام.</p>
+        <div class="ansrow" data-num="0" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="كمية التحرك الكلية"><span class="unit">kg m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8D">وريني الحل</button>
+        <div id="try8D" class="sol" hidden><span class="m">3 × 4 + 2 × (−6) = 12 − 12 = 0</span>، زي ما كانت قبل الانقسام. كمية التحرك محفوظة.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">اكتب الاتجاه الموجب جنب المسألة قبل أي حاجة</div>
+      <img data-img="mint-think" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: ROCKET ============ -->
+<section class="board sky" id="l8-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">إزاي الصاروخ بيتحرك في الفضاء الفاضي؟</h2>
+      <p class="lead">الصاروخ بيرمي غازات العادم لورا بسرعة عالية جدًا. الغازات بتاخد كمية تحرك لورا، والصاروخ بياخد كمية تحرك لقدّام قدها بالظبط. ولو الدفع الخارجي مهمل، كمية التحرك الكلية للصاروخ والعادم محفوظة: <span class="m">Δp<sub>rocket</sub> = −Δp<sub>exhaust</sub></span>. دوس «اطلق» أكتر من مرة، وكل دفعة بترمي كتلة غاز.</p>
+      <div class="sim">
+        <canvas id="rkCanvas" style="aspect-ratio:16/6" aria-label="صاروخ في الفضاء يطلق غازات العادم"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="rkG">كتلة الغاز في كل دفعة <output data-out="rkG"></output></label><input id="rkG" type="range" min="1" max="20" step="1" value="5"></div>
+          <div class="ctrl"><label for="rkU">سرعة خروج الغاز بالنسبة للأرض <output data-out="rkU"></output></label><input id="rkU" type="range" min="500" max="3000" step="100" value="2000"></div>
+        </div>
+        <div class="btnrow"><button class="btn" id="rkFire">اطلق دفعة</button><button class="btn ghost small" id="rkReset">من الأول</button></div>
+        <div class="readout">
+          <div><span>كتلة الصاروخ دلوقتي</span><b id="rkM">—</b></div>
+          <div><span>سرعة الصاروخ</span><b id="rkV">—</b></div>
+          <div><span>كمية التحرك الكلية (صاروخ + كل الغاز)</span><b id="rkP">—</b></div>
+        </div>
+        <p class="muted" style="font-size:14px">الصاروخ بيبدأ ساكن وكتلته <span class="m">1000 kg</span>. وللتبسيط سرعة الغاز ثابتة بالنسبة للأرض في كل دفعة.</p>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا يمكن للصاروخ أن يتسارع في فراغ الفضاء رغم عدم وجود وسط خارجي يدفع ضده. <button class="btn small navy" data-toggle="irl8A">إجابة مقترحة</button></div>
+      <div id="irl8A" class="sol" hidden>الصاروخ مش محتاج يزق في هوا أو أرض. هو بيزق الغاز بتاعه لورا، والغاز بيزقه لقدّام بنفس القوة (قوى داخلية جوه نظام الصاروخ والعادم). ولأن كمية التحرك الكلية للنظام محفوظة، الغاز لما ياخد كمية تحرك لورا، الصاروخ لازم ياخد كمية تحرك قدها لقدّام. وعلى الأرض وقت الإطلاق، الجاذبية بتشد لتحت، فالصاروخ مابيطلعش لفوق إلا لما قوة الدفع بتاعته تبقى أكبر من وزنه.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">الصاروخ بيزق غازه… والغاز بيزقه!</div>
+      <img data-img="mint-wow" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l8-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">النيوترينو: الجسيم اللي اتنبأوا بيه عشان القانون مايقعش</h3>
+      <p>سنة <span class="m">1930</span>، قياسات اضمحلال جسيمات بيتا كانت باينة كأن فيه طاقة وكمية تحرك ناقصين من النواتج. بدل ما العلماء يرموا قوانين الحفظ اللي اتجربت كتير، فولفجانج باولي اقترح إن فيه جسيم متعادل لسه ماحدش شافه، شايل الطاقة وكمية التحرك الناقصين. الجسيم ده اتسمى بعدين <b>النيوترينو</b>. والاقتراح كان قابل للاختبار: لو الجسيم موجود، التجارب في الآخر هتلاقي دليل عليه. وفعلًا سنة <span class="m">1956</span> فريدريك راينز وكلايد كوان أعلنوا اكتشافه تجريبيًا. يعني العلماء بيتمسكوا بالقوانين طول ما الأدلة بتدعمها، بس كمان بيطوروا ويختبروا تفسيرات بديلة لما ملاحظات جديدة تبان مش متسقة معاها.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> لماذا كان اقتراح فرضية قابلة للاختبار عن جسيم أكثر فائدة علميًا من مجرد إعلان فشل قوانين الحفظ؟</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l8-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تنسى السالب للجسم الجاي من الناحية التانية</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">1.2 × 3.0 + 2.8 × 2.0 = 4.0 v′</span>، يبقى <span class="m">v′ = 2.3</span></div>
+            <div class="good"><b>صح:</b> <span class="m">B</span> رايح عكس: <span class="m">2.8 × (−2.0)</span>، يبقى <span class="m">v′ = −0.50 m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تنسى تجمع الكتلتين لما يلتصقوا</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> بعد الالتصاق: <span class="m">m<sub>1</sub> v′</span> بس</div>
+            <div class="good"><b>صح:</b> بقوا جسم واحد: <span class="m">(m<sub>1</sub> + m<sub>2</sub>) v′</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. «الجسم الساكن مالوش كمية تحرك، يبقى مالوش دور»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> تشيل الجسم الساكن من المعادلة خالص</div>
+            <div class="good"><b>صح:</b> قبل التصادم كمية تحركه صفر، بس <b>بعد</b> التصادم بيتحرك وليه <span class="m">m v′</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تجمع المقادير في بُعدين</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">0.4 = 0.2 v<sub>A</sub>′ + 0.8 v<sub>B</sub>′</span> والأجسام طالعة بزوايا</div>
+            <div class="good"><b>صح:</b> حلل: معادلة لـ <span class="m">x</span> ومعادلة لـ <span class="m">y</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">اكتب Σp قبل = Σp بعد، واتجاه موجب واضح!</div>
+        <img data-img="mint-trap" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l8-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">عندما تنزل من قارب صغير ساكن بجوار الرصيف، لماذا يتحرك القارب إلى الخلف؟ وما الذي يحدد سرعته؟</p>
+    <p class="lead">اعتبر إنت والقارب نظام واحد. كمية التحرك الكلية في الأول <b>صفر</b> لأن الاتنين ساكنين. وخلال الزقة القصيرة، الدفع الخارجي الأفقي مهمل، فكمية التحرك محفوظة: <span class="m ylw">p<sub>you</sub> + p<sub>boat</sub> = 0</span>. يعني إنت والقارب بتاخدوا كميتين تحرك متساويتين ومتعاكستين: إنت لقدّام، والقارب لورا. ولأن <span class="m">p = m v</span>، سرعة القارب بتعتمد على كتلته وعلى قوة زقتك: القارب الخفيف بيرجع أسرع من التقيل لنفس كمية التحرك، والزقة الأقوى بتديه سرعة أكبر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l8-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">النظام المعزول</b><p>الدفع الخارجي = صفر.<br>القوى الداخلية أزواج متساوية ومتعاكسة.<br>كمية التحرك الكلية ثابتة.</p></div>
+        <div class="sumcol"><b class="on-navy-given">القانون</b><p><span class="m">m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub> = m<sub>1</sub>v<sub>1</sub>′ + m<sub>2</sub>v<sub>2</sub>′</span><br>التصقوا: <span class="m">(m<sub>1</sub> + m<sub>2</sub>) v′</span></p></div>
+        <div class="sumcol"><b class="mintc">خطوات الحل</b><p>حدد النظام.<br>اختار اتجاه موجب.<br>في بُعدين: <span class="m">x</span> لوحده و <span class="m">y</span> لوحده.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! كده خلّصت أول 8 دروس</div>
+      <img data-img="mint-tea" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l8-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تصطدم العربة <span class="m">A</span> كتلتها <span class="m">2.0 kg</span> متحركة بسرعة <span class="m">4.5 m s<sup>−1</sup></span> على خط مستقيم بالعربة <span class="m">B</span> كتلتها <span class="m">5.0 kg</span> المتحركة بسرعة <span class="m">0.40 m s<sup>−1</sup></span> في الاتجاه نفسه. إذا تحركت <span class="m">B</span> بعد التصادم بسرعة <span class="m">2.6 m s<sup>−1</sup></span> في اتجاهها الأصلي، فأوجد سرعة <span class="m">A</span> (بالإشارة).</p>
+      <div class="ansrow" data-num="-1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8A">وريني الحل</button>
+      <div id="ch8A" class="sol" hidden><span class="m">2.0 × 4.5 + 5.0 × 0.40 = 2.0 v<sub>A</sub>′ + 5.0 × 2.6</span><br><span class="m">11 = 2.0 v<sub>A</sub>′ + 13</span>، يبقى <span class="m">v<sub>A</sub>′ = −1.0 m s<sup>−1</sup></span>: ارتدت عكس اتجاهها الأصلي.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">0.20 kg</span> متحركًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">0.60 kg</span> الساكن. بعد التصادم ينحرف <span class="m">A</span> بزاوية <span class="m">60°</span> فوق الأفقي وينحرف <span class="m">B</span> بزاوية <span class="m">30°</span> أسفله. أوجد السرعة النهائية للجسم <span class="m">A</span>.</p>
+      <div class="ansrow" data-num="1" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8B">وريني الحل</button>
+      <div id="ch8B" class="sol" hidden>على <span class="m">y</span>: <span class="m">0.20 v<sub>A</sub>′ sin 60° = 0.60 v<sub>B</sub>′ sin 30°</span>، يبقى <span class="m">v<sub>B</sub>′ ≈ 0.577 v<sub>A</sub>′</span>.<br>على <span class="m">x</span>: <span class="m">0.40 = 0.20 v<sub>A</sub>′ cos 60° + 0.60 v<sub>B</sub>′ cos 30° = 0.10 v<sub>A</sub>′ + 0.30 v<sub>A</sub>′</span><br><span class="m">v<sub>A</sub>′ = 1.0 m s<sup>−1</sup></span> و <span class="m">v<sub>B</sub>′ ≈ 0.58 m s<sup>−1</sup></span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> على سطح أفقي أملس، ينقسم جسم كتلته <span class="m">5.0 kg</span> يتحرك أفقيًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> إلى جسم <span class="m">A</span> كتلته <span class="m">4.0 kg</span> وجسم <span class="m">B</span> كتلته <span class="m">1.0 kg</span>. ينحرف <span class="m">A</span> بزاوية <span class="m">60°</span> فوق الأفقي، ويتحرك <span class="m">B</span> رأسيًا إلى أسفل. أوجد سرعة <span class="m">B</span>.</p>
+      <div class="ansrow" data-num="17.3" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8C">وريني الحل</button>
+      <div id="ch8C" class="sol" hidden>على <span class="m">x</span> (<span class="m">B</span> مالوش مركبة أفقية): <span class="m">5.0 × 2.0 = 4.0 v<sub>A</sub>′ cos 60°</span>، يبقى <span class="m">v<sub>A</sub>′ = 5.0 m s<sup>−1</sup></span>.<br>على <span class="m">y</span>: <span class="m">0 = 4.0 × 5.0 × sin 60° − 1.0 v<sub>B</sub>′</span>، يبقى <span class="m">v<sub>B</sub>′ ≈ 17.3 m s<sup>−1</sup></span> لتحت.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>4.</b> تصطدم عربة كتلتها <span class="m">1.5 kg</span> تتحرك بسرعة <span class="m">2.0 m s<sup>−1</sup></span> اصطدامًا أماميًا بعربة ساكنة كتلتها <span class="m">0.50 kg</span> على مسار أملس، وتتحرك العربتان معًا. أوجد السرعة النهائية للعربتين الملتصقتين.</p>
+      <div class="ansrow" data-num="1.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="السرعة"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8D">وريني الحل</button>
+      <div id="ch8D" class="sol" hidden><span class="m">1.5 × 2.0 + 0 = (1.5 + 0.50) v′</span>، يبقى <span class="m">v′ = 3.0 / 2.0 = 1.5 m s<sup>−1</sup></span>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l8-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه البندقية بترجع لورا (بتضرب في كتف اللي ماسكها) لما الرصاصة تخرج؟ وليه سرعة رجوعها أقل بكتير من سرعة الرصاصة؟</b>
+  <label for="l8c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l8c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l8c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l8-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-8</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img data-img="face-starry" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر اتجاه اليمين (أو الشرق) موجبًا ما لم يُذكر غير ذلك.</p>
+    <div class="qlist" data-quiz="q8"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q8">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q8">
       <img data-img="mint-gotit" alt="دكتور نعناع مبسوط">
       <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="games">يلا على الألعاب ←</a></div>
     </div>
@@ -2201,7 +3945,7 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
   <div class="stack">
     <span class="seg">لعبة 4 · كل الدروس</span>
     <h2 class="h2">سباق الدقيقة</h2>
-    <p>عندك <span class="m">60</span> ثانية. كل سؤال حسبة سريعة من الدروس الأربعة أو من الأساسيات. الإجابة الصح بنقطة، والغلط مالوش خصم بس بيضيّع وقتك. حاول تكسر أعلى سكور ليك.</p>
+    <p>عندك <span class="m">60</span> ثانية. كل سؤال حسبة سريعة من الدروس التمانية أو من الأساسيات. الإجابة الصح بنقطة، والغلط مالوش خصم بس بيضيّع وقتك. حاول تكسر أعلى سكور ليك.</p>
     <div class="blitz">
       <div class="blitzhead"><b id="gbTime" class="m">60</b><span>ثانية</span><b id="gbScore" class="m">0</b><span>نقطة</span><span class="muted">أعلى سكور: <b id="gbBest" class="m">0</b></span></div>
       <div id="gbQ" class="blitzq">دوس «ابدأ» عشان يبدأ السباق.</div>
@@ -2276,6 +4020,8 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
           <tr><td>عزم القوة</td><td class="m">Moment (Torque)</td><td class="m">M = F d</td><td class="m">N m</td></tr>
           <tr><td>الشغل والطاقة</td><td class="m">Work / Energy</td><td class="m">W = F d</td><td class="m">J = N m</td></tr>
           <tr><td>القدرة</td><td class="m">Power</td><td class="m">P = W / t</td><td class="m">W (watt) = J/s</td></tr>
+          <tr><td>كمية التحرك</td><td class="m">Momentum</td><td class="m">p = m v</td><td class="m">kg m s<sup>−1</sup></td></tr>
+          <tr><td>الدفع</td><td class="m">Impulse</td><td class="m">J = F Δt</td><td class="m">N s</td></tr>
         </tbody>
       </table>
     </div>
@@ -2430,7 +4176,7 @@ footer{padding-block:24px 40px;color:var(--tea);font-size:14px;text-align:center
 <section class="board light" id="b-gloss">
   <div class="stack">
     <span class="seg navy">9 · قاموس المصطلحات <span class="en">Glossary</span></span>
-    <p>ابحث بالعربي أو بالإنجليزي. كل المصطلحات اللي في الدروس الأربعة والأساسيات.</p>
+    <p>ابحث بالعربي أو بالإنجليزي. كل المصطلحات اللي في الدروس التمانية والأساسيات.</p>
     <input type="search" id="glQ" class="glsearch" placeholder="ابحث… مثلًا: سرعة أو torque" aria-label="بحث في المصطلحات">
     <div class="tablewrap"><table class="gltable"><thead><tr><th>بالعربي</th><th>English</th><th>معناه باختصار</th></tr></thead><tbody id="glBody"></tbody></table></div>
   </div>
@@ -2541,6 +4287,94 @@ window.QUIZ_L4=[
  {type:'num',q:'تؤثر قوة مقدارها <span class="m">8.0 N</span> على بُعد <span class="m">2.0 m</span> من نقطة الدوران، بزاوية <span class="m">150°</span> مع الذراع، وتُدوِّر الجسم عكس اتجاه عقارب الساعة. احسب العزم.',a:8,unit:'N m',show:'+8.0 N m',
   ex:'<span class="m">M = 8.0 × 2.0 × sin 150° = 8.0 × 2.0 × 0.5 = 8.0 N m</span>، وعكس عقارب الساعة يبقى موجب. خد بالك: <span class="m">sin 150° = sin 30°</span>.'}
 ];
+window.QUIZ_L5=[
+ {type:'mcq',q:'يكون الجسم في حالة اتزان انتقالي عندما:',opts:['تكون سرعته صفرًا فقط','تكون محصلة القوى المؤثرة فيه صفرًا','تؤثر فيه قوة واحدة فقط','يكون وزنه صفرًا'],a:1,
+  ex:'الاتزان: <span class="m">ΣF = 0</span>. والجسم ممكن يكون ساكن أو بيتحرك بسرعة ثابتة.'},
+ {type:'mcq',q:'سيارة تتحرك على طريق مستقيم بسرعة ثابتة. محصلة القوى المؤثرة فيها:',opts:['في اتجاه الحركة','عكس اتجاه الحركة','تساوي صفرًا','تساوي وزنها'],a:2,
+  ex:'سرعة ثابتة في خط مستقيم يعني مفيش عجلة، يبقى المحصلة صفر. ده اتزان زي السكون بالظبط.'},
+ {type:'num',q:'كتاب كتلته <span class="m">2.0 kg</span> ساكن على طاولة أفقية. احسب القوة العمودية التي تؤثر بها الطاولة على الكتاب.',a:19.6,unit:'N',show:'19.6 N',
+  ex:'متزن على سطح أفقي: <span class="m">F<sub>N</sub> = m g = 2.0 × 9.8 = 19.6 N</span> لفوق.'},
+ {type:'mcq',q:'في مخطط الجسم الحر لكتاب على طاولة، نرسم:',opts:['وزن الكتاب وقوة الكتاب على الطاولة','وزن الكتاب والقوة العمودية من الطاولة','القوة العمودية فقط','وزن الطاولة ووزن الكتاب'],a:1,
+  ex:'بنرسم القوى اللي <b>على</b> الكتاب بس: وزنه لتحت، والقوة العمودية من الطاولة لفوق.'},
+ {type:'num',q:'يتدلى مصباح وزنه <span class="m">40 N</span> من كابلين متطابقين يصنع كل منهما زاوية <span class="m">30°</span> مع الأفقي. احسب الشد في كل كابل.',a:40,unit:'N',show:'40 N',
+  ex:'<span class="m">2 T sin 30° = 40</span>، يبقى <span class="m">T = 40 / (2 × 0.5) = 40 N</span>.'},
+ {type:'mcq',q:'جسم معلق بكابلين متماثلين متساويي الزاوية. عند زيادة الزاوية بين كل كابل والرأسي مع ثبات الوزن، فإن الشد في كل كابل:',opts:['يقل','يزداد','لا يتغير','يصبح صفرًا'],a:1,
+  ex:'<span class="m">2 T cos θ = W</span>. لما <span class="m">θ</span> مع الرأسي تكبر، <span class="m">cos θ</span> يصغر، فـ <span class="m">T</span> لازم يكبر.'},
+ {type:'num',q:'تتدلى كتلة <span class="m">0.50 kg</span> ساكنة من نابض ثابته <span class="m">98 N m<sup>−1</sup></span>. احسب استطالة النابض بالسنتيمتر.',a:5,unit:'cm',show:'5.0 cm',
+  ex:'<span class="m">k x = m g</span>، يبقى <span class="m">x = 4.9 / 98 = 0.050 m = 5.0 cm</span>.'},
+ {type:'mcq',q:'لافتة معلقة بسلسلتين، إحداهما تصنع <span class="m">70°</span> والأخرى <span class="m">20°</span> مع الأفقي. أي العبارات صحيحة؟',opts:['الشد متساوٍ في السلسلتين','الشد أكبر في السلسلة التي تصنع <span class="m">20°</span>','الشد أكبر في السلسلة التي تصنع <span class="m">70°</span>','مجموع الشدين يساوي الوزن دائمًا'],a:2,
+  ex:'السلسلة الأقرب للرأسي <span class="m">(70°)</span> بتشيل الجزء الأكبر من الوزن، فشدها أكبر. ومجموع الشدين أكبر من الوزن، اللي بيساوي الوزن هو مجموع <b>الأجزاء الرأسية</b> بس.'},
+ {type:'num',q:'مصباح كتلته <span class="m">2.0 kg</span> معلق بكابل يصنع زاوية <span class="m">30°</span> مع الرأسي، وحبل أفقي. احسب الشد في الحبل الأفقي.',a:11.3,unit:'N',show:'11.3 N',
+  ex:'رأسي: <span class="m">T cos 30° = 19.6</span>، يبقى <span class="m">T ≈ 22.6 N</span>. أفقي: <span class="m">P = T sin 30° ≈ 11.3 N</span>.'},
+ {type:'mcq',q:'لماذا تُترك أسلاك الكهرباء متدلية قليلًا بين الأعمدة؟',opts:['لتقليل وزن السلك','لأن الشد المطلوب يكبر جدًا كلما اقترب السلك من الأفقي','لزيادة مقاومة السلك','لأن الحرارة تجعلها تتدلى ولا علاقة للشد بذلك'],a:1,
+  ex:'<span class="m">2 T sin θ = W</span>. لو الزاوية مع الأفقي صغيرة قوي، الشد المطلوب يبقى ضخم والسلك ممكن يتقطع.'}
+];
+window.QUIZ_L6=[
+ {type:'mcq',q:'وحدة قياس القدرة هي:',opts:['<span class="m">J</span>','<span class="m">J s</span>','<span class="m">W = J s<sup>−1</sup></span>','<span class="m">N m</span>'],a:2,
+  ex:'القدرة = شغل ÷ زمن، يعني جول لكل ثانية، واسمها الوات <span class="m">(W)</span>.'},
+ {type:'mcq',q:'يرفع مصعدان الحمل نفسه إلى الارتفاع نفسه، الأول في <span class="m">20 s</span> والثاني في <span class="m">10 s</span>. أي العبارات صحيحة؟',opts:['الثاني بذل شغلًا أكبر','الأول له قدرة أكبر','بذلا الشغل نفسه، وقدرة الثاني ضعف قدرة الأول','بذلا الشغل نفسه والقدرة نفسها'],a:2,
+  ex:'نفس <span class="m">m g h</span> = نفس الشغل. ونص الزمن = ضعف القدرة.'},
+ {type:'num',q:'يرفع شخص صندوقًا كتلته <span class="m">20 kg</span> رأسيًا مسافة <span class="m">1.5 m</span> بسرعة ثابتة خلال <span class="m">3.0 s</span>. احسب قدرته المتوسطة.',a:98,unit:'W',show:'98 W',
+  ex:'<span class="m">W = 20 × 9.8 × 1.5 = 294 J</span>، و <span class="m">P = 294 / 3.0 = 98 W</span>.'},
+ {type:'num',q:'يسحب محرك سيارة بقوة <span class="m">2000 N</span> في اتجاه الحركة، فتتحرك بسرعة ثابتة <span class="m">25 m s<sup>−1</sup></span>. احسب قدرة المحرك بالكيلووات.',a:50,unit:'kW',show:'50 kW',
+  ex:'<span class="m">P = F v = 2000 × 25 = 50 000 W = 50 kW</span>.'},
+ {type:'mcq',q:'الكفاءة كمية:',opts:['وحدتها الجول','وحدتها الوات','ليس لها وحدة','وحدتها الجول لكل ثانية'],a:2,
+  ex:'الكفاءة نسبة بين طاقتين (أو قدرتين)، فالوحدات بتتلغي.'},
+ {type:'num',q:'محرك يُزوَّد بـ <span class="m">800 J</span> من الطاقة الكهربائية، فينتج <span class="m">600 J</span> من الشغل المفيد. احسب كفاءته كنسبة مئوية.',a:75,unit:'%',show:'75%',
+  ex:'<span class="m">η = 600 / 800 = 0.75 = 75%</span>.'},
+ {type:'num',q:'مصباح كفاءته <span class="m">20%</span> يُزوَّد بـ <span class="m">60 J</span>. احسب الطاقة المهدرة.',a:48,unit:'J',show:'48 J',
+  ex:'المفيد: <span class="m">0.20 × 60 = 12 J</span>. المهدر: <span class="m">60 − 12 = 48 J</span>.'},
+ {type:'mcq',q:'في مخطط سانكي، يتناسب عرض كل سهم مع:',opts:['زمن انتقال الطاقة','مقدار الطاقة التي يمثلها','كفاءة الجهاز فقط','قدرة الجهاز فقط'],a:1,
+  ex:'عرض السهم بيوريك قد إيه طاقة: السهم العريض = طاقة أكبر.'},
+ {type:'mcq',q:'لماذا لا يمكن أن تصل كفاءة جهاز حقيقي إلى <span class="m">100%</span>؟',opts:['لأن الطاقة تفنى أثناء التشغيل','لأن جزءًا من طاقة الدخل يتحول دائمًا إلى طاقة غير مفيدة كالحرارة','لأن القدرة دائمًا أقل من الشغل','لأن الأجهزة لا تحتاج طاقة دخل'],a:1,
+  ex:'الطاقة مابتفناش، بس جزء منها بيروح حرارة (احتكاك مثلًا) ويتبدد في المحيط.'},
+ {type:'num',q:'ترفع رافعة حملًا كتلته <span class="m">100 kg</span> بسرعة ثابتة <span class="m">0.50 m s<sup>−1</sup></span>، وقدرة الدخل الكهربائية <span class="m">700 W</span>. احسب كفاءة الرافعة كنسبة مئوية.',a:70,unit:'%',show:'70%',
+  ex:'المفيدة: <span class="m">P = m g v = 100 × 9.8 × 0.50 = 490 W</span>. <span class="m">η = 490 / 700 = 70%</span>.'}
+];
+window.QUIZ_L7=[
+ {type:'mcq',q:'وحدة قياس كمية التحرك هي:',opts:['<span class="m">kg m s<sup>−2</sup></span>','<span class="m">kg m s<sup>−1</sup></span>','<span class="m">N s<sup>−1</sup></span>','<span class="m">J</span>'],a:1,
+  ex:'<span class="m">p = m v</span>: كيلوجرام × متر/ثانية = <span class="m">kg m s<sup>−1</sup></span>، وهي نفسها <span class="m">N s</span>.'},
+ {type:'num',q:'احسب كمية تحرك سيارة كتلتها <span class="m">1200 kg</span> تتحرك بسرعة <span class="m">15 m s<sup>−1</sup></span>.',a:18000,unit:'kg m/s',show:'18000 kg m/s',
+  ex:'<span class="m">p = 1200 × 15 = 18 000 kg m s<sup>−1</sup></span>.'},
+ {type:'mcq',q:'الدفع يساوي:',opts:['حاصل ضرب الكتلة في العجلة','التغير في كمية التحرك','القوة مقسومة على الزمن','كمية التحرك مقسومة على الكتلة'],a:1,
+  ex:'نظرية الدفع وكمية التحرك: <span class="m">J = F Δt = Δp</span>.'},
+ {type:'num',q:'تؤثر قوة ثابتة مقدارها <span class="m">12 N</span> على جسم مدة <span class="m">0.50 s</span>. احسب مقدار الدفع.',a:6,unit:'N s',show:'6.0 N s',
+  ex:'<span class="m">J = 12 × 0.50 = 6.0 N s</span>.'},
+ {type:'mcq',q:'تُستخدم الوسادة الهوائية (الإيرباج) في السيارة لأنها:',opts:['تقلل التغير في كمية تحرك الراكب','تزيد زمن توقف الراكب فتقل القوة المؤثرة عليه','تزيد سرعة الراكب','تلغي كمية تحرك الراكب'],a:1,
+  ex:'التغير في كمية التحرك ثابت. الإيرباج بيطوّل <span class="m">Δt</span>، فـ <span class="m">F = Δp / Δt</span> تقل.'},
+ {type:'num',q:'كرة كتلتها <span class="m">0.20 kg</span> تتحرك بسرعة <span class="m">5.0 m s<sup>−1</sup></span>، تصطدم بجدار وترتد بالسرعة نفسها. احسب مقدار التغير في كمية تحركها.',a:2,unit:'N s',show:'2.0 N s',
+  ex:'<span class="m">|Δp| = m (v + v) = 0.20 × 10 = 2.0 N s</span>. الارتداد بيضاعف التغير.'},
+ {type:'num',q:'كرة كتلتها <span class="m">0.50 kg</span> تتحرك بسرعة <span class="m">6.0 m s<sup>−1</sup></span> تُلتقط فتتوقف خلال <span class="m">0.10 s</span>. احسب متوسط القوة المؤثرة عليها.',a:30,unit:'N',show:'30 N',
+  ex:'<span class="m">F = m v / Δt = 0.50 × 6.0 / 0.10 = 30 N</span>.'},
+ {type:'mcq',q:'جسمان لهما كمية التحرك نفسها، كتلة الأول ضعف كتلة الثاني. سرعة الأول:',opts:['ضعف سرعة الثاني','نصف سرعة الثاني','تساوي سرعة الثاني','أربعة أمثال سرعة الثاني'],a:1,
+  ex:'<span class="m">m<sub>1</sub> v<sub>1</sub> = m<sub>2</sub> v<sub>2</sub></span>، و <span class="m">m<sub>1</sub> = 2 m<sub>2</sub></span>، يبقى <span class="m">v<sub>1</sub> = v<sub>2</sub> / 2</span>.'},
+ {type:'mcq',q:'المساحة تحت منحنى (القوة – الزمن) تمثل:',opts:['الشغل','القدرة','الدفع','العجلة'],a:2,
+  ex:'المساحة = القوة × الزمن = الدفع = التغير في كمية التحرك.'},
+ {type:'num',q:'تؤثر قوة <span class="m">4.0 N</span> مدة <span class="m">3.0 s</span> في اتجاه حركة جسم كتلته <span class="m">2.0 kg</span> كانت سرعته <span class="m">1.0 m s<sup>−1</sup></span>. احسب سرعته النهائية.',a:7,unit:'m/s',show:'7.0 m/s',
+  ex:'<span class="m">J = 12 N s</span>. <span class="m">m v′ = 2.0 × 1.0 + 12 = 14</span>، يبقى <span class="m">v′ = 7.0 m s<sup>−1</sup></span>.'}
+];
+window.QUIZ_L8=[
+ {type:'mcq',q:'تبقى كمية التحرك الكلية لنظام ثابتة عندما:',opts:['تكون جميع الأجسام ساكنة','يكون الدفع الخارجي المحصل على النظام صفرًا','تكون القوى الداخلية صفرًا','تتساوى كتل الأجسام'],a:1,
+  ex:'شرط الحفظ: النظام معزول، يعني الدفع الخارجي = صفر. القوى الداخلية مش لازم تبقى صفر، هي بتلغي بعضها.'},
+ {type:'num',q:'جسم كتلته <span class="m">2.0 kg</span> يتحرك بسرعة <span class="m">3.0 m/s</span>، يصطدم بجسم ساكن كتلته <span class="m">1.0 kg</span> ويلتصقان. احسب سرعتهما بعد التصادم.',a:2,unit:'m/s',show:'2.0 m/s',
+  ex:'<span class="m">2.0 × 3.0 = (2.0 + 1.0) v′</span>، يبقى <span class="m">v′ = 2.0 m/s</span>.'},
+ {type:'mcq',q:'شخص يقف على زلاجة ساكنة على جليد أملس، ثم يرمي كرة إلى الأمام. ماذا يحدث للشخص؟',opts:['يبقى ساكنًا','يتحرك إلى الأمام','يتحرك إلى الخلف','يتحرك إلى أعلى'],a:2,
+  ex:'كمية التحرك الكلية كانت صفر. الكرة أخدت كمية تحرك لقدّام، فالشخص لازم ياخد كمية تحرك قدها لورا.'},
+ {type:'num',q:'مدفع كتلته <span class="m">500 kg</span> يطلق قذيفة كتلتها <span class="m">5.0 kg</span> بسرعة <span class="m">200 m/s</span>. احسب مقدار سرعة ارتداد المدفع.',a:2,unit:'m/s',show:'2.0 m/s',
+  ex:'<span class="m">0 = 5.0 × 200 + 500 v</span>، يبقى <span class="m">v = −2.0 m/s</span>، يعني <span class="m">2.0 m/s</span> لورا.'},
+ {type:'num',q:'جسم كتلته <span class="m">1.0 kg</span> يتحرك يمينًا بسرعة <span class="m">4.0 m/s</span>، وجسم كتلته <span class="m">1.0 kg</span> يتحرك يسارًا بسرعة <span class="m">2.0 m/s</span>. يتصادمان ويلتصقان. احسب سرعتهما بعد التصادم (بالإشارة).',a:1,unit:'m/s',show:'+1.0 m/s',
+  ex:'<span class="m">1.0 × 4.0 + 1.0 × (−2.0) = 2.0 v′</span>، يبقى <span class="m">v′ = +1.0 m/s</span> (يمين).'},
+ {type:'mcq',q:'تتدافع فتاة كتلتها <span class="m">40 kg</span> وفتى كتلته <span class="m">80 kg</span> على جليد أملس من السكون. أي العبارات صحيحة؟',opts:['سرعة الفتاة ضعف سرعة الفتى','سرعة الفتى ضعف سرعة الفتاة','سرعتاهما متساويتان','كمية تحرك الفتاة ضعف كمية تحرك الفتى'],a:0,
+  ex:'كميتين التحرك متساويتين في المقدار: <span class="m">40 v<sub>1</sub> = 80 v<sub>2</sub></span>، يبقى <span class="m">v<sub>1</sub> = 2 v<sub>2</sub></span>.'},
+ {type:'mcq',q:'القوى التي تؤثر بها أجسام النظام على بعضها تُسمى:',opts:['قوى خارجية','قوى داخلية','قوى احتكاك','قوى عمودية'],a:1,
+  ex:'جوه النظام = داخلية. وبتيجي أزواج متساوية ومتعاكسة، فدفعها الكلي على النظام صفر.'},
+ {type:'num',q:'جسم ساكن كتلته <span class="m">6.0 kg</span> ينفجر إلى جزأين: جزء كتلته <span class="m">2.0 kg</span> يتحرك بسرعة <span class="m">9.0 m/s</span>. احسب مقدار سرعة الجزء الآخر.',a:4.5,unit:'m/s',show:'4.5 m/s',
+  ex:'<span class="m">0 = 2.0 × 9.0 + 4.0 v</span>، يبقى <span class="m">|v| = 4.5 m/s</span> في الاتجاه العكسي.'},
+ {type:'mcq',q:'عند تطبيق حفظ كمية التحرك على تصادم في مستوى، نطبقه:',opts:['على المقادير مباشرة','على المحور الأفقي فقط','على كل من المحورين المتعامدين بشكل مستقل','على المحور الرأسي فقط'],a:2,
+  ex:'كمية التحرك متجهة: بنحللها ونطبق الحفظ على <span class="m">x</span> لوحده وعلى <span class="m">y</span> لوحده.'},
+ {type:'num',q:'عربة كتلتها <span class="m">3.0 kg</span> تتحرك بسرعة <span class="m">2.0 m/s</span>، تصطدم بعربة ساكنة كتلتها <span class="m">1.0 kg</span>. بعد التصادم تتحرك العربة الثانية بسرعة <span class="m">3.0 m/s</span> في الاتجاه نفسه. احسب سرعة العربة الأولى.',a:1,unit:'m/s',show:'1.0 m/s',
+  ex:'<span class="m">3.0 × 2.0 = 3.0 v′ + 1.0 × 3.0</span>، يبقى <span class="m">v′ = 1.0 m/s</span>.'}
+];
 window.GLOSSARY=[
 ['كمية فيزيائية','Physical quantity','أي حاجة بنقيسها: رقم + وحدة.'],
 ['وحدة القياس','Unit','المقياس اللي بنقارن بيه، زي المتر أو الثانية.'],
@@ -2593,8 +4427,30 @@ window.GLOSSARY=[
 ['ذراع العزم','Moment arm','هو هو البُعد العمودي d.'],
 ['مع عقارب الساعة','Clockwise','عزمه سالب.'],
 ['عكس عقارب الساعة','Anticlockwise','عزمه موجب.'],
-['الاتزان','Equilibrium','مجموع العزوم = صفر، الجسم مش بيلف.'],
+['الاتزان الدوراني','Rotational equilibrium','مجموع العزوم = صفر، الجسم مش بيلف.'],
 ['الرافعة','Lever','أداة بتستخدم العزم عشان تكبّر أثر القوة.'],
+['الاتزان الانتقالي','Translational equilibrium','محصلة القوى = صفر: الجسم ساكن أو بسرعة ثابتة.'],
+['مخطط الجسم الحر','Free-body diagram','رسمة للجسم لوحده عليها كل القوى الخارجية اللي عليه.'],
+['القوة العمودية','Normal force','قوة السطح على الجسم، عمودية على السطح.'],
+['الشد','Tension','قوة الحبل أو الكابل، على طوله وبعيد عن الجسم.'],
+['القوة المرنة','Elastic force','قوة الزنبرك: F = −k x.'],
+['ثابت النابض','Spring constant','k: القوة اللازمة لكل متر استطالة، N/m.'],
+['الشغل','Work','W = F d cos θ، بالجول.'],
+['القدرة','Power','معدل بذل الشغل: P = W / t، بالوات.'],
+['الوات','Watt (W)','جول لكل ثانية.'],
+['الكفاءة','Efficiency','الطاقة المفيدة ÷ طاقة الدخل، من غير وحدة.'],
+['مخطط سانكي','Sankey diagram','أسهم عرضها بيتناسب مع الطاقة: دخل، مفيد، مهدر.'],
+['الطاقة المهدرة','Wasted energy','الجزء اللي مابيستفادش منه، غالبًا حرارة.'],
+['كمية التحرك','Momentum','p = m v، متجهة، kg m/s.'],
+['الدفع','Impulse','J = F Δt = Δp، بوحدة N s.'],
+['زمن التلامس','Contact time','الزمن اللي القوة بتأثر فيه أثناء الخبطة، Δt.'],
+['النظام','System','مجموعة الأجسام اللي بندرسها مع بعض.'],
+['النظام المعزول','Isolated system','الدفع الخارجي عليه = صفر.'],
+['القوى الداخلية','Internal forces','قوى أجسام النظام على بعضها.'],
+['القوى الخارجية','External forces','قوى من حاجات برا النظام.'],
+['حفظ كمية التحرك','Conservation of momentum','Σp قبل = Σp بعد لنظام معزول.'],
+['التصادم','Collision','تفاعل قصير بين جسمين بيغير سرعاتهم.'],
+['الارتداد','Recoil','حركة جسم لورا لما يزق جسم تاني لقدّام.'],
 ['المثلث القائم','Right-angled triangle','مثلث فيه زاوية 90°.'],
 ['الوتر','Hypotenuse','أطول ضلع، قصاد الزاوية القايمة.'],
 ['المقابل','Opposite side','الضلع اللي قصاد الزاوية θ.'],
@@ -2643,6 +4499,12 @@ function arrow(x,x1,y1,x2,y2,col,lw=3,head=10){
 }
 function label(x,t,px,py,col,font,align='center',rtl=true){
   x.save();x.font=font;x.fillStyle=col;x.textAlign=align;x.textBaseline='middle';x.direction=rtl?'rtl':'ltr';x.fillText(t,px,py);x.restore();
+}
+/* Arabic word + LTR number side by side, no bidi reordering */
+function arNum(x,ar,num,px,py,col,size,align='right'){
+  x.save();x.font=AR(800,size);const wa=x.measureText(ar).width;x.font=LAT(800,size);const wn=x.measureText(num).width;x.restore();
+  const tot=wa+6+wn,right=align==='right'?px:align==='left'?px+tot:px+tot/2;
+  label(x,ar,right,py,col,AR(800,size),'right',true);label(x,num,right-wa-6,py,col,LAT(800,size),'right',false);
 }
 function pill(x,t,px,py,bg,fg,font){
   x.save();x.font=font;const w=x.measureText(t).width+16;x.fillStyle=bg;
@@ -3363,6 +5225,381 @@ function wrSim(){
   onRedraw(c,()=>draw(false));out();
 }
 
+/* ===== Lesson 1-5: equilibrium of forces ===== */
+function ebSim(){
+  const c=document.getElementById('ebCanvas'); if(!c)return;
+  let A=15,W=10,k=0;const tb=document.getElementById('ebTable');
+  const T=()=>W/(2*Math.cos(rad(A)));
+  const out=()=>{document.getElementById('ebT').textContent=`${f(T(),1)} N`;document.getElementById('ebX').textContent=`${f(T(),1)} cm`;draw();};
+  range('ebA',v=>`${v}°`,()=>{A=+document.getElementById('ebA').value;out();});
+  range('ebW',v=>`${f(v,1)} N`,()=>{W=+document.getElementById('ebW').value;out();});
+  function band(x,x1,y1,x2,y2){const n=14,dx=(x2-x1)/n,dy=(y2-y1)/n,L=Math.hypot(x2-x1,y2-y1),px=-(y2-y1)/L*5,py=(x2-x1)/L*5;
+    x.strokeStyle='#C98B4B';x.lineWidth=3;x.lineJoin='round';x.beginPath();x.moveTo(x1,y1);
+    for(let i=1;i<n;i++){const s=i%2?1:-1;x.lineTo(x1+dx*i+px*s,y1+dy*i+py*s);}x.lineTo(x2,y2);x.stroke();}
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);
+    const a=rad(A),len=10+T(),Lmax=10+20/(2*Math.cos(rad(75)));const s=Math.min((h-110)/24,(w-40)/(2*Lmax*Math.sin(rad(75))),12);
+    const kx=w/2,ky=40+len*Math.cos(a)*s;
+    const hx1=kx-len*Math.sin(a)*s,hx2=kx+len*Math.sin(a)*s,hy=ky-len*Math.cos(a)*s;
+    x.fillStyle='#5B6B7A';x.fillRect(Math.min(hx1,kx-40)-20,hy-10,(Math.max(hx2,kx+40)-Math.min(hx1,kx-40))+40,8);
+    x.fillStyle=C.white;[hx1,hx2].forEach(px=>{x.beginPath();x.arc(px,hy,5,0,7);x.fill();});
+    band(x,hx1,hy,kx,ky);band(x,hx2,hy,kx,ky);
+    // bottle
+    x.fillStyle='rgba(201,230,255,0.85)';x.beginPath();x.roundRect?x.roundRect(kx-16,ky+14,32,58,8):x.rect(kx-16,ky+14,32,58);x.fill();
+    x.fillStyle=C.sky;x.fillRect(kx-6,ky+2,12,14);x.fillStyle='#1F6FB2';x.fillRect(kx-16,ky+40,32,30);
+    const fs=Math.min(4,70/Math.max(T(),W));
+    arrow(x,kx,ky,kx-T()*fs*Math.sin(a),ky-T()*fs*Math.cos(a),C.yellow,3,9);
+    arrow(x,kx,ky,kx+T()*fs*Math.sin(a),ky-T()*fs*Math.cos(a),C.yellow,3,9);
+    arrow(x,kx+26,ky+40,kx+26,ky+40+W*fs,C.coral,3,9);
+    label(x,`W = ${f(W,1)} N`,kx+34,ky+44+W*fs/2,C.coral,LAT(700,12),'left',false);
+    label(x,`T = ${f(T(),1)} N`,kx-24,ky-28,C.yellow,LAT(700,12),'right',false);
+    if(A>2){x.strokeStyle=C.white;x.lineWidth=1;x.setLineDash([4,4]);x.beginPath();x.moveTo(hx2,hy);x.lineTo(hx2,hy+46);x.stroke();x.setLineDash([]);
+      label(x,`θ = ${A}°`,hx2+8,hy+30,C.white,LAT(700,12),'left',false);}
+  }
+  document.getElementById('ebRec').addEventListener('click',()=>{k++;const e=tb.querySelector('.empty');if(e)e.remove();const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${k}</td><td class="m">${f(W,1)}</td><td class="m">${A}°</td><td class="m ylw">${f(T(),1)}</td><td class="m ylw">${f(T(),1)}</td>`;tb.appendChild(tr);});
+  document.getElementById('ebClear').addEventListener('click',()=>{k=0;tb.innerHTML='<tr class="empty"><td colspan="5" class="muted">لسه مفيش قراءات. غيّر الزاوية ودوس «سجّل».</td></tr>';});
+  onRedraw(c,draw);out();
+}
+
+function lmSim(){
+  const c=document.getElementById('lmCanvas'); if(!c)return;
+  let m=6,a1=30,a2=30,comp=false;
+  const solve=()=>{const W=m*G,s=Math.sin(rad(a1+a2));return{W,T1:W*Math.cos(rad(a2))/s,T2:W*Math.cos(rad(a1))/s};};
+  const out=()=>{const r=solve();document.getElementById('lmW').textContent=`${f(r.W,1)} N`;
+    document.getElementById('lmT1').textContent=`${f(r.T1,1)} N`;document.getElementById('lmT2').textContent=`${f(r.T2,1)} N`;draw();};
+  range('lmM',v=>`${f(v,1)} kg`,()=>{m=+document.getElementById('lmM').value;out();});
+  range('lmA1',v=>`${v}°`,()=>{a1=+document.getElementById('lmA1').value;out();});
+  range('lmA2',v=>`${v}°`,()=>{a2=+document.getElementById('lmA2').value;out();});
+  document.getElementById('lmComp').addEventListener('change',e=>{comp=e.target.checked;draw();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);const r=solve();
+    const top=24,kx=w*0.5,ky=h*0.42,t1=rad(a1),t2=rad(a2);
+    x.fillStyle='#5B6B7A';x.fillRect(0,top-10,w,10);
+    const L1=(ky-top)/Math.sin(t1),L2=(ky-top)/Math.sin(t2);
+    x.strokeStyle='#C9CDD2';x.lineWidth=2.5;x.beginPath();x.moveTo(kx,ky);x.lineTo(kx-L1*Math.cos(t1),top);x.moveTo(kx,ky);x.lineTo(kx+L2*Math.cos(t2),top);x.stroke();
+    // lamp
+    x.beginPath();x.moveTo(kx,ky);x.lineTo(kx,ky+30);x.stroke();
+    x.fillStyle=C.yellow;x.beginPath();x.moveTo(kx-26,ky+58);x.lineTo(kx-12,ky+30);x.lineTo(kx+12,ky+30);x.lineTo(kx+26,ky+58);x.closePath();x.fill();
+    x.fillStyle='#FFF6C8';x.beginPath();x.arc(kx,ky+60,8,0,7);x.fill();
+    // forces at the knot
+    const fs=Math.min((h*0.38)/Math.max(r.T1,r.T2,r.W),3);
+    const e1x=kx-r.T1*fs*Math.cos(t1),e1y=ky-r.T1*fs*Math.sin(t1),e2x=kx+r.T2*fs*Math.cos(t2),e2y=ky-r.T2*fs*Math.sin(t2);
+    if(comp){x.setLineDash([5,5]);x.strokeStyle=C.sky;x.lineWidth=2;x.beginPath();
+      x.moveTo(e1x,e1y);x.lineTo(e1x,ky);x.moveTo(e1x,e1y);x.lineTo(kx,e1y);x.moveTo(e2x,e2y);x.lineTo(e2x,ky);x.moveTo(e2x,e2y);x.lineTo(kx,e2y);x.stroke();x.setLineDash([]);
+      arrow(x,kx,ky,e1x,ky,C.sky,2.5,8);arrow(x,kx,ky,e2x,ky,C.sky,2.5,8);
+      label(x,`${f(r.T1*Math.cos(t1),1)}`,(kx+e1x)/2,ky+12,C.sky,LAT(700,11),'center',false);
+      label(x,`${f(r.T2*Math.cos(t2),1)}`,(kx+e2x)/2,ky+12,C.sky,LAT(700,11),'center',false);
+      label(x,`T1y + T2y = ${f(r.T1*Math.sin(t1)+r.T2*Math.sin(t2),1)} N`,w-12,h-40,C.sky,LAT(700,12),'right',false);
+      label(x,`ΣFx = ${f(r.T2*Math.cos(t2)-r.T1*Math.cos(t1),1)} N , ΣFy = ${f(r.T1*Math.sin(t1)+r.T2*Math.sin(t2)-r.W,1)} N`,w-12,h-18,C.mint,LAT(700,12),'right',false);}
+    arrow(x,kx,ky,e1x,e1y,C.yellow,4,11);arrow(x,kx,ky,e2x,e2y,C.yellow,4,11);
+    arrow(x,kx+40,ky+30,kx+40,ky+30+r.W*fs,C.coral,4,11);
+    label(x,`T1 = ${f(r.T1,1)} N`,e1x-6,e1y-12,C.yellow,LAT(700,13),'right',false);
+    label(x,`T2 = ${f(r.T2,1)} N`,e2x+6,e2y-12,C.yellow,LAT(700,13),'left',false);
+    label(x,`W = ${f(r.W,1)} N`,kx+48,ky+30+r.W*fs/2,C.coral,LAT(700,13),'left',false);
+    label(x,`θ1 = ${a1}°`,kx-60,ky+14,C.white,LAT(700,12),'center',false);
+    label(x,`θ2 = ${a2}°`,kx+60,ky+14,C.white,LAT(700,12),'center',false);
+    x.fillStyle=C.white;x.beginPath();x.arc(kx,ky,5,0,7);x.fill();
+  }
+  onRedraw(c,draw);out();
+}
+
+function plSim(){
+  const c=document.getElementById('plCanvas'); if(!c)return;
+  const SP=40,WT=600;let s=2;
+  const th=()=>Math.atan(4*s/SP);
+  const out=()=>{const t=th(),T=WT/(2*Math.sin(t));document.getElementById('plA').textContent=`${f(deg(t),1)}°`;
+    const el=document.getElementById('plT');el.textContent=`${f(T,0)} N`;el.style.color=T>3000?'var(--red)':'';draw();};
+  range('plS',v=>`${f(v,1)} m`,()=>{s=+document.getElementById('plS').value;out();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);x.fillStyle=C.sky;x.fillRect(0,0,w,h);x.fillStyle='#7BB526';x.fillRect(0,h-22,w,22);
+    const sx=(w-120)/SP,top=36,X0=60,X1=w-60,sy=Math.min(sx,(h-top-50)/8);
+    x.fillStyle='#6B4A2E';[X0,X1].forEach(px=>{x.fillRect(px-5,top-6,10,h-top-16);x.fillRect(px-22,top,44,6);});
+    x.strokeStyle=C.navy;x.lineWidth=3;x.beginPath();
+    for(let i=0;i<=60;i++){const u=i/60;const px=X0+(X1-X0)*u,py=top+4*s*sy*u*(1-u);i?x.lineTo(px,py):x.moveTo(px,py);}x.stroke();
+    const t=th(),T=WT/(2*Math.sin(t)),fl=Math.min(110,20+T/40);
+    arrow(x,X0,top,X0+fl*Math.cos(t)*0.9,top+fl*Math.sin(t)*0.9*(sy/sx),C.red,3,9);
+    arrow(x,X1,top,X1-fl*Math.cos(t)*0.9,top+fl*Math.sin(t)*0.9*(sy/sx),C.red,3,9);
+    label(x,`T = ${f(T,0)} N`,X0+fl*0.5,top-16,C.red,LAT(700,13),'left',false);
+    label(x,`${SP} m`,(X0+X1)/2,h-11,C.navy,LAT(700,12),'center',false);
+    if(s>0.3){x.setLineDash([4,4]);x.strokeStyle=C.navy;x.lineWidth=1;x.beginPath();x.moveTo((X0+X1)/2,top);x.lineTo((X0+X1)/2,top+s*sy);x.stroke();x.setLineDash([]);
+      label(x,`${f(s,1)} m`,(X0+X1)/2+8,top+s*sy/2,C.navy,LAT(700,12),'left',false);}
+  }
+  onRedraw(c,draw);out();
+}
+
+/* ===== Lesson 1-6: power and efficiency ===== */
+function stSim(){
+  const c=document.getElementById('stCanvas'); if(!c)return;
+  let m=60,H=3,T=10,fr=0,run=false,t0=0,k=0;const tb=document.getElementById('stTable');
+  range('stM',v=>`${v} kg`,()=>{m=+document.getElementById('stM').value;draw();});
+  range('stH',v=>`${f(v,1)} m`,()=>{H=+document.getElementById('stH').value;draw();});
+  range('stT',v=>`${f(v,1)} s`,()=>{T=+document.getElementById('stT').value;draw();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);
+    const n=10,x0=60,y0=h-30,sw=(w*0.55)/n,sh=(h-90)/n;
+    x.fillStyle='#5B6B7A';x.beginPath();x.moveTo(x0,y0);for(let i=0;i<n;i++){x.lineTo(x0+i*sw,y0-(i+1)*sh);x.lineTo(x0+(i+1)*sw,y0-(i+1)*sh);}x.lineTo(x0+n*sw,y0);x.closePath();x.fill();
+    x.strokeStyle=C.white;x.setLineDash([4,4]);x.lineWidth=1;x.beginPath();x.moveTo(x0+n*sw+14,y0);x.lineTo(x0+n*sw+14,y0-n*sh);x.stroke();x.setLineDash([]);
+    label(x,`h = ${f(H,1)} m`,x0+n*sw+22,y0-n*sh/2,C.white,LAT(700,13),'left',false);
+    const px=x0+fr*n*sw+sw*0.4,py=y0-Math.min(n,Math.ceil(fr*n+0.001))*sh;
+    x.fillStyle=C.yellow;x.beginPath();x.arc(px,py-36,8,0,7);x.fill();x.fillRect(px-6,py-28,12,20);x.fillRect(px-6,py-10,4,10);x.fillRect(px+2,py-10,4,10);
+    const Wk=m*G*H;
+    label(x,`W = m g h = ${f(Wk,0)} J`,w-16,30,C.yellow,LAT(700,14),'right',false);
+    label(x,`P = W / t = ${f(Wk/T,0)} W`,w-16,56,C.mint,LAT(700,14),'right',false);
+    label(x,`t = ${f(T*fr,1)} s`,w-16,82,C.white,LAT(700,13),'right',false);
+  }
+  function loop(ts){if(!run)return;fr=Math.min(1,(ts-t0)/1000/(T/3));draw();if(fr<1)requestAnimationFrame(loop);else run=false;}
+  document.getElementById('stGo').addEventListener('click',()=>{fr=0;if(RM){fr=1;draw();return;}run=true;t0=performance.now();requestAnimationFrame(loop);});
+  document.getElementById('stRec').addEventListener('click',()=>{k++;const e=tb.querySelector('.empty');if(e)e.remove();const Wk=m*G*H,tr=document.createElement('tr');
+    tr.innerHTML=`<td>${k}</td><td class="m">${f(T,1)}</td><td class="m ylw">${f(Wk,0)}</td><td class="m ylw">${f(Wk/T,0)}</td>`;tb.appendChild(tr);});
+  document.getElementById('stClear').addEventListener('click',()=>{k=0;tb.innerHTML='<tr class="empty"><td colspan="4" class="muted">لسه مفيش طلعات. دوس «اطلع» وبعدين «سجّل».</td></tr>';});
+  onRedraw(c,draw);draw();
+}
+
+function elSim(){
+  const c=document.getElementById('elCanvas'); if(!c)return;
+  let m=600,H=9,TA=24,fr=0,run=false,t0=0;
+  const kW=v=>v>=1000?`${f(v/1000,2)} kW`:`${f(v,0)} W`;
+  const out=()=>{const W=m*G*H;document.getElementById('elW').textContent=W>=1e4?`${f(W/1000,1)} kJ`:`${f(W,0)} J`;
+    document.getElementById('elPA').textContent=kW(W/TA);document.getElementById('elPB').textContent=kW(W/(TA/2));
+    document.getElementById('elChk').textContent=`${kW(m*G*(H/TA))} (v = ${f(H/TA,2)} m/s)`;draw();};
+  range('elM',v=>`${v} kg`,()=>{m=+document.getElementById('elM').value;out();});
+  range('elH',v=>`${v} m`,()=>{H=+document.getElementById('elH').value;out();});
+  range('elT',v=>`${v} s`,()=>{TA=+document.getElementById('elT').value;out();});
+  function car(x,cx,y,lab,col){x.fillStyle=col;x.fillRect(cx-34,y-46,68,46);x.fillStyle=C.navy;x.fillRect(cx-24,y-30,48,22);label(x,lab,cx,y-38,C.navy,LAT(800,12),'center',false);}
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);
+    const top=40,bot=h-24,cA=w*0.3,cB=w*0.62,Y=u=>bot-u*(bot-top-50);
+    [cA,cB].forEach(cx=>{x.fillStyle='rgba(201,230,255,0.10)';x.fillRect(cx-42,top-10,84,bot-top+10);});
+    x.strokeStyle=C.white;x.setLineDash([5,5]);x.beginPath();x.moveTo(cA-60,Y(1));x.lineTo(cB+60,Y(1));x.stroke();x.setLineDash([]);
+    label(x,`h = ${H} m`,cB+64,Y(1),C.white,LAT(700,12),'left',false);
+    const uA=Math.min(1,fr),uB=Math.min(1,fr*2);
+    car(x,cA,Y(uA),`A · ${TA} s`,C.sky);car(x,cB,Y(uB),`B · ${TA/2} s`,C.yellow);
+    label(x,`t = ${f(fr*TA,1)} s`,w-16,24,C.white,LAT(700,13),'right',false);
+    if(uB>=1)pill(x,'B وصل!',cB,Y(1)-64,C.mint,C.navy,AR(800,12));if(uA>=1)pill(x,'A وصل!',cA,Y(1)-64,C.mint,C.navy,AR(800,12));
+  }
+  function loop(ts){if(!run)return;fr=Math.min(1,(ts-t0)/3000);draw();if(fr<1)requestAnimationFrame(loop);else run=false;}
+  document.getElementById('elGo').addEventListener('click',()=>{fr=0;if(RM){fr=1;draw();return;}run=true;t0=performance.now();requestAnimationFrame(loop);});
+  onRedraw(c,draw);out();
+}
+
+function skSim(){
+  const c=document.getElementById('skCanvas'); if(!c)return;
+  let E=100,eta=10,U='J';
+  const fmt=v=>v>=1e4?`${+(v/1000).toFixed(1)} k${U}`:`${+v.toFixed(1)} ${U}`;
+  const out=()=>{document.getElementById('skU').textContent=fmt(E*eta/100);document.getElementById('skW').textContent=fmt(E*(100-eta)/100);draw();};
+  const inEl=range('skIn',v=>`${v} ${U}`,()=>{E=+document.getElementById('skIn').value;out();});
+  range('skE',v=>`${v}%`,()=>{eta=+document.getElementById('skE').value;out();});
+  document.querySelectorAll('[data-sk]').forEach(b=>b.addEventListener('click',()=>{const [e,p]=b.dataset.sk.split(',').map(Number);
+    U=(e===2000||e===2400)?'W':'J';
+    const si=document.getElementById('skIn'),se=document.getElementById('skE');si.value=e;se.value=p;si.dispatchEvent(new Event('input'));se.dispatchEvent(new Event('input'));}));
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);x.fillStyle=C.white;x.fillRect(0,0,w,h);
+    const TW=Math.min(110,h*0.42),wu=Math.max(2,TW*eta/100),ww=Math.max(2,TW*(100-eta)/100);
+    const x0=20,xs=w*0.38,xe=w-60,top=24;
+    x.lineCap='butt';
+    // input
+    x.strokeStyle='#9AA3AD';x.lineWidth=TW;x.beginPath();x.moveTo(x0,top+TW/2);x.lineTo(xs,top+TW/2);x.stroke();
+    // useful
+    const yu=top+wu/2;x.strokeStyle=C.green;x.lineWidth=wu;x.beginPath();x.moveTo(xs-1,yu);x.lineTo(xe,yu);x.stroke();
+    x.fillStyle=C.green;x.beginPath();x.moveTo(xe,top-8);x.lineTo(xe+34,yu);x.lineTo(xe,top+wu+8);x.closePath();x.fill();
+    // wasted: turns downward
+    const yw=top+wu+ww/2,R=ww/2+24;x.strokeStyle=C.coral;x.lineWidth=ww;x.beginPath();x.moveTo(xs-1,yw);x.lineTo(xs+20,yw);x.arc(xs+20,yw+R,R,-Math.PI/2,0);x.lineTo(xs+20+R,h-34);x.stroke();
+    const cx=xs+20+R;x.fillStyle=C.coral;x.beginPath();x.moveTo(cx-ww/2-8,h-34);x.lineTo(cx,h-6);x.lineTo(cx+ww/2+8,h-34);x.closePath();x.fill();
+    arNum(x,'الدخل',fmt(E),x0+6,top+TW+16,C.navy,13,'left');
+    arNum(x,'مفيد',`${fmt(E*eta/100)} (${eta}%)`,xe-6,top+wu+18,C.green,14,'right');
+    {const wl=150;const room=cx+ww/2+14+wl<w;arNum(x,'مهدر',fmt(E*(100-eta)/100),room?cx+ww/2+14:cx-ww/2-14,h-48,C.red,14,room?'left':'right');}
+  }
+  onRedraw(c,draw);out();
+}
+
+/* ===== Lesson 1-7: momentum and impulse ===== */
+function imSim(){
+  const c=document.getElementById('imCanvas'); if(!c)return;
+  let m=0.5,v=1,dt=0.05,ph=0,run=false,t0=0,ghost=null,k=0;const tb=document.getElementById('imTable');const E=0.8;
+  const calc=()=>{const vf=-E*v,dp=m*(vf-v);return{vf,dp,Fav:Math.abs(dp)/dt,Fmax:Math.PI*Math.abs(dp)/(2*dt)};};
+  const out=()=>{const r=calc();document.getElementById('imDp').textContent=`${f(r.dp,3)} N s`;document.getElementById('imJ').textContent=`${f(-Math.abs(r.dp),3)} N s`;
+    document.getElementById('imF').textContent=`${f(r.Fav,1)} N`;if(!run)draw();};
+  range('imM',v2=>`${f(v2,2)} kg`,()=>{m=+document.getElementById('imM').value;out();});
+  range('imV',v2=>`${f(v2,2)} m/s`,()=>{v=+document.getElementById('imV').value;out();});
+  range('imD',v2=>`${f(v2,2)} s`,()=>{dt=+document.getElementById('imD').value;out();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);const r=calc();
+    // track
+    const ty=h*0.26,bx=w-60;x.fillStyle='#5B6B7A';x.fillRect(20,ty+22,w-40,6);
+    x.fillStyle=C.coral;const squash=ph>1&&ph<2?Math.sin((ph-1)*Math.PI)*Math.min(26,6+dt*60):0;x.fillRect(bx-14+squash,ty-14,14-squash,34);x.fillStyle='#9AA3AD';x.fillRect(bx,ty-30,16,60);
+    label(x,'حساس قوة',bx+8,ty-40,C.sky,AR(700,11),'center');
+    let cx;if(ph<=1)cx=40+(bx-14-60-40)*ph;else if(ph<=2)cx=bx-14-60+squash;else cx=bx-14-60-(bx-14-60-40)*Math.min(1,(ph-2)*E);
+    x.fillStyle=C.yellow;x.fillRect(cx,ty-10,60,26);x.fillStyle=C.navy;x.beginPath();x.arc(cx+14,ty+20,6,0,7);x.arc(cx+46,ty+20,6,0,7);x.fill();
+    if(ph<1)arrow(x,cx+30,ty-22,cx+30+30,ty-22,C.mint,3,8);else if(ph>2)arrow(x,cx+30,ty-22,cx+30-24,ty-22,C.mint,3,8);
+    // F-t graph
+    const gx=60,gy=h-30,gw=w-90,gh=h*0.52,Tm=0.5;
+    const Fs=Math.max(r.Fmax,ghost?ghost.Fmax:0)*1.15;
+    x.strokeStyle=C.white;x.lineWidth=1.5;x.beginPath();x.moveTo(gx,gy-gh);x.lineTo(gx,gy);x.lineTo(gx+gw,gy);x.stroke();
+    label(x,'|F| (N)',gx-6,gy-gh-10,C.white,LAT(700,11),'left',false);label(x,'t (s)',gx+gw-4,gy+16,C.white,LAT(700,11),'right',false);
+    x.fillStyle=C.white;x.font=LAT(500,10);x.textAlign='center';for(let s=0;s<=Tm+1e-9;s+=0.1){x.fillText(s.toFixed(1),gx+gw*s/Tm,gy+14);}
+    const pulse=(p,col,fill,frac=1)=>{const t1=0.05;x.beginPath();x.moveTo(gx+gw*t1/Tm,gy);
+      for(let i=0;i<=60*frac;i++){const u=i/60;const tt=t1+u*p.dt;x.lineTo(gx+gw*tt/Tm,gy-gh*(p.Fmax*Math.sin(Math.PI*u))/Fs);}
+      if(fill){x.lineTo(gx+gw*(t1+frac*p.dt)/Tm,gy);x.closePath();x.fillStyle=fill;x.fill();}x.strokeStyle=col;x.lineWidth=2.5;x.stroke();};
+    if(ghost)pulse(ghost,'rgba(201,230,255,0.45)',null);
+    const frac=ph<1?0:ph<2?ph-1:1;
+    if(frac>0)pulse({dt,Fmax:r.Fmax},C.yellow,'rgba(239,211,73,0.25)',frac);
+    if(frac>=1){arNum(x,'المساحة =',`${f(Math.abs(r.dp),3)} N s`,gx+gw*(0.05+dt/2)/Tm+8,gy-gh*0.55,C.yellow,13,'left');
+      label(x,`Fmax ≈ ${f(r.Fmax,0)} N`,gx+gw*(0.05+dt/2)/Tm+8,gy-gh*0.55+20,C.white,LAT(700,12),'left',false);}
+    if(ghost)label(x,'المحاولة اللي فاتت',gx+gw-4,gy-gh+4,C.sky,AR(600,11),'right');
+  }
+  function loop(ts){if(!run)return;const e=(ts-t0)/1000;ph=e<1?e:e<1.8?1+(e-1)/0.8:Math.min(3.2,2+(e-1.8));draw();if(e<3.2)requestAnimationFrame(loop);else{run=false;}}
+  let lastP=null;
+  document.getElementById('imGo').addEventListener('click',()=>{if(run)return;if(lastP)ghost=lastP;lastP={dt,Fmax:calc().Fmax};
+    if(RM){ph=3;draw();return;}ph=0;run=true;t0=performance.now();requestAnimationFrame(loop);});
+  document.getElementById('imRec').addEventListener('click',()=>{k++;const e=tb.querySelector('.empty');if(e)e.remove();const r=calc(),tr=document.createElement('tr');
+    tr.innerHTML=`<td>${k}</td><td class="m">${f(v,2)}</td><td class="m">${f(r.vf,2)}</td><td class="m">${f(dt,2)}</td><td class="m ylw">${f(r.dp,3)}</td><td class="m ylw">${f(-Math.abs(r.dp),3)}</td><td class="m">${f(r.Fmax,0)}</td>`;tb.appendChild(tr);});
+  document.getElementById('imClear').addEventListener('click',()=>{k=0;tb.innerHTML='<tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «اخبط» وبعدين «سجّل».</td></tr>';});
+  onRedraw(c,draw);out();
+}
+
+function phSim(){
+  const c=document.getElementById('phCanvas'); if(!c)return;
+  const M=0.2,LIM=300;let H=1,dt=0.002,fr=1,run=false,t0=0,done=true;
+  const calc=()=>{const v=Math.sqrt(2*G*H),p=M*v;return{v,p,F:p/dt};};
+  const surf=()=>dt<0.005?{n:'بلاط',col:'#C9CDD2'}:dt<0.03?{n:'سجادة',col:'#B5524B'}:dt<0.12?{n:'سرير',col:'#7FA7D9'}:{n:'مخدة',col:'#F2E6C9'};
+  const out=()=>{const r=calc();document.getElementById('phV').textContent=`${f(r.v,2)} m/s`;document.getElementById('phP').textContent=`${f(r.p,3)} N s`;
+    document.getElementById('phF').textContent=`${f(r.F,0)} N`;const s=document.getElementById('phS');const br=r.F>LIM;
+    s.textContent=br?'اتكسرت!':'سليمة';s.style.color=br?'var(--red)':'var(--green)';if(!run)draw();};
+  range('phH',v=>`${f(v,2)} m`,()=>{H=+document.getElementById('phH').value;out();});
+  range('phT',v=>`${f(v,3)} s`,()=>{dt=+document.getElementById('phT').value;out();});
+  document.querySelectorAll('[data-ph]').forEach(b=>b.addEventListener('click',()=>{const el=document.getElementById('phT');el.value=b.dataset.ph;el.dispatchEvent(new Event('input'));}));
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);const r=calc(),s=surf();
+    const fy=h-50,top=30,scale=(fy-top-60)/2;
+    x.fillStyle=s.col;const thick=dt<0.005?10:dt<0.03?16:dt<0.12?34:44;x.fillRect(w*0.2,fy,w*0.6,thick);
+    label(x,s.n,w*0.2-10,fy+thick/2,C.white,AR(700,13),'right');
+    const y0=fy-H*scale-60,py=y0+(fy-60-y0)*fr*fr,cx=w/2;
+    const sink=done?Math.min(thick*0.6,dt*200):0;
+    x.fillStyle='#1B1F24';x.beginPath();x.roundRect?x.roundRect(cx-34,py+sink,68,58,8):x.rect(cx-34,py+sink,68,58);x.fill();
+    x.fillStyle='#3B6EA8';x.fillRect(cx-29,py+sink+5,58,48);
+    if(done&&r.F>LIM){x.strokeStyle=C.white;x.lineWidth=1.5;x.beginPath();x.moveTo(cx-20,py+sink+10);x.lineTo(cx,py+sink+28);x.lineTo(cx+22,py+sink+14);x.moveTo(cx,py+sink+28);x.lineTo(cx-6,py+sink+48);x.moveTo(cx,py+sink+28);x.lineTo(cx+18,py+sink+44);x.stroke();}
+    x.setLineDash([4,4]);x.strokeStyle=C.sky;x.lineWidth=1;x.beginPath();x.moveTo(cx+60,y0+58);x.lineTo(cx+60,fy);x.stroke();x.setLineDash([]);
+    label(x,`h = ${f(H,2)} m`,cx+68,(y0+fy)/2,C.sky,LAT(700,13),'left',false);
+    if(done){const bw=Math.min(w*0.35,w*0.35*r.F/2000);x.fillStyle=r.F>LIM?C.red:C.green;x.fillRect(20,20,Math.max(4,bw),14);
+      x.fillStyle=C.white;x.fillRect(20+w*0.35*LIM/2000,14,2,26);label(x,`F = ${f(r.F,0)} N`,24+Math.max(4,bw),27,C.white,LAT(700,12),'left',false);}
+  }
+  function loop(ts){if(!run)return;fr=Math.min(1,(ts-t0)/900);draw();if(fr<1)requestAnimationFrame(loop);else{run=false;done=true;draw();}}
+  document.getElementById('phGo').addEventListener('click',()=>{if(run)return;done=false;if(RM){fr=1;done=true;draw();return;}fr=0;run=true;t0=performance.now();requestAnimationFrame(loop);});
+  onRedraw(c,draw);out();
+}
+
+function hmSim(){
+  const c=document.getElementById('hmCanvas'); if(!c)return;
+  const M=5,V=6,D0=0.005;let d=3;
+  const F=dd=>M*V/(2*dd/V);
+  const out=()=>{const dd=D0+d/100;document.getElementById('hmT').textContent=`${f(2*dd/V*1000,1)} ms`;document.getElementById('hmF').textContent=`${f(F(dd),0)} N`;draw();};
+  range('hmD',v=>`${f(v,1)} cm`,()=>{d=+document.getElementById('hmD').value;out();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);x.fillStyle=C.white;x.fillRect(0,0,w,h);
+    const hx=90,hy=h/2;x.fillStyle='#E8C39E';x.beginPath();x.arc(hx,hy,34,0,7);x.fill();
+    if(d>0){x.strokeStyle=C.navy;x.lineWidth=4+d*3;x.beginPath();x.arc(hx,hy,36+d*1.5,Math.PI*1.05,Math.PI*1.95,false);x.stroke();}
+    const F0=F(D0),F1=F(D0+d/100),bw=w-260,bx=190;
+    const bar=(y,val,col,t)=>{x.fillStyle='rgba(1,56,105,0.1)';x.fillRect(bx,y,bw,22);x.fillStyle=col;x.fillRect(bx,y,Math.max(3,bw*val/F0),22);
+      label(x,t,bx,y-10,C.navy,AR(700,13),'left');label(x,`${f(val,0)} N`,bx+Math.max(3,bw*val/F0)+6,y+11,C.navy,LAT(800,13),'left',false);};
+    bar(h*0.28,F0,C.red,'من غير خوذة');bar(h*0.66,F1,C.green,d>0?'بالخوذة':'بالخوذة (من غير فوم)');
+  }
+  onRedraw(c,draw);out();
+}
+
+/* ===== Lesson 1-8: conservation of momentum ===== */
+function chSim(){
+  const c=document.getElementById('chCanvas'); if(!c)return;
+  let m1=60,m2=60,J=90,one=false,t=0,run=false,t0=0,k=0;const A=1.5;const tb=document.getElementById('chTable');
+  const vel=()=>({v1:-J/m1,v2:J/m2});
+  const out=()=>{const r=vel();document.getElementById('chV1').textContent=`${f(r.v1,2)} m/s`;document.getElementById('chV2').textContent=`+${f(r.v2,2)} m/s`;
+    document.getElementById('chP').textContent=`${f(m1*r.v1+m2*r.v2,2)} kg m/s`;if(!run)draw();};
+  range('chM1',v=>`${v} kg`,()=>{m1=+document.getElementById('chM1').value;t=0;out();});
+  range('chM2',v=>`${v} kg`,()=>{m2=+document.getElementById('chM2').value;t=0;out();});
+  range('chJ',v=>`${v} N s`,()=>{J=+document.getElementById('chJ').value;t=0;out();});
+  document.getElementById('chOne').addEventListener('change',e=>{one=e.target.checked;draw();});
+  const pos=(v0)=>{const tStop=Math.abs(v0)/A,tt=Math.min(t,tStop);return Math.sign(v0)*(Math.abs(v0)*tt-0.5*A*tt*tt);};
+  function chair(x,cx,y,mass,col,txt){const r=10+mass/10;x.fillStyle='#5B6B7A';x.fillRect(cx-22,y-6,44,8);x.fillStyle=C.white;x.beginPath();x.arc(cx-16,y+8,5,0,7);x.arc(cx+16,y+8,5,0,7);x.fill();
+    x.fillStyle=col;x.beginPath();x.arc(cx,y-30-r,r*0.55,0,7);x.fill();x.fillRect(cx-r*0.5,y-30-r*0.45,r,24+r*0.45);label(x,txt,cx,y+28,C.white,LAT(700,12),'center',false);}
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);const r=vel();
+    const dmax=Math.max(r.v1*r.v1,r.v2*r.v2)/(2*A),S=(w/2-70)/Math.max(dmax,0.6),cx=w/2,fy=h-46;x.fillStyle='#5B6B7A';x.fillRect(0,fy+14,w,3);
+    x.fillStyle=C.yellow;x.fillRect(cx-1,fy-90,3,104);label(x,'خط البداية',cx,fy-100,C.yellow,AR(700,11),'center');
+    const x1=cx-26+pos(r.v1)*S,x2=cx+26+pos(r.v2)*S;
+    chair(x,Math.max(30,x1),fy,m1,C.sky,`${m1} kg`);chair(x,Math.min(w-30,x2),fy,m2,C.coral,`${m2} kg`);
+    if(t===0&&one)label(x,'الشمال بس اللي هيزق',cx,30,C.white,AR(700,13),'center');
+    if(t>0){label(x,`${f(Math.abs(pos(r.v1)),2)} m`,Math.max(30,x1),fy-118,C.sky,LAT(700,12),'center',false);label(x,`${f(pos(r.v2),2)} m`,Math.min(w-30,x2),fy-118,C.coral,LAT(700,12),'center',false);}
+    if(t>0&&one)pill(x,'الاتنين اتحركوا!',cx,30,C.mint,C.navy,AR(800,13));
+  }
+  function loop(ts){if(!run)return;t=(ts-t0)/1000*1.5;const tEnd=Math.max(J/m1,J/m2)/A;draw();if(t<tEnd)requestAnimationFrame(loop);else{t=tEnd;run=false;draw();}}
+  document.getElementById('chGo').addEventListener('click',()=>{if(RM){t=Math.max(J/m1,J/m2)/A;draw();return;}t=0;run=true;t0=performance.now();requestAnimationFrame(loop);});
+  document.getElementById('chRec').addEventListener('click',()=>{k++;const e=tb.querySelector('.empty');if(e)e.remove();const r=vel(),tr=document.createElement('tr');
+    const far=Math.abs(r.v1)>Math.abs(r.v2)?'الشمال (الأخف)':Math.abs(r.v1)<Math.abs(r.v2)?'اليمين (الأخف)':'زي بعض';
+    tr.innerHTML=`<td>${k}${one?' (واحد بيزق)':''}</td><td class="m">${m1}</td><td class="m">${m2}</td><td class="m">${f(r.v1,2)}</td><td class="m">+${f(r.v2,2)}</td><td class="m ylw">${f(m1*r.v1+m2*r.v2,2)}</td><td>${far}</td>`;tb.appendChild(tr);});
+  document.getElementById('chClear').addEventListener('click',()=>{k=0;tb.innerHTML='<tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «زقّوا» وبعدين «سجّل».</td></tr>';});
+  onRedraw(c,draw);out();
+}
+
+function coSim(){
+  const c=document.getElementById('coCanvas'); if(!c)return;
+  let m1=1.2,v1=3,m2=2.8,v2=-2,type='stick',t=0,run=false,t0=0;const X1=-3.5,X2=3.5,hw=m=>0.3+0.1*m;
+  const post=()=>{if(type==='stick'){const v=(m1*v1+m2*v2)/(m1+m2);return{a:v,b:v};}
+    return{a:((m1-m2)*v1+2*m2*v2)/(m1+m2),b:((m2-m1)*v2+2*m1*v1)/(m1+m2)};};
+  const tc=()=>v1-v2>0?(X2-X1-hw(m1)-hw(m2))/(v1-v2):Infinity;
+  const out=()=>{const p=post(),pb=m1*v1+m2*v2,pa=m1*p.a+m2*p.b;
+    document.getElementById('coPb').textContent=`${f(pb,2)} kg m/s`;document.getElementById('coPa').textContent=`${f(pa,2)} kg m/s`;
+    document.getElementById('coVa').textContent=`${f(p.a,2)} m/s`;document.getElementById('coVb').textContent=`${f(p.b,2)} m/s`;
+    const msg=document.getElementById('coMsg');msg.textContent=tc()===Infinity?'العربيتين مش هيقابلوا بعض بالسرعات دي':'';msg.style.color='var(--pen-warn)';if(!run)draw();};
+  const sl=(id,u,fn)=>range(id,v=>`${f(v,1)} ${u}`,()=>{fn(+document.getElementById(id).value);t=0;out();});
+  sl('coM1','kg',v=>m1=v);sl('coV1','m/s',v=>v1=v);sl('coM2','kg',v=>m2=v);sl('coV2','m/s',v=>v2=v);
+  document.querySelectorAll('[data-co]').forEach(b=>b.addEventListener('click',()=>{type=b.dataset.co;document.querySelectorAll('[data-co]').forEach(z=>{const on=z===b;z.setAttribute('aria-pressed',on);z.className='btn small '+(on?'navy':'ghost');});t=0;out();}));
+  const state=()=>{const T=tc();if(t<=T)return{xa:X1+v1*t,xb:X2+v2*t,va:v1,vb:v2,after:false};const p=post(),d=t-T,xa=X1+v1*T,xb=X2+v2*T;return{xa:xa+p.a*d,xb:xb+p.b*d,va:p.a,vb:p.b,after:true};};
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);gridBg(x,w,h,30,C.grid,C.navyDeep);const s=state();
+    const S=(w-60)/16,cx=w/2,ty=h*0.3;x.fillStyle='#5B6B7A';x.fillRect(10,ty+18,w-20,5);
+    const drawCar=(xm,m,col,lab,v)=>{const px=cx+xm*S,ww=2*hw(m)*S;x.fillStyle=col;x.fillRect(px-ww/2,ty-16,ww,32);label(x,lab,px,ty,C.navy,LAT(800,13),'center',false);
+      if(Math.abs(v)>0.05)arrow(x,px,ty-28,px+v*14,ty-28,C.mint,3,8);if(!(s.after&&type==='stick')||lab==='A')label(x,`${f(v,2)} m/s`,s.after&&type==='stick'?cx+((s.xa+s.xb)/2)*S:px,ty-42,C.mint,LAT(700,11),'center',false);};
+    drawCar(s.xa,m1,C.sky,'A',s.va);drawCar(s.xb,m2,C.yellow,'B',s.vb);
+    label(x,`A: ${f(m1,1)} kg   B: ${f(m2,1)} kg`,14,ty+40,C.white,LAT(700,12),'left',false);
+    // momentum bars
+    const by=h*0.62,bh=h*0.3,mx=Math.max(Math.abs(m1*v1),Math.abs(m2*v2),Math.abs(m1*v1+m2*v2),Math.abs(m1*s.va),Math.abs(m2*s.vb),1);
+    const items=[['p A',m1*s.va,C.sky],['p B',m2*s.vb,C.yellow],['Σp',m1*s.va+m2*s.vb,C.mint]];
+    x.strokeStyle=C.white;x.lineWidth=1;x.beginPath();x.moveTo(40,by);x.lineTo(w-40,by);x.stroke();
+    items.forEach(([n,val,col],i)=>{const bx=w*(0.25+i*0.25),hh=bh*0.45*val/mx;x.fillStyle=col;x.fillRect(bx-26,Math.min(by,by-hh),52,Math.abs(hh));
+      label(x,n,bx,by+bh*0.5+4,C.white,LAT(800,12),'center',false);label(x,f(val,2),bx,by-hh+(hh>=0?-10:12),col,LAT(700,12),'center',false);});
+    label(x,s.after?'بعد التصادم':'قبل التصادم',w-14,22,s.after?C.mint:C.white,AR(800,13),'right');
+  }
+  function loop(ts){if(!run)return;t=(ts-t0)/1000;const T=tc();draw();if(t<T+1.6&&t<8)requestAnimationFrame(loop);else run=false;}
+  document.getElementById('coGo').addEventListener('click',()=>{if(tc()===Infinity){out();return;}if(RM){t=tc()+1.2;draw();return;}t=0;run=true;t0=performance.now();requestAnimationFrame(loop);});
+  document.getElementById('coReset').addEventListener('click',()=>{run=false;t=0;draw();});
+  onRedraw(c,draw);out();
+}
+
+function rkSim(){
+  const c=document.getElementById('rkCanvas'); if(!c)return;
+  const M0=1000;let dm=5,u=2000,M=M0,v=0,gasP=0,puffs=[],xr=0,last=0,on=false;
+  const out=()=>{document.getElementById('rkM').textContent=`${f(M,0)} kg`;document.getElementById('rkV').textContent=`${f(v,1)} m/s`;
+    document.getElementById('rkP').textContent=`${f(M*v-gasP,1)} kg m/s`;};
+  range('rkG',x=>`${x} kg`,()=>{dm=+document.getElementById('rkG').value;});
+  range('rkU',x=>`${x} m/s`,()=>{u=+document.getElementById('rkU').value;});
+  document.getElementById('rkFire').addEventListener('click',()=>{if(M-dm<200)return;v=(M*v+dm*u)/(M-dm);M-=dm;gasP+=dm*u;puffs.push({x:xr,age:0,n:dm});out();});
+  document.getElementById('rkReset').addEventListener('click',()=>{M=M0;v=0;gasP=0;puffs=[];xr=0;out();});
+  function draw(){if(c.offsetWidth<40)return;
+    const {x,w,h}=hi(c);x.fillStyle='#0A1630';x.fillRect(0,0,w,h);
+    x.fillStyle='rgba(255,255,255,0.6)';for(let i=0;i<40;i++){const sx=((i*97)%w+w-((xr*0.2)%w))%w,sy=(i*53)%h;x.fillRect(sx,sy,1.5,1.5);}
+    const rx=w*0.55,ry=h/2;
+    puffs.forEach(p=>{const px=rx-(xr-p.x)-p.age*60;const r=4+p.n*0.6+p.age*6;x.fillStyle=`rgba(255,159,28,${Math.max(0,0.8-p.age*0.25)})`;x.beginPath();x.arc(px,ry,r,0,7);x.fill();});
+    x.fillStyle=C.white;x.beginPath();x.moveTo(rx+60,ry);x.lineTo(rx+30,ry-14);x.lineTo(rx-40,ry-14);x.lineTo(rx-40,ry+14);x.lineTo(rx+30,ry+14);x.closePath();x.fill();
+    x.fillStyle=C.red;x.beginPath();x.moveTo(rx-40,ry-14);x.lineTo(rx-56,ry-26);x.lineTo(rx-30,ry-14);x.fill();x.beginPath();x.moveTo(rx-40,ry+14);x.lineTo(rx-56,ry+26);x.lineTo(rx-30,ry+14);x.fill();
+    x.fillStyle=C.sky;x.beginPath();x.arc(rx+14,ry,6,0,7);x.fill();
+    if(v>0.01)arrow(x,rx+70,ry,rx+70+Math.min(120,v*4),ry,C.mint,3,9);
+    label(x,`v = ${f(v,1)} m/s`,rx+74,ry-22,C.mint,LAT(700,12),'left',false);
+  }
+  function loop(ts){if(!on)return;const dt=Math.min(50,ts-(last||ts))/1000;last=ts;xr+=v*dt*2;puffs.forEach(p=>p.age+=dt);puffs=puffs.filter(p=>p.age<3.5);draw();requestAnimationFrame(loop);}
+  visible(c,vis=>{if(vis&&!on){on=true;last=0;requestAnimationFrame(loop);}else if(!vis)on=false;});
+  onRedraw(c,draw);out();draw();
+}
+
 /* ===== Games tab ===== */
 const store={get:k=>{try{return +(localStorage.getItem(k)||0);}catch(e){return 0;}},set:(k,v)=>{try{localStorage.setItem(k,String(v));}catch(e){}}};
 const rnd=(a,b,step=1)=>a+step*Math.floor(Math.random()*(Math.round((b-a)/step)+1));
@@ -3527,6 +5764,12 @@ function blitzGame(){
     ()=>{const F=pick([10,20,40,50]),d=pick([20,25,30,50]);const M=F*d/100;return{q:`قوة ${F} N تؤثر عموديًا على بُعد ${d} cm من محور الدوران. العزم:`,a:`${n(M)} N m`,w:[`${F*d} N m`,`${n(M*2)} N m`,`${n(F/d*10)} N m`]};},
     ()=>{const v=pick([36,54,72,90,108]);return{q:`السرعة ${v} km/h تساوي بالمتر لكل ثانية:`,a:`${v/3.6} m/s`,w:[`${n(v*3.6)} m/s`,`${v/10} m/s`,`${v/3.6+5} m/s`]};},
     ()=>{const v=pick([5,10,15,20]),t=pick([2,3,4]);return{q:`كرة قُذفت أفقيًا بسرعة ${v} m/s، ووصلت للأرض بعد ${t} s. مداها الأفقي:`,a:`${v*t} m`,w:[`${v*t/2} m`,`${5*t*t} m`,`${v+t} m`]};},
+    ()=>{const W=pick([20,40,60,80]);return{q:`مصباح وزنه ${W} N معلق بكابلين متماثلين، كل منهما يصنع 30° مع الأفقي. الشد في كل كابل:`,a:`${W} N`,w:[`${W/2} N`,`${W*2} N`,`${n(W/1.732)} N`]};},
+    ()=>{const m=pick([50,100,200]),h=pick([2,4,5]),t=pick([2,4,5,10]);const P=m*10*h/t;return{q:`يرفع محرك ${m} kg مسافة ${h} m رأسيًا بسرعة ثابتة في ${t} s. قدرته (g = 10 m/s²):`,a:`${n(P)} W`,w:[`${n(P*2)} W`,`${n(m*10*h)} W`,`${n(P/2)} W`]};},
+    ()=>{const [i,o]=pick([[200,150],[500,400],[1000,250],[80,60],[400,100]]);return{q:`جهاز يُزوَّد بـ ${i} J وينتج ${o} J طاقة مفيدة. كفاءته:`,a:`${n(o/i*100)}%`,w:[`${n(i/o*100)}%`,`${n((i-o)/i*100)}%`,`${o}%`]};},
+    ()=>{const m=pick([0.2,0.5,2,4]),v=pick([5,10,20]);return{q:`كمية تحرك جسم كتلته ${m} kg يتحرك بسرعة ${v} m/s:`,a:`${n(m*v)} kg m/s`,w:[`${n(m*v*2)} kg m/s`,`${n(0.5*m*v*v)} kg m/s`,`${n(v/m)} kg m/s`]};},
+    ()=>{const m=pick([0.1,0.2,0.5]),v=pick([4,10,20]);return{q:`كرة كتلتها ${m} kg تصطدم بجدار بسرعة ${v} m/s وترتد بالسرعة نفسها. مقدار الدفع:`,a:`${n(2*m*v)} N s`,w:[`${n(m*v)} N s`,`0 N s`,`${n(4*m*v)} N s`]};},
+    ()=>{const [m1,m2,v]=pick([[2,1,3],[1,1,4],[3,1,4],[2,2,6],[1,3,8]]);return{q:`جسم ${m1} kg بسرعة ${v} m/s يصطدم بجسم ساكن ${m2} kg ويلتصقان. سرعتهما معًا:`,a:`${n(m1*v/(m1+m2))} m/s`,w:[`${v} m/s`,`${n(m1*v/m2)} m/s`,`${n(v/2+1)} m/s`]};},
     ()=>{const F=pick([20,30,40]),d=pick([1,2,3]),F2=pick([10,60,80].filter(z=>z!==F));return{q:`طفل وزنه ${F*10} N يجلس على بُعد ${d} m من نقطة ارتكاز. على أي بُعد يجلس طفل وزنه ${F2*10} N في الجهة الأخرى ليتزن اللوح؟`,a:`${n(F*d/F2)} m`,w:[`${n(F2*d/F)} m`,`${d} m`,`${n(F*d/F2+1)} m`]};}
   ];
   const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -3602,6 +5845,8 @@ function initNav(){
     const t=n&&$(`.tab[data-tab="${n}"]`);if(!t)return;t._silent=true;t.click();t._silent=false;
     if(el)setTimeout(()=>{const tb=document.querySelector('.topbar');window.scrollTo(0,el.getBoundingClientRect().top+scrollY-(tb?tb.offsetHeight:0)-10);},60);else window.scrollTo(0,0);};
   openHash();addEventListener('hashchange',openHash);
+  /* Mouse wheel scrolls the tab strip sideways when it overflows */
+  const strip=$('.tabs');if(strip)strip.addEventListener('wheel',e=>{if(strip.scrollWidth>strip.clientWidth&&Math.abs(e.deltaY)>Math.abs(e.deltaX)){strip.scrollLeft+=(document.dir==='rtl'||strip.closest('[dir=rtl]')?-1:1)*e.deltaY;e.preventDefault();}},{passive:false});
   $$('[data-next-lesson]').forEach(a=>a.addEventListener('click',e=>{const t=$(`.tab[data-tab="${a.dataset.nextLesson}"]`);if(t&&!t.disabled){e.preventDefault();t.click();}}));
   const prog=document.getElementById('prog');
   const onScroll=()=>{
@@ -3635,6 +5880,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   initStepper('exSteps2','exNext2','exReset2');coinSim();labSim();dropGame();initQuiz('q2',window.QUIZ_L2,window.FACES);
   initStepper('exSteps3','exNext3','exReset3');frameSim();angSim();fireworks();initQuiz('q3',window.QUIZ_L3,window.FACES);
   initStepper('exSteps4','exNext4','exReset4');balSim();tqSim();wrSim();initQuiz('q4',window.QUIZ_L4,window.FACES);
+  initStepper('exSteps5','exNext5','exReset5');ebSim();lmSim();plSim();initQuiz('q5',window.QUIZ_L5,window.FACES);
+  initStepper('exSteps6','exNext6','exReset6');stSim();elSim();skSim();initQuiz('q6',window.QUIZ_L6,window.FACES);
+  initStepper('exSteps7','exNext7','exReset7');imSim();phSim();hmSim();initQuiz('q7',window.QUIZ_L7,window.FACES);
+  initStepper('exSteps8','exNext8','exReset8');chSim();coSim();rkSim();initQuiz('q8',window.QUIZ_L8,window.FACES);
   cannonGame();riverGame();seesawGame();blitzGame();basicsTools();
   initFullscreen();initNav();
 });

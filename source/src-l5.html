@@ -1,0 +1,423 @@
+<section class="lesson" id="lesson-5" data-lesson="5" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l5-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-5</span><br>اتزان القوى</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>يبقى كتاب في حالة سكون على طاولة، وتُعلَّق لافتة متجر بواسطة كابلين – ما الصحيح بشأن القوة المحصلة المؤثرة في كل جسم؟</p>
+      </div>
+      <p class="muted">في الدرس اللي فات عرفنا إمتى الجسم مايلفّش. النهارده هنعرف إمتى الجسم مايتحركش خالص، أو يتحرك بسرعة ثابتة: لما كل القوى اللي عليه تلغي بعضها.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l5-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنعلّق حاجات ونحسب الشد!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l5-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تذكر</b> شرط اتزان جسم ساكن أو بيتحرك بسرعة ثابتة.</span></li>
+      <li><span><b>ترسم</b> مخطط الجسم الحر: تعزل الجسم وترسم كل القوى الخارجية اللي عليه، وتحدد مصدر كل قوة.</span></li>
+      <li><span><b>تحسب</b> قوة مجهولة بإنك تحلل القوى لمركبات على محورين متعامدين وتطبق شرط الاتزان على كل محور.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> من الدرس <span class="m">1-1</span>: أي متجه مايل بيتفك لمركبتين، الأفقية <span class="m">F cos θ</span> والرأسية <span class="m">F sin θ</span> (لما <span class="m">θ</span> تبقى الزاوية مع الأفقي). والوزن <span class="m">W = m g</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l5-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">كتاب تقيل نايم على ترابيزة. وزنه شادّه لتحت، ومع ذلك مابيتحركش، يبقى الترابيزة بتعمل حاجة. وجنبه يافطة محل تقيلة متعلقة بسلسلتين مايلين بزاويتين مختلفين: واحدة مايلة جامد وقريبة من الرأسي، والتانية قريبة من الأفقي.</p>
+      <div class="poll" data-poll="p9" data-answer="1">
+        <b>(أ) ما القوة، إن وُجدت، التي تؤثر بها الطاولة على الكتاب؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">لا تؤثر بأي قوة</button>
+          <button class="opt" aria-pressed="false">قوة لأعلى تساوي وزن الكتاب</button>
+          <button class="opt" aria-pressed="false">قوة لأعلى أكبر من الوزن</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنرجعله في <a href="#l5-concept" style="color:var(--yellow)">المفهوم</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">قوة لأعلى تساوي الوزن بالظبط.</b> اسمها <b>القوة العمودية</b> <span class="m">F<sub>N</sub></span>. لو كانت أقل، الكتاب كان هيقع جوه الترابيزة، ولو أكبر كان هيطير لفوق. بما إنه ساكن، المحصلة صفر: <span class="m">F<sub>N</sub> = m g</span>.</div>
+      </div>
+      <div class="poll" data-poll="p10" data-answer="0">
+        <b>(ب) أي السلسلتين عليها قوة الشد الأكبر: الأبعد عن المستوى الأفقي أم الأقرب إليه؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">الأبعد عن الأفقي (الأقرب للرأسي)</button>
+          <button class="opt" aria-pressed="false">الأقرب إلى الأفقي</button>
+          <button class="opt" aria-pressed="false">الشد متساوٍ فيهما</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l5-lab" style="color:var(--yellow)">محاكي اللمبة</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">السلسلة الأقرب للرأسي شدها أكبر.</b> هي اللي «شايلة» الجزء الأكبر من الوزن، لأن معظم شدها رايح لفوق. جرّبها بالأرقام في المحاكي.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">بص على أي يافطة في الشارع وإنت بتفكر</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l5-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — كبّر الزاوية وقيس الاستطالة</span>
+    <p class="lead">إزازة مية معلقة بأستيكتين (شريطين مطاطيين) زي بعض. الإزازة نفسها طول التجربة، يعني الوزن ثابت. غيّر زاوية كل أستيك مع الرأسي، وشوف الاستطالة بتحصل لها إيه. ودوس «سجّل» عشان تحفظ القراءة في الجدول.</p>
+    <div class="sim">
+      <canvas id="ebCanvas" style="aspect-ratio:16/8" aria-label="زجاجة معلقة بشريطين مطاطيين بزاوية مع الرأسي"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="ebA">زاوية كل أستيك مع الرأسي <span class="m">θ</span> <output data-out="ebA"></output></label><input id="ebA" type="range" min="0" max="75" step="1" value="15"></div>
+        <div class="ctrl"><label for="ebW">وزن الإزازة <span class="m">W</span> <output data-out="ebW"></output></label><input id="ebW" type="range" min="5" max="20" step="0.5" value="10"></div>
+      </div>
+      <div class="readout">
+        <div><span>الشد في كل أستيك <span class="m">T</span></span><b id="ebT">—</b></div>
+        <div><span>استطالة كل أستيك</span><b id="ebX">—</b></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="ebRec">سجّل القراءة</button><button class="btn ghost small" id="ebClear">امسح الجدول</button></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th>وزن الإزازة <span class="m">(N)</span></th><th>الزاوية <span class="m">θ</span></th><th>الاستطالة <span class="m">(cm)</span></th><th>الشد <span class="m">T (N)</span></th></tr></thead>
+          <tbody id="ebTable"><tr class="empty"><td colspan="5" class="muted">لسه مفيش قراءات. غيّر الزاوية ودوس «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">الأستيك هنا بيستطيل <span class="m">1 cm</span> لكل <span class="m">1 N</span> شد (يعني ثابته <span class="m">k = 100 N/m</span>). ومن غير ما نتعدى حد المرونة.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) مع زيادة الزاوية عن المستوى الرأسي، ماذا حدث لاستطالة كل شريط، وبالتالي للشد فيه؟<br>(ب) بقي وزن الزجاجة ثابتًا، فلماذا زاد الشد في كل شريط؟ ماذا حدث للمركبتين الأفقيتين لقوتي الشد؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="ebAns">اكشف النمط</button>
+        <div id="ebAns" class="reveal" hidden>كل ما الزاوية تكبر، الأستيك بيطول أكتر، يعني الشد بيزيد، مع إن الوزن ماتغيرش. السبب: اللي شايل الإزازة هو <b>الجزء الرأسي</b> من الشد بس، <span class="m">T cos θ</span>. لما الأستيك يميل، الجزء ده يقل، فالشد كله لازم يكبر عشان الجزأين الرأسيين مع بعض يفضلوا يساووا الوزن: <span class="m ylw">2 T cos θ = W</span>. أما الجزأين الأفقيين فبيشدوا عكس بعض ويلغوا بعض.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l5-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">اعزل الجسم وارسم مخطط الجسم الحر</h2>
+      <p>عشان نحلل أي جسم، بنعزله لوحده عن كل اللي حواليه، ونرسم عليه <b>القوى الخارجية بس</b>، يعني القوى اللي الأجسام التانية بتأثر بيها عليه (مش القوى اللي هو بيأثر بيها على غيره). كل قوة نرسمها سهم في اتجاهها، ونكتب جنبها مصدرها. والوزن بنرسمه سهم واحد لتحت من مركز ثقل الجسم. الرسمة دي اسمها <b>مخطط الجسم الحر</b>.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>القوة</th><th>الرمز</th><th>جاية منين ورايحة فين</th></tr></thead>
+          <tbody>
+            <tr><td>القوة العمودية <span class="en-term">Normal force</span></td><td class="m">F<sub>N</sub></td><td>من سطح لامس الجسم، وعمودية على السطح. لجسم متزن على سطح أفقي من غير قوى رأسية تانية: <span class="m">F<sub>N</sub> = m g</span></td></tr>
+            <tr><td>الشد <span class="en-term">Tension</span></td><td class="m">T</td><td>من حبل أو كابل مشدود، على طول الحبل، ودايمًا <b>بعيد</b> عن الجسم (الحبل بيشد مابيزقش)</td></tr>
+            <tr><td>القوة المرنة <span class="en-term">Elastic force</span></td><td class="m">F<sub>e</sub> = −k x</td><td>من زنبرك مشدود أو مضغوط، عكس الإزاحة عن وضع الاتزان، في حدود التناسب</td></tr>
+            <tr><td>الوزن <span class="en-term">Weight</span></td><td class="m">F<sub>g</sub> = m g</td><td>من جاذبية الأرض، رأسي لتحت من مركز الثقل</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">طبّق شرط الاتزان</h3>
+      <p>الجسم يبقى في <b>اتزان انتقالي</b> لما يكون ساكن أو بيتحرك بسرعة ثابتة. ده بيحصل لما المحصلة بتاعة كل القوى اللي عليه تساوي صفر:</p>
+      <div class="fbox"><span class="m">Σ F = 0</span></div>
+      <p>والقوى المايلة بنحللها لمركبات على محورين متعامدين، ونطبق الشرط على كل محور لوحده:</p>
+      <div class="fbox"><span class="m">Σ F<sub>x</sub> = 0 ,  Σ F<sub>y</sub> = 0</span></div>
+      <div class="term"><b>مصطلح — الاتزان الانتقالي <span class="en-term">Translational equilibrium</span>:</b> حالة الجسم لما محصلة القوى عليه صفر، فيفضل ساكن أو يتحرك بسرعة ثابتة في خط مستقيم.</div>
+      <div class="plain"><b class="t">مع الإزازة المعلقة:</b> الجزأين الأفقيين للشدين متساويين في المقدار وعكس بعض في الاتجاه، فبيلغوا بعض <span class="m">(ΣF<sub>x</sub> = 0)</span>. والجزأين الرأسيين رايحين لفوق ومع بعض بيساووا الوزن <span class="m">(ΣF<sub>y</sub> = 0)</span>. فالمحصلة صفر والإزازة متزنة.</div>
+      <div class="plain"><b class="t">خلي بالك من الزاوية:</b> لو الزاوية مع <b>الأفقي</b> يبقى الجزء الرأسي <span class="m">T sin θ</span>. ولو الزاوية مع <b>الرأسي</b> يبقى الجزء الرأسي <span class="m">T cos θ</span>. ارسم الزاوية على الرسمة قبل ما تختار <span class="m">sin</span> ولا <span class="m">cos</span>.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">ارسم الجسم لوحده، وحط عليه القوى اللي عليه بس</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB ============ -->
+<section class="board" id="l5-lab">
+  <div class="stack">
+    <span class="seg">محاكي اللمبة المعلقة</span>
+    <h2 class="h2">كابلين بزاويتين مختلفين</h2>
+    <p class="lead">لمبة متعلقة في السقف بكابلين. غيّر الكتلة وزاوية كل كابل مع الأفقي. المحاكي بيرسم مخطط الجسم الحر عند نقطة التعليق، وبيحسب الشد في كل كابل بحيث <span class="m">ΣF<sub>x</sub> = 0</span> و <span class="m">ΣF<sub>y</sub> = 0</span>. شغّل «وريني المركبات» عشان تشوف الأجزاء الأفقية بتلغي بعض.</p>
+    <div class="sim">
+      <canvas id="lmCanvas" style="aspect-ratio:16/9" aria-label="لمبة معلقة بكابلين ومخطط الجسم الحر"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="lmM">كتلة اللمبة <span class="m">m</span> <output data-out="lmM"></output></label><input id="lmM" type="range" min="1" max="25" step="0.5" value="6"></div>
+        <div class="ctrl"><label for="lmA1">زاوية الكابل الشمال مع الأفقي <span class="m">θ<sub>1</sub></span> <output data-out="lmA1"></output></label><input id="lmA1" type="range" min="5" max="85" step="1" value="30"></div>
+        <div class="ctrl"><label for="lmA2">زاوية الكابل اليمين مع الأفقي <span class="m">θ<sub>2</sub></span> <output data-out="lmA2"></output></label><input id="lmA2" type="range" min="5" max="85" step="1" value="30"></div>
+      </div>
+      <div class="btnrow"><label class="muted" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="lmComp"> وريني المركبات</label></div>
+      <div class="readout">
+        <div><span>الوزن <span class="m">W = m g</span></span><b id="lmW">—</b></div>
+        <div><span>شد الكابل الشمال <span class="m">T<sub>1</sub></span></span><b id="lmT1">—</b></div>
+        <div><span>شد الكابل اليمين <span class="m">T<sub>2</sub></span></span><b id="lmT2">—</b></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--pen-formula)"></i>الشد</span><span><i style="background:var(--pen-warn)"></i>الوزن</span><span><i style="background:var(--pen-given)"></i>المركبات</span></div>
+      <p class="muted" style="font-size:14px">جرّب: <span class="m">m = 6.0 kg</span> والزاويتين <span class="m">30°</span>، هتلاقي الشد في كل كابل <span class="m">≈ 59 N</span>، ودي أرقام المثال المحلول. وبعدين خلي واحدة <span class="m">30°</span> والتانية <span class="m">60°</span> وشوف مين شده أكبر.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l5-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>شرط الاتزان الانتقالي</b><div class="eq">Σ F = 0</div><small>الجسم ساكن أو بيتحرك بسرعة ثابتة.</small></div>
+      <div class="law"><b>على محورين متعامدين</b><div class="eq">Σ F<sub>x</sub> = 0 , Σ F<sub>y</sub> = 0</div><small>حلل كل قوة مايلة لمركبتين الأول.</small></div>
+      <div class="law"><b>الوزن</b><div class="eq">W = m g</div><small><span class="m">g = 9.8 m s<sup>−2</sup></span> لتحت.</small></div>
+      <div class="law"><b>القوة العمودية على سطح أفقي</b><div class="eq">F<sub>N</sub> = m g</div><small>لو مفيش قوى رأسية تانية.</small></div>
+      <div class="law"><b>كابلين متماثلين بزاوية θ مع الأفقي</b><div class="eq">2 T sin θ = W</div><small>ولو الزاوية مع الرأسي: <span class="m">2 T cos θ = W</span>.</small></div>
+      <div class="law"><b>القوة المرنة (قانون هوك)</b><div class="eq">F<sub>e</sub> = −k x</div><small>المقدار <span class="m">k x</span>، و <span class="m">k</span> بوحدة <span class="m">N m<sup>−1</sup></span>.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l5-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> يتدلى مصباح كتلته <span class="m">6.0 kg</span> في حالة اتزان بواسطة كابلين متطابقين، يصنع كل منهما زاوية <span class="m">30°</span> مع الأفقي. احسب الشد في كل كابل. <span class="m">(g = 9.8 m s<sup>−2</sup>)</span></div>
+    <div class="steps" id="exSteps5">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 6.0 kg</span>، <span class="m">g = 9.8 m s<sup>−2</sup></span>، <span class="m">θ = 30°</span> مع الأفقي</p>
+        <p><b>المطلوب:</b> الشد <span class="m">T</span> في كل كابل.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>نرسم مخطط الجسم الحر: شدين مايلين لفوق، ووزن لتحت. الجزأين الأفقيين بيلغوا بعض، والجزأين الرأسيين مع بعض بيساووا الوزن:</p>
+        <div class="answer"><span class="m">2 T sin 30° = W</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p><span class="m">W = 6.0 × 9.8 = 58.8 N</span></p>
+        <p><span class="m">T = W / (2 × sin 30°) = 58.8 / (2 × 0.5)</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">T = 58.8 N ≈ 59 N</span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext5">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset5">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> الشد في كل كابل طلع قد الوزن كله، مش نصه! لأن عند <span class="m">30°</span> نص الشد بس هو اللي رايح لفوق <span class="m">(sin 30° = 0.5)</span>. والكابل المايل مابيشيلش غير جزء من الوزن، فلازم يتشد أكتر.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l5-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> يتدلى المصباح نفسه الذي كتلته <span class="m">6.0 kg</span> بواسطة كابلين متطابقين، يصنع كل منهما زاوية <span class="m">50°</span> مع الأفقي. أوجد الشد في كل كابل بالنيوتن.</p>
+        <div class="ansrow" data-num="38.4" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5A">وريني الحل</button>
+        <div id="try5A" class="sol" hidden><span class="m">T = 58.8 / (2 × sin 50°) = 58.8 / 1.53 ≈ 38 N</span>. أقل من المثال، لأن الكابل بقى أقرب للرأسي فجزء أكبر من شده رايح لفوق.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> يتدلى مصباح كتلته <span class="m">20 kg</span> فوق ساحة عامة من كابلين يصنعان زاويتين <span class="m">30°</span> و <span class="m">60°</span> مع الأفقي. أوجد الشد في الكابل الذي يصنع <span class="m">60°</span>.</p>
+        <div class="ansrow" data-num="169.7" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5B">وريني الحل</button>
+        <div id="try5B" class="sol" hidden><span class="m">W = 20 × 9.8 = 196 N</span>.<br>أفقي: <span class="m">T<sub>1</sub> cos 30° = T<sub>2</sub> cos 60°</span><br>رأسي: <span class="m">T<sub>1</sub> sin 30° + T<sub>2</sub> sin 60° = 196</span><br>بالحل: <span class="m">T<sub>1</sub> = 98 N</span> (كابل الـ <span class="m">30°</span>) و <span class="m">T<sub>2</sub> ≈ 170 N</span> (كابل الـ <span class="m">60°</span>). الكابل الأقرب للرأسي شده أكبر.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تتدلى لافتة كتلتها <span class="m">5.0 kg</span> فوق شارع من كابلين يصنع كل منهما زاوية <span class="m">40°</span> مع الأفقي. أوجد الشد في كل كابل بالنيوتن.</p>
+        <div class="ansrow" data-num="38.1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5C">وريني الحل</button>
+        <div id="try5C" class="sol" hidden><span class="m">W = 5.0 × 9.8 = 49 N</span>، و <span class="m">T = 49 / (2 × sin 40°) = 49 / 1.29 ≈ 38 N</span>. ولو عايز المركبة الرأسية اللي بيشيلها كل كابل: <span class="m">49 / 2 = 24.5 N</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> تتدلى قطعة معدنية في حالة سكون من نابض زنبركي ثابته <span class="m">200 N m<sup>−1</sup></span>، فيستطيل <span class="m">0.15 m</span>. أوجد وزن القطعة بالنيوتن.</p>
+        <div class="ansrow" data-num="30" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الوزن"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try5D">وريني الحل</button>
+        <div id="try5D" class="sol" hidden>متزنة، يعني قوة الزنبرك لفوق = الوزن: <span class="m">W = k x = 200 × 0.15 = 30 N</span>.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">ارسم مخطط الجسم الحر الأول، وبعدين حلل</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: POWER LINES ============ -->
+<section class="board sky" id="l5-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">ليه أسلاك الكهربا مش مشدودة على الآخر؟</h2>
+      <p class="lead">لو ماشي في طريق زراعي، هتلاحظ إن أسلاك الكهربا بين العواميد بتبقى «مرخية» شوية ونازلة في النص، مش خط أفقي مستقيم. عند كل عمود، الجزء الرأسي من الشد في الناحيتين مع بعض بيساوي وزن السلك كله، والجزء الأفقي بيلغي بعضه. كل ما السلك يتشد أكتر ويقرب من الأفقي، الجزء الرأسي من الشد يبقى نسبة أصغر، فالشد كله لازم يكبر جدًا عشان يشيل نفس الوزن. جرّب بنفسك: المسافة بين العمودين <span class="m">40 m</span> ووزن السلك <span class="m">600 N</span>.</p>
+      <div class="sim">
+        <canvas id="plCanvas" style="aspect-ratio:16/6" aria-label="سلك كهرباء بين عمودين ودرجة ترخيته"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="plS">نزول السلك في النص (الترخية) <output data-out="plS"></output></label><input id="plS" type="range" min="0.1" max="8" step="0.1" value="2"></div>
+        </div>
+        <div class="readout">
+          <div><span>زاوية السلك مع الأفقي عند العمود</span><b id="plA">—</b></div>
+          <div><span>الشد عند كل عمود <span class="m">T = W / (2 sin θ)</span></span><b id="plT">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> باستخدام المركبات الرأسية، فسّر لماذا يؤدي تقليل التدلي في خط كهرباء إلى زيادة الشد فيه. <button class="btn small navy" data-toggle="irl5A">إجابة مقترحة</button></div>
+      <div id="irl5A" class="sol" hidden>الوزن ثابت، والمطلوب <span class="m">2 T sin θ = W</span>. لما نقلل الترخية، الزاوية <span class="m">θ</span> عند العمود تصغر، فـ <span class="m">sin θ</span> يصغر، فلازم <span class="m">T</span> يكبر عشان الحاصل يفضل قد الوزن. ولو حاولنا نخلي السلك أفقي تمامًا <span class="m">(θ = 0)</span>، الشد المطلوب يقرب من ما لا نهاية، والسلك يتقطع. عشان كده المهندسين بيسيبوا ترخية محسوبة.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">السلك المشدود على الآخر بيتقطع أسرع!</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l5-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">ستيفن وإكليل الكرات: قانون اتزان قبل نيوتن</h3>
+      <p>قبل نيوتن بحوالي 100 سنة، سنة <span class="m">1586</span>، العالم سيمون ستيفن درس الاتزان على المستوى المايل بتجربة في دماغه بس. تخيّل سلسلة مقفولة من كرات متساوية ملفوفة حوالين مستويين مايلين. لو ناحية كانت بتشد أكتر من التانية، السلسلة هتلف، وبعد لفة ترجع لنفس الشكل، فتفضل تلف للأبد من غير ما حد يزقها. وده مستحيل. يبقى الشدين لازم يتوازنوا. ومن الفكرة دي طلع قانون الاتزان على المستوى المايل وتحليل القوى لمركبات.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> لماذا استطاع ستيفن أن يثق بهذا الاستنتاج حتى بدون معادلات الحركة الحديثة؟</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l5-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تقسم الوزن على اتنين وتقول ده الشد</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «كابلين شايلين <span class="m">58.8 N</span>، يبقى كل واحد <span class="m">29.4 N</span>»</div>
+            <div class="good"><b>صح:</b> الكابل مايل، فـ <span class="m">2 T sin θ = W</span>. عند <span class="m">30°</span> يطلع <span class="m">T = 58.8 N</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تلخبط بين sin و cos</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> الزاوية مع الرأسي وتكتب الجزء الرأسي <span class="m">T sin θ</span></div>
+            <div class="good"><b>صح:</b> مع الأفقي: الرأسي <span class="m">T sin θ</span>. مع الرأسي: الرأسي <span class="m">T cos θ</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تفتكر الساكن بس هو المتزن</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «العربية ماشية بسرعة ثابتة، يبقى فيه محصلة قوى لقدّام»</div>
+            <div class="good"><b>صح:</b> سرعة ثابتة يعني متزنة: <span class="m">ΣF = 0</span>، زيها زي الساكن</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تحط في مخطط الجسم الحر قوة الجسم على غيره</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> ترسم على الكتاب «قوة الكتاب على الترابيزة»</div>
+            <div class="good"><b>صح:</b> ارسم بس القوى اللي <b>عليه</b>: وزنه، والقوة العمودية من الترابيزة</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">ارسم الزاوية على الرسمة قبل ما تختار sin ولا cos!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l5-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">يبقى كتاب في حالة سكون على طاولة، وتُعلَّق لافتة متجر بسلسلتين – ما الصحيح بشأن القوة المحصلة المؤثرة في كل جسم؟</p>
+    <p class="lead">في الحالتين المحصلة <b>صفر</b>: <span class="m ylw">ΣF = 0</span>، لأن الجسمين في اتزان انتقالي. الكتاب: القوة العمودية من الترابيزة لفوق بتوازن وزنه بالظبط. اليافطة: الجزء الأفقي من شد كل سلسلة بيلغي التاني، والجزأين الرأسيين مع بعض بيساووا وزنها. ولأن السلسلتين بزاويتين مختلفين، الشدين غالبًا مش متساويين، والسلسلة الأقرب للرأسي هي اللي شدها أكبر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l5-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">الاتزان</b><p>ساكن أو سرعة ثابتة.<br><span class="m">ΣF = 0</span><br><span class="m">ΣF<sub>x</sub> = 0 , ΣF<sub>y</sub> = 0</span></p></div>
+        <div class="sumcol"><b class="on-navy-given">مخطط الجسم الحر</b><p>اعزل الجسم، وارسم القوى الخارجية اللي عليه بس: الوزن، والعمودية، والشد، والمرنة.</p></div>
+        <div class="sumcol"><b class="mintc">كابلين مايلين</b><p><span class="m">2 T sin θ = W</span> (الزاوية مع الأفقي).<br>كل ما الكابل يقرب من الأفقي، الشد يكبر.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس الخامس</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l5-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <p>احسب النتيجة إلى أقرب رقمين عشريين؛ خذ <span class="m">g = 9.8 m s<sup>−2</sup></span>.</p>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تتدلى لافتة متجر كتلتها <span class="m">8.0 kg</span> في حالة اتزان من كابلين خفيفين متصلين بعارضة أفقية. يصنع الكابل الأيسر زاوية <span class="m">30°</span> مع الأفقي، ويصنع الأيمن زاوية <span class="m">55°</span> مع الأفقي. أوجد الشد في الكابل الأيمن.</p>
+      <div class="ansrow" data-num="68.16" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5A">وريني الحل</button>
+      <div id="ch5A" class="sol" hidden><span class="m">W = 78.4 N</span><br>أفقي: <span class="m">T<sub>L</sub> cos 30° = T<sub>R</sub> cos 55°</span><br>رأسي: <span class="m">T<sub>L</sub> sin 30° + T<sub>R</sub> sin 55° = 78.4</span><br>بالحل: <span class="m">T<sub>R</sub> = W cos 30° / sin 85° ≈ 68.16 N</span> و <span class="m">T<sub>L</sub> = W cos 55° / sin 85° ≈ 45.14 N</span>. الأيمن (الأقرب للرأسي) شده أكبر.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> يُثبَّت مصباح كتلته <span class="m">3.0 kg</span> في حالة اتزان بكابل مثبت في السقف وحبل أفقي خفيف. يصنع الكابل زاوية <span class="m">25°</span> مع الرأسي. أوجد الشد <span class="m">P</span> في الحبل الأفقي.</p>
+      <div class="ansrow" data-num="13.71" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="الشد في الحبل"><span class="unit">N</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5B">وريني الحل</button>
+      <div id="ch5B" class="sol" hidden>رأسي: <span class="m">T cos 25° = 29.4</span>، يبقى <span class="m">T ≈ 32.44 N</span>.<br>أفقي: <span class="m">P = T sin 25° ≈ 13.71 N</span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> تتدلى قطعة كتلتها <span class="m">1.5 kg</span> في حالة اتزان من نابضين خفيفين متطابقين، يصنع كل منهما زاوية <span class="m">40°</span> مع الرأسي، وثابت كل منهما <span class="m">60 N m<sup>−1</sup></span>. أوجد استطالة كل نابض بالمتر.</p>
+      <div class="ansrow" data-num="0.16" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="الاستطالة"><span class="unit">m</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch5C">وريني الحل</button>
+      <div id="ch5C" class="sol" hidden>الزاوية مع الرأسي: <span class="m">2 F cos 40° = 14.7</span>، يبقى <span class="m">F ≈ 9.60 N</span> في كل نابض.<br><span class="m">x = F / k = 9.60 / 60 ≈ 0.16 m</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l5-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه لما تشيل شنطة تقيلة بإيدين مفرودين على الجنبين بتتعب بسرعة، ولما تشيلها بإيدين نازلين لتحت بتبقى أسهل؟</b>
+  <label for="l5c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l5c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l5c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l5-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-5</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m s<sup>−2</sup></span> في كل الأسئلة.</p>
+    <div class="qlist" data-quiz="q5"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q5">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q5">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="6">الدرس اللي بعده: القدرة والكفاءة ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

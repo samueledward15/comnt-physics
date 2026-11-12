@@ -1,0 +1,430 @@
+<section class="lesson" id="lesson-8" data-lesson="8" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l8-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-8</span><br>حفظ كمية الحركة</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>عندما تنزل من قارب صغير ساكن بجوار الرصيف، لماذا يتحرك القارب إلى الخلف؟ وما الذي يحدد سرعته؟</p>
+      </div>
+      <p class="muted">في الدرس اللي فات شفنا جسم واحد بيتغير زخمه بالدفع. النهارده هنبص على جسمين أو أكتر بيخبطوا في بعض أو بيزقوا بعض، ونكتشف حاجة مابتتغيرش أبدًا: كمية التحرك الكلية.</p>
+      <div class="btnrow">
+        <a class="btn" href="#l8-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">النهارده هنخبّط عربيات في بعض!</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l8-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تشرح</b> ليه كمية التحرك الكلية لنظام معزول بتفضل ثابتة.</span></li>
+      <li><span><b>تطبق</b> قانون حفظ كمية التحرك عشان تحسب سرعات مجهولة قبل التصادم وبعده.</span></li>
+      <li><span><b>تحدد</b> النظام، وتختار محور، وتكتب الاتجاه الموجب قبل ما تطبق حفظ كمية التحرك.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> كمية تحرك جسم <span class="m">p = m v</span>، والدفع اللي بتعمله القوة المحصلة خلال فترة زمنية = التغير في كمية التحرك <span class="m">J = F Δt = Δp</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l8-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">خلصت فسحة في قارب صغير، ونطيت لقدّام ناحية رصيف حجري. أول ما رجلك اتحركت لقدّام، القارب اتزحلق لورا، والمسافة بينه وبين الرصيف زادت. لو نطيت بالراحة، بيبعد بالراحة، ولو زقيت جامد، بيرجع لورا أسرع. ومحدش زق القارب! بص على القارب المرة الجاية لما حد ينزل منه.</p>
+      <div class="poll" data-poll="p15" data-answer="0">
+        <b>(أ) أثناء الدفع، هل تتغير كمية التحرك لديك ولدى القارب بمقدار متساوٍ أم مختلف؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">بمقدار متساوٍ (وفي اتجاهين متعاكسين)</button>
+          <button class="opt" aria-pressed="false">بمقدارين مختلفين</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l8-explore" style="color:var(--yellow)">تجربة الكراسي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">متساوي في المقدار وعكس بعض في الاتجاه.</b> إنت بتزق القارب، والقارب بيزقك بنفس القوة في الاتجاه العكسي، لنفس الزمن بالظبط. فكل واحد بياخد نفس الدفع بالعكس.</div>
+      </div>
+      <div class="poll" data-poll="p16" data-answer="0">
+        <b>(ب) يتلقى قارب فارغ وقارب محمَّل بصناديق الدفع نفسه. أي القاربين يرتد بسرعة أكبر؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">القارب الفارغ</button>
+          <button class="opt" aria-pressed="false">القارب المحمَّل</button>
+          <button class="opt" aria-pressed="false">يرتدان بالسرعة نفسها</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. شوفه في <a href="#l8-explore" style="color:var(--yellow)">تجربة الكراسي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">الفاضي.</b> نفس الدفع يعني نفس التغير في كمية التحرك <span class="m">m v</span>. والكتلة الأصغر بتاخد سرعة أكبر عشان الحاصل يبقى واحد.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">محدش زق القارب… أمال اتحرك ليه؟</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l8-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — طالبين على كراسي بعجل</span>
+    <p class="lead">طالبين قاعدين على كرسيين بعجل قصاد بعض وكفوفهم لازقة في بعض. عند العد، بيزقوا بعض زقة واحدة. غيّر الكتلتين وقوة الزقة، ودوس «زقّوا». وجرّب «طالب واحد بس اللي بيزق». سجّل كل محاولة.</p>
+    <div class="sim">
+      <canvas id="chCanvas" style="aspect-ratio:16/7" aria-label="طالبان على كرسيين بعجلات يتدافعان"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="chM1">كتلة الطالب الشمال مع كرسيه <span class="m">m<sub>1</sub></span> <output data-out="chM1"></output></label><input id="chM1" type="range" min="30" max="120" step="1" value="60"></div>
+        <div class="ctrl"><label for="chM2">كتلة الطالب اليمين مع كرسيه <span class="m">m<sub>2</sub></span> <output data-out="chM2"></output></label><input id="chM2" type="range" min="30" max="120" step="1" value="60"></div>
+        <div class="ctrl"><label for="chJ">قوة الزقة (الدفع) <span class="m">J</span> <output data-out="chJ"></output></label><input id="chJ" type="range" min="20" max="200" step="5" value="90"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="chGo">زقّوا</button><label class="muted" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="chOne"> طالب واحد بس اللي بيزق (الشمال)</label><button class="btn ghost small" id="chRec">سجّل</button><button class="btn ghost small" id="chClear">امسح الجدول</button></div>
+      <div class="readout">
+        <div><span>سرعة الشمال <span class="m">v<sub>1</sub></span></span><b id="chV1">—</b></div>
+        <div><span>سرعة اليمين <span class="m">v<sub>2</sub></span></span><b id="chV2">—</b></div>
+        <div><span>كمية التحرك الكلية بعد الزقة</span><b id="chP">—</b></div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المحاولة</th><th class="m">m<sub>1</sub> (kg)</th><th class="m">m<sub>2</sub> (kg)</th><th class="m">v<sub>1</sub> (m/s)</th><th class="m">v<sub>2</sub> (m/s)</th><th class="m">m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub></th><th>مين راح أبعد؟</th></tr></thead>
+          <tbody id="chTable"><tr class="empty"><td colspan="7" class="muted">لسه مفيش محاولات. دوس «زقّوا» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">اليمين موجب. والكراسي بتهدّي بالاحتكاك، فالمسافة اللي كل كرسي بيقطعها بتزيد كل ما سرعته تكبر.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) عندما تختلف كتلتا الطالبين، أيهما يتحرك مسافة أبعد؟ كيف تعتمد المسافة على الكتلة؟<br>(ب) عندما دفع طالب واحد فقط، هل تحرك كرسيه وحده أم تحرك الكرسيان؟ ماذا يخبرك هذا عن القوى أثناء التفاعل؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="chAns">اكشف النمط</button>
+        <div id="chAns" class="reveal" hidden>الأخف بيروح أبعد دايمًا. والكرسيين بيتحركوا حتى لو واحد بس اللي زق! لأن لما تزق حد، هو بيزقك بنفس القوة في الاتجاه العكسي، لنفس الزمن. فكل واحد بياخد دفع متساوي ومعاكس، وكمية التحرك الكلية بتفضل <b>صفر</b> زي ما كانت قبل الزقة: <span class="m ylw">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = 0</span>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l8-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">النظام وحفظ كمية التحرك</h2>
+      <p>مجموعة الأجسام اللي بندرسها مع بعض اسمها <b>نظام</b>. القوى اللي الأجسام دي بتأثر بيها على بعض جوه النظام اسمها <b>قوى داخلية</b>، والقوى اللي جاية من حاجات برا النظام اسمها <b>قوى خارجية</b>.</p>
+      <div class="grid2">
+        <div class="note"><b>قوى داخلية <span class="en-term">Internal forces</span>:</b> زي زقة الطالبين لبعض. بتيجي أزواج متساوية ومعاكسة، فدفعها الكلي على النظام صفر.</div>
+        <div class="note"><b>قوى خارجية <span class="en-term">External forces</span>:</b> زي الاحتكاك مع الأرض أو زقة من حد برا النظام. دي اللي ممكن تغيّر كمية التحرك الكلية.</div>
+      </div>
+      <div class="term"><b>مصطلح — النظام المعزول <span class="en-term">Isolated system</span>:</b> نظام الدفع الخارجي الكلي عليه خلال فترة زمنية = صفر. فكمية تحركه الكلية بتفضل ثابتة.</div>
+      <p>ومن هنا القانون: كمية التحرك الكلية للنظام قبل التصادم = كمية التحرك الكلية بعده. ده <b>قانون حفظ كمية التحرك</b>. لو الجسم <span class="m">A</span> (كتلته <span class="m">m<sub>1</sub></span> وسرعته <span class="m">v<sub>1</sub></span>) خبط في الجسم <span class="m">B</span> (كتلته <span class="m">m<sub>2</sub></span> وسرعته <span class="m">v<sub>2</sub></span>)، وبقت سرعاتهم <span class="m">v<sub>1</sub>′</span> و <span class="m">v<sub>2</sub>′</span>:</p>
+      <div class="fbox"><span class="m">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</span></div>
+      <div class="plain"><b class="t">إمتى نستخدمه؟</b> لما الدفع الخارجي على النظام يبقى صفر. أو لما فيه قوى خارجية (زي الجاذبية أو الاحتكاك) بس تأثيرها صغير جدًا خلال الخبطة القصيرة، فنهملها.</div>
+      <div class="plain"><b class="t">الإشارات بتعمل كل الشغل:</b> حدد اتجاه موجب الأول. أي سرعة عكسه تتكتب بالسالب. ولو طلعتلك سرعة نهائية سالبة، يبقى الجسم رايح عكس الاتجاه الموجب.</div>
+      <div class="plain"><b class="t">في بُعدين:</b> لو الأجسام اتحركت في مستوى (مش في خط واحد)، حلل كل سرعة لمركبتين، وطبق الحفظ على <span class="m">x</span> لوحده وعلى <span class="m">y</span> لوحده.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">مجموع p قبل = مجموع p بعد</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: COLLISIONS ============ -->
+<section class="board" id="l8-lab">
+  <div class="stack">
+    <span class="seg">محاكي التصادمات</span>
+    <h2 class="h2">عربيتين على مسار أملس</h2>
+    <p class="lead">اختار كتلة وسرعة كل عربية (اليمين موجب، والسالب يعني رايحة شمال)، واختار نوع التصادم. دوس «صادم» وراقب أعمدة كمية التحرك: كل عربية بتتغير، لكن المجموع ثابت.</p>
+    <div class="sim">
+      <canvas id="coCanvas" style="aspect-ratio:16/9" aria-label="عربتان تتصادمان مع أعمدة كمية التحرك"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="coM1">كتلة <span class="m">A</span> <output data-out="coM1"></output></label><input id="coM1" type="range" min="0.2" max="5" step="0.1" value="1.2"></div>
+        <div class="ctrl"><label for="coV1">سرعة <span class="m">A</span> <output data-out="coV1"></output></label><input id="coV1" type="range" min="-5" max="5" step="0.1" value="3"></div>
+        <div class="ctrl"><label for="coM2">كتلة <span class="m">B</span> <output data-out="coM2"></output></label><input id="coM2" type="range" min="0.2" max="5" step="0.1" value="2.8"></div>
+        <div class="ctrl"><label for="coV2">سرعة <span class="m">B</span> <output data-out="coV2"></output></label><input id="coV2" type="range" min="-5" max="5" step="0.1" value="-2"></div>
+      </div>
+      <div class="btnrow" id="coType">
+        <button class="btn small navy" data-co="stick" aria-pressed="true">يلتصقوا</button>
+        <button class="btn small ghost" data-co="bounce" aria-pressed="false">يرتدوا (مرن)</button>
+      </div>
+      <div class="btnrow"><button class="btn" id="coGo">صادم</button><button class="btn ghost small" id="coReset">رجّعهم</button><span id="coMsg" style="font-weight:700"></span></div>
+      <div class="readout">
+        <div><span>الكلية قبل <span class="m">Σp</span></span><b id="coPb">—</b></div>
+        <div><span>الكلية بعد <span class="m">Σp′</span></span><b id="coPa">—</b></div>
+        <div><span><span class="m">v<sub>A</sub>′</span></span><b id="coVa">—</b></div>
+        <div><span><span class="m">v<sub>B</sub>′</span></span><b id="coVb">—</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">الأرقام الأولانية هي المثال المحلول (أ): <span class="m">1.2 kg</span> بـ <span class="m">+3.0</span> و <span class="m">2.8 kg</span> بـ <span class="m">−2.0</span> بيلتصقوا. توقّع الأول السرعة بعد الالتصاق، وبعدين دوس «صادم».</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l8-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>كمية تحرك جسم</b><div class="eq">p = m v</div><small>متجهة.</small></div>
+      <div class="law"><b>حفظ كمية التحرك (جسمين على محور)</b><div class="eq">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</div><small>لنظام معزول: الدفع الخارجي = صفر.</small></div>
+      <div class="law"><b>جسمين التصقوا</b><div class="eq">m<sub>1</sub> v<sub>1</sub> + m<sub>2</sub> v<sub>2</sub> = (m<sub>1</sub> + m<sub>2</sub>) v′</div><small>بيتحركوا بسرعة واحدة بعد التصادم.</small></div>
+      <div class="law"><b>انفجار أو تدافع من السكون</b><div class="eq">0 = m<sub>1</sub> v<sub>1</sub>′ + m<sub>2</sub> v<sub>2</sub>′</div><small>كميتين متساويتين ومتعاكستين.</small></div>
+      <div class="law"><b>في بُعدين</b><div class="eq">Σp<sub>x</sub> = Σp<sub>x</sub>′ , Σp<sub>y</sub> = Σp<sub>y</sub>′</div><small>كل محور لوحده.</small></div>
+      <div class="law"><b>الصاروخ والعادم</b><div class="eq">Δp<sub>rocket</sub> = −Δp<sub>exhaust</sub></div><small>لو الدفع الخارجي مهمل.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l8-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> (أ) يتحرك الجسم <span class="m">A</span> كتلته <span class="m">1.2 kg</span> في الاتجاه الموجب بسرعة <span class="m">3.0 m s<sup>−1</sup></span>، ويتحرك الجسم <span class="m">B</span> كتلته <span class="m">2.8 kg</span> في الاتجاه السالب بسرعة <span class="m">2.0 m s<sup>−1</sup></span> على خط مستقيم، فيتصادمان ويلتصقان معًا. أوجد السرعة بعد التصاقهما.<br>(ب) على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">0.20 kg</span> متحركًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">0.80 kg</span> الساكن. بعد التصادم يتحرك <span class="m">A</span> عموديًا على اتجاهه الأصلي، ويتحرك <span class="m">B</span> بزاوية <span class="m">30°</span> أسفل الاتجاه الأصلي. أوجد السرعتين النهائيتين.</div>
+    <div class="steps" id="exSteps8">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p>(أ) <span class="m">m<sub>A</sub> = 1.2 kg , v<sub>A</sub> = +3.0 m/s , m<sub>B</sub> = 2.8 kg , v<sub>B</sub> = −2.0 m/s</span>. المطلوب: <span class="m">v′</span>.</p>
+        <p>(ب) <span class="m">m<sub>A</sub> = 0.20 kg , v<sub>A</sub> = 2.0 m/s , m<sub>B</sub> = 0.80 kg , v<sub>B</sub> = 0</span>. المطلوب: <span class="m">v<sub>A</sub>′</span> و <span class="m">v<sub>B</sub>′</span>.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>(أ) حركة في بُعد واحد والجسمين التصقوا: <span class="m">m<sub>A</sub> v<sub>A</sub> + m<sub>B</sub> v<sub>B</sub> = (m<sub>A</sub> + m<sub>B</sub>) v′</span></p>
+        <p>(ب) حركة في بُعدين: نطبق الحفظ على <span class="m">x</span> لوحده وعلى <span class="m">y</span> لوحده.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">1.2 × 3.0 + 2.8 × (−2.0) = 4.0 v′</span>، يعني <span class="m">3.6 − 5.6 = 4.0 v′</span></p>
+        <p>(ب) على <span class="m">x</span>: <span class="m">0.20 × 2.0 = 0 + 0.80 v<sub>B</sub>′ cos 30°</span> (لأن <span class="m">A</span> بقى عمودي، فمالوش مركبة على <span class="m">x</span>)</p>
+        <p>على <span class="m">y</span>: <span class="m">0 = 0.20 v<sub>A</sub>′ − 0.80 v<sub>B</sub>′ sin 30°</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer">(أ) <span class="m">v′ = −2.0 / 4.0 = −0.50 m s<sup>−1</sup></span> (في الاتجاه السالب)</div>
+        <div class="answer">(ب) <span class="m">v<sub>B</sub>′ = 0.40 / 0.693 ≈ 0.58 m s<sup>−1</sup></span> و <span class="m">v<sub>A</sub>′ = 0.80 × 0.577 × 0.5 / 0.20 ≈ 1.2 m s<sup>−1</sup></span></div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext8">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset8">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> في (أ) السرعة طلعت سالبة، وده منطقي لأن كمية التحرك الأكبر قبل التصادم كانت في الاتجاه السالب <span class="m">(5.6 &gt; 3.6)</span>. في (ب) السرعتين النهائيتين أقل من السرعة الأولانية، لأن كمية التحرك اتقسمت بين الجسمين.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l8-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ)</b> يتحرك الجسم <span class="m">A</span> كتلته <span class="m">2.0 kg</span> في الاتجاه الموجب بسرعة <span class="m">4.0 m s<sup>−1</sup></span>، ويتحرك الجسم <span class="m">B</span> كتلته <span class="m">3.0 kg</span> في الاتجاه السالب بسرعة <span class="m">4.0 m s<sup>−1</sup></span>، فيتصادمان. إذا كانت سرعة <span class="m">B</span> بعد التصادم <span class="m">2.0 m s<sup>−1</sup></span> في الاتجاه الموجب، فأوجد سرعة <span class="m">A</span> بعد التصادم (بالإشارة).</p>
+        <div class="ansrow" data-num="-5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8A">وريني الحل</button>
+        <div id="try8A" class="sol" hidden><span class="m">2.0 × 4.0 + 3.0 × (−4.0) = 2.0 v<sub>A</sub>′ + 3.0 × 2.0</span><br><span class="m">8 − 12 = 2.0 v<sub>A</sub>′ + 6</span>، يبقى <span class="m">v<sub>A</sub>′ = −5.0 m s<sup>−1</sup></span>، يعني ارتد في الاتجاه السالب.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> ينفجر جسم كتلته <span class="m">8.0 kg</span>، ساكن، إلى جسم <span class="m">A</span> كتلته <span class="m">3.0 kg</span> وجسم <span class="m">B</span> كتلته <span class="m">5.0 kg</span>. إذا تحرك <span class="m">A</span> بعد الانفجار يسارًا بسرعة <span class="m">10 m s<sup>−1</sup></span>، فأوجد سرعة <span class="m">B</span>.</p>
+        <div class="ansrow" data-num="6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8B">وريني الحل</button>
+        <div id="try8B" class="sol" hidden>اليمين موجب. قبل: صفر. <span class="m">0 = 3.0 × (−10) + 5.0 v<sub>B</sub>′</span>، يبقى <span class="m">v<sub>B</sub>′ = +6.0 m s<sup>−1</sup></span> يعني يمين.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">1.0 kg</span> متحركًا بسرعة <span class="m">4.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">2.0 kg</span> الساكن. بعد التصادم ينحرف <span class="m">A</span> بزاوية <span class="m">45°</span> فوق الأفقي وينحرف <span class="m">B</span> بزاوية <span class="m">45°</span> أسفل الأفقي. أوجد السرعة النهائية للجسم <span class="m">B</span>.</p>
+        <div class="ansrow" data-num="1.41" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8C">وريني الحل</button>
+        <div id="try8C" class="sol" hidden>على <span class="m">y</span>: <span class="m">1.0 v<sub>A</sub>′ sin 45° = 2.0 v<sub>B</sub>′ sin 45°</span>، يبقى <span class="m">v<sub>A</sub>′ = 2 v<sub>B</sub>′</span>.<br>على <span class="m">x</span>: <span class="m">4.0 = 1.0 v<sub>A</sub>′ cos 45° + 2.0 v<sub>B</sub>′ cos 45° = 4 v<sub>B</sub>′ × 0.707</span><br><span class="m">v<sub>B</sub>′ ≈ 1.4 m s<sup>−1</sup></span> و <span class="m">v<sub>A</sub>′ ≈ 2.8 m s<sup>−1</sup></span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د) تطبيق سريع:</b> جسم كتلته <span class="m">5 kg</span> ساكن ينقسم إلى جسمين: جسم كتلته <span class="m">3 kg</span> يتحرك شرقًا بسرعة <span class="m">4 m s<sup>−1</sup></span>، وجسم كتلته <span class="m">2 kg</span> يتحرك غربًا بسرعة <span class="m">6 m s<sup>−1</sup></span>. احسب كمية التحرك الكلية بعد الانقسام.</p>
+        <div class="ansrow" data-num="0" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="كمية التحرك الكلية"><span class="unit">kg m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try8D">وريني الحل</button>
+        <div id="try8D" class="sol" hidden><span class="m">3 × 4 + 2 × (−6) = 12 − 12 = 0</span>، زي ما كانت قبل الانقسام. كمية التحرك محفوظة.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">اكتب الاتجاه الموجب جنب المسألة قبل أي حاجة</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: ROCKET ============ -->
+<section class="board sky" id="l8-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">إزاي الصاروخ بيتحرك في الفضاء الفاضي؟</h2>
+      <p class="lead">الصاروخ بيرمي غازات العادم لورا بسرعة عالية جدًا. الغازات بتاخد كمية تحرك لورا، والصاروخ بياخد كمية تحرك لقدّام قدها بالظبط. ولو الدفع الخارجي مهمل، كمية التحرك الكلية للصاروخ والعادم محفوظة: <span class="m">Δp<sub>rocket</sub> = −Δp<sub>exhaust</sub></span>. دوس «اطلق» أكتر من مرة، وكل دفعة بترمي كتلة غاز.</p>
+      <div class="sim">
+        <canvas id="rkCanvas" style="aspect-ratio:16/6" aria-label="صاروخ في الفضاء يطلق غازات العادم"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="rkG">كتلة الغاز في كل دفعة <output data-out="rkG"></output></label><input id="rkG" type="range" min="1" max="20" step="1" value="5"></div>
+          <div class="ctrl"><label for="rkU">سرعة خروج الغاز بالنسبة للأرض <output data-out="rkU"></output></label><input id="rkU" type="range" min="500" max="3000" step="100" value="2000"></div>
+        </div>
+        <div class="btnrow"><button class="btn" id="rkFire">اطلق دفعة</button><button class="btn ghost small" id="rkReset">من الأول</button></div>
+        <div class="readout">
+          <div><span>كتلة الصاروخ دلوقتي</span><b id="rkM">—</b></div>
+          <div><span>سرعة الصاروخ</span><b id="rkV">—</b></div>
+          <div><span>كمية التحرك الكلية (صاروخ + كل الغاز)</span><b id="rkP">—</b></div>
+        </div>
+        <p class="muted" style="font-size:14px">الصاروخ بيبدأ ساكن وكتلته <span class="m">1000 kg</span>. وللتبسيط سرعة الغاز ثابتة بالنسبة للأرض في كل دفعة.</p>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر لماذا يمكن للصاروخ أن يتسارع في فراغ الفضاء رغم عدم وجود وسط خارجي يدفع ضده. <button class="btn small navy" data-toggle="irl8A">إجابة مقترحة</button></div>
+      <div id="irl8A" class="sol" hidden>الصاروخ مش محتاج يزق في هوا أو أرض. هو بيزق الغاز بتاعه لورا، والغاز بيزقه لقدّام بنفس القوة (قوى داخلية جوه نظام الصاروخ والعادم). ولأن كمية التحرك الكلية للنظام محفوظة، الغاز لما ياخد كمية تحرك لورا، الصاروخ لازم ياخد كمية تحرك قدها لقدّام. وعلى الأرض وقت الإطلاق، الجاذبية بتشد لتحت، فالصاروخ مابيطلعش لفوق إلا لما قوة الدفع بتاعته تبقى أكبر من وزنه.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">الصاروخ بيزق غازه… والغاز بيزقه!</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l8-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">النيوترينو: الجسيم اللي اتنبأوا بيه عشان القانون مايقعش</h3>
+      <p>سنة <span class="m">1930</span>، قياسات اضمحلال جسيمات بيتا كانت باينة كأن فيه طاقة وكمية تحرك ناقصين من النواتج. بدل ما العلماء يرموا قوانين الحفظ اللي اتجربت كتير، فولفجانج باولي اقترح إن فيه جسيم متعادل لسه ماحدش شافه، شايل الطاقة وكمية التحرك الناقصين. الجسيم ده اتسمى بعدين <b>النيوترينو</b>. والاقتراح كان قابل للاختبار: لو الجسيم موجود، التجارب في الآخر هتلاقي دليل عليه. وفعلًا سنة <span class="m">1956</span> فريدريك راينز وكلايد كوان أعلنوا اكتشافه تجريبيًا. يعني العلماء بيتمسكوا بالقوانين طول ما الأدلة بتدعمها، بس كمان بيطوروا ويختبروا تفسيرات بديلة لما ملاحظات جديدة تبان مش متسقة معاها.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> لماذا كان اقتراح فرضية قابلة للاختبار عن جسيم أكثر فائدة علميًا من مجرد إعلان فشل قوانين الحفظ؟</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l8-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. تنسى السالب للجسم الجاي من الناحية التانية</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">1.2 × 3.0 + 2.8 × 2.0 = 4.0 v′</span>، يبقى <span class="m">v′ = 2.3</span></div>
+            <div class="good"><b>صح:</b> <span class="m">B</span> رايح عكس: <span class="m">2.8 × (−2.0)</span>، يبقى <span class="m">v′ = −0.50 m s<sup>−1</sup></span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تنسى تجمع الكتلتين لما يلتصقوا</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> بعد الالتصاق: <span class="m">m<sub>1</sub> v′</span> بس</div>
+            <div class="good"><b>صح:</b> بقوا جسم واحد: <span class="m">(m<sub>1</sub> + m<sub>2</sub>) v′</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. «الجسم الساكن مالوش كمية تحرك، يبقى مالوش دور»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> تشيل الجسم الساكن من المعادلة خالص</div>
+            <div class="good"><b>صح:</b> قبل التصادم كمية تحركه صفر، بس <b>بعد</b> التصادم بيتحرك وليه <span class="m">m v′</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تجمع المقادير في بُعدين</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">0.4 = 0.2 v<sub>A</sub>′ + 0.8 v<sub>B</sub>′</span> والأجسام طالعة بزوايا</div>
+            <div class="good"><b>صح:</b> حلل: معادلة لـ <span class="m">x</span> ومعادلة لـ <span class="m">y</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">اكتب Σp قبل = Σp بعد، واتجاه موجب واضح!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l8-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">عندما تنزل من قارب صغير ساكن بجوار الرصيف، لماذا يتحرك القارب إلى الخلف؟ وما الذي يحدد سرعته؟</p>
+    <p class="lead">اعتبر إنت والقارب نظام واحد. كمية التحرك الكلية في الأول <b>صفر</b> لأن الاتنين ساكنين. وخلال الزقة القصيرة، الدفع الخارجي الأفقي مهمل، فكمية التحرك محفوظة: <span class="m ylw">p<sub>you</sub> + p<sub>boat</sub> = 0</span>. يعني إنت والقارب بتاخدوا كميتين تحرك متساويتين ومتعاكستين: إنت لقدّام، والقارب لورا. ولأن <span class="m">p = m v</span>، سرعة القارب بتعتمد على كتلته وعلى قوة زقتك: القارب الخفيف بيرجع أسرع من التقيل لنفس كمية التحرك، والزقة الأقوى بتديه سرعة أكبر.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l8-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">النظام المعزول</b><p>الدفع الخارجي = صفر.<br>القوى الداخلية أزواج متساوية ومتعاكسة.<br>كمية التحرك الكلية ثابتة.</p></div>
+        <div class="sumcol"><b class="on-navy-given">القانون</b><p><span class="m">m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub> = m<sub>1</sub>v<sub>1</sub>′ + m<sub>2</sub>v<sub>2</sub>′</span><br>التصقوا: <span class="m">(m<sub>1</sub> + m<sub>2</sub>) v′</span></p></div>
+        <div class="sumcol"><b class="mintc">خطوات الحل</b><p>حدد النظام.<br>اختار اتجاه موجب.<br>في بُعدين: <span class="m">x</span> لوحده و <span class="m">y</span> لوحده.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! كده خلّصت أول 8 دروس</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l8-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <div class="prob" data-prob>
+      <p><b>1.</b> تصطدم العربة <span class="m">A</span> كتلتها <span class="m">2.0 kg</span> متحركة بسرعة <span class="m">4.5 m s<sup>−1</sup></span> على خط مستقيم بالعربة <span class="m">B</span> كتلتها <span class="m">5.0 kg</span> المتحركة بسرعة <span class="m">0.40 m s<sup>−1</sup></span> في الاتجاه نفسه. إذا تحركت <span class="m">B</span> بعد التصادم بسرعة <span class="m">2.6 m s<sup>−1</sup></span> في اتجاهها الأصلي، فأوجد سرعة <span class="m">A</span> (بالإشارة).</p>
+      <div class="ansrow" data-num="-1" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8A">وريني الحل</button>
+      <div id="ch8A" class="sol" hidden><span class="m">2.0 × 4.5 + 5.0 × 0.40 = 2.0 v<sub>A</sub>′ + 5.0 × 2.6</span><br><span class="m">11 = 2.0 v<sub>A</sub>′ + 13</span>، يبقى <span class="m">v<sub>A</sub>′ = −1.0 m s<sup>−1</sup></span>: ارتدت عكس اتجاهها الأصلي.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> على سطح أفقي أملس، يصطدم الجسم <span class="m">A</span> كتلته <span class="m">0.20 kg</span> متحركًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> بالجسم <span class="m">B</span> كتلته <span class="m">0.60 kg</span> الساكن. بعد التصادم ينحرف <span class="m">A</span> بزاوية <span class="m">60°</span> فوق الأفقي وينحرف <span class="m">B</span> بزاوية <span class="m">30°</span> أسفله. أوجد السرعة النهائية للجسم <span class="m">A</span>.</p>
+      <div class="ansrow" data-num="1" data-tol="0.03"><input type="text" inputmode="decimal" aria-label="سرعة A"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8B">وريني الحل</button>
+      <div id="ch8B" class="sol" hidden>على <span class="m">y</span>: <span class="m">0.20 v<sub>A</sub>′ sin 60° = 0.60 v<sub>B</sub>′ sin 30°</span>، يبقى <span class="m">v<sub>B</sub>′ ≈ 0.577 v<sub>A</sub>′</span>.<br>على <span class="m">x</span>: <span class="m">0.40 = 0.20 v<sub>A</sub>′ cos 60° + 0.60 v<sub>B</sub>′ cos 30° = 0.10 v<sub>A</sub>′ + 0.30 v<sub>A</sub>′</span><br><span class="m">v<sub>A</sub>′ = 1.0 m s<sup>−1</sup></span> و <span class="m">v<sub>B</sub>′ ≈ 0.58 m s<sup>−1</sup></span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> على سطح أفقي أملس، ينقسم جسم كتلته <span class="m">5.0 kg</span> يتحرك أفقيًا بسرعة <span class="m">2.0 m s<sup>−1</sup></span> إلى جسم <span class="m">A</span> كتلته <span class="m">4.0 kg</span> وجسم <span class="m">B</span> كتلته <span class="m">1.0 kg</span>. ينحرف <span class="m">A</span> بزاوية <span class="m">60°</span> فوق الأفقي، ويتحرك <span class="m">B</span> رأسيًا إلى أسفل. أوجد سرعة <span class="m">B</span>.</p>
+      <div class="ansrow" data-num="17.3" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="سرعة B"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8C">وريني الحل</button>
+      <div id="ch8C" class="sol" hidden>على <span class="m">x</span> (<span class="m">B</span> مالوش مركبة أفقية): <span class="m">5.0 × 2.0 = 4.0 v<sub>A</sub>′ cos 60°</span>، يبقى <span class="m">v<sub>A</sub>′ = 5.0 m s<sup>−1</sup></span>.<br>على <span class="m">y</span>: <span class="m">0 = 4.0 × 5.0 × sin 60° − 1.0 v<sub>B</sub>′</span>، يبقى <span class="m">v<sub>B</sub>′ ≈ 17.3 m s<sup>−1</sup></span> لتحت.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>4.</b> تصطدم عربة كتلتها <span class="m">1.5 kg</span> تتحرك بسرعة <span class="m">2.0 m s<sup>−1</sup></span> اصطدامًا أماميًا بعربة ساكنة كتلتها <span class="m">0.50 kg</span> على مسار أملس، وتتحرك العربتان معًا. أوجد السرعة النهائية للعربتين الملتصقتين.</p>
+      <div class="ansrow" data-num="1.5" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="السرعة"><span class="unit">m s<sup>−1</sup></span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch8D">وريني الحل</button>
+      <div id="ch8D" class="sol" hidden><span class="m">1.5 × 2.0 + 0 = (1.5 + 0.50) v′</span>، يبقى <span class="m">v′ = 3.0 / 2.0 = 1.5 m s<sup>−1</sup></span>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l8-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">ليه البندقية بترجع لورا (بتضرب في كتف اللي ماسكها) لما الرصاصة تخرج؟ وليه سرعة رجوعها أقل بكتير من سرعة الرصاصة؟</b>
+  <label for="l8c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l8c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l8c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l8-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-8</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر اتجاه اليمين (أو الشرق) موجبًا ما لم يُذكر غير ذلك.</p>
+    <div class="qlist" data-quiz="q8"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q8">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q8">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="games">يلا على الألعاب ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

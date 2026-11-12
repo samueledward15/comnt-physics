@@ -1,0 +1,435 @@
+<section class="lesson" id="lesson-6" data-lesson="6" hidden>
+<main class="wrap">
+
+<!-- ============ COVER ============ -->
+<section class="board" id="l6-cover">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="eyebrow on-navy-given">الفصل الأول · الميكانيكا (القوى والحركة)</span>
+      <h1 style="font-size:clamp(32px,5vw,56px);font-weight:800">الدرس <span class="m ylw">1-6</span><br>القدرة والكفاءة</h1>
+      <div class="qbox">
+        <div class="h3">سؤال الدرس:</div>
+        <p>يرفع مصعدان الحمولة نفسها إلى الارتفاع الرأسي نفسه، لكن أحدهما ينهي الرفع في نصف الزمن. هل يبذل المصعدان الشغل المفيد نفسه؟ وأيهما له القدرة الأكبر؟</p>
+      </div>
+      <p class="muted">الشغل بيقولك عملت «قد إيه». القدرة بتقولك عملته «بسرعة قد إيه». والكفاءة بتقولك «قد إيه من الطاقة اللي دخلت طلع مفيد».</p>
+      <div class="btnrow">
+        <a class="btn" href="#l6-predict">يلا نبدأ ←</a>
+        <span class="muted" style="font-size:14px">3 محاكيات · كل القوانين · كويز <span class="m">10</span> أسئلة</span>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">مين أقوى: اللي يطلع السلم بسرعة ولا بالراحة؟</div>
+      <img src="{{mint-wave}}" alt="دكتور نعناع بيرحب بيك">
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJECTIVES ============ -->
+<section class="board sky" id="l6-goals">
+  <div class="stack">
+    <span class="seg navy">هتتعلم إيه؟ <span class="en">Objectives</span></span>
+    <h2 class="h2">في آخر الدرس ده هتكون قادر إنك:</h2>
+    <ul class="dots lead">
+      <li><span><b>تحسب</b> قدرة آلة من الشغل والزمن، أو من القوة والسرعة الثابتة.</span></li>
+      <li><span><b>تحسب</b> كفاءة جهاز من طاقة الخرج المفيدة وطاقة الدخل كلها، وتكتبها كنسبة مئوية.</span></li>
+      <li><span><b>تقرأ</b> مخطط سانكي وتحدد فين الطاقة بتضيع.</span></li>
+    </ul>
+    <div class="note"><b>محتاج تفتكر:</b> الشغل <span class="m">W = F d cos θ</span>: القوة بتعمل شغل بس لما الجسم يتحرك في اتجاهها (أو في اتجاه جزء منها). ووحدته الجول <span class="m">(J)</span>. ولما ترفع جسم بسرعة ثابتة: <span class="m">W = m g h</span>.</div>
+  </div>
+</section>
+
+<!-- ============ PREDICT ============ -->
+<section class="board" id="l6-predict">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">توقّع الأول</span>
+      <p class="lead">أسانسيرين جنب بعض في نفس العمارة، شايلين نفس الحمل لنفس الدور. الأسانسير <span class="m">A</span> بياخد <span class="m">20 s</span>، والأسانسير <span class="m">B</span> بياخد <span class="m">10 s</span> بس، يعني نص الوقت. ناس كتير بتقول إن الأسانسير الأسرع «بيعمل شغل أكتر».</p>
+      <div class="poll" data-poll="p11" data-answer="1">
+        <b>(أ) هل بذل المصعد الأسرع شغلًا مفيدًا أكبر على الحمل، أم بذل المصعدان الشغل المفيد نفسه؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">الأسرع بذل شغلًا أكبر</button>
+          <button class="opt" aria-pressed="false">بذلا الشغل نفسه</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. جرّبه في <a href="#l6-lab" style="color:var(--yellow)">سباق الأسانسيرات</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">نفس الشغل.</b> نفس الحمل اترفع لنفس الارتفاع، يبقى <span class="m">W = m g h</span> واحد في الاتنين. الفرق إن <span class="m">B</span> عمله في وقت أقل، يعني <b>قدرته</b> أكبر.</div>
+      </div>
+      <div class="poll" data-poll="p12" data-answer="1">
+        <b>(ب) يدّعي بائع أن «المحرك الأكبر قدرة يستهلك طاقة كهربائية أقل». هل يمكن أن يكون هذا صحيحًا دائمًا؟</b>
+        <div class="opts">
+          <button class="opt" aria-pressed="false">نعم، دائمًا</button>
+          <button class="opt" aria-pressed="false">لا، القدرة لا تحدد الاستهلاك وحدها</button>
+        </div>
+        <div class="pollmsg muted" hidden>اتسجّل توقعك. هنرجعله في <a href="#l6-sankey" style="color:var(--yellow)">مخطط سانكي</a>.</div>
+        <button class="btn small ghost pollrev" hidden>اكشف الإجابة</button>
+        <div class="reveal" hidden><b class="mintc">لأ، مش دايمًا.</b> القدرة بتقول بيشتغل بسرعة قد إيه. اللي بيحدد هيستهلك طاقة قد إيه عشان يعمل نفس الشغل هو <b>الكفاءة</b>: المحرك الأكفأ بيضيّع طاقة أقل، سواء كان كبير ولا صغير.</div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">فرّق بين «قد إيه» و«بسرعة قد إيه»</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE ============ -->
+<section class="board" id="l6-explore">
+  <div class="stack">
+    <span class="seg sky">جرّب بإيدك — اطلع سلم المدرسة</span>
+    <p class="lead">اكتب كتلتك وارتفاع السلم، واختار زمن الطلوع. دوس «اطلع» وبعدين «سجّل». جرّب مرة بالراحة ومرة بسرعة، وقارن عمود الشغل بعمود الشغل ÷ الزمن.</p>
+    <div class="sim">
+      <canvas id="stCanvas" style="aspect-ratio:16/7" aria-label="طالب يصعد سلمًا"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="stM">كتلتك <span class="m">m</span> <output data-out="stM"></output></label><input id="stM" type="range" min="30" max="100" step="1" value="60"></div>
+        <div class="ctrl"><label for="stH">الارتفاع الرأسي للسلم <span class="m">h</span> <output data-out="stH"></output></label><input id="stH" type="range" min="1" max="10" step="0.1" value="3"></div>
+        <div class="ctrl"><label for="stT">زمن الطلوع <span class="m">t</span> <output data-out="stT"></output></label><input id="stT" type="range" min="2" max="20" step="0.1" value="10"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="stGo">اطلع</button><button class="btn ghost small" id="stRec">سجّل</button><button class="btn ghost small" id="stClear">امسح الجدول</button></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>الطلعة</th><th>الزمن <span class="m">(s)</span></th><th>الشغل <span class="m">m g h (J)</span></th><th>الشغل ÷ الزمن <span class="m">(W)</span></th></tr></thead>
+          <tbody id="stTable"><tr class="empty"><td colspan="4" class="muted">لسه مفيش طلعات. دوس «اطلع» وبعدين «سجّل».</td></tr></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:14px">ملحوظة قياس: في التجربة الحقيقية، زمن رد فعلك وإنت بتدوس على ساعة الإيقاف بيعمل خطأ بسيط (أجزاء من الثانية). والخطأ ده تأثيره أكبر على الطلعة السريعة، لأن زمنها أقصر. عشان كده قيس كل طلعة مرتين وخد المتوسط.</p>
+    </div>
+    <div class="grid2">
+      <div class="note"><b>حلّل ما جمعته:</b><br>(أ) هل تغيّر الشغل الذي بذلته بين الصعودين، أم بقي ثابتًا؟ فسّر إجابتك.<br>(ب) في أي صعود كانت قيمة <span class="m">W/t</span> أكبر؟ وماذا تمثل هذه الكمية؟</div>
+      <div class="stack" style="gap:10px">
+        <button class="btn small ghost" data-toggle="stAns">اكشف النمط</button>
+        <div id="stAns" class="reveal" hidden>الشغل ماتغيرش، لأن كتلتك والارتفاع ثابتين، فـ <span class="m">m g h</span> ثابت. لكن في الطلعة السريعة الشغل ده خلص في وقت أقل، فـ <span class="m">W/t</span> طلعت أكبر. الكمية دي اسمها <b>القدرة المتوسطة</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="board" id="l6-concept">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">من التجربة للقانون</span>
+      <h2 class="h2">القدرة: الشغل بيتعمل بسرعة قد إيه</h2>
+      <p>آلتين ممكن يعملوا نفس الشغل (أو ينقلوا نفس الطاقة) بس في زمنين مختلفين. القدرة بتقيس الفرق ده: هي <b>معدل</b> بذل الشغل أو نقل الطاقة. والقدرة المتوسطة خلال فترة زمنية:</p>
+      <div class="fbox"><span class="m">P = ΔW / Δt</span></div>
+      <div class="grid3">
+        <div class="note"><span class="m">P</span>: القدرة بالوات <span class="m">(W)</span>.</div>
+        <div class="note"><span class="m">ΔW</span>: الشغل المبذول بالجول <span class="m">(J)</span>.</div>
+        <div class="note"><span class="m">Δt</span>: الزمن بالثانية <span class="m">(s)</span>.</div>
+      </div>
+      <div class="term"><b>مصطلح — الوات <span class="en-term">Watt</span>:</b> <span class="m">1 W = 1 J s<sup>−1</sup></span>، يعني جول كل ثانية. والقيم الكبيرة بنكتبها بالكيلووات <span class="m">1 kW = 10<sup>3</sup> W</span> والميجاوات <span class="m">1 MW = 10<sup>6</sup> W</span>.</div>
+      <div class="plain"><b class="t">خلي بالك من الحرف W:</b> نفس الحرف بيتكتب للشغل <span class="m"><i>W</i></span> (كمية) وللوات <span class="m">W</span> (وحدة). اقرا السياق: «<span class="m">W = 500 J</span>» ده شغل، و«<span class="m">P = 500 W</span>» دي قدرة.</div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">القدرة من القوة والسرعة</h3>
+      <p>لو قوة ثابتة <span class="m">F</span> بتحرك جسم بسرعة ثابتة <span class="m">v</span>، تقدر تحسب القدرة من غير ما تقيس الزمن:</p>
+      <div class="fbox"><span class="m">P = F v cos θ</span></div>
+      <p>و <span class="m">θ</span> الزاوية بين القوة والسرعة. ولو القوة في اتجاه الحركة <span class="m">(θ = 0)</span>: <span class="m">P = F v</span>. ولما ترفع حمل بسرعة ثابتة، القوة اللي لفوق = الوزن، فـ <span class="m">P = m g v = m g h / t</span>.</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px" id="l6-eff">الكفاءة: قد إيه من الطاقة طلع مفيد؟</h3>
+      <p>مفيش جهاز بيحوّل كل الطاقة اللي داخلاه لطاقة مفيدة. دايمًا جزء بيضيع، غالبًا على شكل حرارة، ويروح للمحيط. الكفاءة بتقيس الجزء المفيد:</p>
+      <div class="fbox"><span class="m">η = طاقة الخرج المفيدة ÷ طاقة الدخل كلها</span></div>
+      <p>ونفس الكلام بالقدرة: <span class="m">η = P<sub>out</sub> / P<sub>in</sub></span>. والكفاءة <b>مالهاش وحدة</b>، وبتتكتب رقم عشري بين <span class="m">0</span> و <span class="m">1</span>، أو نسبة مئوية لو اضربتها في <span class="m">100%</span>. ومفيش جهاز حقيقي كفاءته <span class="m">100%</span>.</p>
+
+      <h3 class="h3 ylw" style="margin-top:6px" id="l6-sankey">مخطط سانكي</h3>
+      <p>مخطط سانكي <span class="en-term">Sankey diagram</span> بيرسم انتقال الطاقة بالأسهم: سهم دخل واحد بيتقسم لسهم خرج مفيد وسهم طاقة مهدرة. <b>عرض كل سهم بيتناسب مع الطاقة اللي بيمثلها</b>. ومجموع الخرج (المفيد + المهدر) = الدخل بالظبط، فلو عارف اتنين تقدر تجيب التالت بالطرح.</p>
+    </div>
+    <div class="mint">
+      <div class="bubble">القدرة = سرعة الشغل، والكفاءة = نسبة المفيد</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAB: ELEVATOR RACE ============ -->
+<section class="board" id="l6-lab">
+  <div class="stack">
+    <span class="seg">سباق الأسانسيرات</span>
+    <h2 class="h2">نفس الشغل… قدرة مختلفة</h2>
+    <p class="lead">الأسانسيرين شايلين نفس الحمل لنفس الارتفاع، و <span class="m">B</span> دايمًا بياخد نص زمن <span class="m">A</span>. غيّر الكتلة والارتفاع وزمن <span class="m">A</span>، ودوس «ابدأ السباق». قارن الشغل والقدرة، واتأكد إن <span class="m">P = m g v</span> بتدي نفس النتيجة.</p>
+    <div class="sim">
+      <canvas id="elCanvas" style="aspect-ratio:16/8" aria-label="مصعدان يرفعان الحمل نفسه بزمنين مختلفين"></canvas>
+      <div class="ctrls">
+        <div class="ctrl"><label for="elM">كتلة الحمل <span class="m">m</span> <output data-out="elM"></output></label><input id="elM" type="range" min="100" max="2000" step="50" value="600"></div>
+        <div class="ctrl"><label for="elH">الارتفاع <span class="m">h</span> <output data-out="elH"></output></label><input id="elH" type="range" min="3" max="30" step="1" value="9"></div>
+        <div class="ctrl"><label for="elT">زمن المصعد <span class="m">A</span> <output data-out="elT"></output></label><input id="elT" type="range" min="4" max="40" step="1" value="24"></div>
+      </div>
+      <div class="btnrow"><button class="btn" id="elGo">ابدأ السباق</button></div>
+      <div class="readout">
+        <div><span>الشغل على الحمل (الاتنين) <span class="m">m g h</span></span><b id="elW">—</b></div>
+        <div><span>قدرة <span class="m">A = W / t</span></span><b id="elPA">—</b></div>
+        <div><span>قدرة <span class="m">B = W / (t/2)</span></span><b id="elPB">—</b></div>
+        <div><span>تحقق <span class="m">P<sub>A</sub> = m g v<sub>A</sub></span></span><b id="elChk">—</b></div>
+      </div>
+      <p class="muted" style="font-size:14px">جرّب: <span class="m">600 kg</span> و <span class="m">9 m</span> و <span class="m">24 s</span>. ودي أرقام سؤال من أسئلة الكتاب.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAWS ============ -->
+<section class="board light" id="l6-eq">
+  <div class="stack">
+    <span class="seg navy">كل قوانين الدرس</span>
+    <div class="laws">
+      <div class="law"><b>الشغل</b><div class="eq">W = F d cos θ</div><small>ولرفع جسم بسرعة ثابتة: <span class="m">W = m g h</span>.</small></div>
+      <div class="law"><b>القدرة من الشغل والزمن</b><div class="eq">P = ΔW / Δt</div><small>بالوات: <span class="m">1 W = 1 J s<sup>−1</sup></span>.</small></div>
+      <div class="law"><b>القدرة من القوة والسرعة</b><div class="eq">P = F v cos θ</div><small>والقوة في اتجاه الحركة: <span class="m">P = F v</span>.</small></div>
+      <div class="law"><b>رفع حمل بسرعة ثابتة</b><div class="eq">P = m g v = m g h / t</div><small>القوة لفوق = الوزن.</small></div>
+      <div class="law"><b>الكفاءة</b><div class="eq">η = E<sub>out</sub> / E<sub>in</sub></div><small>أو <span class="m">P<sub>out</sub> / P<sub>in</sub></span>. × <span class="m">100%</span> للنسبة المئوية.</small></div>
+      <div class="law"><b>مخطط سانكي</b><div class="eq">E<sub>in</sub> = E<sub>useful</sub> + E<sub>wasted</sub></div><small>عرض السهم بيتناسب مع الطاقة.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKED EXAMPLE ============ -->
+<section class="board sky" id="l6-example">
+  <div class="stack">
+    <span class="seg navy">مثال محلول</span>
+    <div class="qbox" style="background:var(--white)"><b>الموقف:</b> ترفع رافعة في موقع بناء منصة نقالة كتلتها <span class="m">5.0 × 10<sup>2</sup> kg</span> رأسيًا إلى أعلى بارتفاع <span class="m">6.0 m</span> بسرعة ثابتة خلال <span class="m">12 s</span>. أهمل مقاومة الهواء. أوجد: (أ) الشغل الذي بذلته الرافعة. (ب) القدرة المتوسطة للرافعة. (ج) تحقق باستخدام <span class="m">P = F v</span>.</div>
+    <div class="steps" id="exSteps6">
+      <div class="step">
+        <div class="lbl"><i>1</i> المعطيات والمطلوب</div>
+        <p><span class="m">m = 500 kg</span>، <span class="m">h = 6.0 m</span>، <span class="m">t = 12 s</span>، <span class="m">g = 9.8 m s<sup>−2</sup></span></p>
+        <p><b>المطلوب:</b> الشغل <span class="m">W</span>، والقدرة <span class="m">P</span>، والتحقق.</p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>2</i> أنهي قانون؟</div>
+        <p>سرعة ثابتة، يبقى قوة الرافعة لفوق = الوزن <span class="m">F = m g</span>. فنستخدم:</p>
+        <div class="answer"><span class="m">W = m g h</span> ثم <span class="m">P = W / t</span> ثم <span class="m">P = m g v</span></div>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>3</i> التعويض</div>
+        <p>(أ) <span class="m">W = 500 × 9.8 × 6.0 = 2.94 × 10<sup>4</sup> J</span></p>
+        <p>(ب) <span class="m">P = 2.94 × 10<sup>4</sup> / 12 = 2.45 × 10<sup>3</sup> W</span></p>
+        <p>(ج) <span class="m">v = 6.0 / 12 = 0.50 m s<sup>−1</sup></span>، و <span class="m">P = 500 × 9.8 × 0.50 = 2450 W</span></p>
+      </div>
+      <div class="step hidden-step">
+        <div class="lbl"><i>4</i> الحل</div>
+        <div class="answer"><span class="m">W = 2.94 × 10<sup>4</sup> J</span></div>
+        <div class="answer"><span class="m">P = 2.45 kW</span> (والطريقتين طلعوا نفس الرقم)</div>
+      </div>
+    </div>
+    <div class="btnrow"><button class="btn navy" id="exNext6">الخطوة الجاية ←</button><button class="btn ghost small" id="exReset6">من الأول</button></div>
+    <div class="note"><b>اتأكد إن إجابتك منطقية:</b> الطريقتين (الشغل ÷ الزمن، والقوة × السرعة) طلعوا نفس القدرة، وده تأكيد إن الحساب صح. ولو الرافعة رفعت نفس الحمل في نص الزمن، الشغل هيفضل زي ما هو، والقدرة هتتضاعف.</div>
+  </div>
+</section>
+
+<!-- ============ TRY THIS ============ -->
+<section class="try" id="l6-try">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">جرّب! <span class="en">Try this!</span></span>
+      <h2 class="h2">حاول</h2>
+      <div class="prob" data-prob>
+        <p><b>(أ) جرّب بنفسك:</b> ترتفع مقصورة مصعد كتلتها <span class="m">400 kg</span> رأسيًا بارتفاع <span class="m">9.0 m</span> بسرعة ثابتة خلال <span class="m">15 s</span>. احسب القدرة الناتجة عن محركها بالكيلووات.</p>
+        <div class="ansrow" data-num="2.35" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6A">وريني الحل</button>
+        <div id="try6A" class="sol" hidden><span class="m">W = 400 × 9.8 × 9.0 = 35 280 J</span>، و <span class="m">P = 35 280 / 15 ≈ 2352 W ≈ 2.35 kW</span>.<br>تحقق: <span class="m">v = 9.0 / 15 = 0.60 m s<sup>−1</sup></span>، و <span class="m">P = 400 × 9.8 × 0.60 = 2352 W</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ب)</b> تسحب مضخة كهربائية في مزرعة بدلتا النيل قدرة كهربائية مقدارها <span class="m">2000 W</span>، وتنتج قدرة خرج مفيدة مقدارها <span class="m">1500 W</span> لرفع مياه الري. أوجد كفاءة المضخة كنسبة مئوية.</p>
+        <div class="ansrow" data-num="75" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6B">وريني الحل</button>
+        <div id="try6B" class="sol" hidden><span class="m">η = 1500 / 2000 = 0.75 = 75%</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(ج)</b> تستقبل سخانة مياه كهربائية صغيرة <span class="m">2400 W</span>، وتنتج قدرة حرارية مفيدة مقدارها <span class="m">2040 W</span> للماء. أوجد كفاءتها كنسبة مئوية.</p>
+        <div class="ansrow" data-num="85" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6C">وريني الحل</button>
+        <div id="try6C" class="sol" hidden><span class="m">η = 2040 / 2400 = 0.85 = 85%</span></div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(د)</b> يُزوَّد مصباح بطاقة كهربائية مقدارها <span class="m">100 J</span>، ويصدر <span class="m">25 J</span> من الضوء، ويتبدد الباقي كحرارة. أوجد الطاقة المهدرة.</p>
+        <div class="ansrow" data-num="75" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الطاقة المهدرة"><span class="unit">J</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6D">وريني الحل</button>
+        <div id="try6D" class="sol" hidden>المهدر = الدخل − المفيد = <span class="m">100 − 25 = 75 J</span> حرارة. والكفاءة <span class="m">25 / 100 = 25%</span>. وتقدر ترسمه في <a href="#l6-irl" style="color:var(--navy)">محاكي سانكي</a> تحت: دخل <span class="m">100</span> وكفاءة <span class="m">25%</span>.</div>
+      </div>
+      <div class="prob" data-prob>
+        <p><b>(هـ) تطبيق سريع:</b> يحمل مصعد مكتبي حمولته إلى أعلى بسرعة ثابتة <span class="m">2.5 m s<sup>−1</sup></span>، ويؤثر المحرك إلى أعلى بقوة <span class="m">7840 N</span>. احسب القدرة بالكيلووات.</p>
+        <div class="ansrow" data-num="19.6" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+        <button class="btn small ghost" data-toggle="try6E">وريني الحل</button>
+        <div id="try6E" class="sol" hidden><span class="m">P = F v = 7840 × 2.5 = 19 600 W = 19.6 kW</span></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble" style="background:var(--navy);color:var(--white)">حوّل لكيلووات في الآخر: اقسم على 1000</div>
+      <img src="{{mint-think}}" alt="دكتور نعناع بيفكر">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHYSICS IRL: SANKEY ============ -->
+<section class="board sky" id="l6-irl">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg navy">Physics IRL · الفيزياء في حياتنا</span>
+      <h2 class="h2">تختار لمبة إيه؟</h2>
+      <p class="lead">لكل <span class="m">100 J</span> كهربا، اللمبة القديمة (أم فتلة) بتطلّع حوالي <span class="m">10 J</span> بس ضوء مفيد، والباقي <span class="m">90 J</span> بيروح حرارة. لمبة الـ <span class="m">LED</span> بتطلّع حوالي <span class="m">40 J</span> ضوء، وبتضيّع <span class="m">60 J</span> بس. اختار جهاز من تحت أو غيّر الأرقام بنفسك، وشوف سهم سانكي بيتقسم إزاي.</p>
+      <div class="sim">
+        <div class="btnrow" id="skPresets">
+          <button class="btn small navy" data-sk="100,10">لمبة فتلة</button>
+          <button class="btn small navy" data-sk="100,40">لمبة LED</button>
+          <button class="btn small navy" data-sk="2000,75">مضخة ري</button>
+          <button class="btn small navy" data-sk="2400,85">سخان مية</button>
+          <button class="btn small navy" data-sk="50000,70">ونش</button>
+        </div>
+        <canvas id="skCanvas" style="aspect-ratio:16/7" aria-label="مخطط سانكي لانتقال الطاقة"></canvas>
+        <div class="ctrls">
+          <div class="ctrl"><label for="skIn">طاقة الدخل <output data-out="skIn"></output></label><input id="skIn" type="range" min="10" max="50000" step="10" value="100"></div>
+          <div class="ctrl"><label for="skE">الكفاءة <span class="m">η</span> <output data-out="skE"></output></label><input id="skE" type="range" min="1" max="99" step="1" value="10"></div>
+        </div>
+        <div class="readout">
+          <div><span>الخرج المفيد</span><b id="skU">—</b></div>
+          <div><span>المهدر (حرارة غالبًا)</span><b id="skW">—</b></div>
+        </div>
+      </div>
+      <div class="btnrow"><b>دورك الآن:</b> فسّر، من مخططي سانكي، لماذا يكلف تشغيل مصباح LED أقل من مصباح فتيل التنجستين بينما ينتجان مقدار الضوء المفيد نفسه. <button class="btn small navy" data-toggle="irl6A">إجابة مقترحة</button></div>
+      <div id="irl6A" class="sol" hidden>عشان نطلّع نفس الضوء، مثلًا <span class="m">40 J</span>: الـ <span class="m">LED</span> محتاجة <span class="m">100 J</span> كهربا بس، أما لمبة الفتلة (كفاءة <span class="m">10%</span>) محتاجة <span class="m">400 J</span>. سهم الضوء في الـ <span class="m">LED</span> أعرض، وسهم الحرارة أضيق، يعني طاقة أقل بتضيع، فبتسحب كهربا أقل وفاتورتها أقل.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">عرض السهم = قد إيه طاقة</div>
+      <img src="{{mint-wow}}" alt="دكتور نعناع مندهش">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KHAMSEENA ============ -->
+<section class="board khamseena" id="l6-nos">
+  <div class="kh">
+    <svg class="glass" viewBox="0 0 54 76" aria-hidden="true"><path d="M8 6h38l-5 62a5 5 0 0 1-5 4H18a5 5 0 0 1-5-4z" fill="none" stroke="#FFF6E8" stroke-width="3" stroke-linejoin="round"/><path d="M12 26h30l-3.6 40a3 3 0 0 1-3 3H18.6a3 3 0 0 1-3-3z" fill="#9E1B0B"/><path d="M27 4c6-8 16-4 14 4-6 2-11 0-14-4z" fill="#7BB526"/><path d="M15 12v52M23 12v54M31 12v54M39 12v52" stroke="#FFF6E8" stroke-opacity=".25" stroke-width="1.5"/></svg>
+    <div class="stack" style="gap:8px">
+      <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
+      <h3 class="h3">جيمس وات والحصان: وحدة يفهمها الزبون</h3>
+      <p>في أواخر القرن التمانتاشر، جيمس وات كان بيبيع محركات بخار محسّنة. الزبائن ماكانوش يعرفوا يقارنوا المحرك بإيه، فوات قاس قدرة حصان شغّال واستخدمها أساس للمقارنة. وعرّف «الحصان» على إنه معدل شغل قدره <span class="m">33 000</span> قدم-رطل في الدقيقة. كده الزبون بقى يفهم «المحرك ده قد 10 أحصنة». والقصة دي بتوري إزاي القياس واتفاق الناس على تعريف بيعملوا وحدة عملية لكمية فيزيائية. ووحدة القدرة الحديثة اتسمت «وات» على اسمه.</p>
+      <p style="color:var(--salmon)"><b>دورك الآن:</b> اقترح ميزة واحدة للتعبير عن قدرة المحرك بوحدة الحصان بدلًا من استحداث وحدة جديدة تمامًا.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM TRAP ============ -->
+<section class="trap" id="l6-trap">
+  <div class="hd">
+    <svg class="tri" viewBox="0 0 44 40" aria-hidden="true"><path d="M22 3 L41 37 H3 Z" fill="#EFD349" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M22 14v11" stroke="#013869" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="31" r="2.4" fill="#013869"/></svg>
+    <div><span class="eyebrow" style="opacity:.9">Exam Trap!</span><h2 class="h2">فخ امتحان!</h2></div>
+  </div>
+  <div class="bd">
+    <div class="with-mint">
+      <div class="stack" style="gap:0">
+        <div class="trapitem">
+          <b>1. «الأسرع بيعمل شغل أكتر»</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> الأسانسير اللي خلص في <span class="m">10 s</span> عمل شغل أكتر</div>
+            <div class="good"><b>صح:</b> نفس الحمل ونفس الارتفاع = نفس الشغل. الأسرع <b>قدرته</b> أكبر بس</div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>2. تقلب كسر الكفاءة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> <span class="m">η = 2000 / 1500 = 133%</span></div>
+            <div class="good"><b>صح:</b> المفيد فوق والدخل تحت: <span class="m">1500 / 2000 = 75%</span>. الكفاءة دايمًا أقل من <span class="m">100%</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>3. تنسى الكيلو</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «<span class="m">P = 2450 kW</span>»</div>
+            <div class="good"><b>صح:</b> <span class="m">2450 W = 2.45 kW</span>. اقسم على <span class="m">1000</span></div>
+          </div>
+        </div>
+        <div class="trapitem">
+          <b>4. تكتب للكفاءة وحدة</b>
+          <div class="pair">
+            <div class="bad"><b>غلط:</b> «<span class="m">η = 0.75 J</span>»</div>
+            <div class="good"><b>صح:</b> الكفاءة نسبة مالهاش وحدة: <span class="m">0.75</span> أو <span class="m">75%</span>. ولو السؤال ماطلبش نسبة مئوية، الرقم العشري مقبول</div>
+          </div>
+        </div>
+      </div>
+      <div class="mint">
+        <div class="bubble">الكفاءة = مفيد ÷ دخل، ومستحيل تعدي 100%!</div>
+        <img src="{{mint-trap}}" alt="دكتور نعناع جاد">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANSWER ============ -->
+<section class="board" id="l6-answer">
+  <div class="stack">
+    <span class="seg">نرجع لسؤال الدرس</span>
+    <p class="on-navy-given">يرفع مصعدان الحمولة نفسها إلى الارتفاع الرأسي نفسه، لكن أحدهما ينهي الرفع في نصف الزمن. هل يبذل المصعدان الشغل المفيد نفسه؟ وأيهما له القدرة الأكبر؟</p>
+    <p class="lead">أيوه، الاتنين بيعملوا <b>نفس الشغل المفيد</b>، لأن نفس الحمل بيترفع لنفس الارتفاع: <span class="m ylw">W = m g h</span>. لكن اللي بيخلص في وقت أقل قدرته أكبر: <span class="m ylw">P = W / t</span>، وفي نص الزمن القدرة بتبقى الضعف. ولو طاقة الدخل بتاعتهم مختلفة، الأكفأ هو اللي بيحوّل جزء أكبر من طاقته لطاقة مفيدة وبيضيّع أقل، وده يبان في مخطط سانكي: سهم مفيد أعرض وسهم مهدر أضيق.</p>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section class="board" id="l6-summary">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg tea">استراحة شاي · الملخص</span>
+      <h2 class="h2">الدرس في 3 أعمدة</h2>
+      <div class="grid3">
+        <div class="sumcol"><b class="ylw">القدرة</b><p>معدل بذل الشغل.<br><span class="m">P = ΔW / Δt</span><br><span class="m">P = F v cos θ</span><br>بالوات <span class="m">W = J s<sup>−1</sup></span></p></div>
+        <div class="sumcol"><b class="on-navy-given">الكفاءة</b><p><span class="m">η = المفيد ÷ الدخل</span><br>مالهاش وحدة، وأقل من <span class="m">100%</span> دايمًا.</p></div>
+        <div class="sumcol"><b class="mintc">سانكي</b><p>سهم دخل بيتقسم لمفيد ومهدر.<br>العرض ∝ الطاقة.<br>الدخل = المفيد + المهدر.</p></div>
+      </div>
+    </div>
+    <div class="mint">
+      <div class="bubble">برافو! خلّصت الدرس السادس</div>
+      <img src="{{mint-tea}}" alt="دكتور نعناع ماسك كوباية شاي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="chal" id="l6-chal">
+  <div class="stack">
+    <span class="seg" style="background:var(--white);color:var(--green)">تحدي! <span class="en">Challenge!</span></span>
+    <h2 class="h2">بأسلوب الامتحان</h2>
+    <p>خذ <span class="m">g = 9.8 m s<sup>−2</sup></span>.</p>
+    <div class="prob" data-prob>
+      <p><b>1.</b> يرفع مصعد بضائع حملًا كتلته <span class="m">1.5 × 10<sup>3</sup> kg</span> رأسيًا بارتفاع <span class="m">18 m</span> بسرعة ثابتة، مستغرقًا <span class="m">30 s</span>. أوجد القدرة الناتجة عن المصعد بالكيلووات.</p>
+      <div class="ansrow" data-num="8.82" data-tol="0.02"><input type="text" inputmode="decimal" aria-label="القدرة"><span class="unit">kW</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6A">وريني الحل</button>
+      <div id="ch6A" class="sol" hidden><span class="m">W = 1500 × 9.8 × 18 = 2.646 × 10<sup>5</sup> J</span><br><span class="m">P = 2.646 × 10<sup>5</sup> / 30 = 8820 W = 8.82 kW</span><br>تحقق: <span class="m">v = 18 / 30 = 0.60 m s<sup>−1</sup></span>، و <span class="m">P = 1500 × 9.8 × 0.60 = 8820 W</span>.</div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>2.</b> يُزوَّد ونش كهربائي بطاقة كهربائية مقدارها <span class="m">5.0 × 10<sup>4</sup> J</span>، ويبذل <span class="m">3.5 × 10<sup>4</sup> J</span> من الشغل المفيد في رفع حمل، وتتبدد بقية الطاقة. أوجد كفاءة الونش كنسبة مئوية.</p>
+      <div class="ansrow" data-num="70" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6B">وريني الحل</button>
+      <div id="ch6B" class="sol" hidden>المتبدد: <span class="m">5.0 × 10<sup>4</sup> − 3.5 × 10<sup>4</sup> = 1.5 × 10<sup>4</sup> J</span> (غالبًا حرارة).<br><span class="m">η = 3.5 / 5.0 = 0.70 = 70%</span></div>
+    </div>
+    <div class="prob" data-prob>
+      <p><b>3.</b> ترفع رافعة كهربائية حملًا كتلته <span class="m">250 kg</span> بارتفاع رأسي <span class="m">6.0 m</span> بسرعة ثابتة خلال <span class="m">8.0 s</span>، وتُزوَّد بطاقة كهربائية بمعدل ثابت مقداره <span class="m">2.5 kW</span>. أوجد كفاءة الرافعة كنسبة مئوية.</p>
+      <div class="ansrow" data-num="73.5" data-tol="0.01"><input type="text" inputmode="decimal" aria-label="الكفاءة"><span class="unit">%</span><button class="btn small navy chk">تحقق</button><span class="fb"></span></div>
+      <button class="btn small ghost" style="color:var(--navy)" data-toggle="ch6C">وريني الحل</button>
+      <div id="ch6C" class="sol" hidden>القدرة المفيدة: <span class="m">P = 250 × 9.8 × 6.0 / 8.0 = 1837.5 W ≈ 1.84 kW</span><br><span class="m">η = 1.8375 / 2.5 ≈ 0.735 = 73.5%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAVE A COMMENT ============ -->
+<section class="comment" id="l6-comment">
+  <span class="seg salmon">سيب كومنت! <span class="en">Leave a Comment!</span></span>
+  <b style="font-size:18px">بص على الشاحن بتاع موبايلك أو أي جهاز في البيت: مكتوب عليه كام وات؟ وتفتكر لما الشاحن بيسخن، ده معناه إيه عن كفاءته؟</b>
+  <label for="l6c" class="muted" style="font-size:14px">اكتب ردك هنا وانسخه في كومنتات الفيديو أو جروب التليجرام:</label>
+  <textarea id="l6c" placeholder="اكتب تفسيرك…"></textarea>
+  <div class="btnrow"><button class="btn navy small" data-copy="l6c">انسخ الكومنت</button><span class="copymsg muted" style="font-size:14px"></span></div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="board" id="l6-quiz">
+  <div class="stack">
+    <div class="quizhead">
+      <div class="stack" style="gap:6px"><span class="seg">كويز الدرس <span class="m">1-6</span></span><h2 class="h2">اختبر نفسك</h2></div>
+      <div class="score"><img src="{{face-starry}}" alt="" data-face><span>النتيجة: <span class="m" data-score>0 / 10</span></span></div>
+    </div>
+    <p class="on-navy-given">اعتبر <span class="m">g = 9.8 m s<sup>−2</sup></span> في كل الأسئلة.</p>
+    <div class="qlist" data-quiz="q6"></div>
+    <div class="btnrow"><button class="btn" data-quiz-reset="q6">ابدأ الكويز من جديد</button></div>
+    <div class="endcard" data-end="q6">
+      <img src="{{mint-gotit}}" alt="دكتور نعناع مبسوط">
+      <div class="stack" style="gap:6px"><h3 class="h3" data-endtitle>خلصت الكويز!</h3><p data-endmsg></p><a class="btn navy" href="#lesson-top" data-next-lesson="7">الدرس اللي بعده: كمية التحرك والدفع ←</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</section>

@@ -5,7 +5,7 @@ def uri(name):
     return "data:image/svg+xml;base64," + base64.b64encode((D / f"{name}.svg").read_bytes()).decode()
 
 lessons = [D / "src-l1.html"]
-extra = ["src-l4.html", "src-games.html", "src-basics.html"]
+extra = ["src-l4.html", "src-l5.html", "src-l6.html", "src-l7.html", "src-l8.html", "src-games.html", "src-basics.html"]
 placeholders = {
     2: ("1-2", "حركة المقذوفات الأفقية"),
     3: ("1-3", "حركة المقذوفات بزاوية"),
