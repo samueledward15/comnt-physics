@@ -287,9 +287,68 @@
       <span class="seg leaf">في الخمسينة · طبيعة العلم</span>
       <h3 class="h3">ستيفن وإكليل الكرات: قانون اتزان قبل نيوتن</h3>
       <p>قبل نيوتن بحوالي 100 سنة، سنة <span class="m">1586</span>، العالم سيمون ستيفن درس الاتزان على المستوى المايل بتجربة في دماغه بس. تخيّل سلسلة مقفولة من كرات متساوية ملفوفة حوالين مستويين مايلين. لو ناحية كانت بتشد أكتر من التانية، السلسلة هتلف، وبعد لفة ترجع لنفس الشكل، فتفضل تلف للأبد من غير ما حد يزقها. وده مستحيل. يبقى الشدين لازم يتوازنوا. ومن الفكرة دي طلع قانون الاتزان على المستوى المايل وتحليل القوى لمركبات.</p>
-      <p style="color:var(--salmon)"><b>دورك الآن:</b> لماذا استطاع ستيفن أن يثق بهذا الاستنتاج حتى بدون معادلات الحركة الحديثة؟</p>
+      <p><a class="btn small" href="#l5-stevin">الشرح والفيديو والتجربة ←</a></p>
     </div>
   </div>
+</section>
+
+<!-- ============ STEVIN: EXPLAIN + VIDEO + EXPERIMENT ============ -->
+<section class="board" id="l5-stevin">
+  <div class="with-mint">
+    <div class="stack">
+      <span class="seg">تجربة ستيفن بالتفصيل</span>
+      <h2 class="h2">إكليل الكرات: إزاي تثبت قانون من غير ما تقيس حاجة؟</h2>
+      <p class="lead">ستيفن ماكانش عنده حساسات قوة ولا معادلات نيوتن. كل اللي عمله إنه تخيّل تجربة وفكّر فيها بالمنطق خطوة خطوة. اتفرج على الفيديو الأول، وبعدين اقرا الخطوات، وبعدين جرّب بإيدك.</p>
+
+      <div class="sim">
+        <b class="h3">الفيديو: التجربة في دقيقة</b>
+        <canvas id="svCanvas" class="gcv" aria-label="فيديو متحرك يشرح تجربة إكليل الكرات لستيفن"></canvas>
+        <div id="svCap" class="svcap">دوس تشغيل.</div>
+        <div class="btnrow">
+          <button class="btn" id="svPlay">تشغيل</button>
+          <input type="range" id="svSeek" min="0" max="60" step="0.1" value="0" aria-label="مكان الفيديو" style="flex:1;min-width:140px">
+          <span class="m" id="svTime">0:00</span>
+        </div>
+      </div>
+
+      <h3 class="h3 ylw" style="margin-top:6px">الفكرة خطوة خطوة</h3>
+      <div class="steps" style="gap:10px">
+        <div class="step"><div class="lbl"><i>1</i> التجهيز</div><p>مثلث عنده منحدرين بنفس الارتفاع: <span class="m">AB</span> طويل (طوله <span class="m">2L</span>) و <span class="m">BC</span> قصير (طوله <span class="m">L</span>). ملفوف عليهم سلسلة مقفولة من كرات زي بعض، والمسافات بينها متساوية، والأسطح ملسا من غير احتكاك. يعني على المنحدر الطويل عدد كرات ضعف القصير، وتحت فيه جزء من السلسلة متدلي.</p></div>
+        <div class="step"><div class="lbl"><i>2</i> لو السلسلة اتحركت؟</div><p>افترض إن ناحية بتشد أكتر، فالسلسلة لفّت شوية. بعد ما كل كرة تاخد مكان الكرة اللي جنبها، <b>الشكل بيرجع زي ما كان بالظبط</b>. يعني نفس السبب اللي حرّكها لسه موجود، فهتفضل تلف للأبد من غير ما حد يزقها. ده اسمه <b>حركة دائمة</b>، ومحدش عمره شافها. يبقى الافتراض غلط، والسلسلة لازم تفضل <b>ساكنة</b>.</p></div>
+        <div class="step"><div class="lbl"><i>3</i> نشيل الجزء المتدلي</div><p>الجزء اللي متدلي تحت متماثل: نصه شمال ونصه يمين، فبيشد الطرفين بالتساوي. لو شلناه، الاتزان مش هيتأثر. يفضل فوق كرات المنحدر الطويل قصاد كرات المنحدر القصير، ومتزنين.</p></div>
+        <div class="step"><div class="lbl"><i>4</i> القانون</div><p>كل كرة على منحدر بيشدها لتحت المنحدر جزء من وزنها بس: <span class="m ylw">W sin θ</span>. على الطويل كرات كتير بس كل واحدة بتشد شوية (الميل قليل). وعلى القصير كرات أقل بس كل واحدة بتشد أكتر (الميل جامد). ولأن عدد الكرات بيتناسب مع الطول، و <span class="m">sin θ = h / L</span>:</p>
+          <div class="fbox"><span class="m">n<sub>1</sub> W sin θ<sub>1</sub> = n<sub>2</sub> W sin θ<sub>2</sub></span></div>
+          <p>يعني القوة اللازمة عشان تمسك جسم وزنه <span class="m">W</span> ساكن على مستوى مايل أملس، موازية للمستوى، هي <span class="m ylw">W sin θ = W h / L</span>. وده بالظبط الجزء من الوزن اللي على طول المستوى لما بنحلل القوى، اللي إنت عارفه من الدرس <span class="m">1-1</span>.</p></div>
+      </div>
+      <div class="plain"><b class="t">«العجيب مش عجيب»</b> ستيفن كان فخور جدًا بالفكرة دي، فحط رسمة إكليل الكرات على غلاف كتابه، ومعاها جملة بالهولندي معناها «العجيب مش عجيب». يعني الحاجة اللي شكلها غريب، لما تفكر فيها كويس بتطلع منطقية.</div>
+    </div>
+    <div class="mint">
+      <div class="bubble">تجربة في الدماغ بس… وطلع منها قانون!</div>
+      <img src="{{mint-explain}}" alt="دكتور نعناع بيشرح">
+    </div>
+  </div>
+
+  <div class="sim" id="l5-stevin-lab" style="margin-top:14px">
+    <b class="h3">جرّب بإيدك: إمتى السلسلة تتزن؟</b>
+    <p>منحدرين بنفس الارتفاع، وكل كرة وزنها <span class="m">1 N</span>، والأسطح ملسا. غيّر ميل كل منحدر وعدد الكرات عليه، وشوف السلسلة هتتزحلق ناحية مين. وبعدين دوس «وزّع زي ستيفن»: الكرات تملا المنحدرين بنفس المسافات.</p>
+    <canvas id="slCanvas" class="gcv" aria-label="سلسلة كرات على منحدرين بزاويتين مختلفتين"></canvas>
+    <div class="ctrls">
+      <div class="ctrl"><label for="slA1">ميل المنحدر الشمال <span class="m">θ<sub>1</sub></span> <output data-out="slA1"></output></label><input id="slA1" type="range" min="15" max="75" step="1" value="30"></div>
+      <div class="ctrl"><label for="slN1">عدد الكرات على الشمال <span class="m">n<sub>1</sub></span> <output data-out="slN1"></output></label><input id="slN1" type="range" min="1" max="12" step="1" value="4"></div>
+      <div class="ctrl"><label for="slA2">ميل المنحدر اليمين <span class="m">θ<sub>2</sub></span> <output data-out="slA2"></output></label><input id="slA2" type="range" min="15" max="75" step="1" value="60"></div>
+      <div class="ctrl"><label for="slN2">عدد الكرات على اليمين <span class="m">n<sub>2</sub></span> <output data-out="slN2"></output></label><input id="slN2" type="range" min="1" max="12" step="1" value="4"></div>
+    </div>
+    <div class="btnrow"><button class="btn" id="slFill">وزّع زي ستيفن</button><button class="btn ghost small" id="slEq">عدد كرات متساوي</button></div>
+    <div class="readout">
+      <div><span>شدّة الشمال <span class="m">n<sub>1</sub> W sin θ<sub>1</sub></span></span><b id="slP1">—</b></div>
+      <div><span>شدّة اليمين <span class="m">n<sub>2</sub> W sin θ<sub>2</sub></span></span><b id="slP2">—</b></div>
+      <div><span>النتيجة</span><b id="slR" style="font-family:var(--f-ar)">—</b></div>
+    </div>
+    <div class="note"><b>تحدّي:</b> خلي الشمال <span class="m">30°</span> واليمين <span class="m">37°</span>. لو على اليمين <span class="m">5</span> كرات، كام كرة محتاج على الشمال عشان يتزنوا؟ احسبها الأول: <span class="m">n<sub>1</sub> × sin 30° = 5 × sin 37°</span>، وبعدين جرّب في المحاكي.</div>
+  </div>
+
+  <div class="btnrow" style="margin-top:12px"><b>دورك الآن:</b> لماذا استطاع ستيفن أن يثق بهذا الاستنتاج حتى بدون معادلات الحركة الحديثة؟ <button class="btn small" data-toggle="l5stA">إجابة مقترحة</button></div>
+  <div id="l5stA" class="sol" hidden>لأنه ماعتمدش على قياس ولا معادلة. اعتمد على حاجتين محدش يقدر يشكك فيهم: إن الحركة الدائمة من غير مصدر طاقة مستحيلة (محدش شافها أبدًا)، وإن الجزء المتماثل بيشد الناحيتين بالتساوي. ولما الاستنتاج بييجي من مبادئ عامة زي دي، بيبقى صحيح مهما كانت الزوايا أو عدد الكرات. وبعدين التجارب الحقيقية أكدته.</div>
 </section>
 
 <!-- ============ EXAM TRAP ============ -->
